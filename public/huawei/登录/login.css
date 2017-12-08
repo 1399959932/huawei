@@ -1,0 +1,212 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-size: 幼圆;
+	font-size: 14px;
+	color: #333;
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	color:#333;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+}
+.top20{
+	height: 20px;
+}
+
+.top10{
+	height: 10px;
+}
+
+body{
+	height: 100%;
+	background-color: #f2f2f2;
+}
+
+.container{
+	background-color: #f2f2f2;
+	height: 709px;
+	width: 100%;
+	/*height: 100%;*/
+}
+
+.all{
+	
+	/*background-color: red;*/
+	
+}
+
+header{
+	background-color: #f2f2f2;
+    height: 67px;
+    min-width: 960px;
+    /*width: 100%;*/
+}
+
+.logo{
+	/*background-color: red;*/
+	height: 67px;
+}
+
+.huaweii{
+	float: left;
+	margin-top: 10px;
+	margin-left: -20px;
+}
+
+.huaweii img{
+	text-align: left;
+	line-height: 67px;
+	/*background-color: #f2f2f2;*/
+	/*float: left;*/
+}
+
+.huawei{
+
+    /*background-color: #333;*/
+	text-align: center;
+	border-left: 1px solid #ccc;
+	width: 106px;
+	height: 20px;
+	float: left;
+	margin-top: 25px;
+	margin-left: 20px;
+}
+
+.huawei b{
+	line-height: 23px;
+	font-size: 18px;
+	color: #333;
+
+}
+
+.all{
+	width: 100%;
+	height: 590px;
+	background-color: #081638;
+}
+
+.denglu{
+	width: 1130px;
+	height: 590px;
+	/*background-color: #fff;*/
+	margin: 0 auto;
+	background:url(/huawei/登录/bg.png);
+}
+
+
+footer{
+	height: 89px;
+	width: 100%;
+	/*background-color: yellow;*/
+	border-top:1px solid #bbb;
+	min-width: 960px;
+}
+
+
+footer a,span{
+	font-size: 14px;
+	color: #aaa;
+}
+
+.input{
+	width: 380px;
+	height: 530px;
+	border: 1px #aaa solid;
+	float: right;
+	margin-top: 30px;
+	background-color: #fff;
+
+}
+
+
+/*滑动验证码开始*/
+/*滑动验证码开始*/
+/*滑动验证码开始*/
+
+#slider{
+	/*background-color: #aaa;*/
+	text-align: center;
+	/*transform-style: preserve-3d;*/
+	color: #555;
+	width: 310px;
+	height: 38px;
+	float: left;
+	margin-left: 49px;
+	margin-top: 2px;
+	font-size: 12px;
+	padding-left: 5px;
+	line-height: 38px;
+	border-radius: 30px;
+	border: 1px solid #ddd;
+	/*background-color: red;*/
+	background: -webkit-gradient(linear,left top,right top,
+				color-stop(0,#4d4d4d),
+				color-stop(.1,#9d9d9d),color-stop(.6,#fff),
+				color-stop(.8,#eee),color-stop(.0,#aaa));
+
+	/*-webkit-background-clip: text;*/
+	/*-webkit-text-fill-color: transparent;*/
+   	/*-webkit-animation: slidetounlock 3s infinite;	*/
+    /*-webkit-text-size-adjust: none;*/
+	  position: relative;
+	  overflow: hidden;
+	  user-select: none;
+	  -moz-user-select: none;
+	  -webkit-user-select: none;
+
+}
+
+#slider_bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: #18A452;
+  z-index: 1;
+}
+
+#label {
+  width: 38px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 38px;
+  line-height: 38px;
+  border: 1px solid #cccccc;
+  background: #fff;
+  z-index: 3;
+  cursor: move;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  color: #aaa;
+  font-size: 13px;
+  font-weight: 900;
+  text-align: center;
+
+}
+
+#labelTip {
+  position: absolute;
+  left: 0;
+  width: 112%;
+  height: 100%;
+  font-size: 13px;
+  font-family: 'Microsoft Yahei', serif;
+  color: #787878;
+  line-height: 38px;
+  text-align: center;
+  z-index: 2;
+}
+
+/*滑动验证码结束*/
+/*滑动验证码结束*/
+/*滑动验证码结束*/
