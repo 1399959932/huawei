@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
 
 class GoodsController extends Controller
 {
@@ -34,7 +35,21 @@ class GoodsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request->hasFile('pic'));
+        $data = $request->only(['title','kuchun','price','content']);
+
+        // 填充数据库数据
+        $data['created_at'] = date('Y-m-d H:i:s');
+        $data['status'] = 1;
+
+        //插入表
+        $res = DB::table('goods')->insertGetId($data);
+       
+       //如果插入成功
+       if($res > 0) {
+            //处理图片
+            dd($request->hasFile('pic'));
+       }
     }
 
     /**
