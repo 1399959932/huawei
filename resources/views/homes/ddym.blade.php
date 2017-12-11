@@ -1,6 +1,6 @@
 @extends('homes.public')
 @section('header')
-<link rel="stylesheet" type="text/css" href="./css/qrdd.css">
+<link rel="stylesheet" type="text/css" href="./css/ddym.css">
 <link rel="stylesheet" type="text/css" href="./css/gwc.css">
 <script type="text/javascript" src="./js/jquery-3.2.1.js"></script>
 <script type="text/javascript" src="./js/fl.js"></script>
@@ -42,7 +42,7 @@
         </div>
         <!-- logo结束 -->
         <div class="col-md-2">
-        	<h4>我的购物车</h4>
+        	<h4>确认订单</h4>
         </div>
         <div class="col-md-8 pull-right gwc_left">
         	<div class="col-md-4">
@@ -73,7 +73,26 @@
 			</div>
 		</div>
 		<div class="col-md-12 qrdd_cen">
-			<div class="cen_left col-md-8"></div>
+			<div class="cen_left">
+               <div class="left_top">
+                   <p>发票信息 &nbsp;<span>注：如果商品由第三方卖家销售，发票内容由其卖家决定，发票由卖家开具并寄出</span>
+                   </p>
+                   <ul class="list-unstyled list-inline">
+                       <li><a href="#">电子普通发票</a></li>
+                       <li><a href="#">个人</a></li>
+                       <li class="xiugai"><a href="#"> 修改</a></li>
+                   </ul>
+               </div>       
+               <div class="left_cen">
+                   <img src="holder.js/80x100">
+                   <ul class="list-unstyled list-inline">
+                       <li><a href="#">荣耀V9 play 全网通标配版（极光蓝）</a></li>
+                       <li><a href="#"></a></li>
+                       <li><a href="#"></a></li>
+                   </ul>
+               </div>       
+               <div class="left_bot"></div>       
+            </div>
 			<div class="cen_right col-md-4"></div>
 		</div>
 	</div>
