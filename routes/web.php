@@ -16,6 +16,29 @@ Route::get('/', function () {
 });
 
 
+// 陈
+Route::get('/vcode', 'UserController@captcha');
+// 注册
+Route::get('/zhuce','UserController@zhuce');
+Route::post('/zhuce','UserController@zhucet');
+
+Route::get('/message','CommonController@message');
+
+// 验证码
+Route::get('/zhuce/captcha/{tmp}', 'UserController@captcha');
+
+
+Route::get('/login','UserControll.0er@login');
+
+//分类
+Route::resource('/cate','CateController');
+
+// 商品管理
+Route::resource('/goods','GoodsController');
+
+    // 陈结束
+
+
 //前台首页
 Route::get('/homes','HomeController@index');
 
