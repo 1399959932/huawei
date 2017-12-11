@@ -1,0 +1,71 @@
+.qrdd{
+	height: 945px;
+	background: #f5f5f5;
+}
+.qrdd .qrdd_up{
+	height: 234px;
+	background: #fff;
+	margin-top: 20px;
+}
+.qrdd .qrdd_up p{
+	padding: 20px;
+	font-size: 18px;
+}
+.qrdd .qrdd_up .dizhi{
+	width: 360px;
+	height: 122px;
+	border: 1px solid #ccc;
+	margin-left: 20px;
+}
+.qrdd .qrdd_up .dizhi h5{
+    text-align: center;
+    line-height: 100px;
+}
+.qrdd .qrdd_cen{
+	height: 430px;
+	background: #fff;
+	margin-top: 20px;
+	padding: 40px;
+}
+.qrdd .qrdd_cen .cen_left{
+	width: 730px;
+	height: 350px;
+	border: 1px solid #ccc;
+	float: left;
+}
+.qrdd .qrdd_cen .cen_left .left_top{
+	width: 730px;
+	height: 133px;
+	padding: 0px;
+	border-bottom: 1px solid #ccc;
+}
+.qrdd .qrdd_cen .cen_left .left_top p{
+	height: 50px;
+	padding: 40px;
+	font-size: 20px;
+}
+.qrdd .qrdd_cen .cen_left .left_top p span{
+	font-size: 15px;
+	color: #ccc;
+}
+.qrdd .qrdd_cen .cen_left .left_top ul{
+    margin-left: 140px;
+}
+.qrdd .qrdd_cen .cen_left .left_top ul li a{
+	color:#000;
+}
+.qrdd .qrdd_cen .cen_left .left_top ul .xiugai a{
+	color: #ccc;
+}
+.qrdd .qrdd_cen .cen_left .left_cen{
+	height: 137px;
+	background: red;
+	padding: 20px;
+}
+.qrdd .qrdd_cen .cen_right{
+	width: 360px;
+	height: 350px;
+	border: 1px solid #ccc;
+	border-left: none;
+	float: right;
+}
