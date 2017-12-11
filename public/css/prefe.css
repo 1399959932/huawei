@@ -2,12 +2,12 @@
 .hwjp{
 	width: 1200px;
 	height: 560px;
-	background-color: orange;
+	/*background-color: red;*/
 	margin-top: 60px;
 }
 .hwjp .jp_t{
-	height: 45px;
-	background-color: pink;
+	height: 54px;
+	/*background-color: pink;*/
 	text-align: center;
 	position: relative;
 }
@@ -27,17 +27,363 @@
 	line-height: 55px;
 }
 .hwjp .jp_b{
-	height: 490px;
-	background-color: pink;
-	margin-top: 25px;
+	height: 506px;
+	/*background-color: pink;*/
+	margin-top: 16px;
 }
 .hwjp .jp_b .b_t{
 	height: 280px;
-	background-color: lightblue;
+	/*background-color: lightblue;*/
 }
 .hwjp .jp_b .b_b{
 	height: 190px;
-	background-color: lightgreen;
+	/*background-color: lightgreen;*/
 	margin-top: 20px;
+	position: relative;
+}
+.hwjp .jp_b .b_b .jie{
+	width: 190px;
+	height: 190px;
+	background-color: rgba(0,0,0,0.4);
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+.hwjp .jp_b .b_b .shao{
+	position: absolute;
+	top: 0px;
+	right: 14px;
+}
+.hwjp .jp_b .b_b .jie:hover{
+	background-color: rgba(153,0,0,0.8);
+}
+.hwjp .jp_b .b_b .jie h3{
+	width: 164px;
+	height: 42px;
+	/*background-color: red;*/
+	line-height: 20px;
+	margin-left: 15px;
+}
+.hwjp .jp_b .b_b .jie h3 a{
+	font-size: 18px;
+	color: #fff;
+}
+.hwjp .jp_b .b_b .jie .lc{
+	width: 164px;
+	height: 28px;
+	/*background-color: pink;*/
+	margin-left: 15px;
+	line-height: 28px;
+}
+.hwjp .jp_b .b_b .jie .lc a{
+	color: #fff;
+	font-size: 13px;
+}
+.hwjp .jp_b .b_b .jie .jia{
+	width: 164px;
+	height: 36px;
+	/*background-color: pink;*/
+	margin-left: 15px;
+}
+.hwjp .jp_b .b_b .jie .jia span{
+	display: block;
+	width: 20px;
+	height: 2px;
+	background-color: #fff;
+	margin-bottom: 7px;
+}
+.hwjp .jp_b .b_b .jie .jia a{
+	color: #fff;
 }
 /*华为精品部分结束*/
+/*手机部分开始*/
+.cell{
+	width: 1200px;
+	height: 700px;
+	/*background-color: lightgreen;*/
+	margin-top: 60px;
+}
+.cell .cell_t{
+	height: 54px;
+	/*background-color: orange;*/
+	position: relative;
+}
+.cell .cell_t span{
+	display: inline-block;
+	width: 24px;
+	height: 4px;
+	background-color: #900;
+	margin: 0px auto;
+	position: absolute;
+	top: 0px;
+	left: 588px;
+}
+.cell .cell_t h2{
+	line-height: 60px;
+	text-align: center;
+}
+.cell .cell_t h2 a{
+	font-size: 30px;
+	color: #000;
+}
+.cell .cell_t h2 a:hover{
+	color: #990000;
+}
+.cell .cell_c{
+	height: 36px;
+	/*background-color: pink;*/
+}
+.cell .cell_c ul li{
+	float: left;
+	text-align: center;
+	line-height: 36px;
+	margin-right: 22px;
+}
+.cell .cell_c ul li a{
+	color: #717171;
+	font-size: 14px;
+}
+.cell .cell_c ul li a:hover{
+	color: #990000;
+}
+.cell .cell_c ul .gd{
+	width: 68px;
+	height: 29px;
+	border: 1px solid #b2b2b2;
+	float: right;
+	margin-top: 4px;
+	line-height: 29px;
+	text-align: center;
+}
+.cell .cell_c ul .gd a{
+	color: #3a3a3a;
+	font-size: 12px;
+}
+.cell .cell_c ul .gd:hover{
+	border: 1px solid #990000;
+}
+.cell .cell_c ul .gd a:hover{
+	color: #990000;
+}
+.cell .cell_c ul .mate{
+	margin-left: 290px;
+}
+.cell .cell_b{
+	height: 592px;
+	/*background-color: blue;*/
+	margin-top: 18px;
+	position: relative;
+}
+.cell .cell_b .pp{
+	width: 180px;
+	height: 85px;
+	/*background-color: pink;*/
+	position: absolute;
+	top: 18px;
+	left: 30px;
+}
+.cell .cell_b .pp span{
+	display: inline-block;
+	width: 24px;
+	height: 2px;
+	background-color: #900;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.cell .cell_b .pp h3 a{
+	font-size: 18px;
+	color: #000;
+}
+.cell .cell_b .pp h5 a{
+	font-size: 18px;
+	color: #900;
+	line-height: 34px;
+	margin-top: 10px;
+}
+.cell .cell_b .pin{
+	width: 180px;
+	height: 85px;
+	/*background-color: pink;*/
+	position: absolute;
+	top: 320px;
+	left: 30px;
+}
+.cell .cell_b .pin span{
+	display: inline-block;
+	width: 24px;
+	height: 2px;
+	background-color: #900;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.cell .cell_b .pin h3 a{
+	font-size: 18px;
+	color: #000;
+}
+.cell .cell_b .pin h5 a{
+	font-size: 18px;
+	color: #900;
+	line-height: 34px;
+	margin-top: 10px;
+}
+.cell .cell_b .pai{
+	width: 180px;
+	height: 85px;
+	/*background-color: pink;*/
+	position: absolute;
+	top: 320px;
+	left: 330px;
+}
+.cell .cell_b .pai span{
+	display: inline-block;
+	width: 24px;
+	height: 2px;
+	background-color: #900;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.cell .cell_b .pai h3 a{
+	font-size: 18px;
+	color: #000;
+}
+.cell .cell_b .pai h5 a{
+	font-size: 18px;
+	color: #900;
+	line-height: 34px;
+	margin-top: 10px;
+}
+.cell .cell_b .ppm{
+	width: 180px;
+	height: 85px;
+	/*background-color: pink;*/
+	position: absolute;
+	top: 18px;
+	left: 30px;
+}
+.cell .cell_b .ppm span{
+	display: inline-block;
+	width: 24px;
+	height: 2px;
+	background-color: #900;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.cell .cell_b .ppm h3 a{
+	font-size: 18px;
+	color: #000;
+}
+.cell .cell_b .ppm h5 a{
+	font-size: 18px;
+	color: #900;
+	line-height: 34px;
+	margin-top: 10px;
+}
+.cell .cell_b .ming{
+	width: 180px;
+	height: 85px;
+	/*background-color: pink;*/
+	position: absolute;
+	top: 330px;
+	left: 30px;
+}
+.cell .cell_b .ming span{
+	display: inline-block;
+	width: 24px;
+	height: 2px;
+	background-color: #900;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.cell .cell_b .ming h3 a{
+	font-size: 18px;
+	color: #000;
+}
+.cell .cell_b .ming h5 a{
+	font-size: 18px;
+	color: #900;
+	line-height: 34px;
+	margin-top: 10px;
+}
+/*手机部分结束*/
+/*笔记本电脑部分开始*/
+.note{
+	width: 1200px;
+	height: 850px;
+	/*background-color: blue;*/
+	margin-top: 60px;
+	position: relative;
+}
+.note .note_t{
+	height: 54px;
+	/*background-color: lightblue;*/
+}
+.note .note_t span{
+	display: inline-block;
+	width: 24px;
+	height: 4px;
+	background-color: #900;
+	margin: 0px auto;
+	position: absolute;
+	top: 0px;
+	left: 588px;
+}
+.note .note_t h2{
+	line-height: 60px;
+	text-align: center;
+}
+.note .note_t h2 a{
+	font-size: 30px;
+	color: #000;
+}
+.note .note_t h2 a:hover{
+	color: #990000;
+}
+.note .note_c{
+	height: 36px;
+	/*background-color: lightgreen;*/
+}
+.note .note_c ul li{
+	float: left;
+	line-height: 36px;
+	margin-right: 25px;
+}
+.note .note_c ul li a{
+	color: #717171;
+	font-size: 14px;
+}
+.note .note_c ul li a:hover{
+	color: #990000;
+}
+.note .note_c ul .com{
+	margin-left: 515px;
+}
+.note .note_c ul .gd{
+	width: 68px;
+	height: 29px;
+	border: 1px solid #b2b2b2;
+	float: right;
+	margin-top: 4px;
+	line-height: 29px;
+	text-align: center;
+}
+.note .note_c ul .gd a{
+	color: #3a3a3a;
+	font-size: 12px;
+}
+.note .note_c ul .gd:hover{
+	border: 1px solid #990000;
+}
+.note .note_c ul .gd a:hover{
+	color: #990000;
+}
+.note .note_b{
+	height: 746px;
+	background-color: orange;
+	margin-top: 14px;
+}
+/*笔记本电脑部分结束*/
