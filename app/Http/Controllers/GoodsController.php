@@ -71,7 +71,7 @@ class GoodsController extends Controller
      */
     public function edit($id)
     {
-        //
+        //s
     }
 
     /**
