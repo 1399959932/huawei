@@ -27,5 +27,10 @@ Route::get('/message','CommonController@message');
 
 
 
-Route::get('/login','UserController@login');
+Route::get('/login','UserControll.0er@login');
 
+//分类
+Route::resource('/cate','CateController');
+
+// 商品管理
+Route::resource('/goods','GoodsController');
