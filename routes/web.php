@@ -18,7 +18,9 @@ Route::get('/articles', 'ArticleController@articleList');
 
 
 // 后台路由组
-	// 后台首页
+
+
+// 后台首页
 Route::get('/admin','AdminController@index');
 // 用户管理
 Route::resource('user','UserController');
@@ -36,6 +38,10 @@ Route::get('/flym','FlController@fl');
 Route::get('/gwc','GwcController@gwcs');
 // 订单页面
 Route::get('/dingdan','DidanController@ddym');
+
+
+
+
 
 Route::get('/vcode', 'UserController@captcha');
 // 注册
