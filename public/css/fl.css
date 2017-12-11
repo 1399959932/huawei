@@ -1,0 +1,94 @@
+body{
+	height: 1500px;
+}
+.center{
+	height: 145px;
+	/*background: red;*/
+}
+.center ul .shouye a{
+	color: #666;
+}
+.center ul .typj a{
+	color: #333;
+}
+.center_down{
+	height: 105px;
+	/*background: green;*/
+	border: 1px solid #ccc;
+}
+.center_down .down_up{
+	height: 35px;
+	/*background: pink;*/
+}
+.center_down .ul_top li a{
+	color: #999;
+	line-height:50px;
+}
+.center_down .ul_top .quanbu a{
+	color: #ac141b;
+}
+.center_down .ul_top li a:hover{
+	color: #666;
+}
+.center_down .down_bot{
+	/*background: yellow;*/
+	margin-top: -10px;
+}
+.center_down .down_bot .ul_bot .quanbu a{
+	color: #ac141b;
+}
+.center_down .down_bot .ul_bot li a{
+	color:#999;
+}
+.center_down .down_bot .ul_bot li a:hover{
+	color: #666;
+}
+.bor_left{
+	border: 1px solid #ccc;
+	width: 222px;
+	height: 364px;
+	margin-top: 20px;
+	margin-left: 7px;
+}
+.bor_left:hover{
+	border: 1px solid #ac141b;
+}
+.bor_left:first-child{
+	margin-left: 0px;
+}
+.bor_left h5{
+	text-align: center;
+}
+.bor_left h4{
+	text-align: center;
+	margin-top: 35px;
+	color: #ac141b;
+}
+.bor_left .anniu{
+	height: 30px;
+	border-top: 1px solid #ccc;
+}
+.bor_left .xugo{
+	width: 112px;
+	height: 28px;
+	background: #fff;
+	border: none;
+	float: left;
+}
+.bor_left a .xugo{
+	color: #ac141b;
+}
+.bor_left a .xugo:hover{
+	background: red;
+	color: #fff;
+}
+.bor_left span{
+	display: inline-block;
+	width: 108px;
+	height: 30px;
+	/*background: green;*/
+	float: right;
+	border-left: 1px solid #ccc;
+	text-align: center;
+	line-height: 30px;
+}
