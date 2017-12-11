@@ -1,0 +1,43 @@
+/*华为精品部分开始*/
+.hwjp{
+	width: 1200px;
+	height: 560px;
+	background-color: orange;
+	margin-top: 60px;
+}
+.hwjp .jp_t{
+	height: 45px;
+	background-color: pink;
+	text-align: center;
+	position: relative;
+}
+.hwjp .jp_t span{
+	display: inline-block;
+	width: 24px;
+	height: 4px;
+	background-color: #900;
+	margin: 0px auto;
+	position: absolute;
+	top: 0px;
+	left: 588px;
+}
+.hwjp .jp_t h2{
+	font-size: 30px;
+	color: #000;
+	line-height: 55px;
+}
+.hwjp .jp_b{
+	height: 490px;
+	background-color: pink;
+	margin-top: 25px;
+}
+.hwjp .jp_b .b_t{
+	height: 280px;
+	background-color: lightblue;
+}
+.hwjp .jp_b .b_b{
+	height: 190px;
+	background-color: lightgreen;
+	margin-top: 20px;
+}
+/*华为精品部分结束*/
