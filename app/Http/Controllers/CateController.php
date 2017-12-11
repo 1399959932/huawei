@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use DB;
 
 class CateController extends Controller
+
 {
     /**
      * Display a listing of the resource.
@@ -37,6 +38,7 @@ class CateController extends Controller
         $cates = DB::table('cates')->get();
         // 分配变量 解析模板
         return view('admin.cate.create',['cates'=>$cates]);
+
     }
 
     /**
@@ -65,6 +67,7 @@ class CateController extends Controller
       }else{
         return back()->with('msg','添加失败');
       }
+
     }
 
     /**
@@ -121,5 +124,6 @@ class CateController extends Controller
         }else{
             return back()->with('msg','删除失败');
         }
+
     }
 }
