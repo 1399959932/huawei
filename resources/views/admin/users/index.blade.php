@@ -69,11 +69,11 @@
                                         <div class="am-btn-toolbar">
                                             <div class="am-btn-group am-btn-group-xs">
                                             <button class="btn-xs btn-primary btn-danger">
-                                                <a href="/user/{{$v->id}}/edit" style="color: #fff;">
+                                                <a href="/users/{{$v->id}}/edit" style="color: #fff;">
                                                     修改
                                                 </a>
                                             </button>
-                                                <form class="del" action="/user/{{$v->id}}" method="POST">
+                                                <form class="del" action="/users/{{$v->id}}" method="POST">
                                                 {{method_field('DELETE')}}
                                                 {{csrf_field()}}
                                                 <button class="btn-xs btn-primary
