@@ -383,7 +383,166 @@
 }
 .note .note_b{
 	height: 746px;
-	background-color: orange;
+	/*background-color: orange;*/
 	margin-top: 14px;
 }
+.note .note_b .grid{
+	position: relative;
+}
+.note .note_b .grid .info{
+	width: 399px;
+	height: 116px;
+	/*background-color: pink;*/
+	text-align: center;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+.note .note_b .grid .info h3 a{
+	font-size: 18px;
+	color: #3a3a3a;
+}
+.note .note_b .grid .info .mian a{
+	font-size: 14px;
+	color: #a4a4a4;
+}
+.note .note_b .grid .info span{
+	display: inline-block;
+	width: 24px;
+	height: 2px;
+	background-color: #900;
+	position: absolute;
+	top: 77px;
+	left: 185px;
+}
+.note .note_b .grid .info .yuan{
+	line-height: 30px;
+}
+.note .note_b .grid .info .yuan a{
+	font-size: 14px;
+	color: #900;
+}
+.note .note_b .ce{
+	position: relative;
+}
+.note .note_b .ce .bian{
+	width: 400px;
+	height: 372px;
+	background-color: rgba(0,0,0,0.4);
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+.note .note_b .ce .bian h3{
+	margin-top: 80px;
+	margin-left: 22px;
+}
+.note .note_b .ce .bian h3 a{
+	font-size: 23px;
+	color: #fff;
+}
+.note .note_b .ce .bian span{
+	display: inline-block;
+	width: 24px;
+	height: 2px;
+	background-color: #fff;
+	position: absolute;
+	top: 135px;
+	left: 20px;
+}
+.note .note_b .ce .bian .yuan{
+	line-height: 30px;
+	margin-left: 20px;
+}
+.note .note_b .ce .bian .yuan a{
+	font-size: 14px;
+	color: #fff;
+}
 /*笔记本电脑部分结束*/
+/*平板穿戴部分开始*/
+.dress{
+	width: 1200px;
+	height: 1232px;
+	/*background-color: blue;*/
+	margin-top: 60px;
+}
+.dress .note_c ul .ping{
+	margin-left: 530px;
+}
+.dress .dress_b{
+	height: 1118px;
+	/*background-color: orange;*/
+	margin-top: 14px;
+}
+/*平板穿戴部分结束*/
+/*智能家居部分开始*/
+.znjj{
+	width: 1200px;
+	height: 976px;
+	/*background-color: blue;*/
+}
+.znjj .cell_c ul .you{
+	margin-left: 427px;
+}
+.znjj .cell_b_x{
+	width: 1200px;
+	height:259px;
+	/*background-color: orange;*/
+	border: 1px solid #eaeaea;
+	margin-top: 10px;
+}
+.znjj .cell_b_x ul .x_nr{
+	width: 213px;
+	height: 256px;
+	background-color: #fff;
+	border-right: 1px solid #eaeaea;
+}
+.znjj .cell_b_x ul .x_nr h3{
+	width: 213px;
+	height: 40px;
+	/*background-color: pink;*/
+	line-height: 45px;
+	text-align: center;
+}
+.znjj .cell_b_x ul .x_nr h3 a{
+	font-size: 18px;
+	color: #3a3a3a;
+}
+.znjj .cell_b_x ul .x_nr .usb{
+	width: 213px;
+	height: 26px;
+	/*background-color: lightblue;*/
+	margin-top: -10px;
+	text-align: center;
+	line-height: 26px;
+}
+.znjj .cell_b_x ul .x_nr .usb a{
+	font-size: 12px;
+	color: #a4a4a4;
+}
+.znjj .cell_b_x ul .x_nr .jige{
+	width: 213px;
+	height: 18px;
+	/*background-color: lightgreen;*/
+	margin-top: -10px;
+	text-align: center;
+	line-height: 18px;
+}
+.znjj .cell_b_x ul .x_nr .jige a{
+	font-size: 14px;
+	color: #900;
+}
+.znjj .cell_b_x ul .x_nr_b{
+	width: 133px;
+	height: 256px;
+	background-color: #fff;
+}
+/*智能家居部分结束*/
+/*热销配件部分开始*/
+.rxpj{
+	margin-bottom: 60px;
+}
+.rxpj .cell_c ul .tmo{
+	margin-left: 240px;
+}
+/*热销配件部分结束*/
