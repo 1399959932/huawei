@@ -1,0 +1,58 @@
+.zhifu{
+	min-height: 593px;
+	background: green;
+	margin: 0px auto;
+}
+.zhifu .zhifu_top{
+	width: 280px;
+	height: 32px;
+	/*background: red;*/
+	margin-top: 40px;
+}
+.zhifu .zhifu_top img{
+	float: left;
+}
+.zhifu .zhifu_top .xian{
+	float: left;
+	width: 1px;
+	height: 20px;
+	background: #ccc;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+.zhifu .zhifu_top h5{
+	text-indent: 10px;
+	font-size: 18px;
+	line-height: 32px;
+}
+.zhifu .zhifu_cen{
+	height: 120px;
+	background: #effaed;
+	border-top: 2px solid #63aa56;
+	margin-top: 40px;
+}
+.zhifu .zhifu_cen img{
+	border-radius: 360px;
+	margin: 20px;
+	float: left;
+}
+.zhifu .zhifu_cen .cen_middler{
+    height: 63px;
+    margin: 20px;
+    /*background: red;*/
+}
+.zhifu .zhifu_right{
+	/*background: yellow;*/
+	height: 60px;
+	margin: 20px;
+}
+.zhifu .zhifu_right p span{
+	font-size: 20px;
+	font-weight: bold;
+	color: #ac141b;
+}
+.zhifu .zhifu_right select{
+	float: right;
+	border: none;
+	background: #effaed;
+}
