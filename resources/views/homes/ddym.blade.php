@@ -87,14 +87,62 @@
                    <img src="holder.js/80x100">
                    <ul class="list-unstyled list-inline">
                        <li><a href="#">荣耀V9 play 全网通标配版（极光蓝）</a></li>
-                       <li><a href="#"></a></li>
-                       <li><a href="#"></a></li>
+                       <li class="shu"><a href="#">x1</a></li>
+                       <li class="jinqian"><a href="#">&yen;1499.00</a></li>
                    </ul>
                </div>       
-               <div class="left_bot"></div>       
+               <div class="left_bot">
+                   <div class="col-md-2">
+                       <p>配</p>
+                   </div>
+                   <div class="col-md-10 bot">
+                       <img src="holder.js/50x77">
+                       <ul class="list-unstyled list-inline">
+                           <li><a href="#">荣耀V9 play 半入耳式耳机(金色)</a></li>
+                           <li class="shujia"><a href="#">x1</a></li>
+                       </ul>
+                   </div>
+               </div>       
             </div>
-			<div class="cen_right col-md-4"></div>
+			<div class="cen_right col-md-4">
+                <div class="right_top">
+                    <p>商品由<span>&nbsp;华为商城&nbsp;</span>选择合作快递</p>
+                </div>         
+                <div class="right_bot">
+                    <ul class="list-unstyled list-inline">
+                        <li><a href="#">商品总金额：<span>¥999.00</span></a></li>
+                        <li class="yunfei"><a href="#">运费：<span>¥0.00</span></a></li>
+                        <li class="youhui"><a href="#">优惠：<span>-¥100.00</span></a></li>
+                        <li class="jiesuan"><a href="#">结算金额：<span>¥899.00</span></a></li>
+                    </ul>
+                </div>         
+            </div>
 		</div>
+        <div class="col-md-12 qrdd_bot">
+            <div class="col-md-4 bot_left">
+                <p>优惠与抵用<span>&nbsp;&nbsp;仅适用于自营实物商品</span></p>
+                <div class="yhq">
+                    <img src="holder.js/30x20">
+                    <h5>使用优惠券</h5>
+                </div>
+                <div class="clearfix"></div>
+                <ul class="list-unstyled list-inline ">
+                    <input type="checkbox" name="">
+                    <li><a href="#">积分余额 5，不足100不可使用</a></li>
+                    <li class="guize"><a href="#">积分使用规则</a></li>
+                </ul>
+                <ul class="list-unstyled list-inline ">
+                    <input type="checkbox" name="">
+                    <li><a href="#">积分余额 5，不足100不可使用</a></li>
+                    <li class="guize"><a href="#">积分使用规则</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 bot_right pull-right">
+                <p>应付总额：<span>¥899.00</span></p>
+                <input type="text" name="" value="无收货地址不可下单,点击填充">
+                <button>提交订单</button>
+            </div>
+        </div>
 	</div>
 </div>
 @stop
