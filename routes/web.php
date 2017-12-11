@@ -41,7 +41,7 @@ Route::resource('/goods','GoodsController');
 
 
 //前台首页
-Route::get('/homes','HomeController@index');
+Route::get('/homed','HomeController@index');
 
 //前台分类
 Route::get('/Fen','FenController@classify');
