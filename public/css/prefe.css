@@ -6,7 +6,7 @@
 	margin-top: 60px;
 }
 .hwjp .jp_t{
-	height: 45px;
+	height: 54px;
 	background-color: pink;
 	text-align: center;
 	position: relative;
@@ -27,7 +27,7 @@
 	line-height: 55px;
 }
 .hwjp .jp_b{
-	height: 490px;
+	height: 506px;
 	background-color: pink;
 	margin-top: 25px;
 }
@@ -39,5 +39,28 @@
 	height: 190px;
 	background-color: lightgreen;
 	margin-top: 20px;
+	position: relative;
+}
+.hwjp .jp_b .b_b .jie{
+	width: 190px;
+	height: 190px;
+	background-color: rgba(0,0,0,0.4);
+	position: absolute;
+	top: 0px;
+	right: 14px;
+}
+.hwjp .jp_b .b_b .jie:hover{
+	background-color: rgba(153.0.0.0.8);
+}
+.hwjp .jp_b .b_b .jie h3{
+	width: 164px;
+	height: 42px;
+	/*background-color: red;*/
+	line-height: 20px;
+	margin-left: 15px;
+}
+.hwjp .jp_b .b_b .jie h3 a{
+	font-size: 18px;
+	color: #fff;
 }
 /*华为精品部分结束*/

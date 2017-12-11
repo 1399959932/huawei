@@ -86,6 +86,11 @@
 			<div class="b_b">
 				<div class="col-md-4" style="padding: 0px;">
 					<img src="holder.js/386x190?bg=#aef">
+                    <div class="jie">
+                        <h3><a href="#">华为平板M3&nbsp;青春版8英寸</a></h3>
+                        <p><a href="#">EMUI5.1流畅体验</a></p>
+                        <p><a href="#">&yen;1749</a></p>
+                    </div>
 				</div>
 				<div class="col-md-4" style="margin-left: -10px;">
 					<img src="holder.js/386x190?bg=#aef">
