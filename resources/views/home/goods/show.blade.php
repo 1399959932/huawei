@@ -1,4 +1,7 @@
 @extends('homes.public')
+@section('title')
+<title>s</title>
+@endsection
 @section('header')
 <link rel="stylesheet" type="text/css" href="/css/gwc.css">
 <script type="text/javascript" src="/js/jquery-3.2.1.js"></script>

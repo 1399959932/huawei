@@ -12,9 +12,26 @@ class GoodsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view('admin.goods.index');
+        $num = $request->input('num',10);
+        $keywords = $request->input('keywords','');
+
+        //关键字
+        if($request->has('keywords')) {
+            //列表显示
+            $goods = DB::table('goods')->where('title','like','%'.$keywords.'%')->paginate($num);
+        }else{
+            //列表显示
+            $goods = DB::table('goods')->paginate($num);
+        }
+
+        //解析模板
+        return view('admin.goods.index',[
+            'goods'=>$goods,
+            'keywords'=>$keywords,
+            'num' => $num
+        ]);
     }
 
     /**
@@ -35,7 +52,7 @@ class GoodsController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->hasFile('pic'));
+        // dd($request->hasFile('pic'));
         $data = $request->only(['title','kuchun','price','content']);
 
         // 填充数据库数据
@@ -48,8 +65,34 @@ class GoodsController extends Controller
        //如果插入成功
        if($res > 0) {
             //处理图片
-            dd($request->hasFile('pic'));
+            if($request->hasFile('pic')){
+                $images = [];
+                // 便利上传的数组
+                foreach($request->file('pic') as $k=>$v) {
+                    $tmp = [];
+                   // 获取文件的后缀名
+                    $suffix = $v->extension();
+
+                    //创建一个新的随机名称
+                    $name = uniqid('img').'.'.$suffix;
+                    //文件夹路径
+                    $dir = '/uploads/'.date('Y-m-d');
+                    //移动文件
+                    // $v->move($dir, $name); //草你mua
+                    //获取文件的路径
+                    $tmp['goods_id'] = $res;
+                    $tmp['pic'] = trim($dir.'/'.$name,'.');
+                    $images[] = $tmp;
+                }
+                //将图片信息插入到商品图片表中
+                DB::table('goods_pic')->insert($images);
+
+            }
+            return redirect('/goods')->with('msg','成功');
+       }else{
+            return redirect('/goods')->with('msg','shibai');
        }
+
     }
 
     /**
@@ -60,7 +103,14 @@ class GoodsController extends Controller
      */
     public function show($id)
     {
-        //
+        //读取商品的详细信息
+        $goods = DB::table('goods')->where('id',$id)->first();
+        //读取商品的图片信息
+        $goods_pic = DB::table('goods_pic')->where('goods_id',$id)->get();
+
+        //home.goods.show      homes.gwcs
+        return view('home.goods.show',compact('goods','goods_pic'));
+
     }
 
     /**

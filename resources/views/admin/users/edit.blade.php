@@ -25,19 +25,19 @@
 
 
                 <div class="am-u-sm-12 am-u-md-9">
-                    <form class="am-form am-form-horizontal" action="/user/{{$users->id}}/edit" method="post" enctype="multipart/form-data">
+                    <form class="am-form am-form-horizontal" action="/users/{{$users->id}}" method="post" enctype="multipart/form-data">
                         <div class="am-form-group">
                             <label for="user-name" class="am-u-sm-3 am-form-label">用户名</label>
                             <div class="am-u-sm-9">
-                                <input type="text" id="user-name" value="{{$users->username}}">
-                                <small>输入你的名字，让我们记住你。</small>
+                                <input type="text" id="user-name" value="{{$users->username}}" name="username">
+                                <small>请输入你想要的用户名</small>
                             </div>
                         </div>
 
                         <div class="am-form-group">
                             <label for="user-email" class="am-u-sm-3 am-form-label">邮箱</label>
                             <div class="am-u-sm-9">
-                                <input type="email" id="user-email" value="{{$users->email}}">
+                                <input type="email" id="user-email" value="{{$users->email}}" name="email">
                                 <small>邮箱你懂得...</small>
                             </div>
                         </div>
@@ -45,12 +45,13 @@
                         <div class="am-form-group">
                             <label for="user-QQ" class="am-u-sm-3 am-form-label">头像</label>
                             <div class="am-u-sm-9" >
-                                <input type="file" id="user-QQ" value="{{$users->hwfile}}" style="border:1px #ccc solid; width:406px; height: 28px;">
+                                <input type="file" id="user-QQ" value="{{$users->hwfile}}" style="border:1px #ccc solid; width:406px; height: 28px;" name="hwfile">
                             </div>
                             <img src="{{$users->hwfile}}" style="width: 85px; height: 80px; margin-left:15px;" class="pull-right">
                         </div>
 
                         {{csrf_field()}}
+                        {{method_field('PUT')}}
 
                         <div class="am-form-group">
                             <div class="am-u-sm-9 am-u-sm-push-3">
