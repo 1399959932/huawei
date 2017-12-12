@@ -1,0 +1,196 @@
+/*荣耀精品部分开始*/
+.ryao{
+	width: 1200px;
+	height: 688px;
+	background-color: #fff;
+	margin-top: 40px;
+	box-shadow: 4px 0px 5px 5px #ddd;
+	overflow: hidden;
+}
+.ryao .ry{
+	width: 1200px;
+	height: 645px;
+	/*background-color: lightgreen;*/
+	margin-top: 22px;
+}
+.ryao .ry .ry_t{
+	width: 1160px;
+	height: 36px;
+	/*background-color: pink;*/
+	margin-left: 20px;
+	position: relative;
+}
+.ryao .ry .ry_t span{
+	width: 8px;
+	height: 34px;
+	background-color: #00b5e2;
+	position: absolute;
+	top: 1px;
+	left: 0px;
+	border-radius: 3px;
+}
+.ryao .ry .ry_t h2{
+	color: #333;
+	font-size: 24px;
+	margin-left: 20px;
+	line-height: 32px;
+}
+.ryao .ry .ry_b{
+	width: 1160px;
+	height: 600px;
+	/*background-color: pink;*/
+	margin-left: 20px;
+	margin-top: 9px;
+}
+.ryao .ry .ry_b .ry_b_t{
+	height: 380px;
+	/*background-color: lightblue;*/
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+.ryao .ry .ry_b .ry_b_t .one{
+	width: 290px;
+	height: 378px;
+	background-color: #fff;
+	float: left;
+}
+.ryao .ry .ry_b .ry_b_t .one:hover{
+	box-shadow: inset 0px 0px 15px 7px #ddd;
+	cursor: pointer;	
+}
+.ryao .ry .ry_b .ry_b_t .one .tit{
+	height: 56px;
+	text-align: center;
+	line-height: 88px;
+	/*background-color: green;*/
+	font-size: 21px;
+	color: #3a3a3a;
+}
+.ryao .ry .ry_b .ry_b_t .one .des{
+	height: 28px;
+	text-align: center;
+	line-height: 28px;
+	/*background-color: green;*/
+	font-size: 14px;
+	color: #a4a4a4;
+}
+.ryao .ry .ry_b .ry_b_t .one .price{
+	height: 34px;
+	text-align: center;
+	line-height: 34px;
+	/*background-color: green;*/
+	font-size: 14px;
+	color: #00B5E2;
+}
+.ryao .ry .ry_b .ry_b_b{
+	height: 198px;
+	/*background-color: lightblue;*/
+	margin-top: 22px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+/*荣耀精品部分结束*/
+/*手机部分开始*/
+.iph{
+	width: 1200px;
+	height: 600px;
+	background-color: #fff;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	box-shadow: 4px 0px 5px 5px #ddd;
+	overflow: hidden;
+}
+.iph .iph_nr{
+	width: 1200px;
+	height: 540px;
+	background-color: lightgreen;
+	margin-top: 22px;
+}
+.iph .iph_nr .iph_t{
+	width: 1160px;
+	height: 38px;
+	background-color: pink;
+	margin-left: 20px;
+	position: relative;
+}
+.iph .iph_nr .iph_t span{
+	width: 8px;
+	height: 34px;
+	background-color: #00b5e2;
+	position: absolute;
+	top: 2px;
+	left: 0px;
+	border-radius: 3px;
+}
+.iph .iph_nr .iph_t ul li{
+	float: left;
+	line-height: 38px;
+	margin-right: 20px;
+}
+.iph .iph_nr .iph_t ul li a{
+	color: #a4a4a4;
+	font-size: 19px;
+}
+.iph .iph_nr .iph_t ul li a:hover{
+	color: #00B5E2;
+}
+.iph .iph_nr .iph_t ul .duo{
+	float: right;
+}
+.iph .iph_nr .iph_t ul .shji{
+	margin-left: 20px;
+	line-height: 35px;
+	margin-right: 45px;
+}
+.iph .iph_nr .iph_t ul .shji a{
+	color: #333;
+	font-size: 24px;	
+}
+.iph .iph_nr .iph_t ul .shji a:hover{
+	color: #00B5E2;
+}
+.iph .iph_nr .iph_b{
+	width: 1160px;
+	height: 490px;
+	background-color: lightblue;
+	margin-left: 20px;
+	margin-top: 12px;
+}
+.iph .iph_nr .iph_b .b_dy{
+	width: 370px;
+	height: 490px;
+	background-color: pink;
+}
+.iph .iph_nr .iph_b .b_de{
+	width: 373px;
+	height: 490px;
+	background-color: pink;
+}
+.iph .iph_nr .iph_b .b_de .de_y{
+	width: 373px;
+	height: 233px;
+	background-color: orange;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	position: relative;
+}
+.iph .iph_nr .iph_b .b_de .de_y:hover{
+	box-shadow: inset 0px 0px 15px 7px #ddd;
+	cursor: pointer;	
+}
+.iph .iph_nr .iph_b .b_de .de_y .zi{
+	width: 183px;
+	height: 108px;
+	background-color: pink;
+	position: absolute;
+	top: 56px;
+	right: 0px;
+}
+.iph .iph_nr .iph_b .b_de .de_y .zi h3{
+	font-size: 18px;
+	color: #3a3a3a;
+}
+.iph .iph_nr .iph_b .b_de .de_y .zi .xs{
+	
+}
+/*手机部分结束*/

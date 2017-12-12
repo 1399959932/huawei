@@ -76,7 +76,7 @@ class catecontroller extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('admin.cate.edit')
     }
 
     /**
@@ -88,7 +88,7 @@ class catecontroller extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        
     }
 
     /**

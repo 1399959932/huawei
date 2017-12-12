@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="/css/admin.css">
     <link rel="stylesheet" href="/css/appp.css">
     <script src="/js/echarts.min.js"></script>
+<<<<<<< HEAD
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+=======
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+>>>>>>> 28d7a0d1d76d37e1dccdeb807cec352a144c564c
     <script src="/bootstrap/js/jquery.js"></script>
     <script src="/bootstrap/js/bootstrap.js"></script>
     <script src="/bootstrap/js/holder.min.js"></script>

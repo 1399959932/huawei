@@ -9,6 +9,10 @@
 	<link rel="stylesheet" href="./huawei/登录/login.css">
 	<script type="text/javascript" src="./huawei/登录/slideunlock.js"></script>
 
+	<style>
+		.border{border-radius: 30px;}
+	</style>
+
 </head>
 <body>
 	<header class="col-lg-12 col-md-12">
@@ -26,7 +30,7 @@
 			<div class="input">
 				<div class="top20"></div>
 				<div class="top20"></div>
-				<form class="form-horizontal">
+				<form class="form-horizontal" action="/login" method="post">
 				  <div class="form-group">
 				    <label for="inputEmail3" class="col-sm-6 control-label col-md-offset-1" style="font-size: 20px;">账号登录</label>
 				  </div>
@@ -34,14 +38,14 @@
 
 				  <div class="form-group">
 				    <div class="col-sm-10 col-md-offset-1" >
-				      <input type="email" class="form-control" id="inputEmail3" placeholder="手机号/邮箱地址" name="tel" style="border-radius: 30px;">
+				      <input type="type" class="form-control border" id="inputEmail3" placeholder="手机号/邮箱地址" name="tel">
 				    </div>
 				  </div>
 				  <div class="top20"></div>
 
 				  <div class="form-group">
 				    <div class="col-sm-10 col-md-offset-1">
-				      <input type="password" class="form-control" id="inputPassword3" placeholder="密码" name="password" style="border-radius: 30px;">
+				      <input type="password" class="form-control border" id="inputPassword3" placeholder="密码" name="password" >
 				    </div>
 				  </div>
 				  <div class="top20"></div>
@@ -68,10 +72,11 @@
 				  <div class="top20"></div>
 				  <div class="form-group">
 				    <div class="col-sm-offset-2 col-md-10 col-md-offset-1">
-				      <button type="submit" class="btn btn-danger col-md-12 btn-md" style="border-radius: 30px;">登录</button>
+				      <button type="submit" class="btn btn-danger col-md-12 btn-md border" >登录</button>
 				    </div>
 				  </div>
-
+				  {{csrf_field()}}
+				</form>
 				  <div class="form-group text-right">
 				  	<a href="" style="color: #0064cc; font-size: 12px; margin-right: 50px;">更多</a>
 				  </div>
@@ -89,7 +94,7 @@
 				   <div class="form-group text-center">
 				  	<span style="color: #aaa;"><span>&nbsp;----------&nbsp;&nbsp;</span>使用其他方式登录<span>&nbsp;&nbsp;----------&nbsp;</span></span>
 				  </div>
-				</form>
+				
 			</div>
 		</div>
 	</div>

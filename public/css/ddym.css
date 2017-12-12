@@ -1,5 +1,5 @@
 .qrdd{
-	height: 945px;
+	height: 1000px;
 	background: #f5f5f5;
 }
 .qrdd .qrdd_up{
@@ -59,8 +59,49 @@
 }
 .qrdd .qrdd_cen .cen_left .left_cen{
 	height: 137px;
-	background: red;
+	/*background: red;*/
 	padding: 20px;
+}
+.qrdd .qrdd_cen .cen_left .left_cen img{
+	float: left;
+}
+.qrdd .qrdd_cen .cen_left .left_cen ul li{
+	margin-left: 40px;
+}
+.qrdd .qrdd_cen .cen_left .left_cen ul li a{
+	color: #000;
+}
+.qrdd .qrdd_cen .cen_left .left_cen ul .shu{
+	margin-left: 80px;
+}
+.qrdd .qrdd_cen .cen_left .left_cen ul .jinqian{
+<<<<<<< HEAD
+	margin-left: 140px;
+=======
+	margin-left: 100px;
+>>>>>>> de01cffe94cef82ec316566b692cdcfb990dcea4
+}
+.qrdd .qrdd_cen .cen_left .left_bot{
+	height: 77px;
+	/*background: green;*/
+}
+.qrdd .qrdd_cen .cen_left .left_bot .bot{
+	height: 77px;
+	/*background: yellow;*/
+	border-top: 1px solid #ccc;
+}
+.qrdd .qrdd_cen .cen_left .left_bot .bot img{
+	float: left;
+}
+.qrdd .qrdd_cen .cen_left .left_bot .bot ul{
+	float: left;
+	margin-left: 5px;
+}
+.qrdd .qrdd_cen .cen_left .left_bot .bot ul li a{
+	color: #000;
+}
+.qrdd .qrdd_cen .cen_left .left_bot .bot ul .shujia{
+	margin-left: 60px;
 }
 .qrdd .qrdd_cen .cen_right{
 	width: 360px;
@@ -68,4 +109,124 @@
 	border: 1px solid #ccc;
 	border-left: none;
 	float: right;
+	background: #f6f6f6;
 }
+.qrdd .qrdd_cen .cen_right .right_top{
+	width: 323px;
+	height: 130px;
+	/*background: red;*/
+	border-bottom: 1px solid #ccc;
+	font-size: 20px;
+	line-height: 80px;
+	text-indent: 20px;
+}
+.qrdd .qrdd_cen .cen_right .right_top p span{
+	color: #ac141b;
+}
+.qrdd .qrdd_cen .cen_right .right_bot{
+	width: 188px;
+	height: 130px;
+	/*background: yellow;*/
+	margin-top: 87px;
+	float: right;
+}
+.qrdd .qrdd_cen .cen_right .right_bot ul li{
+	width: 188px;
+}
+.qrdd .qrdd_cen .cen_right .right_bot ul li a{
+	color: #000;
+	line-height: 30px;
+}
+.qrdd .qrdd_cen .cen_right .right_bot ul .yunfei{
+	text-indent: 40px;
+}
+.qrdd .qrdd_cen .cen_right .right_bot ul .youhui{
+	text-indent: 40px;
+}
+.qrdd .qrdd_cen .cen_right .right_bot ul .youhui a span{
+	margin-left: 35px;
+}
+.qrdd .qrdd_cen .cen_right .right_bot ul .jiesuan{
+	text-indent: 10px;
+}
+.qrdd .qrdd_cen .cen_right .right_bot ul .jiesuan a span{
+	font-size: 18px;
+	color: #ac141b;
+	margin-left: 25px;
+}
+.qrdd .qrdd_cen .cen_right .right_bot ul li a span{
+	margin-left: 35px;
+}
+.qrdd .qrdd_bot{
+	height: 233px;
+	background: #fff;
+	margin-top: 20px;
+}
+.qrdd .qrdd_bot .bot_left{
+	/*background: red;*/
+	height: 233px;
+	padding: 20px;
+}
+.qrdd .qrdd_bot .bot_left p{
+	font-size: 20px;
+}
+.qrdd .qrdd_bot .bot_left p span{
+	font-size: 14px;
+	color: #ccc;
+}
+.qrdd .qrdd_bot .bot_left .yhq{
+	width: 130px;
+	height: 30px;
+	/*background: green;*/
+	margin-left: 20px;
+}
+.qrdd .qrdd_bot .bot_left .yhq img{
+	float: left;
+	margin-top: 5px;
+}
+.qrdd .qrdd_bot .bot_left .yhq h5{
+	float: left;
+	text-indent: 30px;
+	color: #ac141b;
+}
+.qrdd .qrdd_bot .bot_left ul {
+	margin-top: 10px;
+}
+.qrdd .qrdd_bot .bot_left ul li a{
+	color: #000;
+}
+.qrdd .qrdd_bot .bot_left ul .guize a{
+    color: #ccc;
+}
+.qrdd .qrdd_bot .bot_right{
+	height: 233px;
+	padding: 20px;
+	/*background: red;*/
+}
+.qrdd .qrdd_bot .bot_right p{
+	text-indent: 20px;
+	font-size: 20px;
+}
+.qrdd .qrdd_bot .bot_right p span{
+	font-size: 23px;
+	color: #ac141b;
+}
+.qrdd .qrdd_bot .bot_right input{
+	width: 229px;
+	height: 56px;
+	border: 1px solid #ccc;
+	margin-top: 40px;
+	background: pink;
+	text-indent: 20px;
+	cursor: pointer;
+}
+.qrdd .qrdd_bot .bot_right button{
+	width: 175px;
+	height: 46px;
+	background: #ac141b;
+	border: none;
+	color: #fff;
+	font-size: 18px;
+	margin-top: 20px;
+	margin-left: 50px;
+}	

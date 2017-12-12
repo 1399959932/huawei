@@ -24,26 +24,34 @@ Route::post('/zhuce','UserController@zhucet');
 Route::get('/message','CommonController@message');
 // 验证码
 Route::get('/zhuce/captcha/{tmp}', 'UserController@captcha');
+
 Route::get('/login','UserController@login');
+
+Route::post('/login','UserController@dologin');
+
+
+// 购物且
 // 商品管理
+Route::get('/goods/list','GoodsController@gdlist');
 Route::resource('/goods','GoodsController');
 
-    // 陈结束
-    
 
-Route::get('/admin/login','LoginController@login');
-Route::post('/admin/login','LoginController@dologin');
+    // 陈结束
+
+
 
 //后台首页
 Route::get('/admin','Admincontroller@index');
 //后台登录
-Route::get('/admin/login','loginController@login');
+Route::get('/admin/login','LoginController@login');
+Route::post('/admin/login','LoginController@dologin');
 //后台用户
 Route::resource('/users','usersController');
 //后台分类
 Route::resource('/cate','catecontroller');
 //文章管理
 Route::resource('article','ArticleController');
+
 
 
 // 前台页面
@@ -58,7 +66,7 @@ Route::get('/dingdan','DidanController@ddym');
 //前台列表页
 Route::get('/list','listcontroller@list');
 //前台首页
-Route::get('/homes','HomeController@index');
+Route::get('/homed','HomeController@index');
 //前台分类
 Route::get('/Fen','FenController@classify');
 //个人中心
@@ -68,7 +76,7 @@ Route::get('/zqu','ZquController@prefe');
 //荣耀家族
 Route::get('/fam','Famcontroller@family');
 
-
-
+// 支付页面
+Route::get('/zhifu','ZhifuController@zfym');
 
 
