@@ -125,8 +125,16 @@ section .goods-imgs .down{
 section .goods-title{
 	padding-left: 20px;
 }
-section .goods-title h2{
+section .goods-title .biaoti{
+    font-size: 25px;
+}
+section .goods-title p{
+	height: 25px;
+	/*background: red;*/
 	margin-top: 0px;
+}
+section .goods-title .sm li a{
+	color: #000;
 }
 section .price{
 	color:red;
@@ -138,6 +146,10 @@ section .sm .padding-top{
   	padding-top: 10px;
   	padding-right: 30px;
 }
+section .goods-title .nav_choice{
+	/*background: red;*/
+	margin-top: -10px;
+}
 section .goods-title .ziti:first-child{
 	padding-top: 0px;
 }
@@ -148,17 +160,35 @@ section .goods-title .ziti h5{
 	float: left;
 	margin-right: 30px;
 }
-section .goods-title .ziti span{
-	display: inline-block;
-    width: 145px;
-    height: 30px;
-    border: 1px solid red;
+section .goods-title .ziti .ziti_ul li{
+    width: 120px;
+    height: 40px;
+    border: 1px solid #ccc;
     float: left;
     cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
 }
-section .goods-title p{
-	padding-top: 10px;
-	
+section .goods-title .nav_choice .ziti .ziti_ul .active{
+	border: 1px solid red;
+}
+section .goods-title .ziti .ziti_ul li a{
+	color: #000;
+	padding: 15px;
+	line-height: 35px;
+}
+section .goods-title .ziti_2 ul li{
+    cursor: pointer;
+    float: left;
+}
+section .goods-title .ziti_2 ul .yanse a:hover{
+	color: red;
+}
+section .goods-title .ziti_2 ul li a span{
+	color: red;
+}
+section .goods-title .nav_choice .tishi{
+	margin-top: 10px;
 }
 section ol li a{
 	color: #666;

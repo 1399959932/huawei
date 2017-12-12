@@ -28,10 +28,23 @@ Route::get('/message','CommonController@message');
 Route::get('/zhuce/captcha/{tmp}', 'UserController@captcha');
 
 
+Route::get('/login','UserController@login');
+Route::post('/login','UserController@dologin');
+
 Route::get('/login','UserControll.0er@login');
+
 
 //分类
 Route::resource('/cate','CateController');
+
+// 购物且
+// 商品管理
+Route::get('/goods/list','GoodsController@gdlist');
+Route::resource('/goods','GoodsController');
+
+
+    // 陈结束
+
 
 // 商品管理
 Route::resource('/goods','GoodsController');
@@ -92,17 +105,26 @@ Route::resource('article','ArticleController');
 //分类管理
 Route::resource('cate','CateController');
 
-// 后台路由组
-	// 后台首页
+
+Route::get('/admin/login','LoginController@login');
+Route::post('/admin/login','LoginController@dologin');
+
+
+//后台首页
 Route::get('/admin','AdminController@index');
-// 用户管理
+
+//用户管理
 Route::resource('user','UserController');
-// 文章管理
+
+//文章管理
 Route::resource('article','ArticleController');
-// 分类管理
+
+//分类管理
 Route::resource('cate','CateController');
 
+
 // 前台页面
+
 // 前页详情
 Route::get('/homes','XqController@xqym');
 // 前页分类
@@ -112,8 +134,4 @@ Route::get('/gwc','GwcController@gwcs');
 // 订单页面
 
 Route::get('/dingdan','DidanController@ddym');
-
-
-
-
 
