@@ -40,12 +40,12 @@
                         </tr>
                         <tr>
                           
-                          <td width="15px;"></td>
+                          <!-- <td width="15px;"></td> -->
                           @foreach($goods_pic as $k=>$v)
-                          <td>
-                           <!-- <a href="/img/imgs.jpeg" target="lefts"> -->
-                           <img src="{{$v->pic}}" width="60" height="60">
-                           <!-- </a> -->
+                          <td style="margin-right: 10px;">
+                           <a href="/img/imgs.jpeg" target="lefts">
+                            <img src="{{$v->pic}}" width="60" height="60">
+                           </a>
                           </td>
                           @endforeach
                         </tr>
@@ -58,6 +58,7 @@
             <h2>{{$goods->title}}</h2>
             
             <h5 class="price">¥{{$goods->price}}</h5>
+            <h5 class="price" style="color: #aaa;">上架时间:{{$goods->created_at}}</h5>
             <hr>
             <ul class="sm list-unstyled list-inline">
                 <li class="padding-left"><a href="#">服务说明</a></li>
@@ -118,14 +119,16 @@
                 <div class="clearfix"></div>
                 <p>已选择商品:&nbsp;&nbsp;&nbsp;{{$goods->title}}</p>
                 <div class="time col-md-10">
+                   <form action="/cart" method="post"> 
                     <div class="zengjia">
-                        <input type="text" class="jia_left" value="1">
+                        <input type="text" class="jia_left" value="1" name="num">
+                        <input type="hidden" name="goods_id" value="{{$goods->id}}">
                         <div class="jia_right">
                             <div id="right_up">+</div>
                             <div id="right_bot">-</div>
                         </div>
                     </div>
-                    <form action="">
+                        {{csrf_field()}}
                         <button type="submit" class="inputs" >加入购物车</button>
                     </form>
 
@@ -201,7 +204,7 @@
             @foreach($goods_pic as $k=>$v)
             <div class="col-md-12" id="one">
 
-                <img src="{{$v->pic}}" style="  width:449px; height: 400px; margin-left: 400px;">
+                <img src="{{$v->pic}}" style="  width:1049px; height: 400px; margin-left: 150px;">
                 
                 <div class="top10"></div>
                 <div class="top10"></div>

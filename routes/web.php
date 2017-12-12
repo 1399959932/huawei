@@ -36,11 +36,21 @@ Route::post('/login','UserController@dologin');
 //分类
 Route::resource('/cate','CateController');
 
-// 购物且
+
 // 商品管理
 Route::get('/goods/list','GoodsController@gdlist');
-Route::resource('/goods','GoodsController');
 
+
+
+//后台路由组
+Route::group(['middleware'=> 'login'],function(){
+	//购物且添加商品
+	Route::resource('/goods','GoodsController');
+	// 购物且
+	Route::post('/cart','CartController@store');
+
+	Route::get('/cart','CartController@index');
+});
 
     // 陈结束
 

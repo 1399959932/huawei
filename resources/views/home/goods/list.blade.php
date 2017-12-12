@@ -11,7 +11,7 @@
     <div class="container"  style="width: 1200px;">
         @foreach($goods as $k=>$v)
         <div class="col-md-2 theme_1" style="padding: 0px;">
-            <img src="{{$v->pic}}" width="210" height="245">
+            <a href="/goods/{{$v->id}}"><img src="{{$v->pic}}" width="210" height="245"></a>
             <h5><a href="#">{{$v->title}}</a></h5>
             <h3>&yen;{{$v->price}}</h3>
             <div class="dib">
@@ -30,11 +30,12 @@
                     <span aria-hidden="true">&laquo;</span>
                   </a>
                 </li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    {{$goods->links()}}
                 <li>
                   <a href="#" aria-label="Next">
                     <span aria-hidden="true">&raquo;</span>
