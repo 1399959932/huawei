@@ -52,6 +52,9 @@ Route::get('/geren','GerenController@person');
 //华为专区
 Route::get('/zqu','ZquController@prefe');
 
+//荣耀家族
+Route::get('/fam','FamController@family');
+
 
 
 

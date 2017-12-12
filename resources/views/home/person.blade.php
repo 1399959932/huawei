@@ -4,7 +4,7 @@
 <title>个人中心</title>
 @stop
 
-<link rel="stylesheet" type="text/css" href="./css/person.css">
+<link rel="stylesheet" type="text/css" href="/css/person.css">
 @section('gr')
 <li><a href="#">178****5762</a></li>
 @stop
