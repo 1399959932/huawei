@@ -1,8 +1,8 @@
 @extends('homes.public')
 @section('content')
-<link rel="stylesheet" type="text/css" href="./css/fl.css">
-<script type="text/javascript" src="./js/jquery-3.2.1.js"></script>
-<script type="text/javascript" src="./js/fl.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/fl.css">
+<script type="text/javascript" src="/js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="/js/fl.js"></script>
 <div class="clearfix"></div>
 <hr>
 <!-- 分类内容 开始 -->

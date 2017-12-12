@@ -89,17 +89,11 @@ Route::resource('article','ArticleController');
 //分类管理
 Route::resource('cate','CateController');
 
-// 后台路由组
-	// 后台首页
-Route::get('/admin','AdminController@index');
-// 用户管理
-Route::resource('user','UserController');
-// 文章管理
-Route::resource('article','ArticleController');
-// 分类管理
-Route::resource('cate','CateController');
+
+
 
 // 前台页面
+
 // 前页详情
 Route::get('/homes','XqController@xqym');
 // 前页分类
@@ -110,6 +104,9 @@ Route::get('/gwc','GwcController@gwcs');
 Route::get('/dingdan','DidanController@ddym');
 // 支付页面
 Route::get('/zhifu','ZhifuController@zfym');
+
+
+
 
 
 

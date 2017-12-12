@@ -1,9 +1,9 @@
 @extends('homes.public')
 @section('header')
-<link rel="stylesheet" type="text/css" href="./css/ddym.css">
-<link rel="stylesheet" type="text/css" href="./css/gwc.css">
-<script type="text/javascript" src="./js/jquery-3.2.1.js"></script>
-<script type="text/javascript" src="./js/fl.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/ddym.css">
+<link rel="stylesheet" type="text/css" href="/css/gwc.css">
+<script type="text/javascript" src="/js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="/js/fl.js"></script>
 	<div class="container">
         <!-- 头部开始 -->
         <div class="header">
