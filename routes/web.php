@@ -72,7 +72,7 @@ Route::get('/list','listcontroller@list');
 //前台首页
 Route::get('/homed','HomeController@index');
 //前台分类
-Route::get('/Fen','FenController@classify');
+Route::get('/fen','FenController@classify');
 //个人中心
 Route::get('/geren','GerenController@person');
 //华为专区
