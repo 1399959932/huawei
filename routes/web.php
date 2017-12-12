@@ -105,10 +105,7 @@ Route::resource('article','ArticleController');
 //分类管理
 Route::resource('cate','CateController');
 
-<<<<<<< HEAD
 
-
-=======
 Route::get('/admin/login','LoginController@login');
 Route::post('/admin/login','LoginController@dologin');
 
@@ -125,16 +122,6 @@ Route::resource('article','ArticleController');
 //分类管理
 Route::resource('cate','CateController');
 
-// 后台路由组
-	// 后台首页
-Route::get('/admin','AdminController@index');
-// 用户管理
-Route::resource('user','UserController');
-// 文章管理
-Route::resource('article','ArticleController');
-// 分类管理
-Route::resource('cate','CateController');
->>>>>>> 63362de336c452edfc7059464823a84ca375b885
 
 // 前台页面
 
@@ -149,13 +136,3 @@ Route::get('/dingdan','DidanController@ddym');
 // 支付页面
 Route::get('/zhifu','ZhifuController@zfym');
 
-
-
-
-
-
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 63362de336c452edfc7059464823a84ca375b885

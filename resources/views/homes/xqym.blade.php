@@ -1,5 +1,6 @@
 @extends('homes.public')
 <link rel="stylesheet" type="text/css" href="/css/xq.css">
+<script type="text/javascript" src="/js/jquery-3.2.1.js"></script>
 <body data-spy="scroll" data-target="#navbar-example">
 <script type="text/javascript">
     $(function(){
