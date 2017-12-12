@@ -110,9 +110,8 @@ Route::get('/flym','FlController@fl');
 // 购物车
 Route::get('/gwc','GwcController@gwcs');
 // 订单页面
+
 Route::get('/dingdan','DidanController@ddym');
-// 支付页面
-Route::get('/zhifu','ZhifuController@zfym');
 
 
 
