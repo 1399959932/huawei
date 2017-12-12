@@ -59,7 +59,7 @@
             <div class="am-form-group">
                 <label class="am-u-sm-1 am-form-label text-info">商品图片</label>
                 <div class="am-u-sm-6 pull-left"  style="float:left;" >
-                    <input type="file"  name="pic" class="form-control border">
+                    <input type="file"  name="pic[]" class="form-control border" multiple>
                 </div>
             </div>
 
