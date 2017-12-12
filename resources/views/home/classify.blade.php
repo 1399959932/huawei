@@ -457,6 +457,7 @@
 </div>
 <!-- 内容部分结束 -->
 <!-- 内容图片部分开始 -->
+@section('body')
 <div class="theme">
 	<div class="container">
 		<div class="col-md-2 theme_1" style="padding: 0px;">
@@ -700,6 +701,7 @@
 		</nav>
 	</div>
 </div>
+@show
 @stop
 <!-- 内容图片部分结束 -->
 <!-- 脚部部分开始 -->
