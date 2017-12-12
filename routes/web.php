@@ -25,8 +25,14 @@ Route::get('/message','CommonController@message');
 // 验证码
 Route::get('/zhuce/captcha/{tmp}', 'UserController@captcha');
 
+<<<<<<< HEAD
 Route::get('/login','UserController@login');
 
+=======
+Route::get('/login','UserController@login');
+
+Route::get('/login','UserController@login');
+>>>>>>> 8cbf1680ec9f300c3b9d915e6b13f91e5cdf4b38
 Route::post('/login','UserController@dologin');
 
 
@@ -43,7 +49,11 @@ Route::resource('/goods','GoodsController');
 //后台首页
 Route::get('/admin','Admincontroller@index');
 //后台登录
+<<<<<<< HEAD
 Route::get('/admin/login','LoginController@login');
+=======
+Route::get('/admin/login','loginController@login');
+>>>>>>> 8cbf1680ec9f300c3b9d915e6b13f91e5cdf4b38
 Route::post('/admin/login','LoginController@dologin');
 //后台用户
 Route::resource('/users','usersController');
@@ -65,10 +75,20 @@ Route::get('/gwc','GwcController@gwcs');
 Route::get('/dingdan','DidanController@ddym');
 //前台列表页
 Route::get('/list','listcontroller@list');
+<<<<<<< HEAD
 //前台首页
 Route::get('/homed','HomeController@index');
 //前台分类
 Route::get('/Fen','FenController@classify');
+=======
+
+
+//h
+//前台首页
+Route::get('/homed','HomeController@index');
+//前台分类
+Route::get('/fen','FenController@classify');
+>>>>>>> 8cbf1680ec9f300c3b9d915e6b13f91e5cdf4b38
 //个人中心
 Route::get('/geren','GerenController@person');
 //华为专区
@@ -76,6 +96,12 @@ Route::get('/zqu','ZquController@prefe');
 //荣耀家族
 Route::get('/fam','Famcontroller@family');
 
+<<<<<<< HEAD
+=======
+//h
+
+
+>>>>>>> 8cbf1680ec9f300c3b9d915e6b13f91e5cdf4b38
 // 支付页面
 Route::get('/zhifu','ZhifuController@zfym');
 
