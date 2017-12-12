@@ -1,7 +1,6 @@
 @extends('homes.public')
-@section('js')   
 <link rel="stylesheet" type="text/css" href="/css/xq.css">
-
+<body data-spy="scroll" data-target="#navbar-example">
 <script type="text/javascript">
     $(function(){
         $('.goods-title >.nav_choice > .ziti > ul > li').click(function(){
@@ -9,7 +8,6 @@
         })
     })
 </script>
-@endsection
 @section('content')
     <hr>
     <!-- 内容区开始 -->
@@ -228,23 +226,23 @@
     <!-- center2 开始 -->
     <div class="container-fulid">
         <div style="margin: 0px auto; width: 1349px;">
-        <ul class="center2_ul col-md-12 list-unstyled list-inline " style="text-align: center;" id="dianji">
-            <li><a href="#one">商品详情</a></li>
-            <li><a href="#two">规格参数</a></li>
-            <li><a href="#there">包装与售后</a></li>
-            <li><a href="#four">用户评价(1112)</a></li>
-        </ul>
-        <div class="col-md-12 tupian">
-            <img src="holder.js/1349x647" style="margin-left: -15px;">
+            <ul class="center2_ul col-md-12 list-unstyled list-inline " style="text-align: center;" id="dianji">
+                <li><a href="#one">商品详情</a></li>
+                <li><a href="#two">规格参数</a></li>
+                <li><a href="#there">包装与售后</a></li>
+                <li><a href="#four">用户评价(1112)</a></li>
+            </ul>
+            <div class="col-md-12 tupian">
+                <img src="holder.js/1349x647" style="margin-left: -15px;">
+            </div>
+            <div class="col-md-12" id="one">
+                <img src="holder.js/1349x646?bg=#ade" style="margin-left: -15px;">
+            </div>
+            <div class="col-md-12">
+                <img src="holder.js/1349x645?bg=#afd" style="margin-left: -15px;">
+            </div>
         </div>
-        <div class="col-md-12" id="one">
-            <img src="holder.js/1349x646?bg=#ade" style="margin-left: -15px;">
-        </div>
-        <div class="col-md-12">
-            <img src="holder.js/1349x645?bg=#afd" style="margin-left: -15px;">
-        </div>
-        </div>
-</div>
+    </div>
     <!-- center2 结束 -->
     <!-- 规格参数 开始 -->
     <div class="clearfix"></div>

@@ -28,10 +28,23 @@ Route::get('/message','CommonController@message');
 Route::get('/zhuce/captcha/{tmp}', 'UserController@captcha');
 
 
+Route::get('/login','UserController@login');
+Route::post('/login','UserController@dologin');
+
 Route::get('/login','UserControll.0er@login');
+
 
 //分类
 Route::resource('/cate','CateController');
+
+// 购物且
+// 商品管理
+Route::get('/goods/list','GoodsController@gdlist');
+Route::resource('/goods','GoodsController');
+
+
+    // 陈结束
+
 
 // 商品管理
 Route::resource('/goods','GoodsController');
@@ -52,26 +65,13 @@ Route::get('/geren','GerenController@person');
 //华为专区
 Route::get('/zqu','ZquController@prefe');
 
+//荣耀家族
+Route::get('/fam','FamController@family');
 
 
 
 
 
-Route::get('/admin/login','LoginController@login');
-Route::post('/admin/login','LoginController@dologin');
-
-
-//后台首页
-Route::get('/admin','AdminController@index');
-
-//用户管理
-Route::resource('user','UserController');
-
-//文章管理
-Route::resource('article','ArticleController');
-
-//分类管理
-Route::resource('cate','CateController');
 
 Route::get('/admin/login','LoginController@login');
 Route::post('/admin/login','LoginController@dologin');
@@ -89,8 +89,52 @@ Route::resource('article','ArticleController');
 //分类管理
 Route::resource('cate','CateController');
 
+Route::get('/admin/login','LoginController@login');
+Route::post('/admin/login','LoginController@dologin');
 
 
+//后台首页
+Route::get('/admin','AdminController@index');
+
+//用户管理
+Route::resource('user','UserController');
+
+//文章管理
+Route::resource('article','ArticleController');
+
+//分类管理
+Route::resource('cate','CateController');
+
+<<<<<<< HEAD
+
+
+=======
+Route::get('/admin/login','LoginController@login');
+Route::post('/admin/login','LoginController@dologin');
+
+
+//后台首页
+Route::get('/admin','AdminController@index');
+
+//用户管理
+Route::resource('user','UserController');
+
+//文章管理
+Route::resource('article','ArticleController');
+
+//分类管理
+Route::resource('cate','CateController');
+
+// 后台路由组
+	// 后台首页
+Route::get('/admin','AdminController@index');
+// 用户管理
+Route::resource('user','UserController');
+// 文章管理
+Route::resource('article','ArticleController');
+// 分类管理
+Route::resource('cate','CateController');
+>>>>>>> 63362de336c452edfc7059464823a84ca375b885
 
 // 前台页面
 
@@ -110,5 +154,8 @@ Route::get('/zhifu','ZhifuController@zfym');
 
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 63362de336c452edfc7059464823a84ca375b885

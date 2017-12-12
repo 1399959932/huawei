@@ -4,7 +4,7 @@
 <title>华为专区</title>
 @stop
 
-<link rel="stylesheet" type="text/css" href="./css/prefe.css">
+<link rel="stylesheet" type="text/css" href="/css/prefe.css">
 
 @section('content')
 <!-- 轮播图部分结束 -->

@@ -12,9 +12,6 @@
     <link rel="stylesheet" type="text/css" href="/css/xq.css">
     <script type="text/javascript" src="/js/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="/js/style.js"></script>
-
-    @section('js')
-    @show
 </head>
 <body>
     @section('header')
