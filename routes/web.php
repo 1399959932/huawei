@@ -37,11 +37,15 @@ Route::resource('/cate','CateController');
 Route::resource('/goods','GoodsController');
 
     // 陈结束
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> f3a2075fc5beed97abad8c59d35ff977e71aabf6
 
 
 //前台首页
-Route::get('/homes','HomeController@index');
+Route::get('/homed','HomeController@index');
 
 //前台分类
 Route::get('/Fen','FenController@classify');
