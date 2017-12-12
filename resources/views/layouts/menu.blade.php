@@ -66,7 +66,7 @@
                                     <span>商品添加</span>
                                     <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
                                 </a>
-                                <a href="/cate">
+                                <a href="/goods">
                                     <i class="am-icon-angle-right"></i>
                                     <span>商品列表</span>
                                 </a>

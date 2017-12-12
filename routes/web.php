@@ -21,16 +21,10 @@ Route::get('/vcode', 'UserController@captcha');
 // 注册
 Route::get('/zhuce','UserController@zhuce');
 Route::post('/zhuce','UserController@zhucet');
-
 Route::get('/message','CommonController@message');
-
 // 验证码
 Route::get('/zhuce/captcha/{tmp}', 'UserController@captcha');
-
-
-Route::get('/login','UserControll.0er@login');
-
-
+Route::get('/login','UserController@login');
 // 商品管理
 Route::resource('/goods','GoodsController');
 
@@ -71,6 +65,8 @@ Route::get('/Fen','FenController@classify');
 Route::get('/geren','GerenController@person');
 //华为专区
 Route::get('/zqu','ZquController@prefe');
+//荣耀家族
+Route::get('/fam','Famcontroller@family');
 
 
 

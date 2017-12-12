@@ -12,18 +12,7 @@
 <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
 <script type="text/javascript" charset="utf-8" src="/plugins/ueditor/lang/zh-cn/zh-cn.js"></script>
 <div class="">
-    <div class="tpl-content-page-title">
-         后台首页
-    </div>
-    <ol class="am-breadcrumb">
-        <li><a href="#" class="am-icon-home">首页</a></li>
-        <li><a href="#">购物车</a></li>
-        <li class="am-active">添加</li>
-    </ol>
-    <!-- 提示框 -->
-    <div class="tpl-content-scope">
-		
-    </div>
+    
     <!-- 提示框结束 -->
 
     <div class="col-md-12" style="height: auto;">
