@@ -23,6 +23,46 @@ a:hover{
 	margin-left: 15px;
 	border-radius: 360px;
 }
+.header .nav_ul .xia{
+	position: relative;
+}
+.header .nav_ul .xiala{
+	width: 140px;
+	height: 280px;
+	background: #fff;
+	position: absolute;
+	top:30px;
+	left: -85px;
+	z-index: 999;
+	box-shadow: 0px 0px 2px 2px #ccc;
+	display: none;
+}
+.header .nav_ul .xiala ul{
+	width: 130px;
+	height: 127px;
+	margin: 5px;
+	/*background: red;*/
+	border-bottom: 1px solid #ccc;
+}
+.header .nav_ul .xiala ul li{
+	width: 137px;
+	height:25px;
+	/*background: pink;*/
+	line-height: 25px;
+	text-align: center;
+	margin-top: 5px;
+}
+.header .nav_ul .xia:hover > .xiala{
+	display: block;
+}
+.header .nav_ul .xiala img{
+	padding: 20px;
+	padding-left: 30px;
+	padding-bottom: 10px;
+}
+.header .nav_ul .xiala h5{
+	padding-left: 15px;
+}
 .center{
 	height: 440px;
 	background: #f5f5f5;

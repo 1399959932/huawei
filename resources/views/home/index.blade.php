@@ -16,10 +16,11 @@
             $(".cebi > ul > li").hover(function(){
                 $(".cebi > .content").show();
                 $(".cebi > .content > .list").eq($(this).index()).show().siblings("list").hide();
-            }).mouseleave(function(){
+            },function(){
                 $(".cebi > .content").hide();
-                $(".cebi > .content > .list").eq($(this).index()).hide();               
+                $(".cebi > .content > .list").eq($(this).index()).hide();
             })
+                            
         // 滚动条
             $(window).scroll(function(){
                 if($(this).scrollTop()>800){
