@@ -28,20 +28,21 @@ Route::get('/message','CommonController@message');
 Route::get('/zhuce/captcha/{tmp}', 'UserController@captcha');
 
 
-Route::get('/login','UserControll.0er@login');
+Route::get('/login','UserController@login');
+Route::post('/login','UserController@dologin');
+
 
 //分类
 Route::resource('/cate','CateController');
 
+// 购物且
 // 商品管理
+Route::get('/goods/list','GoodsController@gdlist');
 Route::resource('/goods','GoodsController');
 
-    // 陈结束
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> f3a2075fc5beed97abad8c59d35ff977e71aabf6
+    // 陈结束
+
 
 
 //前台首页

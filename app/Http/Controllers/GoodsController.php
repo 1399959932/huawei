@@ -105,11 +105,16 @@ class GoodsController extends Controller
     {
         //读取商品的详细信息
         $goods = DB::table('goods')->where('id',$id)->first();
+
         //读取商品的图片信息
         $goods_pic = DB::table('goods_pic')->where('goods_id',$id)->get();
+        $goods_picda = DB::table('goods_pic')->where('id',$id)->get();
+
+
+        // dd($goods_pic);
 
         //home.goods.show      homes.gwcs
-        return view('home.goods.show',compact('goods','goods_pic'));
+        return view('home.goods.show',compact(['goods','goods_pic'],['goods','goods_picda']));
 
     }
 
@@ -145,5 +150,20 @@ class GoodsController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function gdlist(){
+        //读取商品
+        $goods = DB::table('goods')->where('status',1)
+        ->select('id','title','price')->orderBy('id','desc')->paginate(20);
+        
+        //便利商品信息
+        foreach ($goods as $key => $value) {
+            $value->pic = DB::table('goods_pic')
+            ->where('goods_id',$value->id)->value('pic');
+        }
+        // dd($goods);
+        //模板
+        return view('home.goods.list',compact('goods'));
     }
 }

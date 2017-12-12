@@ -243,7 +243,25 @@ class UserController extends Controller
         return view('login.login');
     }
 
-    public function dologin(){
-        $user = DB::table('users')->where('verify',$tel)->first();
+    public function dologin(Request $request){
+
+        // dd($request->all());
+
+        $data = $request->only(['tel','password']);
+        $datas = DB::table('users')->where('tel',$data['tel'])->first();
+
+        // dd($data);
+
+        if (count($datas) > 0) {
+           if($data['password'] = 'password'){
+            return redirect('/homed')->with('msg','登录成功');
+
+           }
+        }else{
+            return back('/')->with('msg','登录失败');
+
+        }
+
+
     }
 }

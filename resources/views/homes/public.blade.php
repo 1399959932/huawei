@@ -3,15 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>华为商城</title>
-	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap-theme.min.css">
-    <script type="text/javascript" src="./bootstrap/js/jquery.js"></script>
-    <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap-theme.min.css">
+    <script type="text/javascript" src="/bootstrap/js/jquery.js"></script>
+    <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <script src="./bootstrap/js/holder.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./css/xq.css">
-    <script type="text/javascript" src="./js/jquery-3.2.1.js"></script>
-    <script type="text/javascript" src="./js/style.js"></script>
+    <script src="/bootstrap/js/holder.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/xq.css">
+    <script type="text/javascript" src="/js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="/js/style.js"></script>
 </head>
 <body>
     @section('header')

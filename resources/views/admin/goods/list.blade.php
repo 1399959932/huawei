@@ -1,6 +1,6 @@
 @extends('homes.xqym')
 @section('title')
-<title>商品详情</title>
+<title>商品列表</title>
 @endsection
 
 <style>.top10{height:10px;}</style>
