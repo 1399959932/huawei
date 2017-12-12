@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home.index');
 });
 
 
@@ -21,21 +21,15 @@ Route::get('/vcode', 'UserController@captcha');
 // 注册
 Route::get('/zhuce','UserController@zhuce');
 Route::post('/zhuce','UserController@zhucet');
-
 Route::get('/message','CommonController@message');
-
 // 验证码
 Route::get('/zhuce/captcha/{tmp}', 'UserController@captcha');
 
+Route::get('/login','UserController@login');
 
 Route::get('/login','UserController@login');
 Route::post('/login','UserController@dologin');
 
-Route::get('/login','UserControll.0er@login');
-
-
-//分类
-Route::resource('/cate','CateController');
 
 // 购物且
 // 商品管理
@@ -46,85 +40,22 @@ Route::resource('/goods','GoodsController');
     // 陈结束
 
 
-// 商品管理
-Route::resource('/goods','GoodsController');
-
-    // 陈结束
-    
-
-
-//前台首页
-Route::get('/homed','HomeController@index');
-
-//前台分类
-Route::get('/Fen','FenController@classify');
-
-//个人中心
-Route::get('/geren','GerenController@person');
-
-//华为专区
-Route::get('/zqu','ZquController@prefe');
-
-//荣耀家族
-Route::get('/fam','FamController@family');
-
-
-
-
-
-
-Route::get('/admin/login','LoginController@login');
-Route::post('/admin/login','LoginController@dologin');
-
 
 //后台首页
-Route::get('/admin','AdminController@index');
-
-//用户管理
-Route::resource('user','UserController');
-
+Route::get('/admin','Admincontroller@index');
+//后台登录
+Route::get('/admin/login','loginController@login');
+Route::post('/admin/login','LoginController@dologin');
+//后台用户
+Route::resource('/users','usersController');
+//后台分类
+Route::resource('/cate','catecontroller');
 //文章管理
 Route::resource('article','ArticleController');
 
-//分类管理
-Route::resource('cate','CateController');
-
-Route::get('/admin/login','LoginController@login');
-Route::post('/admin/login','LoginController@dologin');
-
-
-//后台首页
-Route::get('/admin','AdminController@index');
-
-//用户管理
-Route::resource('user','UserController');
-
-//文章管理
-Route::resource('article','ArticleController');
-
-//分类管理
-Route::resource('cate','CateController');
-
-
-Route::get('/admin/login','LoginController@login');
-Route::post('/admin/login','LoginController@dologin');
-
-
-//后台首页
-Route::get('/admin','AdminController@index');
-
-//用户管理
-Route::resource('user','UserController');
-
-//文章管理
-Route::resource('article','ArticleController');
-
-//分类管理
-Route::resource('cate','CateController');
 
 
 // 前台页面
-
 // 前页详情
 Route::get('/homes','XqController@xqym');
 // 前页分类
@@ -133,6 +64,26 @@ Route::get('/flym','FlController@fl');
 Route::get('/gwc','GwcController@gwcs');
 // 订单页面
 Route::get('/dingdan','DidanController@ddym');
+//前台列表页
+Route::get('/list','listcontroller@list');
+
+
+//h
+//前台首页
+Route::get('/homed','HomeController@index');
+//前台分类
+Route::get('/Fen','FenController@classify');
+//个人中心
+Route::get('/geren','GerenController@person');
+//华为专区
+Route::get('/zqu','ZquController@prefe');
+//荣耀家族
+Route::get('/fam','Famcontroller@family');
+
+//h
+
+
 // 支付页面
 Route::get('/zhifu','ZhifuController@zfym');
+
 

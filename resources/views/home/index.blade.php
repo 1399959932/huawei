@@ -14,11 +14,9 @@
         $(function(){
         //侧边导航栏
             $(".cebi > ul > li").hover(function(){
-                $(".cebi > .content").show();
-                $(".cebi > .content > .list").eq($(this).index()).show().siblings("list").hide();
+                $(this).find('.list').show();
             }).mouseleave(function(){
-                $(".cebi > .content").hide();
-                $(".cebi > .content > .list").eq($(this).index()).hide();               
+                $(this).find('.list').hide();              
             })
         // 滚动条
             $(window).scroll(function(){
