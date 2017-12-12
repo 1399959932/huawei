@@ -26,17 +26,39 @@
 				</div>
 			</div>
 			<div class="zhifu_bot col-md-12">
-				<ul class="nav nav-tabs nav-justified">
-				    <li role="presentation" class="active"><a href="#">Home</a></li>
-				    <li role="presentation"><a href="#">Profile</a></li>
-				    <li role="presentation"><a href="#">Messages</a></li>
+				<ul class="list-unstyled">
+					<li class="active"><a href="#">常用</a></li>
+					<li><a href="#">平台支付</a></li>
+					<li><a href="#">分期支付</a></li>
+					<li><a href="#">网银支付</a></li>
 				</ul>
-				<ul class="nav nav-pills nav-justified">
-				 <li>s</li>
-				 <li>a</li>
-				 <li>q</li>
-				</ul>
+				<div class="col-md-12 bot_cen">
+					<div class="col-md-2">
+						<button>支付宝</button>
+					</div>
+				</div>
 			</div>
+			<button class="pull-right">确认支付</button>
 		</div>
 	</div>
+	<!-- 尾部 开始 -->
+		<div class="footer">
+			<div class="container">	
+		      <div class="col-md-1 footer_top">
+		      	<img src="holder.js/80x24?bg=#afd">
+		      </div>
+		      <div class="col-md-6 footer_cen">
+		      	<p>隐私政策 服务协议 Copyright @ 2012-2017 华为软件技术有限公司 版权所有 保留一切权利</p>
+		      	<p>隐私政策 服务协议 Copyright @ 2012-2017 华为软件技术有限公司 版权所有 保留一切权利</p>
+		      	<p>隐私政策 服务协议 Copyright @ 2012-2017 华为软件技术有限公司 版权所有 保留一切权利</p>
+		      </div>
+		      <div class="col-md-5 footer_bot">
+		      	<img src="holder.js/85x30?bg=#afd">
+		      	<img src="holder.js/85x30?bg=#afd">
+		      	<img src="holder.js/85x30?bg=#afd">
+		      	<img src="holder.js/85x30?bg=#afd">
+		      </div>
+			</div>
+		</div>
+	<!-- 尾部 结束 -->
 <!-- 支付页面 结束 -->
