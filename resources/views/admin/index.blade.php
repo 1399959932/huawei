@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="/css/appp.css">
     <script src="/js/echarts.min.js"></script>
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
-    <script src="../bootstrap/js/jquery.js"></script>
-    <script src="../bootstrap/js/bootstrap.js"></script>
-    <script src="../bootstrap/js/holder.min.js"></script>
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap-theme.min.css">
+    <script src="/bootstrap/js/jquery.js"></script>
+    <script src="/bootstrap/js/bootstrap.js"></script>
+    <script src="/bootstrap/js/holder.min.js"></script>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap-theme.min.css">
 
 
 </head>

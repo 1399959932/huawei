@@ -48,8 +48,6 @@ Route::get('/admin/login','loginController@login');
 Route::resource('/users','usersController');
 //后台分类
 Route::resource('/cate','catecontroller');
-//商品添加
-Route::resource('/good','goodcontroller');
 //文章管理
 Route::resource('article','ArticleController');
 

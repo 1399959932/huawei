@@ -61,7 +61,7 @@
                         </a>
                         <ul class="tpl-left-nav-sub-menu">
                             <li>
-                                <a href="/good/create">
+                                <a href="/goods/create">
                                     <i class="am-icon-angle-right"></i>
                                     <span>商品添加</span>
                                     <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
