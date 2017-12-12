@@ -7,12 +7,12 @@
     @show
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap-theme.min.css">
-    <script type="text/javascript" src="./bootstrap/js/jquery.js"></script>
-    <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./bootstrap/js/holder.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./css/classify.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap-theme.min.css">
+    <script type="text/javascript" src="/bootstrap/js/jquery.js"></script>
+    <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/bootstrap/js/holder.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/classify.css">
     <script type="text/javascript">
     	$(function(){
 			$(".nav_title > .nav_cen > .active").hover(function(){
