@@ -44,7 +44,9 @@ Route::resource('/goods','GoodsController');
 //后台首页
 Route::get('/admin','Admincontroller@index');
 //后台登录
+
 Route::get('/admin/login','LoginController@login');
+
 Route::get('/admin/login','loginController@login');
 Route::post('/admin/login','LoginController@dologin');
 //后台用户
@@ -69,7 +71,6 @@ Route::get('/dingdan','DidanController@ddym');
 Route::get('/list','listcontroller@list');
 
 
-
 //h
 //前台首页
 Route::get('/homed','HomeController@index');
@@ -81,6 +82,7 @@ Route::get('/geren','GerenController@person');
 Route::get('/zqu','ZquController@prefe');
 //荣耀家族
 Route::get('/fam','Famcontroller@family');
+
 
 
 //h

@@ -14,10 +14,19 @@
         $(function(){
         //侧边导航栏
             $(".cebi > ul > li").hover(function(){
+<<<<<<< HEAD
+                $(".cebi > .content").show();
+                $(".cebi > .content > .list").eq($(this).index()).show().siblings("list").hide();
+            },function(){
+                $(".cebi > .content").hide();
+                $(".cebi > .content > .list").eq($(this).index()).hide();
+=======
                 $(this).find('.list').show();
             }).mouseleave(function(){
                 $(this).find('.list').hide();              
+>>>>>>> 8cbf1680ec9f300c3b9d915e6b13f91e5cdf4b38
             })
+                            
         // 滚动条
             $(window).scroll(function(){
                 if($(this).scrollTop()>800){
