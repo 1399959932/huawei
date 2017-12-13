@@ -9,7 +9,7 @@
 }
 </style>
 @section('content')
-<div class="tpl-content-wrapper" style="margin-left: -200px;">
+<div class="">
     <div class="tpl-content-page-title">
         Amaze UI 表单
     <div class="tpl-portlet-components">

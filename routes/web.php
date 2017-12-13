@@ -27,7 +27,6 @@ Route::get('/zhuce/captcha/{tmp}', 'UserController@captcha');
 
 Route::get('/login','UserController@login');
 
-Route::get('/login','UserController@login');
 Route::post('/login','UserController@dologin');
 
 
@@ -66,10 +65,6 @@ Route::get('/gwc','GwcController@gwcs');
 Route::get('/dingdan','DidanController@ddym');
 //前台列表页
 Route::get('/list','listcontroller@list');
-//前台首页
-Route::get('/homed','HomeController@index');
-//前台分类
-Route::get('/Fen','FenController@classify');
 
 
 //h
@@ -83,8 +78,6 @@ Route::get('/geren','GerenController@person');
 Route::get('/zqu','ZquController@prefe');
 //荣耀家族
 Route::get('/fam','Famcontroller@family');
-
-//h
 
 // 支付页面
 Route::get('/zhifu','ZhifuController@zfym');

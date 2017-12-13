@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DB;
+use Hash;
 
 class usersController extends Controller
 {
@@ -47,7 +48,7 @@ class usersController extends Controller
             //创建一个随机名称
             $name = uniqid('img_').'.'.$suffix;
             //文件夹路径
-            $dir = './upload'.date('Y-m-d');
+            $dir = './upload/'.date('Y-m-d');
             //移动文件
             $request->file('hwfile')->move($dir,$name);
             //获取文件路径
@@ -100,7 +101,7 @@ class usersController extends Controller
         if($request->hasFile('hwfile')){
             $suffix = $request->file('hwfile')->extension();
             $name = uniqid('img_').'.'.$suffix;
-            $dir = '/upload/'.date('Y-m-d');
+            $dir = './upload/'.date('Y-m-d');
             $request->file('hwfile')->move($dir,$name);
             $data['hwfile'] = trim($dir.'/'.$name,'.');
         }
