@@ -55,7 +55,7 @@
     <!-- 侧边选项卡开始 -->
     <div class="cebi">
         <ul>
-            <li id="cb_1">
+            <li class="cb_1">
                 <a href="#" class="col-md-12" id="phone">
                     <span>手机</span>
                 </a>
@@ -66,8 +66,49 @@
                     <span>HUAWEI P系列</span>
                 </a>
                 <span class="jito col-md-offset-3">></span>
+
+                <div class="list">
+                    <div class="list_t">
+                        <p class="liu"><a href="#">浏览手机频道</a></p>
+                        <p class="col-md-offset-9"><a href="#">></a></p>
+                    </div>
+                    <div class="list_c">
+                        <div class="c_zi">
+                            <p><a href="#">荣耀</a></p>
+                            <p><a href="#">HUAWEI&nbsp;P系列</a></p>
+                            <p><a href="#">荣耀畅玩系列</a></p>
+                            <p class="meta"><a href="#">HUAWEI&nbsp;Mate系列</a></p>
+                            <p><a href="#">HUAWEI&nbsp;nova系列</a></p>
+                            <p><a href="#">HUAWEI&nbsp;麦芒系列</a></p>
+                            <p><a href="#">华为畅享系列</a></p>
+                            <p class="meta"><a href="#">合约机</a></p>
+                        </div>
+                    </div>
+                    <div class="list_b">
+                        <div class="b_cp">
+                            <img src="holder.js/161x170?bg=#acd">
+                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
+                            <h5 class="mo">&yen;3899</h5>
+                        </div>
+                        <div class="b_cp">
+                            <img src="holder.js/161x170?bg=#acd">
+                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
+                            <h5 class="mo">&yen;3899</h5>
+                        </div>
+                        <div class="b_cp">
+                            <img src="holder.js/161x170?bg=#acd">
+                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
+                            <h5 class="mo">&yen;3899</h5>
+                        </div>
+                        <div class="b_cp b_cp1">
+                            <img src="holder.js/161x170?bg=#acd">
+                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
+                            <h5 class="mo">&yen;3899</h5>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <li id="cb_1">
+            <li class="cb_1">
                 <a href="#" class="col-md-12" id="phone">
                     <span>笔记本&nbsp;&&nbsp;平板</span>
                 </a>
@@ -78,8 +119,48 @@
                     <span>笔记本电脑</span>
                 </a>
                 <span class="jito col-md-offset-3">></span>
+                <div class="list">
+                    <div class="list_t">
+                        <p class="liu"><a href="#">浏览笔记本&nbsp;&&nbsp;平板频道</a></p>
+                        <p class="col-md-offset-8"><a href="#">></a></p>
+                    </div>
+                    <div class="list_c">
+                        <div class="c_zi">
+                            <p><a href="#">荣耀</a></p>
+                            <p><a href="#">HUAWEI&nbsp;P系列</a></p>
+                            <p><a href="#">荣耀畅玩系列</a></p>
+                            <p class="meta"><a href="#">HUAWEI&nbsp;Mate系列</a></p>
+                            <p><a href="#">HUAWEI&nbsp;nova系列</a></p>
+                            <p><a href="#">HUAWEI&nbsp;麦芒系列</a></p>
+                            <p><a href="#">华为畅享系列</a></p>
+                            <p class="meta"><a href="#">合约机</a></p>
+                        </div>
+                    </div>
+                    <div class="list_b">
+                        <div class="b_cp">
+                            <img src="holder.js/161x170?bg=#acd">
+                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
+                            <h5 class="mo">&yen;3899</h5>
+                        </div>
+                        <div class="b_cp">
+                            <img src="holder.js/161x170?bg=#acd">
+                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
+                            <h5 class="mo">&yen;3899</h5>
+                        </div>
+                        <div class="b_cp">
+                            <img src="holder.js/161x170?bg=#acd">
+                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
+                            <h5 class="mo">&yen;3899</h5>
+                        </div>
+                        <div class="b_cp b_cp1">
+                            <img src="holder.js/161x170?bg=#acd">
+                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
+                            <h5 class="mo">&yen;3899</h5>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <li id="cb_1">
+            <li class="cb_1">
                 <a href="#" class="col-md-12" id="phone">
                     <span>穿戴</span>
                 </a>
@@ -90,8 +171,49 @@
                     <span>手表</span>
                 </a>
                 <span class="jito col-md-offset-6">></span>
+
+                <div class="list">
+                    <div class="list_t">
+                        <p class="liu"><a href="#">浏览穿戴频道</a></p>
+                        <p class="col-md-offset-9"><a href="#">></a></p>
+                    </div>
+                    <div class="list_c">
+                        <div class="c_zi">
+                            <p><a href="#">荣耀</a></p>
+                            <p><a href="#">HUAWEI&nbsp;P系列</a></p>
+                            <p><a href="#">荣耀畅玩系列</a></p>
+                            <p class="meta"><a href="#">HUAWEI&nbsp;Mate系列</a></p>
+                            <p><a href="#">HUAWEI&nbsp;nova系列</a></p>
+                            <p><a href="#">HUAWEI&nbsp;麦芒系列</a></p>
+                            <p><a href="#">华为畅享系列</a></p>
+                            <p class="meta"><a href="#">合约机</a></p>
+                        </div>
+                    </div>
+                    <div class="list_b">
+                        <div class="b_cp">
+                            <img src="holder.js/161x170?bg=#acd">
+                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
+                            <h5 class="mo">&yen;3899</h5>
+                        </div>
+                        <div class="b_cp">
+                            <img src="holder.js/161x170?bg=#acd">
+                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
+                            <h5 class="mo">&yen;3899</h5>
+                        </div>
+                        <div class="b_cp">
+                            <img src="holder.js/161x170?bg=#acd">
+                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
+                            <h5 class="mo">&yen;3899</h5>
+                        </div>
+                        <div class="b_cp b_cp1">
+                            <img src="holder.js/161x170?bg=#acd">
+                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
+                            <h5 class="mo">&yen;3899</h5>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <li id="cb_1">
+            <li class="cb_1">
                 <a href="#" class="col-md-12" id="phone">
                     <span>智能家居</span>
                 </a>
@@ -105,8 +227,49 @@
                     <span>路由器</span>
                 </a>
                 <span class="jito">></span>
+
+                <div class="list">
+                    <div class="list_t">
+                        <p class="liu"><a href="#">浏览智能家居频道</a></p>
+                        <p class="col-md-offset-8 col-md-1"><a href="#">></a></p>
+                    </div>
+                    <div class="list_c">
+                        <div class="c_zi">
+                            <p><a href="#">荣耀</a></p>
+                            <p><a href="#">HUAWEI&nbsp;P系列</a></p>
+                            <p><a href="#">荣耀畅玩系列</a></p>
+                            <p class="meta"><a href="#">HUAWEI&nbsp;Mate系列</a></p>
+                            <p><a href="#">HUAWEI&nbsp;nova系列</a></p>
+                            <p><a href="#">HUAWEI&nbsp;麦芒系列</a></p>
+                            <p><a href="#">华为畅享系列</a></p>
+                            <p class="meta"><a href="#">合约机</a></p>
+                        </div>
+                    </div>
+                    <div class="list_b">
+                        <div class="b_cp">
+                            <img src="holder.js/161x170?bg=#acd">
+                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
+                            <h5 class="mo">&yen;3899</h5>
+                        </div>
+                        <div class="b_cp">
+                            <img src="holder.js/161x170?bg=#acd">
+                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
+                            <h5 class="mo">&yen;3899</h5>
+                        </div>
+                        <div class="b_cp">
+                            <img src="holder.js/161x170?bg=#acd">
+                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
+                            <h5 class="mo">&yen;3899</h5>
+                        </div>
+                        <div class="b_cp b_cp1">
+                            <img src="holder.js/161x170?bg=#acd">
+                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
+                            <h5 class="mo">&yen;3899</h5>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <li id="cb_1">
+            <li class="cb_1">
                 <a href="#" class="col-md-12" id="phone">
                     <span>通用配件</span>
                 </a>
@@ -120,8 +283,49 @@
                     <span>音响</span>
                 </a>
                 <span class="jito col-md-offset-2">></span>
+
+                <div class="list">
+                    <div class="list_t">
+                        <p class="liu"><a href="#">浏览通用配件频道</a></p>
+                        <p class="col-md-offset-8 col-md-1"><a href="#">></a></p>
+                    </div>
+                    <div class="list_c">
+                        <div class="c_zi">
+                            <p><a href="#">荣耀</a></p>
+                            <p><a href="#">HUAWEI&nbsp;P系列</a></p>
+                            <p><a href="#">荣耀畅玩系列</a></p>
+                            <p class="meta"><a href="#">HUAWEI&nbsp;Mate系列</a></p>
+                            <p><a href="#">HUAWEI&nbsp;nova系列</a></p>
+                            <p><a href="#">HUAWEI&nbsp;麦芒系列</a></p>
+                            <p><a href="#">华为畅享系列</a></p>
+                            <p class="meta"><a href="#">合约机</a></p>
+                        </div>
+                    </div>
+                    <div class="list_b">
+                        <div class="b_cp">
+                            <img src="holder.js/161x170?bg=#acd">
+                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
+                            <h5 class="mo">&yen;3899</h5>
+                        </div>
+                        <div class="b_cp">
+                            <img src="holder.js/161x170?bg=#acd">
+                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
+                            <h5 class="mo">&yen;3899</h5>
+                        </div>
+                        <div class="b_cp">
+                            <img src="holder.js/161x170?bg=#acd">
+                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
+                            <h5 class="mo">&yen;3899</h5>
+                        </div>
+                        <div class="b_cp b_cp1">
+                            <img src="holder.js/161x170?bg=#acd">
+                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
+                            <h5 class="mo">&yen;3899</h5>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <li id="cb_1">
+            <li class="cb_1">
                 <a href="#" class="col-md-12" id="phone">
                     <span>专属配件</span>
                 </a>
@@ -135,250 +339,49 @@
                     <span>贴膜</span>
                 </a>
                 <span class="jito col-md-offset-2">></span>
+
+                <div class="list">
+                    <div class="list_t">
+                        <p class="liu"><a href="#">浏览专属配件频道</a></p>
+                        <p class="col-md-offset-8 col-md-1"><a href="#">></a></p>
+                    </div>
+                    <div class="list_c">
+                        <div class="c_zi">
+                            <p><a href="#">荣耀</a></p>
+                            <p><a href="#">HUAWEI&nbsp;P系列</a></p>
+                            <p><a href="#">荣耀畅玩系列</a></p>
+                            <p class="meta"><a href="#">HUAWEI&nbsp;Mate系列</a></p>
+                            <p><a href="#">HUAWEI&nbsp;nova系列</a></p>
+                            <p><a href="#">HUAWEI&nbsp;麦芒系列</a></p>
+                            <p><a href="#">华为畅享系列</a></p>
+                            <p class="meta"><a href="#">合约机</a></p>
+                        </div>
+                    </div>
+                    <div class="list_b">
+                        <div class="b_cp">
+                            <img src="holder.js/161x170?bg=#acd">
+                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
+                            <h5 class="mo">&yen;3899</h5>
+                        </div>
+                        <div class="b_cp">
+                            <img src="holder.js/161x170?bg=#acd">
+                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
+                            <h5 class="mo">&yen;3899</h5>
+                        </div>
+                        <div class="b_cp">
+                            <img src="holder.js/161x170?bg=#acd">
+                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
+                            <h5 class="mo">&yen;3899</h5>
+                        </div>
+                        <div class="b_cp b_cp1">
+                            <img src="holder.js/161x170?bg=#acd">
+                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
+                            <h5 class="mo">&yen;3899</h5>
+                        </div>
+                    </div>
+                </div>
             </li>
         </ul>
-        <div class="content">
-            <div class="list">
-                <div class="list_t">
-                    <p class="liu"><a href="#">浏览手机频道</a></p>
-                    <p class="col-md-offset-9"><a href="#">></a></p>
-                </div>
-                <div class="list_c">
-                    <div class="c_zi">
-                        <p><a href="#">荣耀</a></p>
-                        <p><a href="#">HUAWEI&nbsp;P系列</a></p>
-                        <p><a href="#">荣耀畅玩系列</a></p>
-                        <p class="meta"><a href="#">HUAWEI&nbsp;Mate系列</a></p>
-                        <p><a href="#">HUAWEI&nbsp;nova系列</a></p>
-                        <p><a href="#">HUAWEI&nbsp;麦芒系列</a></p>
-                        <p><a href="#">华为畅享系列</a></p>
-                        <p class="meta"><a href="#">合约机</a></p>
-                    </div>
-                </div>
-                <div class="list_b">
-                    <div class="b_cp">
-                        <img src="holder.js/161x170?bg=#acd">
-                        <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;10</a></h5>
-                        <h5 class="mo"><a href="#">&yen;3899</a></h5>
-                    </div>
-                    <div class="b_cp">
-                        <img src="holder.js/161x170?bg=#acd">
-                        <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;10</a></h5>
-                        <h5 class="mo"><a href="#">&yen;3899</a></h5>
-                    </div>
-                    <div class="b_cp">
-                        <img src="holder.js/161x170?bg=#acd">
-                        <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;10</a></h5>
-                        <h5 class="mo"><a href="#">&yen;3899</a></h5>
-                    </div>
-                    <div class="b_cp b_cp1">
-                        <img src="holder.js/161x170?bg=#acd">
-                        <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;10</a></h5>
-                        <h5 class="mo"><a href="#">&yen;3899</a></h5>
-                    </div>
-                </div>
-            </div>
-            <div class="list">
-                <div class="list_t">
-                    <p class="liu"><a href="#">浏览笔记本&nbsp;&&nbsp;平板频道</a></p>
-                    <p class="col-md-offset-8"><a href="#">></a></p>
-                </div>
-                <div class="list_c">
-                    <div class="c_zi">
-                        <p><a href="#">荣耀</a></p>
-                        <p><a href="#">HUAWEI&nbsp;P系列</a></p>
-                        <p><a href="#">荣耀畅玩系列</a></p>
-                        <p class="meta"><a href="#">HUAWEI&nbsp;Mate系列</a></p>
-                        <p><a href="#">HUAWEI&nbsp;nova系列</a></p>
-                        <p><a href="#">HUAWEI&nbsp;麦芒系列</a></p>
-                        <p><a href="#">华为畅享系列</a></p>
-                        <p class="meta"><a href="#">合约机</a></p>
-                    </div>
-                </div>
-                <div class="list_b">
-                    <div class="b_cp">
-                        <img src="holder.js/161x170?bg=#acd">
-                        <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;10</a></h5>
-                        <h5 class="mo"><a href="#">&yen;3899</a></h5>
-                    </div>
-                    <div class="b_cp">
-                        <img src="holder.js/161x170?bg=#acd">
-                        <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;10</a></h5>
-                        <h5 class="mo"><a href="#">&yen;3899</a></h5>
-                    </div>
-                    <div class="b_cp">
-                        <img src="holder.js/161x170?bg=#acd">
-                        <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;10</a></h5>
-                        <h5 class="mo"><a href="#">&yen;3899</a></h5>
-                    </div>
-                    <div class="b_cp b_cp1">
-                        <img src="holder.js/161x170?bg=#acd">
-                        <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;10</a></h5>
-                        <h5 class="mo"><a href="#">&yen;3899</a></h5>
-                    </div>
-                </div>
-            </div>
-            <div class="list">
-                <div class="list_t">
-                    <p class="liu"><a href="#">浏览穿戴频道</a></p>
-                    <p class="col-md-offset-9"><a href="#">></a></p>
-                </div>
-                <div class="list_c">
-                    <div class="c_zi">
-                        <p><a href="#">荣耀</a></p>
-                        <p><a href="#">HUAWEI&nbsp;P系列</a></p>
-                        <p><a href="#">荣耀畅玩系列</a></p>
-                        <p class="meta"><a href="#">HUAWEI&nbsp;Mate系列</a></p>
-                        <p><a href="#">HUAWEI&nbsp;nova系列</a></p>
-                        <p><a href="#">HUAWEI&nbsp;麦芒系列</a></p>
-                        <p><a href="#">华为畅享系列</a></p>
-                        <p class="meta"><a href="#">合约机</a></p>
-                    </div>
-                </div>
-                <div class="list_b">
-                    <div class="b_cp">
-                        <img src="holder.js/161x170?bg=#acd">
-                        <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;10</a></h5>
-                        <h5 class="mo"><a href="#">&yen;3899</a></h5>
-                    </div>
-                    <div class="b_cp">
-                        <img src="holder.js/161x170?bg=#acd">
-                        <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;10</a></h5>
-                        <h5 class="mo"><a href="#">&yen;3899</a></h5>
-                    </div>
-                    <div class="b_cp">
-                        <img src="holder.js/161x170?bg=#acd">
-                        <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;10</a></h5>
-                        <h5 class="mo"><a href="#">&yen;3899</a></h5>
-                    </div>
-                    <div class="b_cp b_cp1">
-                        <img src="holder.js/161x170?bg=#acd">
-                        <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;10</a></h5>
-                        <h5 class="mo"><a href="#">&yen;3899</a></h5>
-                    </div>
-                </div>
-            </div>
-            <div class="list">
-                <div class="list_t">
-                    <p class="liu"><a href="#">浏览智能家居频道</a></p>
-                    <p class="col-md-offset-8 col-md-1"><a href="#">></a></p>
-                </div>
-                <div class="list_c">
-                    <div class="c_zi">
-                        <p><a href="#">荣耀</a></p>
-                        <p><a href="#">HUAWEI&nbsp;P系列</a></p>
-                        <p><a href="#">荣耀畅玩系列</a></p>
-                        <p class="meta"><a href="#">HUAWEI&nbsp;Mate系列</a></p>
-                        <p><a href="#">HUAWEI&nbsp;nova系列</a></p>
-                        <p><a href="#">HUAWEI&nbsp;麦芒系列</a></p>
-                        <p><a href="#">华为畅享系列</a></p>
-                        <p class="meta"><a href="#">合约机</a></p>
-                    </div>
-                </div>
-                <div class="list_b">
-                    <div class="b_cp">
-                        <img src="holder.js/161x170?bg=#acd">
-                        <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;10</a></h5>
-                        <h5 class="mo"><a href="#">&yen;3899</a></h5>
-                    </div>
-                    <div class="b_cp">
-                        <img src="holder.js/161x170?bg=#acd">
-                        <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;10</a></h5>
-                        <h5 class="mo"><a href="#">&yen;3899</a></h5>
-                    </div>
-                    <div class="b_cp">
-                        <img src="holder.js/161x170?bg=#acd">
-                        <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;10</a></h5>
-                        <h5 class="mo"><a href="#">&yen;3899</a></h5>
-                    </div>
-                    <div class="b_cp b_cp1">
-                        <img src="holder.js/161x170?bg=#acd">
-                        <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;10</a></h5>
-                        <h5 class="mo"><a href="#">&yen;3899</a></h5>
-                    </div>
-                </div>
-            </div>
-            <div class="list">
-                <div class="list_t">
-                    <p class="liu"><a href="#">浏览通用配件频道</a></p>
-                    <p class="col-md-offset-8 col-md-1"><a href="#">></a></p>
-                </div>
-                <div class="list_c">
-                    <div class="c_zi">
-                        <p><a href="#">荣耀</a></p>
-                        <p><a href="#">HUAWEI&nbsp;P系列</a></p>
-                        <p><a href="#">荣耀畅玩系列</a></p>
-                        <p class="meta"><a href="#">HUAWEI&nbsp;Mate系列</a></p>
-                        <p><a href="#">HUAWEI&nbsp;nova系列</a></p>
-                        <p><a href="#">HUAWEI&nbsp;麦芒系列</a></p>
-                        <p><a href="#">华为畅享系列</a></p>
-                        <p class="meta"><a href="#">合约机</a></p>
-                    </div>
-                </div>
-                <div class="list_b">
-                    <div class="b_cp">
-                        <img src="holder.js/161x170?bg=#acd">
-                        <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;10</a></h5>
-                        <h5 class="mo"><a href="#">&yen;3899</a></h5>
-                    </div>
-                    <div class="b_cp">
-                        <img src="holder.js/161x170?bg=#acd">
-                        <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;10</a></h5>
-                        <h5 class="mo"><a href="#">&yen;3899</a></h5>
-                    </div>
-                    <div class="b_cp">
-                        <img src="holder.js/161x170?bg=#acd">
-                        <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;10</a></h5>
-                        <h5 class="mo"><a href="#">&yen;3899</a></h5>
-                    </div>
-                    <div class="b_cp b_cp1">
-                        <img src="holder.js/161x170?bg=#acd">
-                        <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;10</a></h5>
-                        <h5 class="mo"><a href="#">&yen;3899</a></h5>
-                    </div>
-                </div>
-            </div>
-            <div class="list">
-                <div class="list_t">
-                    <p class="liu"><a href="#">浏览专属配件频道</a></p>
-                    <p class="col-md-offset-8 col-md-1"><a href="#">></a></p>
-                </div>
-                <div class="list_c">
-                    <div class="c_zi">
-                        <p><a href="#">荣耀</a></p>
-                        <p><a href="#">HUAWEI&nbsp;P系列</a></p>
-                        <p><a href="#">荣耀畅玩系列</a></p>
-                        <p class="meta"><a href="#">HUAWEI&nbsp;Mate系列</a></p>
-                        <p><a href="#">HUAWEI&nbsp;nova系列</a></p>
-                        <p><a href="#">HUAWEI&nbsp;麦芒系列</a></p>
-                        <p><a href="#">华为畅享系列</a></p>
-                        <p class="meta"><a href="#">合约机</a></p>
-                    </div>
-                </div>
-                <div class="list_b">
-                    <div class="b_cp">
-                        <img src="holder.js/161x170?bg=#acd">
-                        <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;10</a></h5>
-                        <h5 class="mo"><a href="#">&yen;3899</a></h5>
-                    </div>
-                    <div class="b_cp">
-                        <img src="holder.js/161x170?bg=#acd">
-                        <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;10</a></h5>
-                        <h5 class="mo"><a href="#">&yen;3899</a></h5>
-                    </div>
-                    <div class="b_cp">
-                        <img src="holder.js/161x170?bg=#acd">
-                        <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;10</a></h5>
-                        <h5 class="mo"><a href="#">&yen;3899</a></h5>
-                    </div>
-                    <div class="b_cp b_cp1">
-                        <img src="holder.js/161x170?bg=#acd">
-                        <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;10</a></h5>
-                        <h5 class="mo"><a href="#">&yen;3899</a></h5>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
     <!-- 侧边选项卡结束 -->

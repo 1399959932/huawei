@@ -34,12 +34,27 @@ class CartController extends Controller
     	foreach($goods as $key => $value){
     		$value->detail = DB::table('goods')->where('id',$value->goods_id)->first();
     		$value->pic = DB::table('goods_pic')->where('goods_id',$value->goods_id)->value('pic');
+
+            $value->danjia = $value->detail->price * $value->num;
+            $value->zongjia = $value->danjia += $value->danjia;
     	}
 
-        // dd($goods);
+        // dd($goods->value->zongjia);
 
     	return view('home.remind.index', compact('goods'));
 
     	// dd($goods);
+    }
+
+    public function delete(Request $request)
+    {
+        //获取id
+        $id = $request->input('cid');
+        // 删除购物车内容
+        if(DB::table('carts')->where('id',$id)->delete()) {
+            echo 1;
+        }else{
+            echo "0";
+        }
     }
 }

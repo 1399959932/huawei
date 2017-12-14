@@ -1,10 +1,14 @@
 @extends('homes.public')
-@section('title')
-<title>详情</title>
-@show
+<link rel="stylesheet" type="text/css" href="/css/xq.css">
+<script type="text/javascript" src="/js/jquery-3.2.1.js"></script>
 <body data-spy="scroll" data-target="#navbar-example">
-    
-
+<script type="text/javascript">
+    $(function(){
+        $('.goods-title >.nav_choice > .ziti > ul > li').click(function(){
+            $(this).addClass("active").siblings("li").removeClass("active");
+        })
+    })
+</script>
 @section('content')
     <hr>
     <!-- 内容区开始 -->
@@ -81,7 +85,7 @@
         <!-- 商品标题 开始 -->
         <div class="right goods-title col-md-7">
             <!-- 标题 -->
-            <h2>HUAWEI Mate 10 保时捷设计 6GB+256GB 全网通版</h2>
+            <p class="biaoti">HUAWEI Mate 10 保时捷设计 6GB+256GB 全网通版</p>
             
             <h5 class="price">¥ 8999.00</h5>
             <hr>
@@ -96,44 +100,78 @@
             </ul>
             <div class="clearfix"></div>
             <hr>
-            <div class="nav_choice col-md-8">
+            <div class="nav_choice col-md-12">
                 <div class="ziti">
                     <h5>选择颜色</h5>
-                    <span></span>
+                    <ul class="list-unstyled list-inline ziti_ul">
+                        <li class="active" >
+                            <img src="holder.js/30x30">
+                            <a  title="香槟金">香槟金</a>
+                        </li>
+                        <li>
+                            <img src="holder.js/30x30">
+                            <a title="摩卡金">摩卡金</a>
+                        </li>
+                        <li>
+                            <img src="holder.js/30x30">
+                            <a title="亮黑色">亮黑色</a>
+                        </li>
+                        <li>
+                            <img src="holder.js/30x30">
+                            <a title="樱粉色">樱粉色</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="clearfix"></div>
                 <div class="ziti">
-                    <h5>选择颜色</h5>
-                    <span></span>
+                    <h5>选择制式</h5>
+                    <ul class="list-unstyled list-inline ziti_ul">
+                        <li>
+                            <a title="全网通版">全网通版</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="clearfix"></div>
                 <div class="ziti">
-                    <h5>选择颜色</h5>
-                    <span></span>
+                    <h5>选择容量</h5>
+                    <ul class="list-unstyled list-inline ziti_ul"> 
+                        <li>
+                            <a title="4GB+64GB">4GB+64GB</a>
+                        </li>
+                        <li>
+                            <a title="6GB+128GB">6GB+128GB</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="clearfix"></div>
                 <div class="ziti">
-                    <h5>选择颜色</h5>
-                    <span></span>
+                    <h5>选择套餐</h5>
+                    <ul class="list-unstyled list-inline ziti_ul">
+                        <li>
+                            <a title="官方标配">官方标配</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="clearfix"></div>
-                <div class="ziti">
-                    <h5>选择颜色</h5>
+                <div class="ziti ziti_2">
+                    <h5>保障服务</h5>
                     <div class="dropdown">
-                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="margin-left: 10px;background: #fff;">
                         可选保障服务
                         </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Separated link</a></li>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="height: 100px;">
+                            <li><a title="无需延保">延保：<span>无需延保</span></a></li>
+                            <li class="yanse"><a title="延长服务宝（半年期）">延长服务宝（半年期）¥98.00</a></li>
+                            <li class="yanse"><a title="终端延保服务（一年期）">终端延保服务（一年期）¥188.00</a></li>
+                            <li style="height: 40px;"></li>
+                            <li><a title="无需碎屏保">碎屏保：<span>无需碎屏保</span></a></li>
+                            <li class="yanse"><a title="碎屏服务宝（一年期）">碎屏服务宝（一年期）¥159.00</a></li>
                         </ul>
                         </div>
 
                 </div>
                 <div class="clearfix"></div>
-                <p>已选择商品:&nbsp;&nbsp;&nbsp;钻石黑 / 全网通版 / 6GB+256GB / 官方标配 </p>
+                <p class="tishi">已选择商品:&nbsp;&nbsp;&nbsp;钻石黑 / 全网通版 / 6GB+256GB / 官方标配</p>
                 <div class="time col-md-10">
                     <div class="zengjia">
                         <input type="text" class="jia_left" value="1">
@@ -143,6 +181,8 @@
                         </div>
                     </div>
                     <button class="inputs">加入购物车</button>
+                    <button class="inputs">立即下单</button>
+
                 </div>
             </div>
         </div>

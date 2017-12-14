@@ -31,9 +31,11 @@
 				<div class="top20"></div>
 				<div class="top20"></div>
 				@if(session('msg'))
+				{
 					<div class="alert alert-warning" role="alert">
 					  <a href="#" class="alert-link">{{$session('msg')}}</a>
 					</div>
+				}
 				@endif
 				<form class="form-horizontal" action="/login" method="post">
 				  <div class="form-group">

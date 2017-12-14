@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home.index');
 });
 
 
@@ -21,20 +21,21 @@ Route::get('/vcode', 'UserController@captcha');
 // 注册   
 Route::get('/zhuce','UserController@zhuce');
 Route::post('/zhuce','UserController@zhucet');
-
 Route::get('/message','CommonController@message');
-
 // 验证码
 Route::get('/zhuce/captcha/{tmp}', 'UserController@captcha');
 
+Route::get('/login','UserController@login');
 
 Route::get('/login','UserController@login');
 Route::post('/login','UserController@dologin');
 
 
 
+
 //分类
 Route::resource('/cate','CateController');
+
 
 
 // 商品管理
@@ -49,7 +50,17 @@ Route::group(['middleware'=> 'login'],function(){
 	// 购物且
 	Route::post('/cart','CartController@store');
 
+
 	Route::get('/cart','CartController@index');
+	Route::get('/cart/delete','CartController@delete');
+	//个人中心
+	 
+	//地址
+	Route::resource('/dizhi', 'AddressController');
+
+	//
+	Route::get('/getarea','AddressController@getArea');
+
 });
 
     // 陈结束
@@ -121,6 +132,21 @@ Route::resource('article','ArticleController');
 // 分类管理
 Route::resource('cate','CateController');
 
+
+//后台首页
+Route::get('/admin','Admincontroller@index');
+//后台登录
+Route::get('/admin/login','loginController@login');
+Route::post('/admin/login','LoginController@dologin');
+//后台用户
+Route::resource('/users','usersController');
+//后台分类
+Route::resource('/cate','catecontroller');
+//文章管理
+Route::resource('article','ArticleController');
+
+
+
 // 前台页面
 // 前页详情
 Route::get('/homes','XqController@xqym');
@@ -130,11 +156,26 @@ Route::get('/flym','FlController@fl');
 Route::get('/gwc','GwcController@gwcs');
 // 订单页面
 Route::get('/dingdan','DidanController@ddym');
+//前台列表页
+Route::get('/list','listcontroller@list');
+
+
+//h
+//前台首页
+Route::get('/homed','HomeController@index');
+//前台分类
+Route::get('/fen','FenController@classify');
+//个人中心
+Route::get('/geren','GerenController@person');
+//华为专区
+Route::get('/zqu','ZquController@prefe');
+//荣耀家族
+Route::get('/fam','Famcontroller@family');
+
+//h
+
+
 // 支付页面
 Route::get('/zhifu','ZhifuController@zfym');
-
-
-
-
 
 
