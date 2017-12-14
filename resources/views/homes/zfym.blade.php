@@ -1,9 +1,16 @@
-<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="/bootstrap/css/bootstrap-theme.min.css">
-<script type="text/javascript" src="/bootstrap/js/jquery.js"></script>
-<script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
-<script src="/bootstrap/js/holder.min.js"></script>
-<link rel="stylesheet" type="text/css" href="/css/zfym.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+		<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/bootstrap/css/bootstrap-theme.min.css">
+		<script type="text/javascript" src="/bootstrap/js/jquery.js"></script>
+		<script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+		<script src="/bootstrap/js/holder.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="/css/zfym.css">
+</head>
+<body>
 <!-- 支付页面 开始 -->
 	<div class="container">
 		<div class=" zhifu">
@@ -62,3 +69,5 @@
 		</div>
 	<!-- 尾部 结束 -->
 <!-- 支付页面 结束 -->
+</body>
+</html>

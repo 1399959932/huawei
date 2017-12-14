@@ -184,6 +184,21 @@
                     <button class="inputs">立即下单</button>
 
                 </div>
+                <div class="col-md-2">
+                    <div class="tishi_1">
+                        <div class="tishi_1_up">
+                            <img src="img/img5.png">
+                            <div class="up_dw">以旧换新,<span>最高可抵&yen;599</span></div>
+                        </div>
+                        <div class="tishi_1_bot">
+                            <img src="img/img6.png">
+                            <div class="bot_dw">
+                                <h5>用手机扫码进行购买</h5>
+                                <img src="img/img7.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- 商品标题 结束 -->
