@@ -12,15 +12,23 @@
     <link rel="stylesheet" type="text/css" href="/css/official.css">
     <script type="text/javascript">
     	$(function(){
+    		//圆圈
     		$(".chan > .container > .pin > ul > li").click(function(){
     			$(this).addClass("one").siblings(".chan > .container > .pin > ul > li").removeClass("one");
-
     		})
+
+
+    		//下拉菜单
+    		$(".nav > .container > .headers > .nav_menu > ul > .menu_1").click(function(){
+    			$('.drop').slideToggle('80');
+    		})
+    		
     	})
     </script>
 </head>
 <body>
 <!-- 头部部分开始 -->
+<div class="ed navbar-fixed-top">
 <div class="nav">
 	<div class="container">
 		<div class="headers">
@@ -33,29 +41,265 @@
 						<a href="#">智能手机</a>
 						<div class="drop">
 							<div class="container">
-								<div class="col-md-4 drop1" style="padding: 0px;">
-									<div class="drop1_zi">
-										<h2>HUAWEI<br>Mate&nbsp;10</h2>
-										<p></p>
-										<em>预见未来</em>
-									</div>
-									<img src="holder.js/306x373">
-									<span>
-										<a href="#">查看全部HUAWEI&nbsp;Mate系列</a>
-									</span>
+								<div class="dr_cha">
+									<span class="glyphicon glyphicon-remove col-md-offset-11 cha"></span>
 								</div>
-								<div class="col-md-4 drop1"></div>
-								<div class="col-md-4 drop1"></div>
+								<div class="dr_nr">
+									<div class="col-md-4 drop1" style="padding: 0px;">
+										<div class="drop1_zi">
+											<h2>HUAWEI<br>Mate&nbsp;10</h2>
+											<p></p>
+											<!-- <span>预见未来</span> -->
+										</div>
+										<div class="drop1_tu">
+											<img src="holder.js/179x254" style="margin-left: 64px;">
+										</div>
+										<div class="drop1_ck">
+											<a href="#">查看全部HUAWEI&nbsp;Mate系列</a>
+										</div>
+									</div>
+									<div class="col-md-4 drop1" style="padding: 0px;">
+										<div class="drop1_zi">
+											<h2>HUAWEI<br>P10</h2>
+											<p></p>
+											<!-- <span>人像摄影大师</span> -->
+										</div>
+										<div class="drop1_tu">
+											<img src="holder.js/179x254" style="margin-left: 64px;">
+										</div>
+										<div class="drop1_ck">
+											<a href="#">查看全部HUAWEI&nbsp;P系列</a>
+										</div>
+									</div>
+									<div class="col-md-4 drop1" style="padding: 0px;">
+										<div class="drop1_zi">
+											<h2>HUAWEI<br>nova&nbsp;2s</h2>
+											<p></p>
+											<!-- <span>高颜值&nbsp;爱自拍</span> -->
+										</div>
+										<div class="drop1_tu">
+											<img src="holder.js/179x254" style="margin-left: 64px;">
+										</div>
+										<div class="drop1_ck">
+											<a href="#">查看全部HUAWEI&nbsp;nova系列</a>
+										</div>
+									</div>
+								</div>
+								<div class="dr_foo">
+									<a href="#">查看全部智能手机</a>
+								</div>
 							</div>
 						</div>
 					</li>
-					<li><a href="#">笔记本&平板</a></li>
-					<li><a href="#">穿戴设备</a></li>
-					<li><a href="#">智能家居</a></li>
-					<li><a href="#">更多产品</a></li>
-					<li><a href="#">软件应用</a></li>
-					<li><a href="#">服务与支持</a></li>
-					<li><a href="#">华为商城</a></li>
+					<li class="menu_1">
+						<a href="#">笔记本&平板</a>
+						<div class="drop">
+							<div class="container">
+								<div class="dr_cha">
+									<span class="glyphicon glyphicon-remove col-md-offset-11 cha"></span>
+								</div>
+								<div class="dr_nr">
+									<div class="col-md-4 drop1" style="padding: 0px;">
+										<div class="drop1_zi">
+											<h2>HUAWEI<br>Mate&nbsp;10</h2>
+											<p></p>
+											<!-- <span>预见未来</span> -->
+										</div>
+										<div class="drop1_tu">
+											<img src="holder.js/179x254" style="margin-left: 64px;">
+										</div>
+										<div class="drop1_ck">
+											<a href="#">查看全部HUAWEI&nbsp;Mate系列</a>
+										</div>
+									</div>
+									<div class="col-md-4 drop1" style="padding: 0px;">
+										<div class="drop1_zi">
+											<h2>HUAWEI<br>P10</h2>
+											<p></p>
+											<!-- <span>人像摄影大师</span> -->
+										</div>
+										<div class="drop1_tu">
+											<img src="holder.js/179x254" style="margin-left: 64px;">
+										</div>
+										<div class="drop1_ck">
+											<a href="#">查看全部HUAWEI&nbsp;P系列</a>
+										</div>
+									</div>
+									<div class="col-md-4 drop1" style="padding: 0px;">
+										<div class="drop1_zi">
+											<h2>HUAWEI<br>nova&nbsp;2s</h2>
+											<p></p>
+											<!-- <span>高颜值&nbsp;爱自拍</span> -->
+										</div>
+										<div class="drop1_tu">
+											<img src="holder.js/179x254" style="margin-left: 64px;">
+										</div>
+										<div class="drop1_ck">
+											<a href="#">查看全部HUAWEI&nbsp;nova系列</a>
+										</div>
+									</div>
+								</div>
+								<div class="dr_foo">
+									<a href="#">查看全部笔记本&平板</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="menu_1">
+						<a href="#">穿戴设备</a>
+						<div class="drop">
+							<div class="container">
+								<div class="dr_cha">
+									<span class="glyphicon glyphicon-remove col-md-offset-11 cha"></span>
+								</div>
+								<div class="dr_nr">
+									<div class="col-md-4 drop1" style="padding: 0px;">
+										<div class="drop1_zi">
+											<h2>HUAWEI<br>Mate&nbsp;10</h2>
+											<p></p>
+											<!-- <span>预见未来</span> -->
+										</div>
+										<div class="drop1_tu">
+											<img src="holder.js/179x254" style="margin-left: 64px;">
+										</div>
+										<div class="drop1_ck">
+											<a href="#">查看全部HUAWEI&nbsp;Mate系列</a>
+										</div>
+									</div>
+									<div class="col-md-4 drop1" style="padding: 0px;">
+										<div class="drop1_zi">
+											<h2>HUAWEI<br>P10</h2>
+											<p></p>
+											<!-- <span>人像摄影大师</span> -->
+										</div>
+										<div class="drop1_tu">
+											<img src="holder.js/179x254" style="margin-left: 64px;">
+										</div>
+										<div class="drop1_ck">
+											<a href="#">查看全部HUAWEI&nbsp;P系列</a>
+										</div>
+									</div>
+									<div class="col-md-4 drop1" style="padding: 0px;">
+										<div class="drop1_zi">
+											<h2>HUAWEI<br>nova&nbsp;2s</h2>
+											<p></p>
+											<!-- <span>高颜值&nbsp;爱自拍</span> -->
+										</div>
+										<div class="drop1_tu">
+											<img src="holder.js/179x254" style="margin-left: 64px;">
+										</div>
+										<div class="drop1_ck">
+											<a href="#">查看全部HUAWEI&nbsp;nova系列</a>
+										</div>
+									</div>
+								</div>
+								<div class="dr_foo">
+									<a href="#">查看全部穿戴设备</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="menu_1">
+						<a href="#">智能家居</a>
+						<div class="drop">
+							<div class="container">
+								<div class="dr_cha">
+									<span class="glyphicon glyphicon-remove col-md-offset-11 cha"></span>
+								</div>
+								<div class="dr_nr">
+									<div class="col-md-4 drop1" style="padding: 0px;">
+										<div class="drop1_zi">
+											<h2>HUAWEI<br>Mate&nbsp;10</h2>
+											<p></p>
+											<!-- <span>预见未来</span> -->
+										</div>
+										<div class="drop1_tu">
+											<img src="holder.js/179x254" style="margin-left: 64px;">
+										</div>
+										<div class="drop1_ck">
+											<a href="#">查看全部HUAWEI&nbsp;Mate系列</a>
+										</div>
+									</div>
+									<div class="col-md-4 drop1" style="padding: 0px;">
+										<div class="drop1_zi">
+											<h2>HUAWEI<br>P10</h2>
+											<p></p>
+											<!-- <span>人像摄影大师</span> -->
+										</div>
+										<div class="drop1_tu">
+											<img src="holder.js/179x254" style="margin-left: 64px;">
+										</div>
+										<div class="drop1_ck">
+											<a href="#">查看全部HUAWEI&nbsp;P系列</a>
+										</div>
+									</div>
+									<div class="col-md-4 drop1" style="padding: 0px;">
+										<div class="drop1_zi">
+											<h2>HUAWEI<br>nova&nbsp;2s</h2>
+											<p></p>
+											<!-- <span>高颜值&nbsp;爱自拍</span> -->
+										</div>
+										<div class="drop1_tu">
+											<img src="holder.js/179x254" style="margin-left: 64px;">
+										</div>
+										<div class="drop1_ck">
+											<a href="#">查看全部HUAWEI&nbsp;nova系列</a>
+										</div>
+									</div>
+								</div>
+								<div class="dr_foo">
+									<a href="#">查看全部智能家居</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="menu_1">
+						<a href="#">更多产品</a>
+						<div class="drop">
+							<div class="container">
+								<div class="dr_cha">
+									<span class="glyphicon glyphicon-remove col-md-offset-11 cha"></span>
+								</div>
+								<div class="dr_nr">
+									<div class="col-md-6 drop1" style="padding: 0px; margin-left: 230px;">
+										<div class="drop1_zi">
+											<h2>HUAWEI<br>Mate&nbsp;10</h2>
+											<p></p>
+											<!-- <span>预见未来</span> -->
+										</div>
+										<div class="drop1_tu">
+											<img src="holder.js/179x254" style="margin-left: 64px;">
+										</div>
+										<div class="drop1_ck">
+											<a href="#">查看全部HUAWEI&nbsp;Mate系列</a>
+										</div>
+									</div>
+									<div class="col-md-6 drop1" style="padding: 0px;">
+										<div class="drop1_zi">
+											<h2>HUAWEI<br>P10</h2>
+											<p></p>
+											<!-- <span>人像摄影大师</span> -->
+										</div>
+										<div class="drop1_tu">
+											<img src="holder.js/179x254" style="margin-left: 64px;">
+										</div>
+										<div class="drop1_ck">
+											<a href="#">查看全部HUAWEI&nbsp;P系列</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="menu_1">
+						<a href="#">软件应用</a>
+					</li>
+					<li class="menu_1">
+						<a href="#">服务与支持</a>
+					</li>
+					<li class="menu_1">
+						<a href="#">华为商城</a>
+					</li>
 				</ul>
 			</div>
 			<div class="nav_ss">
@@ -64,9 +308,10 @@
 		</div>
 	</div>
 </div>
+</div>
 <!-- 头部部分结束 -->
 <!-- logo部分开始 -->
-<div class="logo">
+<!-- <div class="logo">
 	<div class="tu">
 		<img src="holder.js/100px560?bg=#fea">
 		<div class="btns col-md-offset-3">
@@ -74,7 +319,7 @@
 			<span class="col-md-3" style="margin-left: 0px;"><a href="#">HUAWEI&nbsp;Mate&nbsp;10&nbsp;Pro</a></span>
 		</div>
 	</div>
-</div>
+</div> -->
 <!-- logo部分结束 -->
 <!-- 产品部分开始 -->
 <div class="chan">

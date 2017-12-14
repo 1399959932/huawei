@@ -178,7 +178,7 @@ class GoodsController extends Controller
         }
     }
 
-    public function gdlist(){
+    public function classify(){
         //读取商品
         $goods = DB::table('goods')->where('status',1)
         ->select('id','title','price')->orderBy('id','desc')->paginate(20);
@@ -190,6 +190,7 @@ class GoodsController extends Controller
         }
         // dd($goods);
         //模板
-        return view('home.goods.list',compact('goods'));
+        // return view('home.goods.list',compact('goods'));
+        return view('home.classify',compact('goods'));
     }
 }

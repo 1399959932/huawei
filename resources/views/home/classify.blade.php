@@ -27,7 +27,7 @@
 <!-- 导航条部分开始 -->
     @section('header')
     <!-- 导航分类开始 -->
-    	<div class="col-md-9 nav_title">
+    <div class="col-md-9 nav_title">
         <ul class="nav_cen  list-unstyled">
             <li class="active">
                 <a href="#">手机</a>
@@ -360,7 +360,7 @@
                 </div>
             </li>
         </ul>
-    	</div>
+    </div>
     <!-- 导航分类结束 -->
     @endsection
 <!-- 导航条部分结束 -->
@@ -404,10 +404,11 @@
 <!-- 内容图片部分开始 -->
 <div class="theme">
 	<div class="container">
-		<div class="col-md-2 theme_1" style="padding: 0px;">
-			<img src="holder.js/210x245?gb=#fea">
-			<h5><a href="#">华为路由器WS5100（白色）</a></h5>
-			<h3>&yen;159</h3>
+        @foreach($goods as $k=>$v)
+		<div class="col-md-2 theme_1" style="padding: 0px; margin-right: 15px;">
+			<img src="{{$v->pic}}" style="width: 180px;height: 180px;margin-left: 21px;margin-top: 38px;">
+			<h5><a href="#">{{$v->title}}</a></h5>
+			<h3>&yen;{{$v->price}}</h3>
 			<div class="dib">
 				<button class="xg">选购</button>
 				<ul>
@@ -415,215 +416,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="col-md-2 theme_1" style="padding: 0px; margin-left: 20px;">
-			<img src="holder.js/210x245?gb=#fea">
-			<h5><a href="#">华为路由器WS5100（白色）</a></h5>
-			<h3>&yen;159</h3>
-			<div class="dib">
-				<button class="xg">选购</button>
-				<ul>
-					<li class="pj">6人评价</li>
-				</ul>
-			</div>
-		</div>
-		<div class="col-md-2 theme_1" style="padding: 0px; margin-left: 20px;">
-			<img src="holder.js/210x245?gb=#fea">
-			<h5><a href="#">华为路由器WS5100（白色）</a></h5>
-			<h3>&yen;159</h3>
-			<div class="dib">
-				<button class="xg">选购</button>
-				<ul>
-					<li class="pj">6人评价</li>
-				</ul>
-			</div>
-		</div>
-		<div class="col-md-2 theme_1" style="padding: 0px; margin-left: 20px;">
-			<img src="holder.js/210x245?gb=#fea">
-			<h5><a href="#">华为路由器WS5100（白色）</a></h5>
-			<h3>&yen;159</h3>
-			<div class="dib">
-				<button class="xg">选购</button>
-				<ul>
-					<li class="pj">6人评价</li>
-				</ul>
-			</div>
-		</div>
-		<div class="col-md-2 theme_1" style="padding: 0px; margin-left: 20px;">
-			<img src="holder.js/210x245?gb=#fea">
-			<h5><a href="#">华为路由器WS5100（白色）</a></h5>
-			<h3>&yen;159</h3>
-			<div class="dib">
-				<button class="xg">选购</button>
-				<ul>
-					<li class="pj">6人评价</li>
-				</ul>
-			</div>
-		</div>
-		<div class="col-md-2 theme_1" style="padding: 0px; margin-top: 18px;">
-			<img src="holder.js/210x245?gb=#fea">
-			<h5><a href="#">华为路由器WS5100（白色）</a></h5>
-			<h3>&yen;159</h3>
-			<div class="dib">
-				<button class="xg">选购</button>
-				<ul>
-					<li class="pj">6人评价</li>
-				</ul>
-			</div>
-		</div>
-		<div class="col-md-2 theme_1" style="padding: 0px; margin-top: 18px; margin-left: 20px;">
-			<img src="holder.js/210x245?gb=#fea">
-			<h5><a href="#">华为路由器WS5100（白色）</a></h5>
-			<h3>&yen;159</h3>
-			<div class="dib">
-				<button class="xg">选购</button>
-				<ul>
-					<li class="pj">6人评价</li>
-				</ul>
-			</div>
-		</div>
-		<div class="col-md-2 theme_1" style="padding: 0px; margin-top: 18px; margin-left: 20px;">
-			<img src="holder.js/210x245?gb=#fea">
-			<h5><a href="#">华为路由器WS5100（白色）</a></h5>
-			<h3>&yen;159</h3>
-			<div class="dib">
-				<button class="xg">选购</button>
-				<ul>
-					<li class="pj">6人评价</li>
-				</ul>
-			</div>
-		</div>
-		<div class="col-md-2 theme_1" style="padding: 0px; margin-top: 18px; margin-left: 20px;">
-			<img src="holder.js/210x245?gb=#fea">
-			<h5><a href="#">华为路由器WS5100（白色）</a></h5>
-			<h3>&yen;159</h3>
-			<div class="dib">
-				<button class="xg">选购</button>
-				<ul>
-					<li class="pj">6人评价</li>
-				</ul>
-			</div>
-		</div>
-		<div class="col-md-2 theme_1" style="padding: 0px; margin-top: 18px; margin-left: 20px;">
-			<img src="holder.js/210x245?gb=#fea">
-			<h5><a href="#">华为路由器WS5100（白色）</a></h5>
-			<h3>&yen;159</h3>
-			<div class="dib">
-				<button class="xg">选购</button>
-				<ul>
-					<li class="pj">6人评价</li>
-				</ul>
-			</div>
-		</div>
-		<div class="col-md-2 theme_1" style="padding: 0px; margin-top: 18px;">
-			<img src="holder.js/210x245?gb=#fea">
-			<h5><a href="#">华为路由器WS5100（白色）</a></h5>
-			<h3>&yen;159</h3>
-			<div class="dib">
-				<button class="xg">选购</button>
-				<ul>
-					<li class="pj">6人评价</li>
-				</ul>
-			</div>
-		</div>
-		<div class="col-md-2 theme_1" style="padding: 0px; margin-top: 18px; margin-left: 20px;">
-			<img src="holder.js/210x245?gb=#fea">
-			<h5><a href="#">华为路由器WS5100（白色）</a></h5>
-			<h3>&yen;159</h3>
-			<div class="dib">
-				<button class="xg">选购</button>
-				<ul>
-					<li class="pj">6人评价</li>
-				</ul>
-			</div>
-		</div>
-		<div class="col-md-2 theme_1" style="padding: 0px; margin-top: 18px; margin-left: 20px;">
-			<img src="holder.js/210x245?gb=#fea">
-			<h5><a href="#">华为路由器WS5100（白色）</a></h5>
-			<h3>&yen;159</h3>
-			<div class="dib">
-				<button class="xg">选购</button>
-				<ul>
-					<li class="pj">6人评价</li>
-				</ul>
-			</div>
-		</div>
-		<div class="col-md-2 theme_1" style="padding: 0px; margin-top: 18px; margin-left: 20px;">
-			<img src="holder.js/210x245?gb=#fea">
-			<h5><a href="#">华为路由器WS5100（白色）</a></h5>
-			<h3>&yen;159</h3>
-			<div class="dib">
-				<button class="xg">选购</button>
-				<ul>
-					<li class="pj">6人评价</li>
-				</ul>
-			</div>
-		</div>
-		<div class="col-md-2 theme_1" style="padding: 0px; margin-top: 18px; margin-left: 20px;">
-			<img src="holder.js/210x245?gb=#fea">
-			<h5><a href="#">华为路由器WS5100（白色）</a></h5>
-			<h3>&yen;159</h3>
-			<div class="dib">
-				<button class="xg">选购</button>
-				<ul>
-					<li class="pj">6人评价</li>
-				</ul>
-			</div>
-		</div>
-		<div class="col-md-2 theme_1" style="padding: 0px; margin-top: 18px;">
-			<img src="holder.js/210x245?gb=#fea">
-			<h5><a href="#">华为路由器WS5100（白色）</a></h5>
-			<h3>&yen;159</h3>
-			<div class="dib">
-				<button class="xg">选购</button>
-				<ul>
-					<li class="pj">6人评价</li>
-				</ul>
-			</div>
-		</div>
-		<div class="col-md-2 theme_1" style="padding: 0px; margin-top: 18px; margin-left: 20px;">
-			<img src="holder.js/210x245?gb=#fea">
-			<h5><a href="#">华为路由器WS5100（白色）</a></h5>
-			<h3>&yen;159</h3>
-			<div class="dib">
-				<button class="xg">选购</button>
-				<ul>
-					<li class="pj">6人评价</li>
-				</ul>
-			</div>
-		</div>
-		<div class="col-md-2 theme_1" style="padding: 0px; margin-top: 18px; margin-left: 20px;">
-			<img src="holder.js/210x245?gb=#fea">
-			<h5><a href="#">华为路由器WS5100（白色）</a></h5>
-			<h3>&yen;159</h3>
-			<div class="dib">
-				<button class="xg">选购</button>
-				<ul>
-					<li class="pj">6人评价</li>
-				</ul>
-			</div>
-		</div>
-		<div class="col-md-2 theme_1" style="padding: 0px; margin-top: 18px; margin-left: 20px;">
-			<img src="holder.js/210x245?gb=#fea">
-			<h5><a href="#">华为路由器WS5100（白色）</a></h5>
-			<h3>&yen;159</h3>
-			<div class="dib">
-				<button class="xg">选购</button>
-				<ul>
-					<li class="pj">6人评价</li>
-				</ul>
-			</div>
-		</div>
-		<div class="col-md-2 theme_1" style="padding: 0px; margin-top: 18px; margin-left: 20px;">
-			<img src="holder.js/210x245?gb=#fea">
-			<h5><a href="#">华为路由器WS5100（白色）</a></h5>
-			<h3>&yen;159</h3>
-			<div class="dib">
-				<button class="xg">选购</button>
-				<ul>
-					<li class="pj">6人评价</li>
-				</ul>
-			</div>
-		</div>
+        @endforeach
 		<nav class="pull-right" style="margin-top: 20px;">
 		  	<ul class="pagination">
 			    <li>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<style type="text/css">
+		#abc{
+			height:200px;
+			width:200px;
+			background-color: #abc
+		}
+	</style>
+</head>
+<body>
+	<button>点击显示和隐藏元素</button>
+	<div id="abc"></div>
+	<script type="text/javascript">
+		$('button').click(function(){
+			$('#abc').fadeToggle('slow');
+		})
+	</script>
+</body>
+</html>
