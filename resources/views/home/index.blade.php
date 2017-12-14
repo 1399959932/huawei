@@ -14,17 +14,9 @@
         $(function(){
         //侧边导航栏
             $(".cebi > ul > li").hover(function(){
-<<<<<<< HEAD
-                $(".cebi > .content").show();
-                $(".cebi > .content > .list").eq($(this).index()).show().siblings("list").hide();
-            },function(){
-                $(".cebi > .content").hide();
-                $(".cebi > .content > .list").eq($(this).index()).hide();
-=======
                 $(this).find('.list').show();
             }).mouseleave(function(){
-                $(this).find('.list').hide();              
->>>>>>> 8cbf1680ec9f300c3b9d915e6b13f91e5cdf4b38
+                $(this).find('.list').hide();
             })
                             
         // 滚动条
@@ -52,7 +44,6 @@
 </head>
 <body>
 <!-- 导航条部分开始 -->
-@section('header')
 <div class="header">
     <!-- 头部开始 -->
     <div class="container">
@@ -72,15 +63,27 @@
             <li class="xian"><a href="#"></a></li>
             <li><a href="#">SelectRegion</a></li>
             <li class="xian"><a href="#"></a></li>
-            <select>
-                <option>更多精彩</option>
-            </select>
+            <li class="xia">
+                <a href="#">更多精彩</a>
+                <div class="xiala">
+                    <ul class="list-unstyled">
+                        <li><a href="#">EMUI</a></li>
+                        <li><a href="#">应用市场</a></li>
+                        <li><a href="#">云服务</a></li>
+                        <li><a href="#">开发者联盟</a></li>
+                    </ul>
+                    <img src="./img/img4.png">
+                    <h5>扫一扫,下载客户端</h5>
+                </div>
+            </li>
         </ul>
         </div>
         <div class="col-md-6 nav-right">
         <ul class="nav_ul list-unstyled">
-            <li class="dl"><a href="#">请登录</a></li>
-            <li><a href="#">注册</a></li>
+            @section('gr')
+                <li class="dl"><a href="#">请登录</a></li>
+                <li><a href="#">注册</a></li>
+            @show
             <li class="xian"><a href="#"></a></li>
             <li><a href="#">我的订单</a></li>
             <li class="xian"><a href="#"></a></li>
@@ -93,6 +96,7 @@
             <img src="holder.js/210x55?bg=#fac&text=logo" alt="">
         </div>
     <!-- logo结束 -->
+    @section('header')
     <!-- 导航分类开始 -->
     <div class="col-md-9 nav_title" style="padding: 0px;">
         <ul class="nav_cen  list-unstyled">
@@ -117,6 +121,7 @@
         </ul>
     </div>
     <!-- 导航分类结束 -->
+    @show
     <!-- 导航搜索开始 -->
     <div class="search col-md-3 pull-right">
         <div class="input-group">
@@ -130,7 +135,6 @@
     </div>
     <!-- 头部结束 -->
 </div>
-@show
 <!-- 导航条部分结束 -->
 @section('content')
 

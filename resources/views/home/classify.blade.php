@@ -25,49 +25,7 @@
 </head>
 <body>
 <!-- 导航条部分开始 -->
-@section('header')
-<div class="header">
-    <!-- 头部开始 -->
-    <div class="container">
-        <div class="col-md-12 nav">
-	        <ul class="nav_ul  list-unstyled">
-	            <li><a href="#">华为官网</a></li>
-	            <li class="xian"><a href="#"></a></li>
-	            <li><a href="#">荣耀官网</a></li>
-	            <li class="xian"><a href="#"></a></li>
-	            <li><a href="#">花粉俱乐部</a></li>
-	            <li class="xian"><a href="#"></a></li>
-	            <li><a href="#">帮助中心</a></li>
-	            <li class="xian"><a href="#"></a></li>
-	            <li><a href="#">v码(优购码)</a></li>
-	            <li class="xian"><a href="#"></a></li>
-	            <li><a href="#">企业购</a></li>
-	            <li class="xian"><a href="#"></a></li>
-	            <li><a href="#">SelectRegion</a></li>
-	            <li class="xian"><a href="#"></a></li>
-	            <select>
-	                <option>更多精彩</option>
-	            </select>
-	        </ul>
-        </div>
-        <div class="col-md-6 nav-right">
-	        <ul class="nav_ul list-unstyled">
-	        	@section('gr')
-	            <li class="dl"><a href="#">请登录</a></li>
-	            <li><a href="#">注册</a></li>
-	            @show
-	            <li class="xian"><a href="#"></a></li>
-	            <li><a href="#">我的订单</a></li>
-	            <li class="xian"><a href="#"></a></li>
-	            <li><a href="#">购物车(0)</a></li>
-	        </ul>
-        </div>
-        <div class="clearfix"></div>
-    <!-- logo开始 -->
-        <div class="col-md-3" style="padding: 0px; margin-top: 18px;">
-            <img src="holder.js/210x55?bg=#fac&text=logo" alt="">
-        </div>
-    <!-- logo结束 -->
+    @section('header')
     <!-- 导航分类开始 -->
     	<div class="col-md-9 nav_title">
         <ul class="nav_cen  list-unstyled">
@@ -404,20 +362,7 @@
         </ul>
     	</div>
     <!-- 导航分类结束 -->
-    <!-- 导航搜索开始 -->
-    	<div class="search col-md-3 pull-right">
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search for...">
-                <span class="input-group-btn">
-                    <button class="btn btn-default" type="button">Go!</button>
-                </span>
-        </div>
-    	</div>
-    <!-- 导航搜索结束 -->
-    </div>
-    <!-- 头部结束 -->
-</div> 
-@endsection
+    @endsection
 <!-- 导航条部分结束 -->
 <!-- 内容部分开始 -->
 @section('content')
