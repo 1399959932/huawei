@@ -35,9 +35,10 @@ Route::post('/login','UserController@dologin');
 // 商品管理
 Route::get('/goods/list','GoodsController@gdlist');
 Route::resource('/goods','GoodsController');
+Route::get('/fenlei','GoodsController@glist');
 
 
-    // 陈结束
+ // 陈结束
 
 
 

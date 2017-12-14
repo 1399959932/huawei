@@ -53,7 +53,7 @@ class GoodsController extends Controller
     public function store(Request $request)
 
     {   
-
+        // dd($request->all());
         $data = $request->only(['title','kucun','price','content']);
 
 
@@ -81,6 +81,7 @@ class GoodsController extends Controller
                 $images[] = $tmp;
                 $data['profile'] = trim($dir.'/'.$name,'.');
                 }
+                // dd($images);
             DB::table('goods_pic')->insert($images);
             }
             return redirect('/goods')->with('msg','添加成功');
@@ -178,18 +179,26 @@ class GoodsController extends Controller
         }
     }
 
-    public function gdlist(){
+    public function glist(){
         //读取商品
-        $goods = DB::table('goods')->where('status',1)
-        ->select('id','title','price')->orderBy('id','desc')->paginate(20);
+
+        $goods = DB::table('goods')
+        ->where('status',1)
+        ->select('id','title','price')
+        ->orderBy('id','desc')
+        ->paginate(20);
         
         //便利商品信息
-        foreach ($goods as $key => $value) {
+        foreach ($goods as $key => &$value) {
             $value->pic = DB::table('goods_pic')
-            ->where('goods_id',$value->id)->value('pic');
+            ->where('goods_id',$value->id)
+            ->value('pic');
         }
         // dd($goods);
+
+        $cates = DB::table('cate');
         //模板
-        return view('home.goods.list',compact('goods'));
+        return view('homes.fl',compact('goods'));
     }
 }
+
