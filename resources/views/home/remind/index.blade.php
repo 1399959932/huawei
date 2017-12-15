@@ -5,6 +5,7 @@
 @section('header')
 <link rel="stylesheet" type="text/css" href="/css/ddym.css">
 <link rel="stylesheet" type="text/css" href="/css/gwc.css">
+<style>.height{height:auto;}.top10{height:10px;}</style>
 
 <script type="text/javascript" src="/js/jquery-3.2.1.js"></script>
 <script type="text/javascript" src="/js/fl.js"></script>
@@ -71,25 +72,46 @@
 @section('content')
 
 <div class="qrdd" style="height: auto;" >
-    <form action="/cart/geren" method="post">
-	<div class="container bg-success" >
-		<div class="col-md-12 qrdd_up" >  
+    
+	<div class="container" >
+		<div class="col-md-12 qrdd_up container-fluid" style="height: auto;" >  
 
 			<p>收货地址</p>
-			<div class="col-md-4 " id="dizhi">
+			<div class="col-md-3 height" id="dizhi" style="border: 1px solid #ccc; height: 162px;">
 				<h5><a href="/dizhi">+新增收货地址</a></h5>
 			</div>
-
-            <div class="col-md-4 ">
+            @foreach($dizhi as $k=>$v)
+            <a href="/zhifu"><div class="col-md-3 height" style="border: 1px solid #ccc;box-sizing: border-box; margin-bottom: 10px; height: 162px; ">
                 
-            </div>
+
+                <address>
+                    <form action="/dizhi" method="post">
+                     <button type="submit" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                     {{csrf_field()}}
+                     {{method_field('DELETE')}}
+                    </form>
+                  <strong>{{$v->name}}</strong><br>
+                  {{$v->tel}}<br>
+                  {{$v->pname}}{{$v->cname}}{{$v->xname}}{{$v->detail}}<br>
+                  <abbr title="Phone">邮编:</abbr> {{$v->province}}
+                </address>
+
+                <address>
+                  <strong>Name</strong><br>
+                  <a href="mailto:#">1399959932@qq.com</a>
+                </address>
+            </div></a>
+
+            @endforeach
+
+
 
 		</div>
 		
 		<div class="clearfix"></div>
 		
 		<div class="col-md-12 qrdd_cen" style="height: auto;">
-			<div class="cen_left bg-info" style="height: auto;">
+			<div class=" bg-info col-md-12" style="height: auto; ">
          <div class="left_top">
              <p>发票信息 &nbsp;<span>注：如果商品由第三方卖家销售，发票内容由其卖家决定，发票由卖家开具并寄出</span>
              </p>
@@ -101,26 +123,31 @@
          </div>    
          <ul class="col-md-12 jk">
              <li class="col-md-3 col-md-offset-1">商品图片</li>
-             <li class="col-md-4">商品名称</li>
+             <li class="col-md-3">商品名称</li>
              <li class="col-md-2">商品数量</li>
              <li class="col-md-1">小结</li>
 
          </ul>
+         <form action="/dingdan/zhifu" method="post"> 
          @foreach($goods as $k=>$v)   
-         <table class="left_cen col-md-12">
+         <table class="left_cen col-md-12" style="padding-bottom: 30px;">
             <tr class="list-unstyled list-inline ">
                 <th scope="row" >
-                    <input type="checkbox" name="goods_id[]" value="{{$v->id}}" style="margin-left: 30px;">
+                    <input type="checkbox" name="data[{{$v->id}}][id]" value="{{$v->id}}"  >
                 </th>
+                <div class="clearfix"></div><div class="top10"></div>
                 <td class="col-md-3 text-center"><a href="/goods/{{$v->detail->id}}"><img src="{{$v->pic}}" width="140" height="80"></a></ta>
              
                  <td class="col-md-4"><a href="/goods/{{$v->detail->id}}">{{$v->detail->title}}</a></td>
-                 <td class="shu col-md-1">{{$v->num}}</td>
+                 <td class="shu col-md-1">
+                    <input type="text" name="data[{{$v->id}}][num]" value="{{$v->num}}" class="" style="width: 30px;">
+                </td>
+
                  <td class="jinqian col-md-2">&yen;{{$v->danjia}}</td>
 
                  <td> 
                     <i cid="{{$v->id}}"  class="delete" style="cursor: pointer;"> 
-                     删除</i>
+                     删除2</i>
                  </td>                  
              </tr>
          </table>     
@@ -140,7 +167,7 @@
          </div>       
       </div>
       
-      <div class="cen_right col-md-4">
+      <!-- <div class="cen_right col-md-4">
                 <div class="right_top">
                     <p>商品由<span>&nbsp;华为商城&nbsp;</span>选择合作快递</p>
                 </div>         
@@ -160,7 +187,7 @@
                 </div>         
             </div>
 			
-		</div> 
+		</div>  -->
         
         <div class="col-md-12 qrdd_bot">
             <div class="col-md-4 bot_left">
@@ -181,10 +208,15 @@
                     <li class="guize"><a href="#">积分使用规则</a></li>
                 </ul>
             </div>
+           
             <div class="col-md-3 bot_right pull-right">
-               
-                <p>应付总额：<span></span></p>
-                <input type="text" name="dizhi" value="无收货地址不可下单,点击填充">
+               <p>应付总额
+                <!-- <input type="hidden" name="zongjia" value="{{$v->danjia}}"/> ¥:{{$v->danjia}}.00 -->
+                @foreach($goods as $kk=>$vv)
+
+                @endforeach
+               </p>
+                <!-- <input type="text" name="dizhi" value="无收货地址不可下单,点击填充" -->
                 {{csrf_field()}}
                 <button type="submit">提交订单</button>
             </div>

@@ -26,9 +26,21 @@ class CartController extends Controller
 
     public function index()
     {
-    	//读取购物车中的内容
-    	$id = session('id');
-    	$goods = DB::table('carts')->where('user_id',$id)->get();
+    	
+        $dizhi = DB::table('address')->where('user_id',session('id'))->get();
+        
+            //读取收货地址
+            foreach($dizhi as $key=>$value){
+                $value->pname = DB::table('chinamap')->where('id',$value->province)->value('area_name');
+                $value->cname = DB::table('chinamap')->where('id',$value->city)->value('area_name');
+                $value->xname = DB::table('chinamap')->where('id',$value->xian)->value('area_name');
+
+            }
+            // dd($dizhi);
+
+        //读取购物车中的内容
+        $id = session('id');
+        $goods = DB::table('carts')->where('user_id',$id)->get();
 
     	//根据id来获取id的详细信息
     	foreach($goods as $key => $value){
@@ -36,12 +48,18 @@ class CartController extends Controller
     		$value->pic = DB::table('goods_pic')->where('goods_id',$value->goods_id)->value('pic');
 
             $value->danjia = $value->detail->price * $value->num;
-            $value->zongjia = $value->danjia += $value->danjia;
+            //$value->zongjiajia = $value->detail;
+
+            // $zongjia = [];
+            // $value->zongjia = $zongjia;
+            // $zongjia += $value->danjia;
+
     	}
 
         // dd($goods->value->zongjia);
 
-    	return view('home.remind.index', compact('goods'));
+
+    	return view('home.remind.index', compact('goods','dizhi'));
 
     	// dd($goods);
     }

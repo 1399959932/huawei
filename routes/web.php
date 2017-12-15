@@ -41,10 +41,13 @@ Route::resource('/cate','CateController');
 // 商品管理
 Route::get('/goods/list','GoodsController@gdlist');
 
-
+//pay get
+Route::get('/test','PayController@index');
 
 //后台路由组
 Route::group(['middleware'=> 'login'],function(){
+	//zhifu
+	Route::get('/dingdan/pay','DingdanController@pay');
 	//购物且添加商品
 	Route::resource('/goods','GoodsController');
 	// 购物且
@@ -54,6 +57,8 @@ Route::group(['middleware'=> 'login'],function(){
 	Route::get('/cart','CartController@index');
 	Route::get('/cart/delete','CartController@delete');
 	//个人中心
+	Route::post('/cart/geren','CartController@store');
+
 	 
 	//地址
 	Route::resource('/dizhi', 'AddressController');
@@ -61,7 +66,17 @@ Route::group(['middleware'=> 'login'],function(){
 	//
 	Route::get('/getarea','AddressController@getArea');
 
+	//订单
+	Route::post('/dingdan/zhifu','DingdanController@zhifu');
+	Route::resource('dingdan','DingdanController');
+
+	
+
+	//购物车
+
 });
+
+
 
     // 陈结束
 
@@ -155,7 +170,7 @@ Route::get('/flym','FlController@fl');
 // 购物车
 Route::get('/gwc','GwcController@gwcs');
 // 订单页面
-Route::get('/dingdan','DidanController@ddym');
+Route::get('/dingdan','DingdanController@index');
 //前台列表页
 Route::get('/list','listcontroller@list');
 

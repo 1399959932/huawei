@@ -42,13 +42,17 @@ class AddressController extends Controller
 
         $data['user_id'] = session('id');
 
+
+        
+
         //插入
         if (DB::table('address')->insert($data)) {
             return redirect('/cart')->with('msg','成功');
         }else{
             return back()->with('msg','orr');
         }
-        // return view('home.remind.index'); 
+        // dd($dizhi);
+        // return view('home.remind.index',['dizhi'=>$dizhi]);
 
 
     }
@@ -107,4 +111,5 @@ class AddressController extends Controller
         return $map->toJson();
 
     }
+
 }
