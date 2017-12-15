@@ -31,7 +31,6 @@
                             <label for="user-name" class="am-u-sm-3 am-form-label">分类名称</label>
                             <div class="am-u-sm-9">
                                 <input type="text" id="user-name" placeholder="姓名 / Name"  name="name">
-                                <small>输入你的名字，让我们记住你。</small>
                             </div>
                         </div>
                         <div class="am-form-group" style="position: relative;">

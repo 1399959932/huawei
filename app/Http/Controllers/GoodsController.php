@@ -26,6 +26,7 @@ class GoodsController extends Controller
             $goods = DB::table('goods')->paginate($num);
         }
 
+
         //解析模板
         return view('admin.goods.index',[
             'goods'=>$goods,
@@ -41,7 +42,10 @@ class GoodsController extends Controller
      */
     public function create()
     {
-        return view('admin.goods.create');
+
+      $cate = DB::table('cate')->get();
+
+        return view('admin.goods.create',['cate'=>$cate]);
     }
 
     /**
@@ -51,16 +55,14 @@ class GoodsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
+    {
 
-    {   
-
-        $data = $request->only(['title','kucun','price','content']);
-
+        $data = $request->only(['title','price','content','cate_id']);
 
         // 填充数据库数据
         $data['created_at'] = date('Y-m-d H:i:s');
         $data['status'] = 1;
-        $data['kucun'] =rand(1,100);
+        $data['kucun'] = rand(1000,2000);
         // dd($data);
         //插入表
         $res = DB::table('goods')->insertGetId($data);
@@ -83,12 +85,12 @@ class GoodsController extends Controller
                 }
             DB::table('goods_pic')->insert($images);
             }
-            return redirect('/goods')->with('msg','添加成功');
+            return redirect('/goods/create')->with('msg','添加成功');
         }else{
             return redirect('/goods')->with('msg','添加失败');
         }
 
-    }  
+    }
 
     /**
      * Display the specified resource.
@@ -121,8 +123,9 @@ class GoodsController extends Controller
      */
     public function edit($id)
     {
+        $cate = DB::table('cate')->get();
         $goods = DB::table('goods')->where('id',$id)->first();
-        return view('admin.goods.edit',['goods'=>$goods]);
+        return view('admin.goods.edit',['goods'=>$goods],['cate'=>$cate]);
     }
 
     /**
@@ -134,7 +137,7 @@ class GoodsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $data = $request->only(['title','price','kucun','content']);
+        $data = $request->only(['title','price','content','cate_id']);
         $data['status'] = 1;
         $res = DB::table('goods')->insertGetId($data);
         if($res > 0){
@@ -158,7 +161,7 @@ class GoodsController extends Controller
     }else{
         return redirect('/goods')->with('msg','修改失败');
 
-       
+
     }
 
     }
@@ -182,7 +185,7 @@ class GoodsController extends Controller
         //读取商品
         $goods = DB::table('goods')->where('status',1)
         ->select('id','title','price')->orderBy('id','desc')->paginate(20);
-        
+
         //便利商品信息
         foreach ($goods as $key => $value) {
             $value->pic = DB::table('goods_pic')
