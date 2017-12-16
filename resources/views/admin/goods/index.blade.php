@@ -1,25 +1,18 @@
-@extends('layouts.index')
+@extends('admin.index')
 
 @section('title')
 <title>商品列表</title>
 @endsection
 
-@section('ycbt')
+@section('content')
 <style>.border{border-radius: 30px;}</style>
 <script type="text/javascript" charset="utf-8" src="/plugins/ueditor/ueditor.config.js"></script>
 <script type="text/javascript" charset="utf-8" src="/plugins/ueditor/ueditor.all.min.js"> </script>
 <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
 <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
 <script type="text/javascript" charset="utf-8" src="/plugins/ueditor/lang/zh-cn/zh-cn.js"></script>
-<div class="tpl-content-wrapper">
-    <div class="tpl-content-page-title">
-         后台首页
-    </div>
-    <ol class="am-breadcrumb">
-        <li><a href="#" class="am-icon-home">首页</a></li>
-        <li><a href="#">购物车</a></li>
-        <li class="am-active">列表</li>
-    </ol>
+<div class="">
+    
     <!-- 提示框 -->
     <div class="tpl-content-scope">
 		
@@ -103,10 +96,10 @@
                     <tr role="row" class="odd">
                       <td class="sorting_1">{{$v->id}}</td>
                       <td>{{$v->title}}</td>
-                      <td>{{$v->kuchun}}</td>
-                      <td>{{$v->content}}</td>
+                      <td>{{$v->price}}</td>
+                      <td>{{$v->kucun}}</td>
                       <td>
-                        <a href="/goods/{{$v->id}}/edit" class="btn btn-info btn-sm pull-left" style="margin-right: 20px;margin-left: 30px;" >修改</a>
+                        <a href="/goods/{{$v->id}}/edit" class="btn btn-info btn-sm pull-left" style="margin-right: 10px;margin-left: 10px;" >修改</a>
 
                         <form action="/goods/{{$v->id}}" method="post">
                          <button class="btn btn-danger btn-sm " id="de"> 删除</button>

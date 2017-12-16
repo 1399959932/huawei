@@ -25,9 +25,9 @@ Route::get('/message','CommonController@message');
 // 验证码
 Route::get('/zhuce/captcha/{tmp}', 'UserController@captcha');
 
-Route::get('/login','UserController@login');
 
 Route::get('/login','UserController@login');
+
 Route::post('/login','UserController@dologin');
 
 
@@ -77,8 +77,12 @@ Route::group(['middleware'=> 'login'],function(){
 });
 
 
+Route::get('/fens','GoodsController@classify');
 
-    // 陈结束
+Route::get('/fenlei','GoodsController@glist');
+
+
+ // 陈结束
 
 
 
@@ -151,6 +155,9 @@ Route::resource('cate','CateController');
 //后台首页
 Route::get('/admin','Admincontroller@index');
 //后台登录
+
+Route::get('/admin/login','LoginController@login');
+
 Route::get('/admin/login','loginController@login');
 Route::post('/admin/login','LoginController@dologin');
 //后台用户
@@ -185,12 +192,18 @@ Route::get('/geren','GerenController@person');
 //华为专区
 Route::get('/zqu','ZquController@prefe');
 //荣耀家族
-Route::get('/fam','Famcontroller@family');
+Route::get('/fam','FamController@family');
+//华为官网
+Route::get('/hwgw','HwgwController@official');
+
+
 
 //h
 
 
 // 支付页面
 Route::get('/zhifu','ZhifuController@zfym');
+// 荣耀官网
+Route::get('/rygw','RygwController@ry');
 
 

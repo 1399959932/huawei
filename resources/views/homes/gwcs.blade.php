@@ -22,9 +22,19 @@
                 <li class="xian"><a href="#"></a></li>
                 <li><a href="#">SelectRegion</a></li>
                 <li class="xian"><a href="#"></a></li>
-                <select>
-                    <option>更多精彩</option>
-                </select>
+                <li class="xia">
+                    <a href="#">更多精彩</a>
+                    <div class="xiala">
+                        <ul class="list-unstyled">
+                            <li><a href="#">EMUI</a></li>
+                            <li><a href="#">应用市场</a></li>
+                            <li><a href="#">云服务</a></li>
+                            <li><a href="#">开发者联盟</a></li>
+                        </ul>
+                        <img src="./img/img4.png">
+                        <h5>扫一扫,下载客户端</h5>
+                    </div>
+                </li>
             </ul>
         </div>
         <div class="col-md-6 nav-right" style=" text-indent: 30px;">

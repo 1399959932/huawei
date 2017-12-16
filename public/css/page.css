@@ -12,8 +12,9 @@ body{
 /*导航条部分开始*/
 .header{
 	height: 105px;
-	background-color: #fff;
+	/*background-color: red;*/
 	margin: 0px auto;
+	position: relative;
 }
 .header .nav{
 	width: 620px;
@@ -29,13 +30,53 @@ body{
 	margin-left: 8px;
 	margin-right: 8px;
 }
+.header .nav_ul .xia{
+	position: relative;
+}
+.header .nav_ul .xiala{
+	width: 140px;
+	height: 280px;
+	background-color: #fff;
+	position: absolute;
+	top:30px;
+	left: -85px;
+	z-index: 999;
+	box-shadow: 0px 0px 2px 2px #ccc;
+	display: none;
+}
+.header .nav_ul .xiala ul{
+	width: 130px;
+	height: 127px;
+	margin: 5px;
+	/*background-color: red;*/
+	border-bottom: 1px solid #ccc;
+}
+.header .nav_ul .xiala ul li{
+	width: 137px;
+	height:25px;
+	/*background-color: pink;*/
+	line-height: 25px;
+	text-align: center;
+	margin-top: 5px;
+}
+.header .nav_ul .xia:hover > .xiala{
+	display: block;
+}
+.header .nav_ul .xiala img{
+	padding: 20px;
+	padding-left: 30px;
+	padding-bottom: 10px;
+}
+.header .nav_ul .xiala h5{
+	padding-left: 15px;
+}
 .header .nav_ul li{
 	float: left;
 }
 .header .nav_ul li a{
 	color: #a4a4a4;
     line-height: 30px;
-    font-size: 12px;
+    font-size: 13px;
     text-decoration: none;
 }
 .header .nav_ul li a:hover{
@@ -44,7 +85,7 @@ body{
 .header .nav_ul select{
 	border: none;
 	margin-top: 5px;
-	font-size: 12px;
+	font-size: 13px;
 	color: #a4a4a4;
 }
 .header .nav-right{
@@ -58,16 +99,17 @@ body{
 	margin-left: -10px;
 }
 .header .nav_title{
-	width: 510px;
+	width: 500px;
 	height: 60px;
 	/*background-color: yellow;*/
 	margin-top: 10px;
+	position: relative;
 }
 .header .nav_title .nav_cen li{
 	float: left;
 	margin-right: 16px;
 	line-height: 80px;
-	font-size: 16px;
+	font-size: 17px;
 }
 .header .nav_title .nav_cen li a{
 	color: #000;
@@ -76,6 +118,30 @@ body{
 .header .nav_title .nav_cen .active a:hover{
 	color: #ca141d;
 	border-bottom: 2px solid #ca141d;
+}
+.header .nav_title li .center{
+	width: 1173px;
+	height: 250px;
+	background-color: #fff;
+	box-shadow: 0px 0px 2px 3px #ccc;
+	position: absolute;
+	top: 80px;
+	left: -280px;
+	z-index: 999;
+	display: none;
+}
+.header .nav_title li .center ul li{
+	font-size: 13px;
+}
+.header .nav_title li .center h5{
+	text-align: center;
+}
+.header .nav_title li .center h6{
+	text-align: center;
+	color: #ca141b;
+}
+.header .nav_title li .center .lefts{
+	margin-left: 30px;
 }
 .header .search{
 	padding-top: 24px;

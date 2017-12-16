@@ -51,49 +51,45 @@ class GoodsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-        // dd($request->hasFile('pic'));
-        $data = $request->only(['title','kuchun','price','content']);
+
+    {   
+        // dd($request->all());
+        $data = $request->only(['title','kucun','price','content']);
+
 
         // 填充数据库数据
         $data['created_at'] = date('Y-m-d H:i:s');
         $data['status'] = 1;
-
+        $data['kucun'] =rand(1,100);
+        // dd($data);
         //插入表
         $res = DB::table('goods')->insertGetId($data);
-       
        //如果插入成功
-       if($res > 0) {
-            //处理图片
-            if($request->hasFile('pic')){
-                $images = [];
-                // 便利上传的数组
-                foreach($request->file('pic') as $k=>$v) {
-                    $tmp = [];
-                   // 获取文件的后缀名
-                    $suffix = $v->extension();
 
-                    //创建一个新的随机名称
-                    $name = uniqid('img').'.'.$suffix;
-                    //文件夹路径
-                    $dir = '/uploads/'.date('Y-m-d');
-                    //移动文件
-                    // $v->move($dir, $name); //草你mua
-                    //获取文件的路径
-                    $tmp['goods_id'] = $res;
-                    $tmp['pic'] = trim($dir.'/'.$name,'.');
-                    $images[] = $tmp;
+       if($res > 0){
+        if($request->hasFile('pic')){
+            $images = [];
+
+            foreach($request->file('pic') as $k=>$v){
+                $tmp = [];
+                $suffix = $v->extension();
+                $name  = uniqid('img_').'.'.$suffix;
+                $dir = './upload/'.date('Y-m-d');
+                $v->move($dir,$name);
+                $tmp['goods_id'] = $res;
+                $tmp['pic'] = trim($dir.'/'.$name,'.');
+                $images[] = $tmp;
+                $data['profile'] = trim($dir.'/'.$name,'.');
                 }
-                //将图片信息插入到商品图片表中
-                DB::table('goods_pic')->insert($images);
-
+                // dd($images);
+            DB::table('goods_pic')->insert($images);
             }
-            return redirect('/goods')->with('msg','成功');
-       }else{
-            return redirect('/goods')->with('msg','shibai');
-       }
+            return redirect('/goods')->with('msg','添加成功');
+        }else{
+            return redirect('/goods')->with('msg','添加失败');
+        }
 
-    }
+    }  
 
     /**
      * Display the specified resource.
@@ -126,7 +122,8 @@ class GoodsController extends Controller
      */
     public function edit($id)
     {
-        //s
+        $goods = DB::table('goods')->where('id',$id)->first();
+        return view('admin.goods.edit',['goods'=>$goods]);
     }
 
     /**
@@ -138,7 +135,33 @@ class GoodsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = $request->only(['title','price','kucun','content']);
+        $data['status'] = 1;
+        $res = DB::table('goods')->insertGetId($data);
+        if($res > 0){
+        if($request->hasFile('pic')){
+            $images = [];
+
+            foreach($request->file('pic') as $k=>$v){
+                $tmp = [];
+                $suffix = $v->extension();
+                $name  = uniqid('img_').'.'.$suffix;
+                $dir = './upload/'.date('Y-m-d');
+                $v->move($dir,$name);
+                $tmp['goods_id'] = $res;
+                $tmp['pic'] = trim($dir.'/'.$name,'.');
+                $images[] = $tmp;
+                $data['profile'] = trim($dir.'/'.$name,'.');
+            }
+            DB::table('goods_pic')->insert($images);
+        }
+        return redirect('/goods')->with('msg','修改成功');
+    }else{
+        return redirect('/goods')->with('msg','修改失败');
+
+       
+    }
+
     }
 
     /**
@@ -149,21 +172,65 @@ class GoodsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        if(DB::table('goods')->where('id', $id)->delete()) {
+            return back()->with('msg','删除成功');
+        }else{
+            return back()->with('msg','删除失败!!');
+        }
     }
 
-    public function gdlist(){
+
+
+    public function glist(){
+
         //读取商品
-        $goods = DB::table('goods')->where('status',1)
-        ->select('id','title','price')->orderBy('id','desc')->paginate(20);
+
+        $goods = DB::table('goods')
+        ->where('status',1)
+        ->select('id','title','price')
+        ->orderBy('id','desc')
+        ->paginate(20);
         
         //便利商品信息
-        foreach ($goods as $key => $value) {
+        foreach ($goods as $key => &$value) {
             $value->pic = DB::table('goods_pic')
-            ->where('goods_id',$value->id)->value('pic');
+            ->where('goods_id',$value->id)
+            ->value('pic');
         }
         // dd($goods);
+
+        $cates = DB::table('cate');
         //模板
-        return view('home.goods.list',compact('goods'));
+
+        // return view('home.goods.list',compact('goods'));
+
+        return view('homes.fl',compact('goods'));
+    }
+
+
+    public function classify(){
+        //读取商品
+
+        $goods = DB::table('goods')
+        ->where('status',1)
+        ->select('id','title','price')
+        ->orderBy('id','desc')
+        ->paginate(20);
+        
+        //便利商品信息
+        foreach ($goods as $key => &$value) {
+            $value->pic = DB::table('goods_pic')
+            ->where('goods_id',$value->id)
+            ->value('pic');
+        }
+        // dd($goods);
+
+        $cates = DB::table('cate');
+        //模板
+
+        // return view('home.goods.list',compact('goods'));
+        return view('home.classify',compact('goods'));
+
     }
 }
+
