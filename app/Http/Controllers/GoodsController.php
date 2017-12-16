@@ -83,6 +83,7 @@ class GoodsController extends Controller
                 $images[] = $tmp;
                 $data['profile'] = trim($dir.'/'.$name,'.');
                 }
+              
             DB::table('goods_pic')->insert($images);
             }
             return redirect('/goods/create')->with('msg','添加成功');
