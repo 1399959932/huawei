@@ -18,7 +18,11 @@ class LoginMiddleware
         $id = session('id');
         //没有登陆
         if(empty($id)) {
+
+            return redirect('/login')->with('msg','没有登陆');
+
             return redirect('/admin/login')->with('msg','没有登陆');
+
         }
         return $next($request);
     }

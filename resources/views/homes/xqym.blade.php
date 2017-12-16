@@ -29,59 +29,28 @@
             <table border="0" cellpadding="0" cellspacing="0">
                         <tr>
                             <td colspan="6">
-                                <iframe src="/img/imgs.jpeg" frameborder="0" width="450" height="450" name="lefts">
+                                @foreach($goods_picda as $k=>$v)
+                                <iframe src="{{$v->pic}}" frameborder="0" width="450" height="450" name="lefts">
                                 </iframe>
+                                @endforeach
                             </td>
                         </tr>
                         <tr>
                             <td colspan="6" height="20px;"></td>
                         </tr>
                         <tr>
-                          <td width="15px;"></td>
-                          <td>
+                          
+                          <!-- <td width="15px;"></td> -->
+                          @foreach($goods_pic as $k=>$v)
+                          <td style="margin-right: 10px;">
                            <a href="/img/imgs.jpeg" target="lefts">
-                           <img src="/img/imgs.jpeg" width="60" height="60">
+                            <img src="{{$v->pic}}" width="60" height="60">
                            </a>
                           </td>
-                          <td>
-                           <a href="/img/imgs3.jpg" target="lefts">
-                           <img src="/img/imgs3.jpg" width="60" height="60">
-                           </a>
-                          </td>
-                          <td>
-                           <a href="/img/imgs.jpeg" target="lefts">
-                           <img src="/img/imgs.jpeg" width="60" height="60">
-                           </a>
-                          </td>
-                          <td>
-                           <a href="/img/imgs3.jpg" target="lefts">
-                          <img src="/img/imgs3.jpg" width="60" height="60">
-                           </a>
-                          </td>
-                          <td>
-                           <a href="/img/imgs.jpeg" target="lefts">
-                           <img src="/img/imgs.jpeg" width="60" height="60">
-                           </a>
-                          </td>
+                          @endforeach
                         </tr>
                     </table>
-            <!-- <ul class="list-unstyled list-inline up">
-                <li><img src="holder.js/450x450" alt=""></li>
-                <li><img src="holder.js/450x450" alt=""></li>
-                <li><img src="holder.js/450x450" alt=""></li>
-                <li><img src="holder.js/450x450" alt=""></li>
-                <li><img src="holder.js/450x450" alt=""></li>
-            </ul>   
-
-            <ul class="down list-unstyled list-inline">
-                <li><img src="holder.js/60x60" alt=""></li>
-                <li><img src="holder.js/60x60" alt=""></li>
-                <li><img src="holder.js/60x60" alt=""></li>
-                <li><img src="holder.js/60x60" alt=""></li>
-                <li><img src="holder.js/60x60" alt=""></li>
-            </ul> -->
         </div>
-        <!-- 图片内容 结束 -->
         <!-- 商品标题 开始 -->
         <div class="right goods-title col-md-7">
             <!-- 标题 -->

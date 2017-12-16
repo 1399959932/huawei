@@ -402,6 +402,7 @@
 </div>
 <!-- 内容部分结束 -->
 <!-- 内容图片部分开始 -->
+@section('body')
 <div class="theme">
 	<div class="container">
         @foreach($goods as $k=>$v)
@@ -438,6 +439,7 @@
 		</nav>
 	</div>
 </div>
+@show
 @stop
 <!-- 内容图片部分结束 -->
 <!-- 脚部部分开始 -->
