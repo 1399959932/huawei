@@ -28,10 +28,6 @@ Route::get('/zhuce/captcha/{tmp}', 'UserController@captcha');
 
 Route::get('/login','UserController@login');
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 0af1c8bceb6fd3a9b19f949ad076c9ea509fab66
 Route::post('/login','UserController@dologin');
 
 
@@ -45,8 +41,7 @@ Route::resource('/cate','CateController');
 // 商品管理
 Route::get('/goods/list','GoodsController@gdlist');
 
-<<<<<<< HEAD
-=======
+
 //pay get
 Route::get('/test','PayController@index');
 
@@ -108,7 +103,6 @@ Route::get('/zqu','ZquController@prefe');
 //荣耀家族
 Route::get('/fam','FamController@family');
 
->>>>>>> 0af1c8bceb6fd3a9b19f949ad076c9ea509fab66
 
 
 
@@ -162,12 +156,11 @@ Route::resource('cate','CateController');
 //后台首页
 Route::get('/admin','Admincontroller@index');
 //后台登录
-<<<<<<< HEAD
-=======
+
 
 Route::get('/admin/login','LoginController@login');
 
->>>>>>> 0af1c8bceb6fd3a9b19f949ad076c9ea509fab66
+
 Route::get('/admin/login','loginController@login');
 Route::post('/admin/login','LoginController@dologin');
 //后台用户
@@ -177,7 +170,7 @@ Route::resource('/cate','catecontroller');
 //轮播图
 Route::resource('/roll','rollcontroller');
 //文章管理
-<<<<<<< HEAD
+
 Route::resource('/article','ArticleController');
 
 
@@ -187,11 +180,11 @@ Route::get('/lunbotu','LbtController@rool');
 
 
 
-=======
+
 Route::resource('article','ArticleController');
 //商品管理
 Route::resource('/goods','GoodsController');
->>>>>>> 25dd12c646c7987b551984045bcb18985374f395
+
 
 // 前台页面
 // 前页详情
@@ -204,18 +197,16 @@ Route::get('/gwc','GwcController@gwcs');
 Route::get('/dingdan','DingdanController@index');
 //前台列表页
 Route::get('/list','listcontroller@list');
-<<<<<<< HEAD
+
 
 //前台首页
 Route::get('/homed','HomeController@index');
 //前台分类
 Route::get('/Fen','FenController@classify');
-=======
->>>>>>> 0af1c8bceb6fd3a9b19f949ad076c9ea509fab66
 
 
 
-//
+
 //前台首页
 Route::get('/homed','HomeController@index');
 //前台分类
@@ -235,23 +226,10 @@ Route::get('/syscs','SyscController@colle');
 
 
 
-<<<<<<< HEAD
-
-//
-=======
-//h
->>>>>>> 0af1c8bceb6fd3a9b19f949ad076c9ea509fab66
-
 
 // 支付页面
 Route::get('/zhifu','ZhifuController@zfym');
-<<<<<<< HEAD
-=======
+
 // 荣耀官网
 Route::get('/rygw','RygwController@ry');
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 0af1c8bceb6fd3a9b19f949ad076c9ea509fab66
->>>>>>> 25dd12c646c7987b551984045bcb18985374f395
