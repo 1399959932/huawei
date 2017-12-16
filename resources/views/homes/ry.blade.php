@@ -140,9 +140,9 @@
 <!-- 荣耀官网 header 结束 -->
 </div>
 <!-- 轮播图 开始 -->
-    <div class="lbt">
+    <div class="lbt" >
     	<div class="container">
-    		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" >
 			  <!-- Indicators -->
 			  <ol class="carousel-indicators">
 			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -154,31 +154,13 @@
 
 			  <!-- Wrapper for slides -->
 			  <div class="carousel-inner" role="listbox">
-			    <div class="item active">
-			      <img src="holder.js/100px600" alt="...">
+                @foreach($goods as $k=>$v)
+			    <div class="item @if($k==0) active @endif">
+			      <img src="{{$v->pic}}" alt="..." >
 			      <div class="carousel-caption">
 			      </div>
 			    </div>
-			    <div class="item">
-			      <img src="holder.js/100px600?theme=sky" alt="...">
-			      <div class="carousel-caption">
-			      </div>
-			    </div>
-			    <div class="item">
-			      <img src="holder.js/100px600?bg=#adf" alt="...">
-			      <div class="carousel-caption">
-			      </div>
-			    </div>
-			    <div class="item">
-			      <img src="holder.js/100px600?bg=#aed" alt="...">
-			      <div class="carousel-caption">
-			      </div>
-			    </div>
-			    <div class="item">
-			      <img src="holder.js/100px600?bg=#cef" alt="...">
-			      <div class="carousel-caption">
-			      </div>
-			    </div>
+                @endforeach
 			  </div>
 			  <!-- Controls -->
 			  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -249,7 +231,7 @@
     			<!-- 进度条 结束 -->
     			<!-- 介绍 开始 -->
     			<div class="jieshao">
-    				<img src="holder.js/475x510">
+    				<img src="{{$v->pic}}" style="width: 475px;height: 510px;">
     				<div class="jieshao_right">
     					<h3>荣耀V10</h3>
     					<h4>我AI的快</h4>
@@ -301,7 +283,7 @@
     				</div>
     			</div>
     			<div style="margin-top: 20px;">
-    				<img src="holder.js/1140x480">
+    				<img src="{{$v->pic}}" style="width: 1140px;height: 480px;">
     			</div>
     		</div>
     	</div>
@@ -315,19 +297,19 @@
     			<div class="zx_up">
     				<div class="col-md-4 up_left lefts">
     					<div class="imgs"><img src="img/img7.png" style="width: 360px;height: 272px;"></div>
-    					<h4>AI速度革命席卷全球，荣耀V10伦敦正式发布</h4>
+    					<h4>AI速度革命席卷全球,荣耀V10伦敦正式发布</h4>
     					<h5>2017-12-06</h5>
     				</div>
     				<div class="col-md-4 up_left">
     					<div class="imgs">
     					<img src="holder.js/360x272"></div>
-    					<h4>AI速度革命席卷全球，荣耀V10伦敦正式发布</h4>
+    					<h4>AI速度革命席卷全球,荣耀V10伦敦正式发布</h4>
     					<h5>2017-12-06</h5>
     				</div>
     				<div class="col-md-4 up_left">
     					<div class="imgs">
     					<img src="holder.js/360x272"></div>
-    					<h4>AI速度革命席卷全球，荣耀V10伦敦正式发布</h4>
+    					<h4>AI速度革命席卷全球,荣耀V10伦敦正式发布</h4>
     					<h5>2017-12-06</h5>
     				</div>
     			</div>

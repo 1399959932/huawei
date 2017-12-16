@@ -28,6 +28,7 @@ Route::get('/zhuce/captcha/{tmp}', 'UserController@captcha');
 
 Route::get('/login','UserController@login');
 
+
 Route::post('/login','UserController@dologin');
 
 
@@ -40,6 +41,7 @@ Route::resource('/cate','CateController');
 
 // 商品管理
 Route::get('/goods/list','GoodsController@gdlist');
+
 
 //pay get
 Route::get('/zhifubao','PayController@index');
@@ -104,7 +106,6 @@ Route::get('/fam','FamController@family');
 
 
 
-
 Route::get('/admin/login','LoginController@login');
 Route::post('/admin/login','LoginController@dologin');
 
@@ -156,7 +157,9 @@ Route::resource('cate','CateController');
 Route::get('/admin','Admincontroller@index');
 //后台登录
 
+
 Route::get('/admin/login','LoginController@login');
+
 
 Route::get('/admin/login','loginController@login');
 Route::post('/admin/login','LoginController@dologin');
@@ -164,10 +167,23 @@ Route::post('/admin/login','LoginController@dologin');
 Route::resource('/users','usersController');
 //后台分类
 Route::resource('/cate','catecontroller');
+//轮播图
+Route::resource('/roll','rollcontroller');
 //文章管理
+
+Route::resource('/article','ArticleController');
+
+
+// 后台轮播图
+Route::resource('/admin/lbotu','LbtController');
+Route::get('/lunbotu','LbtController@rool');
+
+
+
+
 Route::resource('article','ArticleController');
-
-
+//商品管理
+Route::resource('/goods','GoodsController');
 
 // 前台页面
 // 前页详情
@@ -182,7 +198,14 @@ Route::get('/dingdan','DingdanController@index');
 Route::get('/list','listcontroller@list');
 
 
-//h
+//前台首页
+Route::get('/homed','HomeController@index');
+//前台分类
+Route::get('/Fen','FenController@classify');
+
+
+
+//
 //前台首页
 Route::get('/homed','HomeController@index');
 //前台分类
@@ -196,14 +219,17 @@ Route::get('/fam','FamController@family');
 //华为官网
 Route::get('/hwgw','HwgwController@official');
 
+//首页上传
+Route::resource('sysc','SyscController');
+Route::get('/syscs','SyscController@colle');
 
 
-//h
+
 
 
 // 支付页面
 Route::get('/zhifu','ZhifuController@zfym');
+
 // 荣耀官网
 Route::get('/rygw','RygwController@ry');
-
 

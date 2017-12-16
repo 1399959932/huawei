@@ -17,7 +17,25 @@ class usersController extends Controller
     {
 
         $users = DB::table('users')->get();
-        return view('admin.users.index',['users'=>$users]);
+        $num = $request->input('num',10);
+        $keywords = $request->input('keywords','');
+
+        //关键字
+        if($request->has('keywords')) {
+            //列表显示
+            $users = DB::table('users')->where('title','like','%'.$keywords.'%')->paginate($num);
+        }else{
+            //列表显示
+            $users = DB::table('users')->paginate($num);
+        }
+
+
+        //解析模板
+        return view('admin.users.index',[
+            'users'=>$users,
+            'keywords'=>$keywords,
+            'num' => $num
+        ]);
     }
 
     /**
@@ -53,6 +71,7 @@ class usersController extends Controller
             $request->file('hwfile')->move($dir,$name);
             //获取文件路径
             $data['hwfile'] = trim($dir.'/'.$name,'.');
+
        }
        $data['status'] = 0;
 
@@ -82,7 +101,7 @@ class usersController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
-    {   
+    {
         $users = DB::table('users')->where('id',$id)->first();
         return view('admin.users.edit',['users'=>$users]);
     }
@@ -99,11 +118,17 @@ class usersController extends Controller
         $data = $request->only(['username','email']);
         //文件上传
         if($request->hasFile('hwfile')){
+
             $suffix = $request->file('hwfile')->extension();
+
             $name = uniqid('img_').'.'.$suffix;
+
             $dir = './upload/'.date('Y-m-d');
+
             $request->file('hwfile')->move($dir,$name);
+
             $data['hwfile'] = trim($dir.'/'.$name,'.');
+
         }
 
         if(DB::table('users')->where('id',$id)->update($data)) {
@@ -111,7 +136,7 @@ class usersController extends Controller
         }else{
             return back()->with('msg','更新失败');
         }
-    }   
+    }
 
     /**
      * Remove the specified resource from storage.

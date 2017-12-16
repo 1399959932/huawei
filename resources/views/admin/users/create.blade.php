@@ -18,7 +18,7 @@
     <div class="tpl-portlet-components">
         <div class="portlet-title">
             <div class="caption font-green bold">
-                <span class="am-icon-code"></span> 表单
+                <span class="am-icon-code"></span> 表单2
             </div>
             <div class="tpl-portlet-input tpl-fz-ml">
                 <div class="portlet-input input-small input-inline">
@@ -39,10 +39,10 @@
                 <div class="am-u-sm-12 am-u-md-9">
                     <form class="am-form am-form-horizontal" action="/users" method="post" enctype="multipart/form-data">
                         <div class="am-form-group">
-                            <label for="user-name" class="am-u-sm-3 am-form-label">姓名 / Name</label>
+                            <label for="user-name" class="am-u-sm-3 am-form-label">用户名</label>
                             <div class="am-u-sm-9">
-                                <input type="text" id="user-name" placeholder="姓名 / Name"  name="username">
-                                <small>输入你的名字，让我们记住你。</small>
+                                <input type="text" id="user-name" placeholder="用户名"  name="username">
+                                <small>输入你用户名</small>
                             </div>
                         </div>
 
@@ -62,7 +62,7 @@
                         </div>
 
                        <div class="am-form-group">
-                            <label for="user-phone" class="am-u-sm-3 am-form-label"></label>
+                            <label for="user-phone" class="am-u-sm-3 am-form-label">确认密码</label>
                             <div class="am-u-sm-9">
                                 <input type="password" id="user-phone" placeholder="再次输入你的密码">
                             </div>
