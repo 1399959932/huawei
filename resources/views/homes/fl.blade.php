@@ -55,17 +55,17 @@
 <!-- 小分图 开始 -->
 <div class="container">
 	<div class=" fentu">
-		@foreach($goods as $k=>$v)
+		
 		<div class="col-md-2 bor_left" style="padding: 0px;">
-			<img src="{{$v->pic}}" style="width: 220px;height: 229px;margin-top: 10px;">
-			<h5>{{$v->title}}</h5>
-			<h4>¥{{$v->price}}</h4>
+			<img src="" style="width: 220px;height: 229px;margin-top: 10px;">
+			<h5></h5>
+			<h4>¥</h4>
 			<div class="anniu">
 				<a href="#"><button class="xugo">选购</button></a>
 				<span>0人评价</span>
 			</div>
 		</div>
-		@endforeach
+		
 	</div>
 	<!-- 页面分页 开始 -->
 	<nav class="pull-right">

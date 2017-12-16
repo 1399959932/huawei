@@ -6,7 +6,7 @@
 
 <link rel="stylesheet" type="text/css" href="/css/person.css">
 @section('gr')
-<li><a href="#">178****5762</a></li>
+<li><a href="#">{{session('tel')}}</a></li>
 @stop
 
 @section('content')
@@ -52,6 +52,7 @@
 					</li>
 				</ul>
 			</div>
+
 			<div class="s_b_r">
 				<div class="b_r_t">
 					<div class="t_l">
@@ -130,6 +131,8 @@
 					</div>
 				</div>
 			</div>
+
+		<!-- title商行结束 -->
 		</div>
 	</div>
 </div>

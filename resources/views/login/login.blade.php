@@ -30,6 +30,13 @@
 			<div class="input">
 				<div class="top20"></div>
 				<div class="top20"></div>
+				@if(session('msg'))
+				{
+					<div class="alert alert-warning" role="alert">
+					  <a href="#" class="alert-link">{{$session('msg')}}</a>
+					</div>
+				}
+				@endif
 				<form class="form-horizontal" action="/login" method="post">
 				  <div class="form-group">
 				    <label for="inputEmail3" class="col-sm-6 control-label col-md-offset-1" style="font-size: 20px;">账号登录</label>

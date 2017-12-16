@@ -51,7 +51,7 @@ class catecontroller extends Controller
         }
 
         if(DB::table('cate')->insert($data)){
-            return redirect('/cate')->with('msg','添加成功');
+            return redirect('/cate/create')->with('msg','添加成功');
         }else{
             return back()->with('msg','添加失败');
         }
@@ -76,7 +76,11 @@ class catecontroller extends Controller
      */
     public function edit($id)
     {
+<<<<<<< HEAD
         return view('admin.cate.edit');
+=======
+
+>>>>>>> 25dd12c646c7987b551984045bcb18985374f395
     }
 
     /**
@@ -88,7 +92,7 @@ class catecontroller extends Controller
      */
     public function update(Request $request, $id)
     {
-        
+
     }
 
     /**

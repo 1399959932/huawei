@@ -480,70 +480,17 @@
                     <img src="holder.js/100px594?bg=#ced">  
                 </div>
             </li>
-            <li class="col-md-2">
+            @foreach($shouye as $k=>$v)
+            
+            <li class="col-md-2" style="margin-right: 40px; margin-bottom: 10px;">
                 <div class="item">
-                    <img src="holder.js/100px200?bg=#afe">
-                    <h5><a href="#">荣耀V9&nbsp;play</a></h5>
-                    <h6><a href="#">最高优惠200元</a></h6>
-                    <h5 class="money"><a href="#">&yen;999</a></h5>  
+                    <img src="{{$v->pic}}" style="width: 134px;height: 134px; margin-top: 35px;margin-left: 50px;">
+                    <h5><a href="#">{{$v->title}}</a></h5>
+                    <h6><a href="#">{{$v->youhui}}</a></h6>
+                    <h5 class="money"><a href="#">&yen;{{$v->price}}</a></h5>  
                 </div>
             </li>
-            <li class="col-md-2" style="margin-left: 42px;">
-                <div class="item">
-                    <img src="holder.js/100px200?bg=#afe">
-                    <h5><a href="#">荣耀V9&nbsp;play</a></h5>
-                    <h6><a href="#">最高优惠200元</a></h6>
-                    <h5 class="money"><a href="#">&yen;999</a></h5>  
-                </div>
-            </li>
-            <li class="col-md-2" style="margin-left: 42px;">
-                <div class="item">
-                    <img src="holder.js/100px200?bg=#afe">
-                    <h5><a href="#">荣耀V9&nbsp;play</a></h5>
-                    <h6><a href="#">最高优惠200元</a></h6>
-                    <h5 class="money"><a href="#">&yen;999</a></h5>  
-                </div>
-            </li>
-            <li class="col-md-2" style="margin-left: 41px;">
-                <div class="item">
-                    <img src="holder.js/100px200?bg=#afe">
-                    <h5><a href="#">荣耀V9&nbsp;play</a></h5>
-                    <h6><a href="#">最高优惠200元</a></h6>
-                    <h5 class="money"><a href="#">&yen;999</a></h5>  
-                </div>
-            </li>
-            <li class="col-md-2" style="margin-top: 14px;">
-                <div class="item">
-                    <img src="holder.js/100px200?bg=#afe">
-                    <h5><a href="#">荣耀V9&nbsp;play</a></h5>
-                    <h6><a href="#">最高优惠200元</a></h6>
-                    <h5 class="money"><a href="#">&yen;999</a></h5>  
-                </div>
-            </li>
-            <li class="col-md-2" style="margin-top: 14px; margin-left: 42px;">
-                <div class="item">
-                    <img src="holder.js/100px200?bg=#afe">
-                    <h5><a href="#">荣耀V9&nbsp;play</a></h5>
-                    <h6><a href="#">最高优惠200元</a></h6>
-                    <h5 class="money"><a href="#">&yen;999</a></h5>  
-                </div>
-            </li>
-            <li class="col-md-2" style="margin-top: 14px; margin-left: 42px;">
-                <div class="item">
-                    <img src="holder.js/100px200?bg=#afe">
-                    <h5><a href="#">荣耀V9&nbsp;play</a></h5>
-                    <h6><a href="#">最高优惠200元</a></h6>
-                    <h5 class="money"><a href="#">&yen;999</a></h5>  
-                </div>
-            </li>
-            <li class="col-md-2" style="margin-top: 14px; margin-left: 41px;">
-                <div class="item">
-                    <img src="holder.js/100px200?bg=#afe">
-                    <h5><a href="#">荣耀V9&nbsp;play</a></h5>
-                    <h6><a href="#">最高优惠200元</a></h6>
-                    <h5 class="money"><a href="#">&yen;999</a></h5>  
-                </div>
-            </li>
+            @endforeach
         </ul>
     </div>
 </div>
@@ -553,42 +500,14 @@
     <div class="jptj">
         <h3>精品推荐</h3>
         <ul class="list-unstyled">
+            @foreach($shouye as $k=>$v)
             <li class="col-md-2 jipi" style="padding: 0px;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">HUAWEI&nbsp;WATCH&nbsp;2&nbsp;Pro</a></h5>
-                <h6><a href="#">独立通话(eSIM技术)</a></h6>
-                <h5 class="money"><a href="#">&yen;2588</a></h5> 
+                <img src="{{$v->pic}}" style="width: 134px;height: 134px;">
+                <h5><a href="#">{{$v->title}}</a></h5>
+                <h6><a href="#">{{$v->youhui}}</a></h6>
+                <h5 class="money"><a href="#">&yen;{{$v->price}}</a></h5> 
             </li>
-            <li class="col-md-2 jipi" style="padding: 0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">HUAWEI&nbsp;WATCH&nbsp;2&nbsp;Pro</a></h5>
-                <h6><a href="#">独立通话(eSIM技术)</a></h6>
-                <h5 class="money"><a href="#">&yen;2588</a></h5>  
-            </li>
-            <li class="col-md-2 jipi" style="padding: 0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">HUAWEI&nbsp;WATCH&nbsp;2&nbsp;Pro</a></h5>
-                <h6><a href="#">独立通话(eSIM技术)</a></h6>
-                <h5 class="money"><a href="#">&yen;2588</a></h5>  
-            </li>
-            <li class="col-md-2 jipi" style="padding: 0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">HUAWEI&nbsp;WATCH&nbsp;2&nbsp;Pro</a></h5>
-                <h6><a href="#">独立通话(eSIM技术)</a></h6>
-                <h5 class="money"><a href="#">&yen;2588</a></h5>  
-            </li>
-            <li class="col-md-2 jipi" style="padding: 0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">HUAWEI&nbsp;WATCH&nbsp;2&nbsp;Pro</a></h5>
-                <h6><a href="#">独立通话(eSIM技术)</a></h6>
-                <h5 class="money"><a href="#">&yen;2588</a></h5>  
-            </li>
-            <li class="col-md-1 jipi_1" style="padding: 0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/110x200?bg=#afe">
-                <h5><a href="#">HUAWEI&nbsp;WATCH&nbsp;2&nbsp;Pro</a></h5>
-                <h6><a href="#">独立通话(eSIM技术)</a></h6>
-                <h5 class="money"><a href="#">&yen;2588</a></h5>  
-            </li>
+            @endforeach
         </ul>
     </div>
 </div>

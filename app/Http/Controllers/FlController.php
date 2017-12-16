@@ -7,7 +7,7 @@ use DB;
 
 class FlController extends Controller
 {
-    public function fl($id){
+    public function fl(){
     	// $goods = DB::table('goods')->where('id',$id)->first();
     	// $goods_pic = DB::table('goods_pic')->where('id',$id)->get();
     	return view('homes.fl');

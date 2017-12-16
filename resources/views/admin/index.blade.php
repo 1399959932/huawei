@@ -8,8 +8,20 @@
     <link rel="stylesheet" href="/css/admin.css">
     <link rel="stylesheet" href="/css/appp.css">
     <script src="/js/echarts.min.js"></script>
+<<<<<<< HEAD
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
 
+=======
+<<<<<<< HEAD
+
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+
+=======
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+>>>>>>> 996ab4aa93743de5977bac421a79babc3ed49d7f
+>>>>>>> 25dd12c646c7987b551984045bcb18985374f395
     <script src="/bootstrap/js/jquery.js"></script>
     <script src="/bootstrap/js/bootstrap.js"></script>
     <script src="/bootstrap/js/holder.min.js"></script>
@@ -28,7 +40,7 @@
         <div class="am-icon-list tpl-header-nav-hover-ico am-fl am-margin-right">
 
         </div>
-        
+
         <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
 
         <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
@@ -52,7 +64,7 @@
                         </li>
                     </ul>
                 </li>
-                
+
 
                 <li class="am-hide-sm-only"><a href="javascript:;" id="admin-fullscreen" class="tpl-header-list-link"><span class="am-icon-arrows-alt"></span> <span class="admin-fullText">开启全屏</span></a></li>
 
@@ -70,7 +82,7 @@
         </div>
     </header>
 
-        
+
         @include('layouts.menu')
 
         <div class="tpl-content-wrapper">
@@ -88,7 +100,7 @@
             </div>
             @show
 
-            
+
 
     <script src="/js/jquery.min.js"></script>
     <script src="/js/amazeui.min.js"></script>
