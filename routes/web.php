@@ -69,10 +69,10 @@ Route::group(['middleware'=> 'login'],function(){
 	//订单
 	Route::post('/dingdan/zhifu','DingdanController@zhifu');
 	Route::resource('dingdan','DingdanController');
+	//购物车结束
 
-	
-
-	//购物车
+	//基础信息管理
+	Route::resource('/admin/xinxi','InfoController');
 
 });
 

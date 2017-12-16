@@ -97,10 +97,6 @@
     </div>
     <div class="tpl-alert"></div>
 </div>
-
-
-@endsection
-
 @section('js')
 <script>
     $('.del').submit(function(){
@@ -108,4 +104,8 @@
     });
 </script>
 @endsection
+
+@endsection
+
+
                    
