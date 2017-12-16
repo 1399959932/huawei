@@ -109,4 +109,6 @@ class catecontroller extends Controller
             return back()->with('msg','删除失败');
         }
     }
+
+    
 }

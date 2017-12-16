@@ -247,21 +247,55 @@ class UserController extends Controller
 
         // dd($request->all());
 
-        $data = $request->only(['tel','password']);
+        // 陈注册
+        $data = $request->only(['tel','password']); 
         $datas = DB::table('users')->where('tel',$data['tel'])->first();
-
-        // dd($data);
+        
 
         if (count($datas) > 0) {
            if($data['password'] = 'password'){
-            return redirect('/homed')->with('msg','登录成功');
+              session(['id'=>$datas->id]);
+              session(['tel'=>$datas->tel]);
+             return redirect('/homed')->with('msg','登录成功');
+
 
            }
         }else{
-            return back('/')->with('msg','登录失败');
+        return back('/')->with('msg','登录失败');    
 
         }
 
+        // 陈注册结束
 
+        //强哥
+        // $data = $request->except('_token');
+        // $user = DB::table('users')->where('tel',$data['tel'])->first();
+
+        // //判断有没有这个用户
+        // if (empty($user)) {
+        //     return back('/')->with('msg','登录失败');
+        // }
+
+        // //校验密码
+
+        // if (Hash::check($data['password'],$user->password)) 
+        // {
+          
+        //     // 密码对比...写入session信息
+
+        //     session(['id'=>$user->id]);
+        //     session(['tel'=>$user->tel]);
+
+        //     //登录成功
+        //     return redirect('/homed')->with('msg','登录成功');
+        // }
+
+        //     return back('/')->with('msg','登录失败');
+
+
+        // 强哥结束
+
+
+        
     }
 }

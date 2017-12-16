@@ -13,18 +13,18 @@ class GoodsTableSeeder extends Seeder
     public function run(Faker $faker)
     {
         $data = [];
-        for($i=0;$i<30;$i++){
+        for($i=0;$i<60;$i++){
         	$tmp = [
         		'title' => str_random(20),
         		'price' => rand(10,10000),
         		'kuchun' => rand(1,100),
         		'content' => "<p>
-					<img src='{$faker->imageUrl(800,400)}' />
-					<img src='{$faker->imageUrl(800,400)}' />
+					<img src='{$faker->imageUrl(1200,600)}' />
+					<img src='{$faker->imageUrl(1200,600)}' />
 
-					<img src='{$faker->imageUrl(800,400)}' />
+					<img src='{$faker->imageUrl(1200,600)}' />
 
-					<img src='{$faker->imageUrl(800,400)}' />
+					<img src='{$faker->imageUrl(1200,600)}' />
 
         		</p>",
         		'created_at' => date('Y-m-d H:i:s'),

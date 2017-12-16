@@ -112,10 +112,6 @@
     </div>
 
 </div>
-
-
-@endsection
-
 @section('js')
 <script>
     $('.del').submit(function(){
@@ -123,3 +119,11 @@
     });
 </script>
 @endsection
+<<<<<<< HEAD
+=======
+
+@endsection
+
+
+                   
+>>>>>>> 0af1c8bceb6fd3a9b19f949ad076c9ea509fab66
