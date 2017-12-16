@@ -56,7 +56,7 @@
             <div class="am-form-group">
                 <label  class="am-u-sm-1 am-form-label text-info">商品详情</label>
                 <div class="am-u-sm-6 pull-left"  style="float:left;" >
-                     <script id="editor" type="text/plain" name="content" style="width:754px;height:500px;"></script>
+                     <script id="editor" type="text/plain" name="content" style="width:754px;height:300px;"></script>
                 </div>
             </div>
 

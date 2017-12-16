@@ -153,7 +153,7 @@ a:hover{
 .find_cen .jdt{
 	width: 722px;
 	height: 84px;
-	background: green;
+	/*background: green;*/
 	margin: 0px auto;
 	margin-top: 20px;
 }
@@ -337,7 +337,7 @@ a:hover{
 }
 .zx .zx_cen .zx_bot{
 	height: 414px;
-	background: green;
+	/*background: green;*/
 	margin-top: 30px;
 }
 .zx .zx_cen .zx_bot .bot_left{

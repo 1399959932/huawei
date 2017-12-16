@@ -8,6 +8,7 @@ class RygwController extends Controller
 {
     public function ry()
     {
+    	
     	return view('homes.ry');
     }
 }

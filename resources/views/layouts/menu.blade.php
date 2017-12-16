@@ -75,6 +75,26 @@
                     </li>
 
 
+                    <li class="tpl-left-nav-item">
+                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                            <i class="am-icon-table"></i>
+                            <span>轮播图</span>
+                            <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                        </a>
+                        <ul class="tpl-left-nav-sub-menu">
+                            <li>
+                                <a href="/admin/lbotu/create">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>图片添加</span>
+                                    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a>
+                                <a href="/admin/lbotu">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>图片列表</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
 
                     <li class="tpl-left-nav-item">
                         <a href="login.html" class="nav-link tpl-left-nav-link-list">

@@ -55,7 +55,13 @@ Route::resource('/users','usersController');
 //后台分类
 Route::resource('/cate','catecontroller');
 //文章管理
-Route::resource('article','ArticleController');
+Route::resource('/article','ArticleController');
+
+
+// 后台轮播图
+Route::resource('/admin/lbotu','LbtController');
+Route::get('/lunbotu','LbtController@rool');
+
 
 
 
@@ -93,5 +99,4 @@ Route::get('/fam','Famcontroller@family');
 Route::get('/zhifu','ZhifuController@zfym');
 // 荣耀官网
 Route::get('/rygw','RygwController@ry');
-
 
