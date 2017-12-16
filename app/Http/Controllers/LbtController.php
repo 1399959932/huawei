@@ -153,6 +153,6 @@ class LbtController extends Controller
 
         // $cates = DB::table('cate');
         //模板
-        return view('homes.rf',compact('goods'));
+        return view('homes.ry',compact('goods'));
     }
 }
