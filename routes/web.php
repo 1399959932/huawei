@@ -42,7 +42,7 @@ Route::resource('/cate','CateController');
 Route::get('/goods/list','GoodsController@gdlist');
 
 //pay get
-Route::get('/test','PayController@index');
+Route::get('/zhifubao','PayController@index');
 
 //后台路由组
 Route::group(['middleware'=> 'login'],function(){

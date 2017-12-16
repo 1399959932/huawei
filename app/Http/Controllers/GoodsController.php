@@ -181,7 +181,7 @@ class GoodsController extends Controller
 
 
 
-    public function glist(){
+    public function gdlist(){
 
         //读取商品
 
