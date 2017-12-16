@@ -28,6 +28,7 @@ Route::get('/zhuce/captcha/{tmp}', 'UserController@captcha');
 
 Route::get('/login','UserController@login');
 
+
 Route::post('/login','UserController@dologin');
 
 
@@ -110,68 +111,32 @@ Route::get('/admin/login','LoginController@login');
 Route::post('/admin/login','LoginController@dologin');
 
 
-//后台首页
-Route::get('/admin','AdminController@index');
+
 
 
 //文章管理
 Route::resource('article','ArticleController');
 
-//分类管理
-Route::resource('cate','CateController');
-
-Route::get('/admin/login','LoginController@login');
-Route::post('/admin/login','LoginController@dologin');
-
-
-//后台首页
-Route::get('/admin','AdminController@index');
 
 //用户管理
 Route::resource('user','UserController');
 
-//文章管理
-Route::resource('article','ArticleController');
 
 
 
-Route::get('/admin/login','LoginController@login');
-Route::post('/admin/login','LoginController@dologin');
-
-
-//后台首页
-Route::get('/admin','AdminController@index');
 
 
 // 后台路由组
 	// 后台首页
 Route::get('/admin','AdminController@index');
 
-// 文章管理
-Route::resource('article','ArticleController');
-// 分类管理
-Route::resource('cate','CateController');
 
 
-//后台首页
-Route::get('/admin','Admincontroller@index');
-//后台登录
-
-
-Route::get('/admin/login','LoginController@login');
-
-
-Route::get('/admin/login','loginController@login');
-Route::post('/admin/login','LoginController@dologin');
 //后台用户
 Route::resource('/users','usersController');
-//后台分类
-Route::resource('/cate','catecontroller');
+
 //轮播图
 Route::resource('/roll','rollcontroller');
-//文章管理
-
-Route::resource('/article','ArticleController');
 
 
 // 后台轮播图
@@ -180,10 +145,6 @@ Route::get('/lunbotu','LbtController@rool');
 
 
 
-
-Route::resource('article','ArticleController');
-//商品管理
-Route::resource('/goods','GoodsController');
 
 
 // 前台页面
@@ -199,30 +160,15 @@ Route::get('/dingdan','DingdanController@index');
 Route::get('/list','listcontroller@list');
 
 
-//前台首页
-Route::get('/homed','HomeController@index');
-//前台分类
-Route::get('/Fen','FenController@classify');
 
 
-
-
-//前台首页
-Route::get('/homed','HomeController@index');
-//前台分类
-Route::get('/fen','FenController@classify');
-//个人中心
-Route::get('/geren','GerenController@person');
-//华为专区
-Route::get('/zqu','ZquController@prefe');
-//荣耀家族
-Route::get('/fam','FamController@family');
 //华为官网
 Route::get('/hwgw','HwgwController@official');
 
 //首页上传
 Route::resource('sysc','SyscController');
 Route::get('/syscs','SyscController@colle');
+
 
 
 
