@@ -33,7 +33,7 @@
         <div class="col-md-12 col-sm-12 col-xs-12">
           <div class="x_panel">
             <div class="x_title">
-              <h2>期初信息列表 <small>goods link</small></h2>
+              <h2>网站基础信息 <small>goods link</small></h2>
               <ul class="nav navbar-right panel_toolbox">
                 <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                 </li>
@@ -112,7 +112,7 @@
                         <a href="/admin/xinxi/{{$v->id}}/edit" class="btn btn-info btn-sm pull-left"  >修改</a>
 
                         <form action="/admin/xinxi/{{$v->id}}" method="post">
-                         <button class="btn btn-danger btn-sm del" id="de" style="submit"> 删除</button>
+                         <button class="btn btn-danger btn-sm del" id="de" type="submit">删除</button>
                          {{method_field('DELETE')}}
                          {{csrf_field()}}
                         </form>
@@ -140,13 +140,15 @@
 
 </div>
 
-@section('js')
-<script>
-    $('.del').submit(function(){
-        if(!confirm('确定删除?')) return false;
+ <script>
+    $('.del').click(function(e){
+      var res = confirm('您确定要删除么');
+      if(!res){
+        return false;
+      }
     });
-</script>
-@endsection
+  </script>
+ 
 
 @endsection
 

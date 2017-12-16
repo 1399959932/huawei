@@ -106,27 +106,6 @@ Route::get('/fam','FamController@family');
 
 
 
-Route::get('/admin/login','LoginController@login');
-Route::post('/admin/login','LoginController@dologin');
-
-
-//后台首页
-Route::get('/admin','AdminController@index');
-
-
-//文章管理
-Route::resource('article','ArticleController');
-
-//分类管理
-Route::resource('cate','CateController');
-
-Route::get('/admin/login','LoginController@login');
-Route::post('/admin/login','LoginController@dologin');
-
-
-//后台首页
-Route::get('/admin','AdminController@index');
-
 //用户管理
 Route::resource('user','UserController');
 
@@ -134,18 +113,7 @@ Route::resource('user','UserController');
 Route::resource('article','ArticleController');
 
 
-
-Route::get('/admin/login','LoginController@login');
-Route::post('/admin/login','LoginController@dologin');
-
-
-//后台首页
-Route::get('/admin','AdminController@index');
-
-
 // 后台路由组
-	// 后台首页
-Route::get('/admin','AdminController@index');
 
 // 文章管理
 Route::resource('article','ArticleController');
@@ -153,20 +121,13 @@ Route::resource('article','ArticleController');
 Route::resource('cate','CateController');
 
 
-//后台首页
-Route::get('/admin','Admincontroller@index');
 //后台登录
-
-
-Route::get('/admin/login','LoginController@login');
 
 
 Route::get('/admin/login','loginController@login');
 Route::post('/admin/login','LoginController@dologin');
 //后台用户
 Route::resource('/users','usersController');
-//后台分类
-Route::resource('/cate','catecontroller');
 //轮播图
 Route::resource('/roll','rollcontroller');
 //文章管理
@@ -178,10 +139,6 @@ Route::resource('/article','ArticleController');
 Route::resource('/admin/lbotu','LbtController');
 Route::get('/lunbotu','LbtController@rool');
 
-
-
-
-Route::resource('article','ArticleController');
 //商品管理
 Route::resource('/goods','GoodsController');
 

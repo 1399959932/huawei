@@ -45,14 +45,14 @@
                         <div class="am-form-group">
                             <label for="user-QQ" class="am-u-sm-3 am-form-label">公安备案</label>
                             <div class="am-u-sm-9" >
-                                <input type="file" id="user-QQ" value="{{$info->content}}" style="border:1px #ccc solid; width:406px; height: 28px;" name="content">
+                                <input type="text" id="user-QQ" value="{{$info->content}}" style="border:1px #ccc solid; width:406px; height: 28px;" name="content">
                             </div>
                         </div>
 
                         <div class="am-form-group">
                             <label for="user-QQ" class="am-u-sm-3 am-form-label">许可</label>
                             <div class="am-u-sm-9" >
-                                <input type="file" id="user-QQ" value="{{$info->pro}}" style="border:1px #ccc solid; width:406px; height: 28px;" name="pro">
+                                <input type="text" id="user-QQ" value="{{$info->pro}}" style="border:1px #ccc solid; width:406px; height: 28px;" name="pro">
                             </div>
                         </div>
 

@@ -480,17 +480,17 @@
                     <img src="holder.js/100px594?bg=#ced">  
                 </div>
             </li>
-            @foreach($shouye as $k=>$v)
+           
             
             <li class="col-md-2" style="margin-right: 40px; margin-bottom: 10px;">
                 <div class="item">
-                    <img src="{{$v->pic}}" style="width: 134px;height: 134px; margin-top: 35px;margin-left: 50px;">
-                    <h5><a href="#">{{$v->title}}</a></h5>
-                    <h6><a href="#">{{$v->youhui}}</a></h6>
-                    <h5 class="money"><a href="#">&yen;{{$v->price}}</a></h5>  
+                    <img src="" style="width: 134px;height: 134px; margin-top: 35px;margin-left: 50px;">
+                    <h5><a href="#"></a></h5>
+                    <h6><a href="#"></a></h6>
+                    <h5 class="money"><a href="#">&yen;</a></h5>  
                 </div>
             </li>
-            @endforeach
+            
         </ul>
     </div>
 </div>
@@ -500,14 +500,14 @@
     <div class="jptj">
         <h3>精品推荐</h3>
         <ul class="list-unstyled">
-            @foreach($shouye as $k=>$v)
+            
             <li class="col-md-2 jipi" style="padding: 0px;">
-                <img src="{{$v->pic}}" style="width: 134px;height: 134px;">
-                <h5><a href="#">{{$v->title}}</a></h5>
-                <h6><a href="#">{{$v->youhui}}</a></h6>
-                <h5 class="money"><a href="#">&yen;{{$v->price}}</a></h5> 
+                <img src="" style="width: 134px;height: 134px;">
+                <h5><a href="#"></a></h5>
+                <h6><a href="#"></a></h6>
+                <h5 class="money"><a href="#">&yen;</a></h5> 
             </li>
-            @endforeach
+            
         </ul>
     </div>
 </div>
