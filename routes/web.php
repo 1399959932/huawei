@@ -89,6 +89,10 @@ Route::get('/fam','FamController@family');
 //华为官网
 Route::get('/hwgw','HwgwController@official');
 
+//首页上传
+Route::resource('sysc','SyscController');
+Route::get('/syscs','SyscController@colle');
+
 
 
 //h

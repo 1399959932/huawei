@@ -83,6 +83,28 @@
 
                         </a>
                     </li>
+
+
+                    <li class="tpl-left-nav-item">
+                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                            <i class="am-icon-table"></i>
+                            <span>首页上传</span>
+                            <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                        </a>
+                        <ul class="tpl-left-nav-sub-menu">
+                            <li>
+                                <a href="/sysc/create">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>商品添加</span>
+                                    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                </a>
+                                <a href="/sysc">
+                                    <i class="am-icon-angle-right"></i>
+                                    <span>商品列表</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>    
                 </ul>
             </div>
         </div>
