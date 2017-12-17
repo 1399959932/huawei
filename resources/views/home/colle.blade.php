@@ -53,6 +53,7 @@
         </a>
     </div>
     <!-- 侧边选项卡开始 -->
+    
     <div class="cebi">
         <ul>
             <li class="cb_1">
@@ -384,6 +385,7 @@
         </ul>
     </div>
 </div>
+</div>
     <!-- 侧边选项卡结束 -->
     <!-- 轮播图下开始 -->
     <div class="container">
@@ -477,7 +479,7 @@
         <ul class="list-unstyled">
             <li class="col-md-2">
                 <div class="rxdp">
-                    <img src="holder.js/100px594?bg=#ced">  
+                    <img src="holder.js/100px594?bg=#ced">
                 </div>
             </li>
             <li class="col-md-2">
@@ -485,7 +487,7 @@
                     <img src="holder.js/100px200?bg=#afe">
                     <h5><a href="#">荣耀V9&nbsp;play</a></h5>
                     <h6><a href="#">最高优惠200元</a></h6>
-                    <h5 class="money"><a href="#">&yen;999</a></h5>  
+                    <h5 class="money"><a href="#">&yen;999</a></h5>
                 </div>
             </li>
             <li class="col-md-2" style="margin-left: 42px;">
@@ -493,7 +495,7 @@
                     <img src="holder.js/100px200?bg=#afe">
                     <h5><a href="#">荣耀V9&nbsp;play</a></h5>
                     <h6><a href="#">最高优惠200元</a></h6>
-                    <h5 class="money"><a href="#">&yen;999</a></h5>  
+                    <h5 class="money"><a href="#">&yen;999</a></h5>
                 </div>
             </li>
             <li class="col-md-2" style="margin-left: 42px;">
@@ -501,7 +503,7 @@
                     <img src="holder.js/100px200?bg=#afe">
                     <h5><a href="#">荣耀V9&nbsp;play</a></h5>
                     <h6><a href="#">最高优惠200元</a></h6>
-                    <h5 class="money"><a href="#">&yen;999</a></h5>  
+                    <h5 class="money"><a href="#">&yen;999</a></h5>
                 </div>
             </li>
             <li class="col-md-2" style="margin-left: 41px;">
@@ -509,7 +511,7 @@
                     <img src="holder.js/100px200?bg=#afe">
                     <h5><a href="#">荣耀V9&nbsp;play</a></h5>
                     <h6><a href="#">最高优惠200元</a></h6>
-                    <h5 class="money"><a href="#">&yen;999</a></h5>  
+                    <h5 class="money"><a href="#">&yen;999</a></h5>
                 </div>
             </li>
             <li class="col-md-2" style="margin-top: 14px;">
@@ -517,7 +519,7 @@
                     <img src="holder.js/100px200?bg=#afe">
                     <h5><a href="#">荣耀V9&nbsp;play</a></h5>
                     <h6><a href="#">最高优惠200元</a></h6>
-                    <h5 class="money"><a href="#">&yen;999</a></h5>  
+                    <h5 class="money"><a href="#">&yen;999</a></h5>
                 </div>
             </li>
             <li class="col-md-2" style="margin-top: 14px; margin-left: 42px;">
@@ -525,7 +527,7 @@
                     <img src="holder.js/100px200?bg=#afe">
                     <h5><a href="#">荣耀V9&nbsp;play</a></h5>
                     <h6><a href="#">最高优惠200元</a></h6>
-                    <h5 class="money"><a href="#">&yen;999</a></h5>  
+                    <h5 class="money"><a href="#">&yen;999</a></h5>
                 </div>
             </li>
             <li class="col-md-2" style="margin-top: 14px; margin-left: 42px;">
@@ -533,7 +535,7 @@
                     <img src="holder.js/100px200?bg=#afe">
                     <h5><a href="#">荣耀V9&nbsp;play</a></h5>
                     <h6><a href="#">最高优惠200元</a></h6>
-                    <h5 class="money"><a href="#">&yen;999</a></h5>  
+                    <h5 class="money"><a href="#">&yen;999</a></h5>
                 </div>
             </li>
             <li class="col-md-2" style="margin-top: 14px; margin-left: 41px;">
@@ -541,58 +543,13 @@
                     <img src="holder.js/100px200?bg=#afe">
                     <h5><a href="#">荣耀V9&nbsp;play</a></h5>
                     <h6><a href="#">最高优惠200元</a></h6>
-                    <h5 class="money"><a href="#">&yen;999</a></h5>  
+                    <h5 class="money"><a href="#">&yen;999</a></h5>
                 </div>
             </li>
         </ul>
     </div>
 </div>
 <!-- 热销单品部分结束 -->
-<!-- 精品推荐部分开始 -->
-<div class="container">
-    <div class="jptj">
-        <h3>精品推荐</h3>
-        <ul class="list-unstyled">
-            <li class="col-md-2 jipi" style="padding: 0px;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">HUAWEI&nbsp;WATCH&nbsp;2&nbsp;Pro</a></h5>
-                <h6><a href="#">独立通话(eSIM技术)</a></h6>
-                <h5 class="money"><a href="#">&yen;2588</a></h5> 
-            </li>
-            <li class="col-md-2 jipi" style="padding: 0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">HUAWEI&nbsp;WATCH&nbsp;2&nbsp;Pro</a></h5>
-                <h6><a href="#">独立通话(eSIM技术)</a></h6>
-                <h5 class="money"><a href="#">&yen;2588</a></h5>  
-            </li>
-            <li class="col-md-2 jipi" style="padding: 0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">HUAWEI&nbsp;WATCH&nbsp;2&nbsp;Pro</a></h5>
-                <h6><a href="#">独立通话(eSIM技术)</a></h6>
-                <h5 class="money"><a href="#">&yen;2588</a></h5>  
-            </li>
-            <li class="col-md-2 jipi" style="padding: 0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">HUAWEI&nbsp;WATCH&nbsp;2&nbsp;Pro</a></h5>
-                <h6><a href="#">独立通话(eSIM技术)</a></h6>
-                <h5 class="money"><a href="#">&yen;2588</a></h5>  
-            </li>
-            <li class="col-md-2 jipi" style="padding: 0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">HUAWEI&nbsp;WATCH&nbsp;2&nbsp;Pro</a></h5>
-                <h6><a href="#">独立通话(eSIM技术)</a></h6>
-                <h5 class="money"><a href="#">&yen;2588</a></h5>  
-            </li>
-            <li class="col-md-1 jipi_1" style="padding: 0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/110x200?bg=#afe">
-                <h5><a href="#">HUAWEI&nbsp;WATCH&nbsp;2&nbsp;Pro</a></h5>
-                <h6><a href="#">独立通话(eSIM技术)</a></h6>
-                <h5 class="money"><a href="#">&yen;2588</a></h5>  
-            </li>
-        </ul>
-    </div>
-</div>
-<!-- 精品推荐部分结束 -->
 <!-- 广告图部分开始 -->
 <div class="container">
     <div class="adv col-md-12">
@@ -601,19 +558,16 @@
 </div>
 <!-- 广告图部分结束 -->
 <!-- 手机部分开始 -->
+@foreach($cate as $k=>$v)
 <div class="container">
     <div class="iphone">
         <div class="iphone_t">
-            <h3>手机</h3>
+            <h3>{{$v->name}}</h3>
             <ul>
-                <li><a href="#">荣耀</a></li>
-                <li><a href="#">HUAWEI&nbsp;P系列</a></li>
-                <li><a href="#">荣耀畅玩系列</a></li>
-                <li><a href="#">HUAWEI&nbsp;Mate系列</a></li>
-                <li><a href="#">HUAWEI&nbsp;nova系列</a></li>
-                <li><a href="#">HUAWEI&nbsp;麦芒系列</a></li>
-                <li><a href="#">华为畅享系列</a></li>
-                <li><a href="#">合约机</a></li>
+
+                <li><a href="#"></a></li>
+
+
                 <li class="gedu"><a href="#">更多></a></li>
             </ul>
         </div>
@@ -622,427 +576,23 @@
                 <li class="col-md-3" style="padding: 0px;">
                     <img src="holder.js/290x345?bg=#dcf">
                 </li>
-                <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
+                @foreach($v->goods as $k=>$v)
+                  @if($k < 7)
+                      <li class="col-md-3 gao" style="padding: 0px;">
+                          <img src="{{$v->goods_pic}}" width="134" height="134" style="margin:30px 40px 60px 80px;">
+
+                          <h5><a href="#">{{$v->title}}</a></h5>
+                          <h6><a href="#">{{$v->content}}</a></h6>
+                          <h5 class="money yuan"><a href="#">&yen;{{$v->price}}</a></h5>
+                      </li>
+                   @endif
+                 @endforeach
             </ul>
         </div>
     </div>
 </div>
-<!-- 手机部分结束 -->
-<!-- 笔记本电脑部分开始 -->
-<div class="container">
-    <div class="iphone brain">
-        <div class="iphone_t brain_t">
-            <h3>笔记本电脑</h3>
-            <ul>
-                <li><a href="#">平板电脑</a></li>
-                <li><a href="#">笔记本电脑</a></li>
-                <li><a href="#">笔记本配件</a></li>
-                <li class="gedu"><a href="#">更多></a></li>
-            </ul>
-        </div>
-        <div class="iphone_b brain_b">
-            <ul class="list-unstyled">
-                <li class="col-md-3" style="padding: 0px;">
-                    <img src="holder.js/290x345?bg=#dcf">
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-<!-- 笔记本电脑部分结束 -->
-<!-- 精品平板部分开始 -->
-<div class="container">
-    <div class="iphone">
-        <div class="iphone_t iph_t">
-            <h3>精品平板</h3>
-            <ul>
-                <li><a href="#">平板电脑</a></li>
-                <li><a href="#">笔记本电脑</a></li>
-                <li><a href="#">笔记本配件</a></li>
-                <li class="gedu"><a href="#">更多></a></li>
-            </ul>
-        </div>
-        <div class="iphone_b">
-            <ul class="list-unstyled">
-                <li class="col-md-3" style="padding: 0px;">
-                    <img src="holder.js/290x345?bg=#dcf">
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-<!-- 精品平板部分结束 -->
-<!-- 智能穿戴部分开始 -->
-<div class="container">
-    <div class="iphone">
-        <div class="iphone_t noop">
-            <h3>智能穿戴</h3>
-            <ul>
-                <li><a href="#">手环</a></li>
-                <li><a href="#">手表</a></li>
-                <li class="gedu"><a href="#">更多></a></li>
-            </ul>
-        </div>
-        <div class="iphone_b">
-            <ul class="list-unstyled">
-                <li class="col-md-3" style="padding: 0px;">
-                    <img src="holder.js/290x345?bg=#dcf">
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-<!-- 智能穿戴部分结束 -->
-<!-- 智能家居部分开始 -->
-<div class="container">
-    <div class="iphone">
-        <div class="iphone_t home_t">
-            <h3>智能家居</h3>
-            <ul>
-                <li><a href="#">子母路由</a></li>
-                <li><a href="#">电视盒子</a></li>
-                <li><a href="#">路由器</a></li>
-                <li><a href="#">电力猫</a></li>
-                <li><a href="#">随性wifi</a></li>
-                <li><a href="#">HUAWEI&nbsp;HiLink生态产品</a></li>
-                <li class="gedu"><a href="#">更多></a></li>
-            </ul>
-        </div>
-        <div class="iphone_b">
-            <ul class="list-unstyled">
-                <li class="col-md-6" style="padding: 0px;">
-                    <img src="holder.js/590x345?bg=#dcf">
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="house">
-        <ul class="list-unstyled">
-            <li class="col-md-2 hou" style="padding: 0px;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
-                <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
-            </li>
-            <li class="col-md-2 hou" style="padding:0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
-                <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
-            </li>
-            <li class="col-md-2 hou" style="padding:0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
-                <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
-            </li>
-            <li class="col-md-2 hou" style="padding:0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
-                <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
-            </li>
-            <li class="col-md-2 hou" style="padding:0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
-                <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
-            </li>
-            <li class="col-md-1 hous" style="padding:0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/110x200?bg=#afe">
-                <h5><a href="#">华为路由</a></h5>
-                <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
-            </li>
-        </ul>
-    </div>
-</div>
-<!-- 智能家居部分结束 -->
-<!-- 热销配件部分开始 -->
-<div class="container">
-    <div class="iphone">
-        <div class="iphone_t home_t">
-            <h3>热销配件</h3>
-            <ul>
-                <li><a href="#">移动电源</a></li>
-                <li><a href="#">耳机</a></li>
-                <li><a href="#">充电器/线材</a></li>
-                <li><a href="#">自拍杆/支架</a></li>
-                <li><a href="#">音箱</a></li>
-                <li><a href="#">U盘/存储卡</a></li>
-                <li><a href="#">排插</a></li>
-                <li><a href="#">摄像机/镜头</a></li>
-                <li><a href="#">智能硬件</a></li>
-                <li><a href="#">生活周边</a></li>
-                <li class="gedu"><a href="#">更多></a></li>
-            </ul>
-        </div>
-        <div class="iphone_b">
-            <ul class="list-unstyled">
-                <li class="col-md-6" style="padding: 0px;">
-                    <img src="holder.js/590x345?bg=#dcf">
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="house">
-        <ul class="list-unstyled">
-            <li class="col-md-2 hou" style="padding: 0px;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
-                <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
-            </li>
-            <li class="col-md-2 hou" style="padding:0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
-                <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
-            </li>
-            <li class="col-md-2 hou" style="padding:0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
-                <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
-            </li>
-            <li class="col-md-2 hou" style="padding:0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
-                <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
-            </li>
-            <li class="col-md-2 hou" style="padding:0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
-                <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
-            </li>
-            <li class="col-md-1 hous" style="padding:0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/110x200?bg=#afe">
-                <h5><a href="#">华为路由</a></h5>
-                <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
-            </li>
-        </ul>
-    </div>
-</div>
-<!-- 热销配件部分结束 -->
-<!-- 品牌配件部分开始 -->
+@endforeach
+
 <div class="container">
     <div class="iphone">
         <div class="iphone_t home_t">
@@ -1111,37 +661,37 @@
                 <img src="holder.js/215x200?bg=#afe">
                 <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
                 <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
+                <h5 class="money"><a href="#">&yen;129</a></h5>
             </li>
             <li class="col-md-2 hou" style="padding:0px; border-left: 1px solid #f5f5f5;">
                 <img src="holder.js/215x200?bg=#afe">
                 <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
                 <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
+                <h5 class="money"><a href="#">&yen;129</a></h5>
             </li>
             <li class="col-md-2 hou" style="padding:0px; border-left: 1px solid #f5f5f5;">
                 <img src="holder.js/215x200?bg=#afe">
                 <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
                 <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
+                <h5 class="money"><a href="#">&yen;129</a></h5>
             </li>
             <li class="col-md-2 hou" style="padding:0px; border-left: 1px solid #f5f5f5;">
                 <img src="holder.js/215x200?bg=#afe">
                 <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
                 <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
+                <h5 class="money"><a href="#">&yen;129</a></h5>
             </li>
             <li class="col-md-2 hou" style="padding:0px; border-left: 1px solid #f5f5f5;">
                 <img src="holder.js/215x200?bg=#afe">
                 <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
                 <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
+                <h5 class="money"><a href="#">&yen;129</a></h5>
             </li>
             <li class="col-md-1 hous" style="padding:0px; border-left: 1px solid #f5f5f5;">
                 <img src="holder.js/110x200?bg=#afe">
                 <h5><a href="#">华为路由</a></h5>
                 <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
+                <h5 class="money"><a href="#">&yen;129</a></h5>
             </li>
         </ul>
     </div>
