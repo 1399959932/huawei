@@ -58,7 +58,12 @@ class GoodsController extends Controller
     {
 
 
+
         $data = $request->only(['title','price','content','cate_id','kucun']);
+
+
+        $data = $request->only(['title','price','content','cate_id']);
+
 
         // 填充数据库数据
         $data['created_at'] = date('Y-m-d H:i:s');
@@ -187,7 +192,6 @@ class GoodsController extends Controller
     public function glist(){
 
         //读取商品
-
 
         $goods = DB::table('goods')
         ->where('status',1)
