@@ -160,7 +160,7 @@ class SyscController extends Controller
         $shouye = DB::table('shouye')
         ->where('status',1)
         ->select('id','title','price','youhui')
-        ->orderBy('id','desc')
+        ->orderBy('id','asc')
         ->paginate(20);
         
         //遍历商品信息

@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
 
 class HomeController extends Controller
 {
     //
     public function index()
     {
-    	return view('home.colle');
+    	$shouye = DB::table('shouye')->get();
+    	return view('home.colle','shouye=>$shouye');
     }
 }

@@ -389,7 +389,11 @@
     <div class="container">
         <div class="lbx">
             <div class="col-md-3 lbx_1">
-                <img src="holder.js/60x60?bg=#fec" style="border-radius: 100%; margin: 10px; float: left;">
+                @foreach($shouye as $k=>$v)
+                @if($k == 8)
+                <img src="{{$v->pic}}" style="border-radius: 100%; margin: 10px; float: left;" width="60" height="60">
+                @endif
+                @endforeach
                 <ul>
                     <li>欢迎来到华为商城,请<a href="#">登录</a></li>
                     <li>还没账号？<a href="#">注册</a>即可享受&nbsp;&nbsp;&nbsp;&nbsp;></li>
@@ -400,30 +404,19 @@
                 </ul>
             </div>
             <div class="col-md-6 lbx_1 lbx_2">
-                <div class="col-md-2 xt" style="padding: 0px;">
-                    <img src="holder.js/50x45?bg=#ace">
-                    <h6>优选配件</h6>
+                @foreach($shouye as $k=>$v)
+                @if($k > 8)
+                <div class="col-md-2 xt" style="padding: 0px; margin-right: 22px;">
+                    <img src="{{$v->pic}}">
+                    <h6>{{$v->title}}</h6>
                 </div>
-                <div class="col-md-2 xt xt1" style="padding: 0px;">
-                    <img src="holder.js/50x45?bg=#ace">
-                    <h6>优选配件</h6>
+                @elseif($k == 15)
+                <div class="col-md-2 xt xt1" style="padding: 0px;margin-right: 0px;">
+                    <img src="{{$v->pic}}">
+                    <h6>{{$v->title}}</h6>
                 </div>
-                <div class="col-md-2 xt xt1" style="padding: 0px;">
-                    <img src="holder.js/50x45?bg=#ace">
-                    <h6>优选配件</h6>
-                </div>
-                <div class="col-md-2 xt xt1" style="padding: 0px;">
-                    <img src="holder.js/50x45?bg=#ace">
-                    <h6>优选配件</h6>
-                </div>
-                <div class="col-md-2 xt xt1" style="padding: 0px;">
-                    <img src="holder.js/50x45?bg=#ace">
-                    <h6>优选配件</h6>
-                </div>
-                <div class="col-md-2 xt xt1" style="padding: 0px;">
-                    <img src="holder.js/50x45?bg=#ace">
-                    <h6>优选配件</h6>
-                </div>
+                @endif
+                @endforeach
             </div>
             <div class="col-md-3 lbx_1 lbx_3">
                 <div class="lb_t">
@@ -431,6 +424,7 @@
                 </div>
                 <div class="lb_b">
                     <ul>
+                        @foreach($shouye as $k=>$v)
                         <li class="col-md-4">
                             <img src="holder.js/15x15?bg=#acd">
                             <span>优购码</span>
@@ -443,6 +437,7 @@
                             <img src="holder.js/15x15?bg=#acd">
                             <span>优购码</span>
                         </li>
+                        @endforeach
                     </ul>
                 </div>
             </div>
@@ -480,8 +475,7 @@
                     <img src="holder.js/100px594?bg=#ced">  
                 </div>
             </li>
-            @foreach($shouye as $k=>$v)
-            
+            @foreach($shouye as $k=>$v)          
             <li class="col-md-2" style="margin-right: 40px; margin-bottom: 10px;">
                 <div class="item">
                     <img src="{{$v->pic}}" style="width: 134px;height: 134px; margin-top: 35px;margin-left: 50px;">

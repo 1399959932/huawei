@@ -24,25 +24,13 @@ Route::post('/zhuce','UserController@zhucet');
 Route::get('/message','CommonController@message');
 // 验证码
 Route::get('/zhuce/captcha/{tmp}', 'UserController@captcha');
-
-
 Route::get('/login','UserController@login');
-
-
 Route::post('/login','UserController@dologin');
-
-
-
 
 //分类
 Route::resource('/cate','CateController');
-
-
-
 // 商品管理
 Route::get('/goods/list','GoodsController@gdlist');
-
-
 //pay get
 Route::get('/test','PayController@index');
 
@@ -55,13 +43,11 @@ Route::group(['middleware'=> 'login'],function(){
 	// 购物且
 	Route::post('/cart','CartController@store');
 
-
 	Route::get('/cart','CartController@index');
 	Route::get('/cart/delete','CartController@delete');
 	//个人中心
 	Route::post('/cart/geren','CartController@store');
-
-	 
+ 
 	//地址
 	Route::resource('/dizhi', 'AddressController');
 
@@ -78,15 +64,11 @@ Route::group(['middleware'=> 'login'],function(){
 
 });
 
-
 Route::get('/fens','GoodsController@classify');
 
 Route::get('/fenlei','GoodsController@glist');
 
-
  // 陈结束
-
-
 
 
 //前台首页
@@ -105,13 +87,8 @@ Route::get('/zqu','ZquController@prefe');
 Route::get('/fam','FamController@family');
 
 
-
-
 Route::get('/admin/login','LoginController@login');
 Route::post('/admin/login','LoginController@dologin');
-
-
-
 
 
 //文章管理
@@ -122,14 +99,9 @@ Route::resource('article','ArticleController');
 Route::resource('user','UserController');
 
 
-
-
-
-
 // 后台路由组
 	// 后台首页
 Route::get('/admin','AdminController@index');
-
 
 
 //后台用户
@@ -142,9 +114,6 @@ Route::resource('/roll','rollcontroller');
 // 后台轮播图
 Route::resource('/admin/lbotu','LbtController');
 Route::get('/lunbotu','LbtController@rool');
-
-
-
 
 
 // 前台页面
@@ -160,16 +129,12 @@ Route::get('/dingdan','DingdanController@index');
 Route::get('/list','listcontroller@list');
 
 
-
-
 //华为官网
 Route::get('/hwgw','HwgwController@official');
 
 //首页上传
 Route::resource('sysc','SyscController');
 Route::get('/syscs','SyscController@colle');
-
-
 
 
 

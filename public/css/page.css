@@ -99,7 +99,7 @@ body{
 	margin-left: -10px;
 }
 .header .nav_title{
-	width: 500px;
+	width: 510px;
 	height: 60px;
 	/*background-color: yellow;*/
 	margin-top: 10px;
@@ -112,6 +112,7 @@ body{
 	font-size: 17px;
 }
 .header .nav_title .nav_cen li a{
+	font-size: 16px;
 	color: #000;
 	text-decoration: none;
 }
@@ -149,9 +150,10 @@ body{
 /*导航条部分结束*/
 /*导航部分开始*/
 .dh{
-	width: 100%;
+	width: 1349px;
 	height: 450px;
 	/*background-color: red;*/
+	margin: 0px auto;
 	position: relative;
 }
 .dh .cebi{
@@ -322,6 +324,10 @@ body{
 	font-size: 12px;
 	color: #3a3a3a;
 	margin-top: 2px;
+	cursor: pointer;
+}
+.lbx .lbx_2 .xt h6:hover{
+	color: #ca151d;
 }
 .lbx .lbx_3 .lb_t{
 	height: 47px;
