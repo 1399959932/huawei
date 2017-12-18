@@ -585,20 +585,32 @@
     </div>
     <div class="foot_b">
         <div class="container">
+            @foreach($shouye as $k=>$v)
+            @if($k == 118)
             <div class="col-md-1" style="padding:0px;margin-top: 47px;">
-                <img src="holder.js/85x25?bg=#fea&text=logo">
+                <img src="{{$v->pic}}">
             </div>
+            @endif
+            @endforeach
             <div class="col-md-6" style="margin-top: 25px;">
                 <p class="ban"><a href="#">隐私政权</a>&nbsp;<a href="#">服务协议</a>&nbsp;Copyright8&nbsp;&copy;&nbsp;2012-2017&nbsp;华为软件技术有限公司&nbsp;版权所有&nbsp;保留一切权利</p>
                 <p class="ban"><a href="#">隐私政权</a>&nbsp;<a href="#">服务协议</a>&nbsp;Copyright8&nbsp;&copy;&nbsp;2012-2017&nbsp;华为软件技术有限公司&nbsp;版权所有&nbsp;保留一切权利</p>
                 <p class="ban"><a href="#">隐私政权</a>&nbsp;<a href="#">服务协议</a>&nbsp;Copyright8&nbsp;&copy;&nbsp;2012-2017&nbsp;华为软件技术有限公司&nbsp;版权所有&nbsp;保留一切权利</p>
             </div>
             <div class="pull-right" style="margin-top: 47px;">
-                <img src="holder.js/90x32?bg=#afc">
-                <img src="holder.js/90x32?bg=#afc">
-                <img src="holder.js/90x32?bg=#afc">
-                <img src="holder.js/90x32?bg=#afc">
-                <img src="holder.js/90x32?bg=#afc">
+                @foreach($shouye as $k=>$v)
+                @if($k > 118 && $k < 123)
+                <img src="{{$v->pic}}" style="width: 70px;height: 24px;">
+                @elseif($k == 120)
+                <img src="{{$v->pic}}" style="width: 70px;height: 24px;">
+                @elseif($k == 121)
+                <img src="{{$v->pic}}" style="width: 70px;height: 24px;">
+                @elseif($k == 122)
+                <img src="{{$v->pic}}" style="width: 70px;height: 24px;">
+                @elseif($k == 123)
+                <img src="{{$v->pic}}" style="width: 70px;height: 24px;">
+                @endif
+                @endforeach
             </div>
         </div>
     </div>

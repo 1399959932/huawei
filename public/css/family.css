@@ -38,7 +38,7 @@
 .ryao .ry .ry_b{
 	width: 1160px;
 	height: 600px;
-	/*background-color: pink;*/
+	/*background-csolor: pink;*/
 	margin-left: 20px;
 	margin-top: 9px;
 }
@@ -52,6 +52,7 @@
 	width: 290px;
 	height: 378px;
 	background-color: #fff;
+	border-left: 1px solid #ddd;
 	float: left;
 }
 .ryao .ry .ry_b .ry_b_t .one:hover{
@@ -88,6 +89,9 @@
 	margin-top: 22px;
 	border: 1px solid #ddd;
 	border-radius: 5px;
+}
+.ryao .ry .ry_b .ry_b_b div{
+	border-left: 1px solid #ddd;
 }
 /*荣耀精品部分结束*/
 /*手机部分开始*/
@@ -129,7 +133,7 @@
 }
 .iph .iph_nr .iph_t ul li a{
 	color: #a4a4a4;
-	font-size: 19px;
+	font-size: 18px;
 }
 .iph .iph_nr .iph_t ul li a:hover{
 	color: #00B5E2;
@@ -235,7 +239,7 @@
 }
 .jppb .pb_nr .pb_nr_t ul li a{
 	color: #a4a4a4;
-	font-size: 19px;
+	font-size: 18px;
 }
 .jppb .pb_nr .pb_nr_t ul li a:hover{
 	color: #00B5E2;
@@ -401,7 +405,7 @@
 }
 .jiju .jia_nr .jia_nr_t ul li a{
 	color: #a4a4a4;
-	font-size: 19px;
+	font-size: 18px;
 }
 .jiju .jia_nr .jia_nr_t ul li a:hover{
 	color: #00B5E2;

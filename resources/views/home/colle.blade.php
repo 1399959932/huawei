@@ -3,55 +3,71 @@
 <!-- 导航部分开始 -->
 <div class="dh">
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="6"></li>
-        </ol>
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="holder.js/100px450?bg=#dac" alt="...">
-                <div class="carousel-caption"></div>
-            </div>
-            <div class="item">
-                <img src="holder.js/100px450?bg=#def" alt="...">
-                <div class="carousel-caption"></div>
-            </div>
-            <div class="item">
-                <img src="holder.js/100px450?bg=#abf" alt="...">
-                <div class="carousel-caption"></div>
-            </div>
-            <div class="item">
-                <img src="holder.js/100px450?bg=#eda" alt="...">
-                <div class="carousel-caption"></div>
-            </div>
-            <div class="item">
-                <img src="holder.js/100px450?bg=#cbe" alt="...">
-                <div class="carousel-caption"></div>
-            </div>
-            <div class="item">
-                <img src="holder.js/100px450?bg=#dac" alt="...">
-                <div class="carousel-caption"></div>
-            </div>
-            <div class="item">
-                <img src="holder.js/100px450?bg=#def" alt="...">
-                <div class="carousel-caption"></div>
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="" alt="...">
+            <div class="carousel-caption">
             </div>
         </div>
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="sr-only">Next</span>
-        </a>
+        <div class="item">
+            <img src="holder.js/100px450?bg=#acd" alt="...">
+            <div class="carousel-caption">
+            </div>
+        </div>
+        <div class="item">
+            <img src="holder.js/100px450?bg=#acd" alt="...">
+            <div class="carousel-caption">
+            </div>
+        </div>
+        <div class="item">
+            <img src="holder.js/100px450?bg=#acd" alt="...">
+            <div class="carousel-caption">
+            </div>
+        </div>
+        <div class="item">
+            <img src="holder.js/100px450?bg=#acd" alt="...">
+            <div class="carousel-caption">
+            </div>
+        </div>
+        <div class="item">
+            <img src="holder.js/100px450?bg=#acd" alt="...">
+            <div class="carousel-caption">
+            </div>
+        </div>
+        <div class="item">
+            <img src="holder.js/100px450?bg=#acd" alt="...">
+            <div class="carousel-caption">
+            </div>
+        </div>
+        <div class="item">
+            <img src="holder.js/100px450?bg=#acd" alt="...">
+            <div class="carousel-caption">
+            </div>
+        </div>
     </div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
     <!-- 侧边选项卡开始 -->
     <div class="cebi">
         <ul>
@@ -85,26 +101,21 @@
                         </div>
                     </div>
                     <div class="list_b">
+                        @foreach($shouye as $k=>$v)
+                        @if($k > 93 && $k < 97)
                         <div class="b_cp">
-                            <img src="holder.js/161x170?bg=#acd">
-                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
-                            <h5 class="mo">&yen;3899</h5>
+                            <img src="{{$v->pic}}" style="width: 120px;height: 120px; margin-top: 25px;margin-left: 25px;margin-bottom: 25px;">
+                            <h5>{{$v->title}}</h5>
+                            <h5 class="mo">&yen;{{$v->price}}</h5>
                         </div>
+                        @elseif($k == 97)
                         <div class="b_cp">
-                            <img src="holder.js/161x170?bg=#acd">
-                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
-                            <h5 class="mo">&yen;3899</h5>
+                            <img src="{{$v->pic}}" style="width: 120px;height: 120px; margin-top: 25px;margin-left: 25px;margin-bottom: 25px;">
+                            <h5>{{$v->title}}</h5>
+                            <h5 class="mo">&yen;{{$v->price}}</h5>
                         </div>
-                        <div class="b_cp">
-                            <img src="holder.js/161x170?bg=#acd">
-                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
-                            <h5 class="mo">&yen;3899</h5>
-                        </div>
-                        <div class="b_cp b_cp1">
-                            <img src="holder.js/161x170?bg=#acd">
-                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
-                            <h5 class="mo">&yen;3899</h5>
-                        </div>
+                        @endif
+                        @endforeach
                     </div>
                 </div>
             </li>
@@ -126,37 +137,27 @@
                     </div>
                     <div class="list_c">
                         <div class="c_zi">
-                            <p><a href="#">荣耀</a></p>
-                            <p><a href="#">HUAWEI&nbsp;P系列</a></p>
-                            <p><a href="#">荣耀畅玩系列</a></p>
-                            <p class="meta"><a href="#">HUAWEI&nbsp;Mate系列</a></p>
-                            <p><a href="#">HUAWEI&nbsp;nova系列</a></p>
-                            <p><a href="#">HUAWEI&nbsp;麦芒系列</a></p>
-                            <p><a href="#">华为畅享系列</a></p>
-                            <p class="meta"><a href="#">合约机</a></p>
+                            <p><a href="#">平板电脑</a></p>
+                            <p><a href="#">笔记本电脑</a></p>
+                            <p><a href="#">笔记本配件</a></p>
                         </div>
                     </div>
                     <div class="list_b">
+                        @foreach($shouye as $k=>$v)
+                        @if($k > 97 && $k < 101)
                         <div class="b_cp">
-                            <img src="holder.js/161x170?bg=#acd">
-                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
-                            <h5 class="mo">&yen;3899</h5>
+                            <img src="{{$v->pic}}" style="width: 120px;height: 120px; margin-top: 25px;margin-left: 25px;margin-bottom: 25px;">
+                            <h5>{{$v->title}}</h5>
+                            <h5 class="mo">&yen;{{$v->price}}</h5>
                         </div>
+                        @elseif($k == 101)
                         <div class="b_cp">
-                            <img src="holder.js/161x170?bg=#acd">
-                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
-                            <h5 class="mo">&yen;3899</h5>
+                            <img src="{{$v->pic}}" style="width: 120px;height: 120px; margin-top: 25px;margin-left: 25px;margin-bottom: 25px;">
+                            <h5>{{$v->title}}</h5>
+                            <h5 class="mo">&yen;{{$v->price}}</h5>
                         </div>
-                        <div class="b_cp">
-                            <img src="holder.js/161x170?bg=#acd">
-                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
-                            <h5 class="mo">&yen;3899</h5>
-                        </div>
-                        <div class="b_cp b_cp1">
-                            <img src="holder.js/161x170?bg=#acd">
-                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
-                            <h5 class="mo">&yen;3899</h5>
-                        </div>
+                        @endif
+                        @endforeach
                     </div>
                 </div>
             </li>
@@ -179,37 +180,26 @@
                     </div>
                     <div class="list_c">
                         <div class="c_zi">
-                            <p><a href="#">荣耀</a></p>
-                            <p><a href="#">HUAWEI&nbsp;P系列</a></p>
-                            <p><a href="#">荣耀畅玩系列</a></p>
-                            <p class="meta"><a href="#">HUAWEI&nbsp;Mate系列</a></p>
-                            <p><a href="#">HUAWEI&nbsp;nova系列</a></p>
-                            <p><a href="#">HUAWEI&nbsp;麦芒系列</a></p>
-                            <p><a href="#">华为畅享系列</a></p>
-                            <p class="meta"><a href="#">合约机</a></p>
+                            <p><a href="#">手环</a></p>
+                            <p><a href="#">手表</a></p>
                         </div>
                     </div>
                     <div class="list_b">
+                        @foreach($shouye as $k=>$v)
+                        @if($k > 101 && $k < 105)
                         <div class="b_cp">
-                            <img src="holder.js/161x170?bg=#acd">
-                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
-                            <h5 class="mo">&yen;3899</h5>
+                            <img src="{{$v->pic}}" style="width: 120px;height: 120px; margin-top: 25px;margin-left: 25px;margin-bottom: 25px;">
+                            <h5>{{$v->title}}</h5>
+                            <h5 class="mo">&yen;{{$v->price}}</h5>
                         </div>
+                        @elseif($k == 105)
                         <div class="b_cp">
-                            <img src="holder.js/161x170?bg=#acd">
-                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
-                            <h5 class="mo">&yen;3899</h5>
+                            <img src="{{$v->pic}}" style="width: 120px;height: 120px; margin-top: 25px;margin-left: 25px;margin-bottom: 25px;">
+                            <h5>{{$v->title}}</h5>
+                            <h5 class="mo">&yen;{{$v->price}}</h5>
                         </div>
-                        <div class="b_cp">
-                            <img src="holder.js/161x170?bg=#acd">
-                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
-                            <h5 class="mo">&yen;3899</h5>
-                        </div>
-                        <div class="b_cp b_cp1">
-                            <img src="holder.js/161x170?bg=#acd">
-                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
-                            <h5 class="mo">&yen;3899</h5>
-                        </div>
+                        @endif
+                        @endforeach
                     </div>
                 </div>
             </li>
@@ -234,38 +224,31 @@
                         <p class="col-md-offset-8 col-md-1"><a href="#">></a></p>
                     </div>
                     <div class="list_c">
-                        <div class="c_zi">
-                            <p><a href="#">荣耀</a></p>
-                            <p><a href="#">HUAWEI&nbsp;P系列</a></p>
-                            <p><a href="#">荣耀畅玩系列</a></p>
-                            <p class="meta"><a href="#">HUAWEI&nbsp;Mate系列</a></p>
-                            <p><a href="#">HUAWEI&nbsp;nova系列</a></p>
-                            <p><a href="#">HUAWEI&nbsp;麦芒系列</a></p>
-                            <p><a href="#">华为畅享系列</a></p>
-                            <p class="meta"><a href="#">合约机</a></p>
+                        <div class="c_zi" style="width: 550px;">
+                            <p><a href="#">子母路由</a></p>
+                            <p><a href="#">电视盒子</a></p>
+                            <p><a href="#">路由器</a></p>
+                            <p><a href="#">电力猫</a></p>
+                            <p><a href="#">随性wifi</a></p>
+                            <p class="meta"><a href="#">HUAWEI&nbsp;HiLink生态产品</a></p>
                         </div>
                     </div>
                     <div class="list_b">
+                        @foreach($shouye as $k=>$v)
+                        @if($k > 105 && $k < 109)
                         <div class="b_cp">
-                            <img src="holder.js/161x170?bg=#acd">
-                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
-                            <h5 class="mo">&yen;3899</h5>
+                            <img src="{{$v->pic}}" style="width: 120px;height: 120px; margin-top: 25px;margin-left: 25px;margin-bottom: 25px;">
+                            <h5>{{$v->title}}</h5>
+                            <h5 class="mo">&yen;{{$v->price}}</h5>
                         </div>
+                        @elseif($k == 109)
                         <div class="b_cp">
-                            <img src="holder.js/161x170?bg=#acd">
-                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
-                            <h5 class="mo">&yen;3899</h5>
+                            <img src="{{$v->pic}}" style="width: 120px;height: 120px; margin-top: 25px;margin-left: 25px;margin-bottom: 25px;">
+                            <h5>{{$v->title}}</h5>
+                            <h5 class="mo">&yen;{{$v->price}}</h5>
                         </div>
-                        <div class="b_cp">
-                            <img src="holder.js/161x170?bg=#acd">
-                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
-                            <h5 class="mo">&yen;3899</h5>
-                        </div>
-                        <div class="b_cp b_cp1">
-                            <img src="holder.js/161x170?bg=#acd">
-                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
-                            <h5 class="mo">&yen;3899</h5>
-                        </div>
+                        @endif
+                        @endforeach
                     </div>
                 </div>
             </li>
@@ -290,38 +273,35 @@
                         <p class="col-md-offset-8 col-md-1"><a href="#">></a></p>
                     </div>
                     <div class="list_c">
-                        <div class="c_zi">
-                            <p><a href="#">荣耀</a></p>
-                            <p><a href="#">HUAWEI&nbsp;P系列</a></p>
-                            <p><a href="#">荣耀畅玩系列</a></p>
-                            <p class="meta"><a href="#">HUAWEI&nbsp;Mate系列</a></p>
-                            <p><a href="#">HUAWEI&nbsp;nova系列</a></p>
-                            <p><a href="#">HUAWEI&nbsp;麦芒系列</a></p>
-                            <p><a href="#">华为畅享系列</a></p>
-                            <p class="meta"><a href="#">合约机</a></p>
+                        <div class="c_zi" style="width: 545px;">
+                            <p><a href="#">移动电源</a></p>
+                            <p><a href="#">耳机</a></p>
+                            <p><a href="#">音箱</a></p>
+                            <p class="meta"><a href="#">自拍杆/支架</a></p>
+                            <p><a href="#">充电器/线材</a></p>
+                            <p><a href="#">U盘/存储卡</a></p>
+                            <p><a href="#">排插</a></p>
+                            <p><a href="#">摄像机/镜头</a></p>
+                            <p><a href="#">智能硬件</a></p>
+                            <p class="meta"><a href="#">生活周边</a></p>
                         </div>
                     </div>
                     <div class="list_b">
+                        @foreach($shouye as $k=>$v)
+                        @if($k > 109 && $k < 113)
                         <div class="b_cp">
-                            <img src="holder.js/161x170?bg=#acd">
-                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
-                            <h5 class="mo">&yen;3899</h5>
+                            <img src="{{$v->pic}}" style="width: 120px;height: 120px; margin-top: 25px;margin-left: 25px;margin-bottom: 25px;">
+                            <h5>{{$v->title}}</h5>
+                            <h5 class="mo">&yen;{{$v->price}}</h5>
                         </div>
+                        @elseif($k == 113)
                         <div class="b_cp">
-                            <img src="holder.js/161x170?bg=#acd">
-                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
-                            <h5 class="mo">&yen;3899</h5>
+                            <img src="{{$v->pic}}" style="width: 120px;height: 120px; margin-top: 25px;margin-left: 25px;margin-bottom: 25px;">
+                            <h5>{{$v->title}}</h5>
+                            <h5 class="mo">&yen;{{$v->price}}</h5>
                         </div>
-                        <div class="b_cp">
-                            <img src="holder.js/161x170?bg=#acd">
-                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
-                            <h5 class="mo">&yen;3899</h5>
-                        </div>
-                        <div class="b_cp b_cp1">
-                            <img src="holder.js/161x170?bg=#acd">
-                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
-                            <h5 class="mo">&yen;3899</h5>
-                        </div>
+                        @endif
+                        @endforeach
                     </div>
                 </div>
             </li>
@@ -347,37 +327,29 @@
                     </div>
                     <div class="list_c">
                         <div class="c_zi">
-                            <p><a href="#">荣耀</a></p>
-                            <p><a href="#">HUAWEI&nbsp;P系列</a></p>
-                            <p><a href="#">荣耀畅玩系列</a></p>
-                            <p class="meta"><a href="#">HUAWEI&nbsp;Mate系列</a></p>
-                            <p><a href="#">HUAWEI&nbsp;nova系列</a></p>
-                            <p><a href="#">HUAWEI&nbsp;麦芒系列</a></p>
-                            <p><a href="#">华为畅享系列</a></p>
-                            <p class="meta"><a href="#">合约机</a></p>
+                            <p><a href="#">保护壳</a></p>
+                            <p><a href="#">保护套</a></p>
+                            <p><a href="#">贴膜</a></p>
+                            <p class="meta"><a href="#">盒子专属配件</a></p>
+                            <p><a href="#">表带</a></p>
                         </div>
                     </div>
                     <div class="list_b">
+                        @foreach($shouye as $k=>$v)
+                        @if($k > 113 && $k < 117)
                         <div class="b_cp">
-                            <img src="holder.js/161x170?bg=#acd">
-                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
-                            <h5 class="mo">&yen;3899</h5>
+                            <img src="{{$v->pic}}" style="width: 120px;height: 120px; margin-top: 25px;margin-left: 25px;margin-bottom: 25px;">
+                            <h5>{{$v->title}}</h5>
+                            <h5 class="mo">&yen;{{$v->price}}</h5>
                         </div>
+                        @elseif($k == 117)
                         <div class="b_cp">
-                            <img src="holder.js/161x170?bg=#acd">
-                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
-                            <h5 class="mo">&yen;3899</h5>
+                            <img src="{{$v->pic}}" style="width: 120px;height: 120px; margin-top: 25px;margin-left: 25px;margin-bottom: 25px;">
+                            <h5>{{$v->title}}</h5>
+                            <h5 class="mo">&yen;{{$v->price}}</h5>
                         </div>
-                        <div class="b_cp">
-                            <img src="holder.js/161x170?bg=#acd">
-                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
-                            <h5 class="mo">&yen;3899</h5>
-                        </div>
-                        <div class="b_cp b_cp1">
-                            <img src="holder.js/161x170?bg=#acd">
-                            <h5>HUAWEI&nbsp;Mate&nbsp;10</h5>
-                            <h5 class="mo">&yen;3899</h5>
-                        </div>
+                        @endif
+                        @endforeach
                     </div>
                 </div>
             </li>
@@ -390,7 +362,7 @@
         <div class="lbx">
             <div class="col-md-3 lbx_1">
                 @foreach($shouye as $k=>$v)
-                @if($k == 8)
+                @if($k == 0)
                 <img src="{{$v->pic}}" style="border-radius: 100%; margin: 10px; float: left;" width="60" height="60">
                 @endif
                 @endforeach
@@ -405,12 +377,12 @@
             </div>
             <div class="col-md-6 lbx_1 lbx_2">
                 @foreach($shouye as $k=>$v)
-                @if($k > 8)
+                @if($k > 0 && $k < 7)
                 <div class="col-md-2 xt" style="padding: 0px; margin-right: 22px;">
                     <img src="{{$v->pic}}">
                     <h6>{{$v->title}}</h6>
                 </div>
-                @elseif($k == 15)
+                @elseif($k == 6)
                 <div class="col-md-2 xt xt1" style="padding: 0px;margin-right: 0px;">
                     <img src="{{$v->pic}}">
                     <h6>{{$v->title}}</h6>
@@ -425,18 +397,17 @@
                 <div class="lb_b">
                     <ul>
                         @foreach($shouye as $k=>$v)
-                        <li class="col-md-4">
-                            <img src="holder.js/15x15?bg=#acd">
-                            <span>优购码</span>
+                        @if($k > 6 && $k < 10)
+                        <li class="col-md-4" style="padding: 0px;">
+                            <img src="{{$v->pic}}">
+                            <span>{{$v->title}}</span>
                         </li>
-                        <li class="col-md-4">
-                            <img src="holder.js/15x15?bg=#acd">
-                            <span>优购码</span>
+                        @elseif($k == 9)
+                        <li class="col-md-4" style="margin-right: 0px">
+                            <img src="{{$v->pic}}">
+                            <span>{{$v->title}}</span>
                         </li>
-                        <li class="col-md-4">
-                            <img src="holder.js/15x15?bg=#acd">
-                            <span>优购码</span>
-                        </li>
+                        @endif
                         @endforeach
                     </ul>
                 </div>
@@ -450,18 +421,17 @@
 <div class="ten"></div>
 <div class="container">
     <div class="dhx">
+        @foreach($shouye as $k=>$v)
+        @if($k > 23 && $k < 27)
         <div class="col-xs-3 dhx_1">
-            <img src="holder.js/97px160?bg=#def">
+            <img src="{{$v->pic}}">
         </div>
+        @elseif($k == 27)
         <div class="col-xs-3 dhx_1">
-            <img src="holder.js/97px160?bg=#acd">
+            <img src="{{$v->pic}}">
         </div>
-        <div class="col-xs-3 dhx_1">
-            <img src="holder.js/97px160?bg=#ecc">
-        </div>
-        <div class="col-xs-3 dhx_1">
-            <img src="holder.js/100px160?bg=#fea">
-        </div>
+        @endif
+        @endforeach
     </div>
 </div>
 <!-- 导航下部分结束 -->
@@ -471,11 +441,16 @@
         <h3>热销单品</h3>
         <ul class="list-unstyled">
             <li class="col-md-2">
+                 @foreach($shouye as $k=>$v)
+                 @if($k == 18)
                 <div class="rxdp">
-                    <img src="holder.js/100px594?bg=#ced">  
+                    <img src="{{$v->pic}}">  
                 </div>
+                @endif
+                @endforeach
             </li>
-            @foreach($shouye as $k=>$v)          
+            @foreach($shouye as $k=>$v)
+            @if($k > 9 && $k < 18)         
             <li class="col-md-2" style="margin-right: 40px; margin-bottom: 10px;">
                 <div class="item">
                     <img src="{{$v->pic}}" style="width: 134px;height: 134px; margin-top: 35px;margin-left: 50px;">
@@ -484,6 +459,16 @@
                     <h5 class="money"><a href="#">&yen;{{$v->price}}</a></h5>  
                 </div>
             </li>
+            @elseif($k == 17)
+            <li class="col-md-2" style="margin-right: 40px; margin-bottom: 10px;">
+                <div class="item">
+                    <img src="{{$v->pic}}" style="width: 134px;height: 134px; margin-top: 35px;margin-left: 50px;">
+                    <h5><a href="#">{{$v->title}}</a></h5>
+                    <h6><a href="#">{{$v->youhui}}</a></h6>
+                    <h5 class="money"><a href="#">&yen;{{$v->price}}</a></h5>  
+                </div>
+            </li>
+            @endif
             @endforeach
         </ul>
     </div>
@@ -495,12 +480,21 @@
         <h3>精品推荐</h3>
         <ul class="list-unstyled">
             @foreach($shouye as $k=>$v)
-            <li class="col-md-2 jipi" style="padding: 0px;">
-                <img src="{{$v->pic}}" style="width: 134px;height: 134px;">
+            @if($k > 18 && $k < 23)
+            <li class="col-md-2 jipi" style="padding: 0px; margin-right: 25px;">
+                <img src="{{$v->pic}}" style="width: 134px;height: 134px;margin-left: 43px;margin-top: 38px;">
                 <h5><a href="#">{{$v->title}}</a></h5>
                 <h6><a href="#">{{$v->youhui}}</a></h6>
-                <h5 class="money"><a href="#">&yen;{{$v->price}}</a></h5> 
+                <h5 class="money"><a href="#">&yen;{{$v->price}}</a></h5>
             </li>
+            @elseif($k == 23)
+            <li class="col-md-2 jipi" style="padding: 0px;margin-right: 25px;">
+                <img src="{{$v->pic}}" style="width: 134px;height: 134px;margin-left: 43px;margin-top: 38px;">
+                <h5><a href="#">{{$v->title}}</a></h5>
+                <h6><a href="#">{{$v->youhui}}</a></h6>
+                <h5 class="money"><a href="#">&yen;{{$v->price}}</a></h5>
+            </li>
+            @endif
             @endforeach
         </ul>
     </div>
@@ -508,9 +502,13 @@
 <!-- 精品推荐部分结束 -->
 <!-- 广告图部分开始 -->
 <div class="container">
+    @foreach($shouye as $k=>$v)
+    @if($k == 35)
     <div class="adv col-md-12">
-        <img src="holder.js/100px120?bg=#fea">
+        <img src="{{$v->pic}}">
     </div>
+    @endif
+    @endforeach
 </div>
 <!-- 广告图部分结束 -->
 <!-- 手机部分开始 -->
@@ -532,51 +530,30 @@
         </div>
         <div class="iphone_b">
             <ul class="list-unstyled">
+                @foreach($shouye as $k => $v)
+                @if($k == 36)
                 <li class="col-md-3" style="padding: 0px;">
-                    <img src="holder.js/290x345?bg=#dcf">
+                    <img src="{{$v->pic}}">
                 </li>
+                @endif
+                @endforeach
+                @foreach($shouye as $k => $v)
+                @if($k > 27 && $k < 34)
                 <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
+                    <img src="{{$v->pic}}" style="width: 160px;height: 160px;margin-top: 43px;margin-left: 65px;margin-bottom: 50px;">
+                    <h5><a href="#">{{$v->title}}</a></h5>
+                    <h6><a href="#">{{$v->youhui}}</a></h6>
+                    <h5 class="money yuan"><a href="#">&yen;{{$v->price}}</a></h5>
                 </li>
+                @elseif($k == 34)
                 <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
+                    <img src="{{$v->pic}}" style="width: 160px;height: 160px;margin-top: 43px;margin-left: 65px;margin-bottom: 50px;">
+                    <h5><a href="#">{{$v->title}}</a></h5>
+                    <h6><a href="#">{{$v->youhui}}</a></h6>
+                    <h5 class="money yuan"><a href="#">&yen;{{$v->price}}</a></h5>
                 </li>
-                <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
+                @endif
+                @endforeach
             </ul>
         </div>
     </div>
@@ -596,27 +573,30 @@
         </div>
         <div class="iphone_b brain_b">
             <ul class="list-unstyled">
+                @foreach($shouye as $k=>$v)
+                @if($k == 37)
                 <li class="col-md-3" style="padding: 0px;">
-                    <img src="holder.js/290x345?bg=#dcf">
+                    <img src="{{$v->pic}}">
                 </li>
+                @endif
+                @endforeach
+                @foreach($shouye as $k=>$v)
+                @if($k > 37 && $k < 40)
                 <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
+                    <img src="{{$v->pic}}" style="width: 160px;height: 160px;margin-top: 44px;margin-left: 65px;margin-bottom: 50px;">
+                    <h5><a href="#">{{$v->title}}</a></h5>
+                    <h6><a href="#">{{$v->youhui}}</a></h6>
+                    <h5 class="money yuan"><a href="#">&yen;{{$v->price}}</a></h5>
                 </li>
+                @elseif($k == 40)
                 <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
+                    <img src="{{$v->pic}}" style="width: 160px;height: 160px;margin-top: 44px;margin-left: 65px;margin-bottom: 50px;">
+                    <h5><a href="#">{{$v->title}}</a></h5>
+                    <h6><a href="#">{{$v->youhui}}</a></h6>
+                    <h5 class="money yuan"><a href="#">&yen;{{$v->price}}</a></h5>
                 </li>
-                <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
+                @endif
+                @endforeach
             </ul>
         </div>
     </div>
@@ -636,51 +616,30 @@
         </div>
         <div class="iphone_b">
             <ul class="list-unstyled">
+                @foreach($shouye as $k=>$v)
+                @if($k == 41)
                 <li class="col-md-3" style="padding: 0px;">
-                    <img src="holder.js/290x345?bg=#dcf">
+                    <img src="{{$v->pic}}">
                 </li>
+                @endif
+                @endforeach
+                @foreach($shouye as $k=>$v)
+                @if($k > 41 && $k < 48)
                 <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
+                    <img src="{{$v->pic}}" style="width: 160px;height: 160px;margin-top: 44px;margin-left: 65px;margin-bottom: 50px;">
+                    <h5><a href="#">{{$v->title}}</a></h5>
+                    <h6><a href="#">{{$v->youhui}}</a></h6>
+                    <h5 class="money yuan"><a href="#">&yen;{{$v->price}}</a></h5>
                 </li>
+                @elseif($k == 48)
                 <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
+                    <img src="{{$v->pic}}" style="width: 160px;height: 160px;margin-top: 44px;margin-left: 65px;margin-bottom: 50px;">
+                    <h5><a href="#">{{$v->title}}</a></h5>
+                    <h6><a href="#">{{$v->youhui}}</a></h6>
+                    <h5 class="money yuan"><a href="#">&yen;{{$v->price}}</a></h5>
                 </li>
-                <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
+                @endif
+                @endforeach
             </ul>
         </div>
     </div>
@@ -699,51 +658,32 @@
         </div>
         <div class="iphone_b">
             <ul class="list-unstyled">
+                @foreach($shouye as $k=>$v)
+                @if($k == 49)
                 <li class="col-md-3" style="padding: 0px;">
-                    <img src="holder.js/290x345?bg=#dcf">
+                    <img src="{{$v->pic}}">
                 </li>
+                @endif
+                @endforeach
+                @foreach($shouye as $k=>$v)
+                @if($k > 49 && $k < 56)
                 <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
+                    <img src="{{$v->pic}}" style="width: 160px;
+                    height: 160px;margin-top: 44px;margin-left: 65px;margin-bottom: 50px;">
+                    <h5><a href="#">{{$v->title}}</a></h5>
+                    <h6><a href="#">{{$v->youhui}}</a></h6>
+                    <h5 class="money yuan"><a href="#">&yen;{{$v->price}}</a></h5>
                 </li>
+                @elseif($k == 56)
                 <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
+                    <img src="{{$v->pic}}" style="width: 160px;
+                    height: 160px;margin-top: 44px;margin-left: 65px;margin-bottom: 50px;">
+                    <h5><a href="#">{{$v->title}}</a></h5>
+                    <h6><a href="#">{{$v->youhui}}</a></h6>
+                    <h5 class="money yuan"><a href="#">&yen;{{$v->price}}</a></h5>
                 </li>
-                <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
+                @endif
+                @endforeach
             </ul>
         </div>
     </div>
@@ -766,86 +706,56 @@
         </div>
         <div class="iphone_b">
             <ul class="list-unstyled">
+                @foreach($shouye as $k=>$v)
+                @if($k == 57)
                 <li class="col-md-6" style="padding: 0px;">
-                    <img src="holder.js/590x345?bg=#dcf">
+                    <img src="{{$v->pic}}">
                 </li>
+                @endif
+                @endforeach
+                @foreach($shouye as $k=>$v)
+                @if($k > 57 && $k < 63)
                 <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
+                    <img src="{{$v->pic}}" style="width: 160px;
+                    height: 160px;margin-top: 44px;margin-left: 65px;margin-bottom: 50px;">
+                    <h5><a href="#">{{$v->title}}</a></h5>
+                    <h6><a href="#">{{$v->youhui}}</a></h6>
+                    <h5 class="money yuan"><a href="#">&yen;{{$v->price}}</a></h5>
                 </li>
+                @elseif($k == 63)
                 <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
+                    <img src="{{$v->pic}}" style="width: 160px;
+                    height: 160px;margin-top: 44px;margin-left: 65px;margin-bottom: 50px;">
+                    <h5><a href="#">{{$v->title}}</a></h5>
+                    <h6><a href="#">{{$v->youhui}}</a></h6>
+                    <h5 class="money yuan"><a href="#">&yen;{{$v->price}}</a></h5>
                 </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
+                @endif
+                @endforeach
             </ul>
         </div>
     </div>
     <div class="house">
         <ul class="list-unstyled">
-            <li class="col-md-2 hou" style="padding: 0px;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
-                <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
+            @foreach($shouye as $k=>$v)
+            @if($k > 63 && $k < 68)
+            <li class="col-md-2 hou" style="padding: 0px;margin-right: 27px;">
+                <img src="{{$v->pic}}" style="width: 134px;
+                    height: 134px;margin-top: 40px;margin-left: 45px;margin-bottom: 20px;">
+                <h5><a href="#">{{$v->title}}</a></h5>
+                <h6><a href="#">{{$v->youhui}}</a></h6>
+                <h5 class="money"><a href="#">&yen;{{$v->price}}</a></h5> 
             </li>
+            @elseif($k == 68)
             <li class="col-md-2 hou" style="padding:0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
-                <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
+                <img src="{{$v->pic}}" style="width: 134px;
+                    height: 134px;margin-top: 40px;margin-left: 45px;margin-bottom: 20px;">
+                <h5><a href="#">{{$v->title}}</a></h5>
+                <h6><a href="#">{{$v->youhui}}</a></h6>
+                <h5 class="money"><a href="#">&yen;{{$v->price}}</a></h5>  
             </li>
-            <li class="col-md-2 hou" style="padding:0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
-                <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
-            </li>
-            <li class="col-md-2 hou" style="padding:0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
-                <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
-            </li>
-            <li class="col-md-2 hou" style="padding:0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
-                <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
-            </li>
-            <li class="col-md-1 hous" style="padding:0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/110x200?bg=#afe">
-                <h5><a href="#">华为路由</a></h5>
-                <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
-            </li>
+            @endif
+            @endforeach
         </ul>
     </div>
 </div>
@@ -871,86 +781,52 @@
         </div>
         <div class="iphone_b">
             <ul class="list-unstyled">
+                @foreach($shouye as $k=>$v)
+                @if($k == 69)
                 <li class="col-md-6" style="padding: 0px;">
-                    <img src="holder.js/590x345?bg=#dcf">
+                    <img src="{{$v->pic}}">
                 </li>
+                @endif
+                @endforeach
+                @foreach($shouye as  $k=>$v)
+                @if($k > 69 && $k < 75)
                 <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
+                    <img src="{{$v->pic}}" style="width: 160px;height: 160px;margin-top: 40px;margin-left: 65px;margin-bottom: 47px;">
+                    <h5><a href="#">{{$v->title}}</a></h5>
+                    <h6><a href="#">{{$v->youhui}}</a></h6>
+                    <h5 class="money yuan"><a href="#">&yen;{{$v->price}}</a></h5>
                 </li>
+                @elseif($k == 75)
                 <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
+                    <img src="{{$v->pic}}" style="width: 160px;height: 160px;margin-top: 40px;margin-left: 65px;margin-bottom: 47px;">
+                    <h5><a href="#">{{$v->title}}</a></h5>
+                    <h6><a href="#">{{$v->youhui}}</a></h6>
+                    <h5 class="money yuan"><a href="#">&yen;{{$v->price}}</a></h5>
                 </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
+                @endif
+                @endforeach
             </ul>
         </div>
     </div>
     <div class="house">
         <ul class="list-unstyled">
-            <li class="col-md-2 hou" style="padding: 0px;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
-                <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
+            @foreach($shouye as $k=>$v)
+            @if($k > 75 && $k < 80)
+            <li class="col-md-2 hou" style="padding: 0px; margin-right: 27px;">
+                <img src="{{$v->pic}}" style="height: 134px;margin-top: 40px;margin-left: 45px;margin-bottom: 20px;">
+                <h5><a href="#">{{$v->title}}</a></h5>
+                <h6><a href="#">{{$v->youhui}}</a></h6>
+                <h5 class="money"><a href="#">&yen;{{$v->price}}</a></h5>  
             </li>
+            @elseif($k == 80)
             <li class="col-md-2 hou" style="padding:0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
-                <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
+                <img src="{{$v->pic}}" style="height: 134px;margin-top: 40px;margin-left: 45px;margin-bottom: 20px;">
+                <h5><a href="#">{{$v->title}}</a></h5>
+                <h6><a href="#">{{$v->youhui}}</a></h6>
+                <h5 class="money"><a href="#">&yen;{{$v->price}}</a></h5>  
             </li>
-            <li class="col-md-2 hou" style="padding:0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
-                <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
-            </li>
-            <li class="col-md-2 hou" style="padding:0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
-                <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
-            </li>
-            <li class="col-md-2 hou" style="padding:0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
-                <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
-            </li>
-            <li class="col-md-1 hous" style="padding:0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/110x200?bg=#afe">
-                <h5><a href="#">华为路由</a></h5>
-                <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
-            </li>
+            @endif
+            @endforeach
         </ul>
     </div>
 </div>
@@ -976,95 +852,65 @@
         </div>
         <div class="iphone_b">
             <ul class="list-unstyled">
+                @foreach($shouye as $k=>$v)
+                @if($k == 81)
                 <li class="col-md-6" style="padding: 0px;">
-                    <img src="holder.js/590x345?bg=#dcf">
+                    <img src="{{$v->pic}}">
                 </li>
+                @endif
+                @endforeach
+                @foreach($shouye as $k=>$v)
+                @if($k > 81 && $k < 87)
                 <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
+                    <img src="{{$v->pic}}" style="width: 160px;height: 160px;margin-top: 40px;margin-left: 65px;margin-bottom: 47px;">
+                    <h5><a href="#">{{$v->title}}</a></h5>
+                    <h6><a href="#">{{$v->youhui}}</a></h6>
+                    <h5 class="money yuan"><a href="#">&yen;{{$v->price}}</a></h5>
                 </li>
+                @elseif($k == 87)
                 <li class="col-md-3 gao" style="padding: 0px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
+                    <img src="{{$v->pic}}" style="width: 160px;height: 160px;margin-top: 40px;margin-left: 65px;margin-bottom: 47px;">
+                    <h5><a href="#">{{$v->title}}</a></h5>
+                    <h6><a href="#">{{$v->youhui}}</a></h6>
+                    <h5 class="money yuan"><a href="#">&yen;{{$v->price}}</a></h5>
                 </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
-                <li class="col-md-3 gao" style="padding: 0px; margin-top: 15px;">
-                    <img src="holder.js/290x250?bg=#dcf">
-                    <h5><a href="#">HUAWEI&nbsp;Mate&nbsp;9&nbsp;Pro</a></h5>
-                    <h6><a href="#">领券享优惠+赠好礼</a></h6>
-                    <h5 class="money yuan"><a href="#">&yen;4899</a></h5>
-                </li>
+                @endif
+                @endforeach
             </ul>
         </div>
     </div>
     <div class="house">
         <ul class="list-unstyled">
-            <li class="col-md-2 hou" style="padding: 0px;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
-                <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
+            @foreach($shouye as $k=>$v)
+            @if($k > 87 && $k < 92)
+            <li class="col-md-2 hou" style="padding: 0px; margin-right: 27px;">
+                <img src="{{$v->pic}}" style="height: 134px;margin-top: 40px;margin-left: 45px;margin-bottom: 20px;">
+                <h5><a href="#">{{$v->title}}</a></h5>
+                <h6><a href="#">{{$v->youhui}}</a></h6>
+                <h5 class="money"><a href="#">&yen;{{$v->price}}</a></h5>  
             </li>
+            @elseif($k == 92)
             <li class="col-md-2 hou" style="padding:0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
-                <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
+                <img src="{{$v->pic}}" style="height: 134px;margin-top: 40px;margin-left: 45px;margin-bottom: 20px;">
+                <h5><a href="#">{{$v->title}}</a></h5>
+                <h6><a href="#">{{$v->youhui}}</a></h6>
+                <h5 class="money"><a href="#">&yen;{{$v->price}}</a></h5>  
             </li>
-            <li class="col-md-2 hou" style="padding:0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
-                <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
-            </li>
-            <li class="col-md-2 hou" style="padding:0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
-                <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
-            </li>
-            <li class="col-md-2 hou" style="padding:0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/215x200?bg=#afe">
-                <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
-                <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
-            </li>
-            <li class="col-md-1 hous" style="padding:0px; border-left: 1px solid #f5f5f5;">
-                <img src="holder.js/110x200?bg=#afe">
-                <h5><a href="#">华为路由</a></h5>
-                <h6><a href="#">高性能双天线</a></h6>
-                <h5 class="money"><a href="#">&yen;129</a></h5>  
-            </li>
+            @endif
+            @endforeach
         </ul>
     </div>
 </div>
 <!-- 品牌配件部分结束 -->
 <!-- 广告图部分开始 -->
 <div class="container">
+    @foreach($shouye as $k=>$v)
+    @if($k == 93)
     <div class="adv col-md-12">
-        <img src="holder.js/100px120?bg=#fea">
+        <img src="{{$v->pic}}">
     </div>
+    @endif
+    @endforeach
 </div>
 <div class="itm"></div>
 <!-- 广告图部分结束 -->
