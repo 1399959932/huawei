@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
 
 class ZquController extends Controller
 {
@@ -10,6 +11,9 @@ class ZquController extends Controller
     {
     	$goods = DB::table('goods')->get();
     	$tupian = DB::table('goods_pic')->get();
-    	return view('home.prefe',['goods',$goods],['tupian',$tupian]);
+    	// dd($tupian);
+    	$lbt = DB::table('lbt')->get();
+
+    	return view('home.prefe',compact('goods','tupian','lbt'));
     }
 }
