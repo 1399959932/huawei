@@ -186,6 +186,3 @@ Route::get('/rygw','RygwController@ry');
 
 // 支付页面
 Route::get('/zhifu','ZhifuController@zfym');
-
-// 荣耀官网
-Route::get('/rygw','RygwController@ry');
