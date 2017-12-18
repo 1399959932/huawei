@@ -11,6 +11,7 @@ class CartController extends Controller
     public function store(Request $request)
     {
 
+        // dd($request->all());
     	$data = $request->only(['goods_id','num']);
     	$data['created_at'] = date('Y-m-d H:i:s');
     	$data['user_id'] = session('id');
@@ -28,6 +29,7 @@ class CartController extends Controller
     {
     	
         $dizhi = DB::table('address')->where('user_id',session('id'))->get();
+
         
             //读取收货地址
             foreach($dizhi as $key=>$value){
@@ -41,7 +43,8 @@ class CartController extends Controller
         //读取购物车中的内容
         $id = session('id');
         $goods = DB::table('carts')->where('user_id',$id)->get();
-
+        // dd($goods);
+        
     	//根据id来获取id的详细信息
     	foreach($goods as $key => $value){
     		$value->detail = DB::table('goods')->where('id',$value->goods_id)->first();

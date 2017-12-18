@@ -8,6 +8,6 @@ class XqController extends Controller
 {
     public function xqym()
    {
-   	return view('homes.xqym');
+   		return view('homes.xqym');
    }
 }

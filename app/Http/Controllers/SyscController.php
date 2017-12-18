@@ -156,8 +156,16 @@ class SyscController extends Controller
         $shouye = DB::table('shouye')
         ->where('status',1)
         ->select('id','title','price','youhui')
+<<<<<<< HEAD
+        ->orderBy('id','desc')
+=======
         ->orderBy('id','asc')
+<<<<<<< HEAD
         ->get();
+=======
+>>>>>>> 33a174e30bd5a671863da6af3d024d3a5590e51c
+        ->paginate(20);
+>>>>>>> f97d506e2cddbfdfd3e3f6bc8b4e5ea297f60774
         
         //遍历商品信息
         foreach ($shouye as $key => &$value) {

@@ -18,7 +18,7 @@ class DingdanController extends Controller
      */
     public function index()
     {
-        return view ('homes.ddym'); 
+        
         
         $config_biz = [
             'out_trade_no' => $bm['did'],
@@ -26,7 +26,9 @@ class DingdanController extends Controller
             'subject'      => '珠宝之家',
         ];
         $pay = new Pay($this->config);
-        return $pay->driver('alipay')->gateway()->pay($config_biz); 
+        return $pay->driver('alipay')->gateway()->pay($config_biz);
+
+         return view ('homes.ddym'); 
     }
 
     /**
@@ -72,6 +74,7 @@ class DingdanController extends Controller
             ];
             $goods[] = $tmp;
         }
+        // dd($goods);
         if (DB::table('dingdan_goods')->insert($goods)) {
             return redirect('/dingdan/pay?did='.$data['bm']);
         }else{
@@ -126,7 +129,7 @@ class DingdanController extends Controller
         //
     }
 
-    public function zhifu(Request $request)
+    public function zhifu(Request $request )
     {
         // dd($request->all());
         // echo '我是确认页面';
@@ -144,19 +147,22 @@ class DingdanController extends Controller
 
         //便利数组
         $data = $request->data;
+
+        // dd($data);
         $goodsDate= [];
         //重甲
         $zongjia = 0;
         //单价
         $xiaojie = 0;
-        foreach ($data as $key => $value) {
+        foreach ($data as $key => $value) { 
             if(isset($value['id'])){
                 //读取商品的信息
                 //读取商品的详细信息
                 $goods = DB::table('goods')->where('id',$value['id'])->first();
                 $goods->pic = DB::table('goods_pic')->where('goods_id', $value['id'])->value('pic');
                 $goods->num = $value['num'];
-                $goodsData[] = $goods;
+                $goodsDate[] = $goods;
+
 
                  // $goods->picda = DB::table('goods_pic')->where('id',$value['id'])->first();
                 $xiaojie = $goods->num * $goods->price;
@@ -164,10 +170,10 @@ class DingdanController extends Controller
 
             }
         }
-        // dd($goodsData);
+        
        
         //解析模板 分配数据
-        return view('home.remind.zhifu', compact('dizhi','goodsData','xiaojie','zongjia'));
+        return view('home.remind.zhifu', compact('dizhi','goodsDate','xiaojie','zongjia'));
 
 
     }

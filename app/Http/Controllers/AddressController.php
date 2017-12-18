@@ -14,7 +14,32 @@ class AddressController extends Controller
      */
     public function index()
     {
-        return view('home.address.index');
+
+        $goods = DB::table('goods')
+        ->where('status',1)
+        ->select('id','title','price')
+        ->orderBy('id','desc')
+        ->paginate(20);
+       
+        //便利商品信息
+        foreach ($goods as $key => &$value) {
+            $value->pic = DB::table('goods_pic')
+            ->where('goods_id',$value->id)
+            ->value('pic');
+        }
+                
+        // $cates = DB::table('cate')->get();
+
+        $goodss = DB::table('carts')->get();
+        // dd($goods);
+
+       
+
+        //评论
+        $pinglun = DB::table('pinglun')->get();
+
+
+        return view('home.address.index',compact('goods_pic','pinglun','goodss','goods'));
        
     }
 
@@ -65,7 +90,15 @@ class AddressController extends Controller
      */
     public function show($id)
     {
-        return view('home.address.index');
+         //读取商品的详细信息
+        $goodss = DB::table('carts')->get();
+        // dd($goods);
+            //读取商品的图片信息
+            $goods_pic = DB::table('goods_pic')->where('goods_id',$id)->get();
+            $goods_picda = DB::table('goods_pic')->where('id',$id)->get();
+
+        return view('home.address.index',compact('goods_pic','goods','pinglun','goodss'));
+
     }
 
     /**
@@ -99,7 +132,12 @@ class AddressController extends Controller
      */
     public function destroy($id)
     {
-        //
+        dd($request->all());
+        if(DB::table('address')->where('id', $id)->delete()) {
+            return back()->with('msg','删除成功');
+        }else{
+            return back()->with('msg','删除失败!!');
+        }
     }
 
     public function getArea(Request $request){

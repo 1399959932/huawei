@@ -217,22 +217,27 @@ class UserController extends Controller
         }
 
 
-        $data = $request->only(['username','tel','password']);
+        $data = $request->only(['email','tel','password']);
         $data['password'] = Hash::make($data['password']);
+        $data['verify'] = str_random(30);
+
 
         //dd($data);
 
         //插入数据库
         if (DB::table('users')->insert($data)) {
 
-            Mail::send('email.send', [], function ($message) {
+            Mail::send('email.send', ['data'=>$data], function ($message) use ($data) {
             //标题
             $message->subject('ABC');
             //接收者
             $message->to('1399959932@qq.com');
             });
-            return redirect('/')->with('msg','ok');
+            // return redirect('/')->with('msg','ok');
+            return redirect('/')->with('msg','注册成功,一封激活邮件已经发送到您的邮箱,请确认激活!!');
         }
+
+
         
         else{
             return back()->with('msg','orr');

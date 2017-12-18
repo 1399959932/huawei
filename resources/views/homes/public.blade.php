@@ -51,7 +51,7 @@
         </div>
         <div class="col-md-6 nav-right">
             <ul class="nav_ul list-unstyled">
-                <li class="dl"><a href="#">请登录</a></li>
+                <li class="dl"><a href="#">{{session('tel')}}</a></li>
                 <li><a href="#">注册</a></li>
                 <li class="xian"><a href="#"></a></li>
                 <li><a href="#">我的订单</a></li>

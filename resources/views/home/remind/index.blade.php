@@ -85,8 +85,8 @@
                 
 
                 <address>
-                    <form action="/dizhi" method="post">
-                     <button type="submit" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <form action="/dizhi/{{$v->id}}" method="post">
+                     <button type="submit" class="close" aria-label="Close" id="de"><span aria-hidden="true">&times;</span></button>
                      {{csrf_field()}}
                      {{method_field('DELETE')}}
                     </form>
@@ -228,6 +228,14 @@
 
 <script>
  $(function(){
+
+    $('#de').click(function(e){
+      var res = confirm('您确定要删除么');
+      if(!res){
+        return false;
+      }
+    });
+
       $('.delete').click(function(){
 
             if(!confirm('确定删除?')) return false;
@@ -242,7 +250,6 @@
                 success: function(data){
                     if(data == '1') {
                         tr.fadeOut(1000,function(){
-                            alert('移出成功!!!');
                         });
                     }
                 }

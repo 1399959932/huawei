@@ -2,6 +2,7 @@
 <link rel="stylesheet" type="text/css" href="/css/xq.css">
 <script type="text/javascript" src="/js/jquery-3.2.1.js"></script>
 <body data-spy="scroll" data-target="#navbar-example">
+
 <script type="text/javascript">
     $(function(){
         $('.goods-title >.nav_choice > .ziti > ul > li').click(function(){
@@ -19,7 +20,7 @@
               <li><a href="#">首页 </a></li>
               <li><a href="#">手机</a></li>
               <li class="active"><a href="#"> HUAWEI Mate系列</a></li>
-              <li class="active"> <a href="#"> HUAWEI Mate 10 保时捷设计 6GB+256GB 全网通版（钻石黑）</a></li>
+              <li class="active"> <a href="#"> {{$goods->title}}</a></li>
             </ol>
         </nav>
 
@@ -30,8 +31,8 @@
                         <tr>
                             <td colspan="6">
                                 @foreach($goods_picda as $k=>$v)
-                                <iframe src="{{$v->pic}}" frameborder="0" width="450" height="450" name="lefts">
-                                </iframe>
+                                <img src="{{$v->pic}}" frameborder="0" width="450" height="450" name="lefts">
+                                
                                 @endforeach
                             </td>
                         </tr>
@@ -43,10 +44,33 @@
                           <!-- <td width="15px;"></td> -->
                           @foreach($goods_pic as $k=>$v)
                           <td style="margin-right: 10px;">
-                           <a href="/img/imgs.jpeg" target="lefts">
+                           <a href="" target="lefts">
                             <img src="{{$v->pic}}" width="60" height="60">
                            </a>
                           </td>
+
+                          <td style="margin-right: 10px;">
+                           <a href="" target="lefts">
+                            <img src="{{$v->pic}}" width="60" height="60">
+                           </a>
+                          </td>
+
+
+                          <td style="margin-right: 10px;">
+                           <a href="" target="lefts">
+                            <img src="{{$v->pic}}" width="60" height="60">
+                           </a>
+                          </td>
+
+                          <td style="margin-right: 10px;">
+                           <a href="" target="lefts">
+                            <img src="{{$v->pic}}" width="60" height="60">
+                           </a>
+                          </td>
+
+
+
+
                           @endforeach
                         </tr>
                     </table>
@@ -54,9 +78,9 @@
         <!-- 商品标题 开始 -->
         <div class="right goods-title col-md-7">
             <!-- 标题 -->
-            <p class="biaoti">HUAWEI Mate 10 保时捷设计 6GB+256GB 全网通版</p>
+            <p class="biaoti">{{$goods->title}}</p>
             
-            <h5 class="price">¥ 8999.00</h5>
+            <h5 class="price">{{$goods->price}}</h5>
             <hr>
             <ul class="sm list-unstyled list-inline">
                 <li class="padding-left"><a href="#">服务说明</a></li>
@@ -140,19 +164,24 @@
 
                 </div>
                 <div class="clearfix"></div>
-                <p class="tishi">已选择商品:&nbsp;&nbsp;&nbsp;钻石黑 / 全网通版 / 6GB+256GB / 官方标配</p>
-                <div class="time col-md-10">
-                    <div class="zengjia">
-                        <input type="text" class="jia_left" value="1">
-                        <div class="jia_right">
-                            <div id="right_up">+</div>
-                            <div id="right_bot">-</div>
+                <form action="/cart" method="post">
+                    <p class="tishi">已选择商品:&nbsp;&nbsp;&nbsp;{{$goods->title}}</p>
+                    <div class="time col-md-10">
+                        <div class="zengjia">
+                            <input type="text" class="jia_left" value="1" name="num">
+                            <input type="hidden" name="goods_id" value="{{$goods->id}}">
+                            <div class="jia_right">
+                                <div id="right_up">+</div>
+                                <div id="right_bot">-</div>
+                            </div>
                         </div>
-                    </div>
-                    <button class="inputs">加入购物车</button>
-                    <button class="inputs">立即下单</button>
+                        {{csrf_field()}}
 
-                </div>
+                        <button type="submit" class="inputs">加入购物车</button>
+                        <button class="inputs">立即下单</button>
+
+                    </div>
+                </form>
                 <div class="col-md-2">
                     <div class="tishi_1">
                         <div class="tishi_1_up">
@@ -437,70 +466,69 @@
         </div>
     </div>
     <!-- 好评度 结束 -->
+
+    <!-- form评论开始 -->
+    <div class="col-md-8 bg-ingo col-md-offset-2" style="height: 100px; margin-left: 380px; height: auto;">
+        <div class="top10" style="height: 10px;"></div>
+        <div class="top10" style="height: 10px;"></div>
+        <form action="/goods/pinglun" method="post">
+            <div class="" style="height: 30px;">我要评论 
+                <button type="button" class="btn btn-default btn-sm" value="1" name="star">
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="btn btn-default btn-sm" value="2" name="star">
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="btn btn-default btn-sm" value="3" name="star">
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="btn btn-default btn-sm" value="4" name="star">
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="btn btn-default btn-sm" value="5" name="star">
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                </button>
+            </div>
+            <br> 
+            <textarea name="content" class="col-md-12" style="height: 100px;" placeholder="请输入你的评论">
+                
+            </textarea>
+            <input type="hidden" name="goods_id" value="{{$goods->id}}">
+
+            {{csrf_field()}}
+            <div class="clearfix"></div>
+            <div class="top10" style="height: 10px;"></div>
+            <button style="submit" class="btn-lg btn-danger pull-right">评论</button>
+            
+        </form>
+    </div>
+    <!-- form评论结束 -->
+
+
     <!-- 评论 开始 -->
     <div class="clearfix"></div>
     <div class="container">
-        <div class="pl">
-            <div class="col-md-2 nav_imgs">
-                <img src="holder.js/90x100?bg=#afd">
-                <h6>13518*****</h6>
-            </div>
-            <div class="col-md-1">
-                <img src="holder.js/107x22?bg=#aff">
-            </div>
-            <div class="col-md-9 lefts">
-                <div class="col-md-12">
-                    <ul class="list-unstyled list-inline">
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                </ul>
-                </div>
-            </div>
-            <p>速度真快，手机还做飞机！第一天报着试试看的态度抢购，没想到还真抢到了。今天早上到货。真的很快。激动，除了激动还是激动⊙∀⊙！非常喜欢，支持华为，支持国产</p>
-            <p>2017-11-30 13:10</p>
-            <hr>
-            <p style="color:#ac141b;">华为商城回复：<span>亲，您的一句话简洁有力，这就是给我们最大的鼓励，谢谢！</span></p>
+        <form action="/goods/id" method="post">
+        <!-- 搜索
+        搜索
+        搜索 -->
+        <div id="datatable-fixed" class="dataTables_filter pull-right">
+            <label>Search:
+                <input type="search" name="keywords" value="{{$keywords}}" class="form-control input-sm" placeholder=""  aria-controls="datatable-fixed-header">
+             </label>
+            &nbsp;
+            <button class="btn btn-info btn-sm" type="submit">搜索</button>
         </div>
-        <hr>
 
-        <div class="pl">
-            <div class="col-md-2 nav_imgs">
-                <img src="holder.js/90x100?bg=#afd">
-                <h6>13518*****</h6>
-            </div>
-            <div class="col-md-1">
-                <img src="holder.js/107x22?bg=#aff">
-            </div>
-            <div class="col-md-9 lefts">
-                <div class="col-md-12">
-                    <ul class="list-unstyled list-inline">
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                </ul>
-                </div>
-            </div>
-            <p>速度真快，手机还做飞机！第一天报着试试看的态度抢购，没想到还真抢到了。今天早上到货。真的很快。激动，除了激动还是激动⊙∀⊙！非常喜欢，支持华为，支持国产</p>
-            <p>2017-11-30 13:10</p>
-            <hr>
-            <p style="color:#ac141b;">华为商城回复：<span>亲，您的一句话简洁有力，这就是给我们最大的鼓励，谢谢！</span></p>
-        </div>
-        <hr>
+        <!-- 搜索
+        搜索
+        搜索 -->
+        
+        <div class="clearfix"></div>
+        <div class="top10" style="height: 10px;"></div>
+        <div class="top10" style="height: 10px;"></div>
 
-        <div class="pl">
-            <div class="col-md-2 nav_imgs">
-                <img src="holder.js/90x100?bg=#afd">
-                <h6>13518*****</h6>
-            </div>
-            <div class="col-md-1">
-                <img src="holder.js/107x22?bg=#aff">
-            </div>
-            <div class="col-md-9 lefts">
+        <div class="col-md-9 lefts">
                 <div class="col-md-12">
                     <ul class="list-unstyled list-inline">
                     <li>高端大气&nbsp;877</li>
@@ -511,196 +539,31 @@
                 </ul>
                 </div>
             </div>
-            <p>速度真快，手机还做飞机！第一天报着试试看的态度抢购，没想到还真抢到了。今天早上到货。真的很快。激动，除了激动还是激动⊙∀⊙！非常喜欢，支持华为，支持国产</p>
-            <p>2017-11-30 13:10</p>
-            <hr>
-            <p style="color:#ac141b;">华为商城回复：<span>亲，您的一句话简洁有力，这就是给我们最大的鼓励，谢谢！</span></p>
-        </div>
-        <hr>
 
+            <div class="clearfix"></div>
+    
+        @foreach($pinglun as $k=>$v)
         <div class="pl">
             <div class="col-md-2 nav_imgs">
                 <img src="holder.js/90x100?bg=#afd">
-                <h6>13518*****</h6>
+                <h6>{{$v->user_tel}}</h6>
             </div>
-            <div class="col-md-1">
-                <img src="holder.js/107x22?bg=#aff">
-            </div>
-            <div class="col-md-9 lefts">
-                <div class="col-md-12">
-                    <ul class="list-unstyled list-inline">
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                </ul>
-                </div>
-            </div>
-            <p>速度真快，手机还做飞机！第一天报着试试看的态度抢购，没想到还真抢到了。今天早上到货。真的很快。激动，除了激动还是激动⊙∀⊙！非常喜欢，支持华为，支持国产</p>
-            <p>2017-11-30 13:10</p>
+            
+            <p style="color: red;">华为系列产品___{{$v->goods_id}}</p>
+            <p>{{$v->addtime}}</p>
+            <p>{{$v->content}}</p>
             <hr>
             <p style="color:#ac141b;">华为商城回复：<span>亲，您的一句话简洁有力，这就是给我们最大的鼓励，谢谢！</span></p>
         </div>
+        @endforeach
+    </form>
         <hr>
+        
 
-        <div class="pl">
-            <div class="col-md-2 nav_imgs">
-                <img src="holder.js/90x100?bg=#afd">
-                <h6>13518*****</h6>
-            </div>
-            <div class="col-md-1">
-                <img src="holder.js/107x22?bg=#aff">
-            </div>
-            <div class="col-md-9 lefts">
-                <div class="col-md-12">
-                    <ul class="list-unstyled list-inline">
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                </ul>
-                </div>
-            </div>
-            <p>速度真快，手机还做飞机！第一天报着试试看的态度抢购，没想到还真抢到了。今天早上到货。真的很快。激动，除了激动还是激动⊙∀⊙！非常喜欢，支持华为，支持国产</p>
-            <p>2017-11-30 13:10</p>
-            <hr>
-            <p style="color:#ac141b;">华为商城回复：<span>亲，您的一句话简洁有力，这就是给我们最大的鼓励，谢谢！</span></p>
-        </div>
-        <hr>
-
-        <div class="pl">
-            <div class="col-md-2 nav_imgs">
-                <img src="holder.js/90x100?bg=#afd">
-                <h6>13518*****</h6>
-            </div>
-            <div class="col-md-1">
-                <img src="holder.js/107x22?bg=#aff">
-            </div>
-            <div class="col-md-9 lefts">
-                <div class="col-md-12">
-                    <ul class="list-unstyled list-inline">
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                </ul>
-                </div>
-            </div>
-            <p>速度真快，手机还做飞机！第一天报着试试看的态度抢购，没想到还真抢到了。今天早上到货。真的很快。激动，除了激动还是激动⊙∀⊙！非常喜欢，支持华为，支持国产</p>
-            <p>2017-11-30 13:10</p>
-            <hr>
-            <p style="color:#ac141b;">华为商城回复：<span>亲，您的一句话简洁有力，这就是给我们最大的鼓励，谢谢！</span></p>
-        </div>
-        <hr>
-
-        <div class="pl">
-            <div class="col-md-2 nav_imgs">
-                <img src="holder.js/90x100?bg=#afd">
-                <h6>13518*****</h6>
-            </div>
-            <div class="col-md-1">
-                <img src="holder.js/107x22?bg=#aff">
-            </div>
-            <div class="col-md-9 lefts">
-                <div class="col-md-12">
-                    <ul class="list-unstyled list-inline">
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                </ul>
-                </div>
-            </div>
-            <p>速度真快，手机还做飞机！第一天报着试试看的态度抢购，没想到还真抢到了。今天早上到货。真的很快。激动，除了激动还是激动⊙∀⊙！非常喜欢，支持华为，支持国产</p>
-            <p>2017-11-30 13:10</p>
-            <hr>
-            <p style="color:#ac141b;">华为商城回复：<span>亲，您的一句话简洁有力，这就是给我们最大的鼓励，谢谢！</span></p>
-        </div>
-        <hr>
-
-        <div class="pl">
-            <div class="col-md-2 nav_imgs">
-                <img src="holder.js/90x100?bg=#afd">
-                <h6>13518*****</h6>
-            </div>
-            <div class="col-md-1">
-                <img src="holder.js/107x22?bg=#aff">
-            </div>
-            <div class="col-md-9 lefts">
-                <div class="col-md-12">
-                    <ul class="list-unstyled list-inline">
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                </ul>
-                </div>
-            </div>
-            <p>速度真快，手机还做飞机！第一天报着试试看的态度抢购，没想到还真抢到了。今天早上到货。真的很快。激动，除了激动还是激动⊙∀⊙！非常喜欢，支持华为，支持国产</p>
-            <p>2017-11-30 13:10</p>
-            <hr>
-            <p style="color:#ac141b;">华为商城回复：<span>亲，您的一句话简洁有力，这就是给我们最大的鼓励，谢谢！</span></p>
-        </div>
-        <hr>
-
-        <div class="pl">
-            <div class="col-md-2 nav_imgs">
-                <img src="holder.js/90x100?bg=#afd">
-                <h6>13518*****</h6>
-            </div>
-            <div class="col-md-1">
-                <img src="holder.js/107x22?bg=#aff">
-            </div>
-            <div class="col-md-9 lefts">
-                <div class="col-md-12">
-                    <ul class="list-unstyled list-inline">
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                </ul>
-                </div>
-            </div>
-            <p>速度真快，手机还做飞机！第一天报着试试看的态度抢购，没想到还真抢到了。今天早上到货。真的很快。激动，除了激动还是激动⊙∀⊙！非常喜欢，支持华为，支持国产</p>
-            <p>2017-11-30 13:10</p>
-            <hr>
-            <p style="color:#ac141b;">华为商城回复：<span>亲，您的一句话简洁有力，这就是给我们最大的鼓励，谢谢！</span></p>
-        </div>
-        <hr>
-
-        <div class="pl">
-            <div class="col-md-2 nav_imgs">
-                <img src="holder.js/90x100?bg=#afd">
-                <h6>13518*****</h6>
-            </div>
-            <div class="col-md-1">
-                <img src="holder.js/107x22?bg=#aff">
-            </div>
-            <div class="col-md-9 lefts">
-                <div class="col-md-12">
-                    <ul class="list-unstyled list-inline">
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                    <li>高端大气&nbsp;877</li>
-                </ul>
-                </div>
-            </div>
-            <p>速度真快，手机还做飞机！第一天报着试试看的态度抢购，没想到还真抢到了。今天早上到货。真的很快。激动，除了激动还是激动⊙∀⊙！非常喜欢，支持华为，支持国产</p>
-            <p>2017-11-30 13:10</p>
-            <hr>
-            <p style="color:#ac141b;">华为商城回复：<span>亲，您的一句话简洁有力，这就是给我们最大的鼓励，谢谢！</span></p>
-        </div>
         <hr>
         <div class="col-md-2 gongji">
             <h5>共1112条评论</h5>
+            
         </div>
         <div class="col-md-10 text-right">
             <nav>
@@ -825,15 +688,15 @@
             <div class="col-md-12">
                 <div class="col-md-2">
                     <img src="holder.js/120x142?bg=#afd">
-                    <span>HUAWEI Mate 10 保时捷设计</span>
-                    <h5>¥8999</h5>
+                    <span>{{$goods->title}}</span>
+                    <h5>{{$goods->pirce}</h5>
                 </div>
             </div>
         </div>
     </div>
     <!-- 浏览记录 结束 -->
         <!-- 定位 开始 -->
-    <div class="dingwei">
+    <div class="dingwei " style="margin-left: 275px;">
         <ul class="center2_ul col-md-12 list-unstyled list-inline " style="text-align: center;" id="dianji">
             <li><a href="#one">商品详情</a></li>
             <li><a href="#two">规格参数</a></li>

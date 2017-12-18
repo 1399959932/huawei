@@ -72,7 +72,11 @@
     <div class="header_title">
       <div class="container">
     	<div class="col-md-1 no-padding">
-    		<img src="holder.js/111x60">
+            @foreach($tupian as $k=>$v)
+            @if($k == 71)
+    		<img src="{{$v->pic}}" width="110px" height="50px;">
+            @endif
+            @endforeach
     	</div>
     	<ul class="list-unstyled list-inline title_ul">
     		<li class="cp">
@@ -231,7 +235,11 @@
     			<!-- 进度条 结束 -->
     			<!-- 介绍 开始 -->
     			<div class="jieshao">
+                    @foreach($tupian as $k=>$v)
+                    @if($k == 48)
     				<img src="{{$v->pic}}" style="width: 475px;height: 510px;">
+                    @endif
+                    @endforeach
     				<div class="jieshao_right">
     					<h3>荣耀V10</h3>
     					<h4>我AI的快</h4>
@@ -253,38 +261,82 @@
     		<div class="xgtj_cen">
     			<p>相关推荐<span>更多></span></p>
     			<div class="cen_nav">
+                   
     				<div class="col-md-3 nav_tu tu_1">
-    					<h3>荣耀V10</h3>
-    					<h5>我AI的快</h5>
-    					<img src="holder.js/198x195">
+                        @foreach($xinxi as $k=>$v)
+                        @if($k == 23)
+    					<h3>{{$v->title}}</h3>
+    					<h5>{{$v->content}}</h5>
+                        @endif
+                        @endforeach
+                         @foreach($tupian as $k=>$v)
+                         @if($k == 50)
+    					<img src="{{$v->pic}} " width="198px;" height="195px;">
+                         @endif
+                         @endforeach
     					<button>立即购买 ></button>
-    					<button class="ljgm_left">立即购买 ></button>
+    					<button class="ljgm_left">加入对比 ></button>
     				</div>
+                   
+                    
     				<div class="col-md-3 nav_tu tu_2">
-    					<h3>荣耀V10</h3>
-    					<h5>我AI的快</h5>
-    					<img src="holder.js/198x195">
+                        @foreach($xinxi as $k=>$v)
+                        @if($k == 22)
+    					<h3>{{$v->title}}</h3>
+    					<h5>{{$v->content}}</h5>
+                        @endif
+                        @endforeach
+                        @foreach($tupian as $k=>$v)
+                        @if($k == 53)
+    					<img src="{{$v->pic}}" width="198px;" height="195px;">
+                         @endif
+                         @endforeach
     					<button>立即购买 ></button>
-    					<button class="ljgm_left">立即购买 ></button>
+    					<button class="ljgm_left">加入对比 ></button>
     				</div>
+                   
+                   
     				<div class="col-md-3 nav_tu tu_2">
-    					<h3>荣耀V10</h3>
-    					<h5>我AI的快</h5>
-    					<img src="holder.js/198x195">
+    					@foreach($xinxi as $k=>$v)
+                        @if($k == 23)
+                        <h3>{{$v->title}}</h3>
+                        <h5>{{$v->content}}</h5>
+                        @endif
+                        @endforeach
+                         @foreach($tupian as $k=>$v)
+                         @if($k == 51)
+    					<img src="{{$v->pic}}" width="198px;" height="195px;">
+                         @endif
+                         @endforeach
     					<button>立即购买 ></button>
-    					<button class="ljgm_left">立即购买 ></button>
+    					<button class="ljgm_left">加入对比 ></button>
     				</div>
+                   
+                   
     				<div class="col-md-3 nav_tu tu_2">
-    					<h3>荣耀V10</h3>
-    					<h5>我AI的快</h5>
-    					<img src="holder.js/198x195">
+    					@foreach($xinxi as $k=>$v)
+                        @if($k == 24)
+                        <h3>{{$v->title}}</h3>
+                        <h5>{{$v->content}}</h5>
+                        @endif
+                        @endforeach
+                         @foreach($tupian as $k=>$v)
+                         @if($k == 54)
+    					<img src="{{$v->pic}}" width="198px;" height="195px;">
+                         @endif
+                         @endforeach
     					<button>立即购买 ></button>
-    					<button class="ljgm_left">立即购买 ></button>
+    					<button class="ljgm_left">加入对比 ></button>
     				</div>
+                   
     			</div>
+                @foreach($tupian as $k=>$v)
+                @if($k == 55)
     			<div style="margin-top: 20px;">
     				<img src="{{$v->pic}}" style="width: 1140px;height: 480px;">
     			</div>
+                @endif
+                @endforeach
     		</div>
     	</div>
     </div>
@@ -295,37 +347,75 @@
     		<div class="zx_cen">
     			<p>最新消息<span>更多></span></p>
     			<div class="zx_up">
+                    
     				<div class="col-md-4 up_left lefts">
-    					<div class="imgs"><img src="img/img7.png" style="width: 360px;height: 272px;"></div>
-    					<h4>AI速度革命席卷全球,荣耀V10伦敦正式发布</h4>
-    					<h5>2017-12-06</h5>
+                        @foreach($tupian as $k=>$v)
+                        @if($k == 56)
+    					<div class="imgs"><img src="{{$v->pic}}" style="width: 360px;height: 272px;"></div>
+                        @endif
+                        @endforeach
+    					@foreach($xinxi as $k=>$v)
+                        @if($k == 28)
+                        <h3 style="font-size: 16px;">{{$v->title}}</h3>
+                        <h5>{{$v->content}}</h5>
+                        @endif
+                        @endforeach
     				</div>
+                    
+                    
     				<div class="col-md-4 up_left">
+                        @foreach($tupian as $k=>$v)
+                        @if($k == 57)
     					<div class="imgs">
-    					<img src="holder.js/360x272"></div>
-    					<h4>AI速度革命席卷全球,荣耀V10伦敦正式发布</h4>
-    					<h5>2017-12-06</h5>
+    					<img src="{{$v->pic}}"></div>
+                        @endif
+                        @endforeach
+    					@foreach($xinxi as $k=>$v)
+                        @if($k == 27)
+                        <h3 style="font-size: 16px;">{{$v->title}}</h3>
+                        <h5>{{$v->content}}</h5>
+                        @endif
+                        @endforeach
     				</div>
+                  
+                    
     				<div class="col-md-4 up_left">
+                        @foreach($tupian as $k=>$v)
+                        @if($k == 58)
     					<div class="imgs">
-    					<img src="holder.js/360x272"></div>
-    					<h4>AI速度革命席卷全球,荣耀V10伦敦正式发布</h4>
-    					<h5>2017-12-06</h5>
+    					<img src="{{$v->pic}}"></div>
+                        @endif
+                        @endforeach
+    					@foreach($xinxi as $k=>$v)
+                        @if($k == 26)
+                        <h3 style="font-size: 16px;">{{$v->title}}</h3>
+                        <h5>{{$v->content}}</h5>
+                        @endif
+                        @endforeach
     				</div>
+                    
     			</div>
     			<div class="zx_bot">
+                    @foreach($tupian as $k=>$v)
+                    @if($k == 25)
     				<div class="col-md-6 bot_left">
-    					<img src="holder.js/570x414">
+    					<img src="{{$v->pic}}" width="570px;" height="414px;">
     					<h3>在线客服</h3>
     					<h4>与专业人员联系</h4>
     					<button>开始沟通 ></button>
     				</div>
+                    @endif
+                    @endforeach
+                    @foreach($tupian as $k=>$v)
+                    @if($k == 35)
     				<div class="col-md-6 bot_left">
-    					<img src="holder.js/570x414?bg=#aef">
+    					<img src="{{$v->pic}}" width="570px;" height="414px;">
     					<h3>服务中心</h3>
     					<h4>你附近的服务中心</h4>
     					<button>门店地址 ></button>
     				</div>
+                    @endif
+                    @endforeach
     			</div>
     		</div>
     	</div>

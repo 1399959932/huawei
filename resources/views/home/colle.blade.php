@@ -69,6 +69,7 @@
     </a>
 </div>
     <!-- 侧边选项卡开始 -->
+    
     <div class="cebi">
         <ul>
             <li class="cb_1">
@@ -356,6 +357,7 @@
         </ul>
     </div>
 </div>
+</div>
     <!-- 侧边选项卡结束 -->
     <!-- 轮播图下开始 -->
     <div class="container">
@@ -444,6 +446,7 @@
                  @foreach($shouye as $k=>$v)
                  @if($k == 18)
                 <div class="rxdp">
+<<<<<<< HEAD
                     <img src="{{$v->pic}}">  
                 </div>
                 @endif
@@ -460,12 +463,92 @@
                 </div>
             </li>
             @elseif($k == 17)
+=======
+                    <img src="holder.js/100px594?bg=#ced">
+                </div>
+            </li>
+
+           
+            
+            <li class="col-md-2" style="margin-right: 40px; margin-bottom: 10px;">
+                <div class="item">
+                    <img src="" style="width: 134px;height: 134px; margin-top: 35px;margin-left: 50px;">
+                    <h5><a href="#"></a></h5>
+                    <h6><a href="#"></a></h6>
+                    <h5 class="money"><a href="#">&yen;</a></h5>  
+
+            <li class="col-md-2">
+                <div class="item">
+                    <img src="holder.js/100px200?bg=#afe">
+                    <h5><a href="#">荣耀V9&nbsp;play</a></h5>
+                    <h6><a href="#">最高优惠200元</a></h6>
+                    <h5 class="money"><a href="#">&yen;999</a></h5>
+                </div>
+            </li>
+            <li class="col-md-2" style="margin-left: 42px;">
+                <div class="item">
+                    <img src="holder.js/100px200?bg=#afe">
+                    <h5><a href="#">荣耀V9&nbsp;play</a></h5>
+                    <h6><a href="#">最高优惠200元</a></h6>
+                    <h5 class="money"><a href="#">&yen;999</a></h5>
+                </div>
+            </li>
+            <li class="col-md-2" style="margin-left: 42px;">
+                <div class="item">
+                    <img src="holder.js/100px200?bg=#afe">
+                    <h5><a href="#">荣耀V9&nbsp;play</a></h5>
+                    <h6><a href="#">最高优惠200元</a></h6>
+                    <h5 class="money"><a href="#">&yen;999</a></h5>
+                </div>
+            </li>
+            <li class="col-md-2" style="margin-left: 41px;">
+                <div class="item">
+                    <img src="holder.js/100px200?bg=#afe">
+                    <h5><a href="#">荣耀V9&nbsp;play</a></h5>
+                    <h6><a href="#">最高优惠200元</a></h6>
+                    <h5 class="money"><a href="#">&yen;999</a></h5>
+                </div>
+            </li>
+            <li class="col-md-2" style="margin-top: 14px;">
+                <div class="item">
+                    <img src="holder.js/100px200?bg=#afe">
+                    <h5><a href="#">荣耀V9&nbsp;play</a></h5>
+                    <h6><a href="#">最高优惠200元</a></h6>
+                    <h5 class="money"><a href="#">&yen;999</a></h5>
+                </div>
+            </li>
+            <li class="col-md-2" style="margin-top: 14px; margin-left: 42px;">
+                <div class="item">
+                    <img src="holder.js/100px200?bg=#afe">
+                    <h5><a href="#">荣耀V9&nbsp;play</a></h5>
+                    <h6><a href="#">最高优惠200元</a></h6>
+                    <h5 class="money"><a href="#">&yen;999</a></h5>
+                </div>
+            </li>
+            <li class="col-md-2" style="margin-top: 14px; margin-left: 42px;">
+                <div class="item">
+                    <img src="holder.js/100px200?bg=#afe">
+                    <h5><a href="#">荣耀V9&nbsp;play</a></h5>
+                    <h6><a href="#">最高优惠200元</a></h6>
+                    <h5 class="money"><a href="#">&yen;999</a></h5>
+                </div>
+            </li>
+            <li class="col-md-2" style="margin-top: 14px; margin-left: 41px;">
+                <div class="item">
+                    <img src="holder.js/100px200?bg=#afe">
+                    <h5><a href="#">荣耀V9&nbsp;play</a></h5>
+                    <h6><a href="#">最高优惠200元</a></h6>
+                    <h5 class="money"><a href="#">&yen;999</a></h5>
+
+            @foreach($shouye as $k=>$v)          
+>>>>>>> f97d506e2cddbfdfd3e3f6bc8b4e5ea297f60774
             <li class="col-md-2" style="margin-right: 40px; margin-bottom: 10px;">
                 <div class="item">
                     <img src="{{$v->pic}}" style="width: 134px;height: 134px; margin-top: 35px;margin-left: 50px;">
                     <h5><a href="#">{{$v->title}}</a></h5>
                     <h6><a href="#">{{$v->youhui}}</a></h6>
                     <h5 class="money"><a href="#">&yen;{{$v->price}}</a></h5>  
+
                 </div>
             </li>
             @endif
@@ -474,11 +557,13 @@
     </div>
 </div>
 <!-- 热销单品部分结束 -->
+
 <!-- 精品推荐部分开始 -->
 <div class="container">
     <div class="jptj">
         <h3>精品推荐</h3>
         <ul class="list-unstyled">
+<<<<<<< HEAD
             @foreach($shouye as $k=>$v)
             @if($k > 18 && $k < 23)
             <li class="col-md-2 jipi" style="padding: 0px; margin-right: 25px;">
@@ -496,10 +581,21 @@
             </li>
             @endif
             @endforeach
+=======
+            
+            <li class="col-md-2 jipi" style="padding: 0px;">
+                <img src="" style="width: 134px;height: 134px;">
+                <h5><a href="#"></a></h5>
+                <h6><a href="#"></a></h6>
+                <h5 class="money"><a href="#">&yen;</a></h5> 
+            </li>
+            
+>>>>>>> f97d506e2cddbfdfd3e3f6bc8b4e5ea297f60774
         </ul>
     </div>
 </div>
 <!-- 精品推荐部分结束 -->
+
 <!-- 广告图部分开始 -->
 <div class="container">
     @foreach($shouye as $k=>$v)
@@ -512,9 +608,11 @@
 </div>
 <!-- 广告图部分结束 -->
 <!-- 手机部分开始 -->
+@foreach($cate as $k=>$v)
 <div class="container">
     <div class="iphone">
         <div class="iphone_t">
+<<<<<<< HEAD
             <h3>手机</h3>
             <ul>
                 <li><a href="#">荣耀</a></li>
@@ -650,9 +748,14 @@
     <div class="iphone">
         <div class="iphone_t noop">
             <h3>智能穿戴</h3>
+=======
+            <h3>{{$v->name}}</h3>
+>>>>>>> f97d506e2cddbfdfd3e3f6bc8b4e5ea297f60774
             <ul>
-                <li><a href="#">手环</a></li>
-                <li><a href="#">手表</a></li>
+
+                <li><a href="#"></a></li>
+
+
                 <li class="gedu"><a href="#">更多></a></li>
             </ul>
         </div>
@@ -661,6 +764,7 @@
                 @foreach($shouye as $k=>$v)
                 @if($k == 49)
                 <li class="col-md-3" style="padding: 0px;">
+<<<<<<< HEAD
                     <img src="{{$v->pic}}">
                 </li>
                 @endif
@@ -829,9 +933,27 @@
             @endforeach
         </ul>
     </div>
+=======
+                    <img src="holder.js/290x345?bg=#dcf">
+                </li>
+                @foreach($v->goods as $k=>$v)
+                  @if($k < 7)
+                      <li class="col-md-3 gao" style="padding: 0px;">
+                          <img src="{{$v->goods_pic}}" width="134" height="134" style="margin:30px 40px 60px 80px;">
+
+                          <h5><a href="#">{{$v->title}}</a></h5>
+                          <h6><a href="#">{{$v->content}}</a></h6>
+                          <h5 class="money yuan"><a href="#">&yen;{{$v->price}}</a></h5>
+                      </li>
+                   @endif
+                 @endforeach
+            </ul>
+        </div>
+    </div>
+>>>>>>> f97d506e2cddbfdfd3e3f6bc8b4e5ea297f60774
 </div>
-<!-- 热销配件部分结束 -->
-<!-- 品牌配件部分开始 -->
+@endforeach
+
 <div class="container">
     <div class="iphone">
         <div class="iphone_t home_t">
@@ -881,6 +1003,7 @@
     </div>
     <div class="house">
         <ul class="list-unstyled">
+<<<<<<< HEAD
             @foreach($shouye as $k=>$v)
             @if($k > 87 && $k < 92)
             <li class="col-md-2 hou" style="padding: 0px; margin-right: 27px;">
@@ -888,13 +1011,51 @@
                 <h5><a href="#">{{$v->title}}</a></h5>
                 <h6><a href="#">{{$v->youhui}}</a></h6>
                 <h5 class="money"><a href="#">&yen;{{$v->price}}</a></h5>  
+=======
+            <li class="col-md-2 hou" style="padding: 0px;">
+                <img src="holder.js/215x200?bg=#afe">
+                <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
+                <h6><a href="#">高性能双天线</a></h6>
+                <h5 class="money"><a href="#">&yen;129</a></h5>
+            </li>
+            <li class="col-md-2 hou" style="padding:0px; border-left: 1px solid #f5f5f5;">
+                <img src="holder.js/215x200?bg=#afe">
+                <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
+                <h6><a href="#">高性能双天线</a></h6>
+                <h5 class="money"><a href="#">&yen;129</a></h5>
+            </li>
+            <li class="col-md-2 hou" style="padding:0px; border-left: 1px solid #f5f5f5;">
+                <img src="holder.js/215x200?bg=#afe">
+                <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
+                <h6><a href="#">高性能双天线</a></h6>
+                <h5 class="money"><a href="#">&yen;129</a></h5>
+            </li>
+            <li class="col-md-2 hou" style="padding:0px; border-left: 1px solid #f5f5f5;">
+                <img src="holder.js/215x200?bg=#afe">
+                <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
+                <h6><a href="#">高性能双天线</a></h6>
+                <h5 class="money"><a href="#">&yen;129</a></h5>
+>>>>>>> f97d506e2cddbfdfd3e3f6bc8b4e5ea297f60774
             </li>
             @elseif($k == 92)
             <li class="col-md-2 hou" style="padding:0px; border-left: 1px solid #f5f5f5;">
+<<<<<<< HEAD
                 <img src="{{$v->pic}}" style="height: 134px;margin-top: 40px;margin-left: 45px;margin-bottom: 20px;">
                 <h5><a href="#">{{$v->title}}</a></h5>
                 <h6><a href="#">{{$v->youhui}}</a></h6>
                 <h5 class="money"><a href="#">&yen;{{$v->price}}</a></h5>  
+=======
+                <img src="holder.js/215x200?bg=#afe">
+                <h5><a href="#">华为路由&nbsp;WS318&nbsp;增强版</a></h5>
+                <h6><a href="#">高性能双天线</a></h6>
+                <h5 class="money"><a href="#">&yen;129</a></h5>
+            </li>
+            <li class="col-md-1 hous" style="padding:0px; border-left: 1px solid #f5f5f5;">
+                <img src="holder.js/110x200?bg=#afe">
+                <h5><a href="#">华为路由</a></h5>
+                <h6><a href="#">高性能双天线</a></h6>
+                <h5 class="money"><a href="#">&yen;129</a></h5>
+>>>>>>> f97d506e2cddbfdfd3e3f6bc8b4e5ea297f60774
             </li>
             @endif
             @endforeach

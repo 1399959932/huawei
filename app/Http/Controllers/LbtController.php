@@ -136,7 +136,8 @@ class LbtController extends Controller
     public function rool()
     {
         //读取商品
-
+        $xinxi = DB::table('goods')->get();
+        $tupian = DB::table('goods_pic')->get();
         $goods = DB::table('lbt')
         ->where('status',1)
         ->select('id','pic')
@@ -153,6 +154,6 @@ class LbtController extends Controller
 
         // $cates = DB::table('cate');
         //模板
-        return view('homes.ry',compact('goods'));
+        return view('homes.ry',compact('goods','tupian','xinxi'));
     }
 }
