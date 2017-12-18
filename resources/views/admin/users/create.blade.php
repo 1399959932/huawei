@@ -18,7 +18,7 @@
     <div class="tpl-portlet-components">
         <div class="portlet-title">
             <div class="caption font-green bold">
-                <span class="am-icon-code"></span> 表单
+                <span class="am-icon-code"></span> 表单2
             </div>
             <div class="tpl-portlet-input tpl-fz-ml">
                 <div class="portlet-input input-small input-inline">

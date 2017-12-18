@@ -8,7 +8,20 @@ aa<!doctype html>
     <link rel="stylesheet" href="/css/admin.css">
     <link rel="stylesheet" href="/css/appp.css">
     <script src="/js/echarts.min.js"></script>
+<<<<<<< HEAD
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+
+=======
+<<<<<<< HEAD
+
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+
+=======
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+>>>>>>> 996ab4aa93743de5977bac421a79babc3ed49d7f
+>>>>>>> 25dd12c646c7987b551984045bcb18985374f395
     <script src="/bootstrap/js/jquery.js"></script>
     <script src="/bootstrap/js/bootstrap.js"></script>
     <script src="/bootstrap/js/holder.min.js"></script>

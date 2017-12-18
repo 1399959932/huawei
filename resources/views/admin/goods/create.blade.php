@@ -74,7 +74,11 @@
             <div class="am-form-group">
                 <label  class="am-u-sm-1 am-form-label text-info">商品详情</label>
                 <div class="am-u-sm-6 pull-left"  style="float:left;" >
+<<<<<<< HEAD
+                     <script id="editor" type="text/plain" name="content" style="width:754px;height:300px;"></script>
+=======
                      <script id="editor" type="text/plain" name="details" style="width:754px;height:500px;"></script>
+>>>>>>> 25dd12c646c7987b551984045bcb18985374f395
                 </div>
             </div>
 

@@ -311,7 +311,7 @@
 </div>
 <!-- 头部部分结束 -->
 <!-- logo部分开始 -->
-<!-- <div class="logo">
+<div class="logo">
 	<div class="tu">
 		<img src="holder.js/100px560?bg=#fea">
 		<div class="btns col-md-offset-3">
@@ -319,7 +319,7 @@
 			<span class="col-md-3" style="margin-left: 0px;"><a href="#">HUAWEI&nbsp;Mate&nbsp;10&nbsp;Pro</a></span>
 		</div>
 	</div>
-</div> -->
+</div>
 <!-- logo部分结束 -->
 <!-- 产品部分开始 -->
 <div class="chan">
@@ -488,7 +488,7 @@
 				</ul>
 			</div>
 			<div class="footer_c">
-				<div class="group">
+				<div class="group" style="margin-left: 50px;">
 					<dl>
 						<dt>购买产品</dt>
 						<dd><a href="#">智能手机</a></dd>

@@ -58,10 +58,19 @@ class GoodsController extends Controller
     {
 
 
+<<<<<<< HEAD
         $data = $request->only(['title','price','content','cate_id']);
 
 
 
+=======
+
+        $data = $request->only(['title','price','content','cate_id','kucun']);
+
+
+        $data = $request->only(['title','price','content','cate_id']);
+
+>>>>>>> 33a174e30bd5a671863da6af3d024d3a5590e51c
 
         // 填充数据库数据
         $data['created_at'] = date('Y-m-d H:i:s');
@@ -87,10 +96,13 @@ class GoodsController extends Controller
                 $images[] = $tmp;
                 $data['profile'] = trim($dir.'/'.$name,'.');
                 }
+<<<<<<< HEAD
 
 
                 // dd($images);
 
+=======
+>>>>>>> 33a174e30bd5a671863da6af3d024d3a5590e51c
             DB::table('goods_pic')->insert($images);
             }
             return redirect('/goods/create')->with('msg','添加成功');
@@ -194,15 +206,22 @@ class GoodsController extends Controller
     public function glist(){
 
         //读取商品
+<<<<<<< HEAD
         $goods = DB::table('goods')->where('status',1)
         ->select('id','title','price')->orderBy('id','desc')->paginate(20);
+=======
+>>>>>>> 33a174e30bd5a671863da6af3d024d3a5590e51c
 
         $goods = DB::table('goods')
         ->where('status',1)
         ->select('id','title','price')
         ->orderBy('id','desc')
         ->paginate(20);
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 33a174e30bd5a671863da6af3d024d3a5590e51c
 
         //便利商品信息
         foreach ($goods as $key => &$value) {

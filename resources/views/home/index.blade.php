@@ -93,7 +93,7 @@
         <div class="clearfix"></div>
     <!-- logo开始 -->
         <div class="col-md-3" style="padding: 0px; margin-top: 18px;">
-            <img src="holder.js/210x55?bg=#fac&text=logo" alt="">
+            <img src="/img/admin-logo.png" alt="" style="margin-left: -30px;cursor: pointer;">
         </div>
     <!-- logo结束 -->
     @section('header')

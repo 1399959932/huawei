@@ -24,24 +24,22 @@ Route::post('/zhuce','UserController@zhucet');
 Route::get('/message','CommonController@message');
 // 验证码
 Route::get('/zhuce/captcha/{tmp}', 'UserController@captcha');
-
-
 Route::get('/login','UserController@login');
+<<<<<<< HEAD
 
+=======
+>>>>>>> 33a174e30bd5a671863da6af3d024d3a5590e51c
 Route::post('/login','UserController@dologin');
-
-
-
 
 //分类
 Route::resource('/cate','CateController');
-
-
-
 // 商品管理
 Route::get('/goods/list','GoodsController@gdlist');
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 33a174e30bd5a671863da6af3d024d3a5590e51c
 //pay get
 Route::get('/test','PayController@index');
 
@@ -54,13 +52,16 @@ Route::group(['middleware'=> 'login'],function(){
 	// 购物且
 	Route::post('/cart','CartController@store');
 
-
 	Route::get('/cart','CartController@index');
 	Route::get('/cart/delete','CartController@delete');
 	//个人中心
 	Route::post('/cart/geren','CartController@store');
+<<<<<<< HEAD
 
 
+=======
+ 
+>>>>>>> 33a174e30bd5a671863da6af3d024d3a5590e51c
 	//地址
 	Route::resource('/dizhi', 'AddressController');
 
@@ -77,15 +78,11 @@ Route::group(['middleware'=> 'login'],function(){
 
 });
 
-
 Route::get('/fens','GoodsController@classify');
 
 Route::get('/fenlei','GoodsController@glist');
 
-
  // 陈结束
-
-
 
 
 //前台首页
@@ -103,37 +100,38 @@ Route::get('/zqu','ZquController@prefe');
 //荣耀家族
 Route::get('/fam','FamController@family');
 
+<<<<<<< HEAD
 //后台首页
 Route::get('/admin','AdminController@index');
+=======
+
+Route::get('/admin/login','LoginController@login');
+Route::post('/admin/login','LoginController@dologin');
+>>>>>>> 33a174e30bd5a671863da6af3d024d3a5590e51c
 
 
 //文章管理
 Route::resource('article','ArticleController');
 
-//分类管理
-Route::resource('cate','CateController');
-
-Route::get('/admin/login','LoginController@login');
-Route::post('/admin/login','LoginController@dologin');
-
-
-//后台首页
-Route::get('/admin','AdminController@index');
 
 //用户管理
 Route::resource('user','UserController');
 
+<<<<<<< HEAD
 //文章管理
 Route::resource('article','ArticleController');
 
 //后台首页
 Route::get('/admin','AdminController@index');
 
+=======
+>>>>>>> 33a174e30bd5a671863da6af3d024d3a5590e51c
 
 // 后台路由组
 	// 后台首页
 Route::get('/admin','AdminController@index');
 
+<<<<<<< HEAD
 // 文章管理
 Route::resource('article','ArticleController');
 // 分类管理
@@ -150,16 +148,20 @@ Route::get('/admin','Admincontroller@index');
 Route::get('/admin/login','loginController@login');
 Route::post('/admin/login','LoginController@dologin');
 Route::get('/admin/quit','logincontroller@quit');
+=======
+
+>>>>>>> 33a174e30bd5a671863da6af3d024d3a5590e51c
 //后台用户
 Route::resource('/users','usersController');
-//后台分类
-Route::resource('/cate','catecontroller');
+
 //轮播图
 Route::resource('/roll','rollcontroller');
-//文章管理
-Route::resource('article','ArticleController');
-//商品管理
-Route::resource('/goods','GoodsController');
+
+
+// 后台轮播图
+Route::resource('/admin/lbotu','LbtController');
+Route::get('/lunbotu','LbtController@rool');
+
 
 // 前台页面
 // 前页详情
@@ -172,33 +174,37 @@ Route::get('/gwc','GwcController@gwcs');
 Route::get('/dingdan','DingdanController@index');
 //前台列表页
 Route::get('/list','listcontroller@list');
+<<<<<<< HEAD
 
 //前台首页
 Route::get('/homed','HomeController@index');
 //前台分类
 Route::get('/Fen','FenController@classify');
+=======
+>>>>>>> 33a174e30bd5a671863da6af3d024d3a5590e51c
 
 
-
-//
-//前台首页
-Route::get('/homed','HomeController@index');
-//前台分类
-Route::get('/fen','FenController@classify');
-//个人中心
-Route::get('/geren','GerenController@person');
-//华为专区
-Route::get('/zqu','ZquController@prefe');
-//荣耀家族
-Route::get('/fam','FamController@family');
 //华为官网
 Route::get('/hwgw','HwgwController@official');
 
+//首页上传
+Route::resource('sysc','SyscController');
+Route::get('/syscs','SyscController@colle');
 
 
+<<<<<<< HEAD
 
 
 
 // 支付页面
 // 荣耀官网
 Route::get('/rygw','RygwController@ry');
+=======
+
+// 支付页面
+Route::get('/zhifu','ZhifuController@zfym');
+
+// 荣耀官网
+Route::get('/rygw','RygwController@ry');
+
+>>>>>>> 33a174e30bd5a671863da6af3d024d3a5590e51c
