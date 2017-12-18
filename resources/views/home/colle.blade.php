@@ -477,7 +477,7 @@
                     <img src="holder.js/100px594?bg=#ced">
                 </div>
             </li>
-<<<<<<< HEAD
+
            
             
             <li class="col-md-2" style="margin-right: 40px; margin-bottom: 10px;">
@@ -486,8 +486,7 @@
                     <h5><a href="#"></a></h5>
                     <h6><a href="#"></a></h6>
                     <h5 class="money"><a href="#">&yen;</a></h5>  
-=======
-<<<<<<< HEAD
+
             <li class="col-md-2">
                 <div class="item">
                     <img src="holder.js/100px200?bg=#afe">
@@ -550,7 +549,7 @@
                     <h5><a href="#">荣耀V9&nbsp;play</a></h5>
                     <h6><a href="#">最高优惠200元</a></h6>
                     <h5 class="money"><a href="#">&yen;999</a></h5>
-=======
+
             @foreach($shouye as $k=>$v)          
             <li class="col-md-2" style="margin-right: 40px; margin-bottom: 10px;">
                 <div class="item">
@@ -558,17 +557,15 @@
                     <h5><a href="#">{{$v->title}}</a></h5>
                     <h6><a href="#">{{$v->youhui}}</a></h6>
                     <h5 class="money"><a href="#">&yen;{{$v->price}}</a></h5>  
->>>>>>> 33a174e30bd5a671863da6af3d024d3a5590e51c
->>>>>>> 053b2638ae39fa636a91311cee8189afa04d26ca
+
                 </div>
             </li>
-            
+            @endforeach
         </ul>
     </div>
 </div>
 <!-- 热销单品部分结束 -->
-<<<<<<< HEAD
-=======
+
 <!-- 精品推荐部分开始 -->
 <div class="container">
     <div class="jptj">
@@ -586,7 +583,7 @@
     </div>
 </div>
 <!-- 精品推荐部分结束 -->
->>>>>>> 33a174e30bd5a671863da6af3d024d3a5590e51c
+
 <!-- 广告图部分开始 -->
 <div class="container">
     <div class="adv col-md-12">

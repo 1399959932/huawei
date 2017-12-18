@@ -110,7 +110,7 @@ class GoodsController extends Controller
      * Display the specified resource.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\m_responsekeys(conn, identifier)
      */
     public function show(Request $request ,$id)
     {
@@ -119,7 +119,7 @@ class GoodsController extends Controller
         // dd($goods);
         //读取商品的图片信息
         $goods_pic = DB::table('goods_pic')->where('goods_id',$id)->get();
-        $goods_picda = DB::table('goods_pic')->where('id',$id)->get();
+
 
         //index///////////////// //index///////////////// //index/////////////////
         //index///////////////// //index/////////////////
@@ -263,54 +263,5 @@ class GoodsController extends Controller
         return view('home.classify',compact('goods'));
 
     }
-    public function hua(){
-        //读取商品
-        $tupian = DB::table('goods_pic')->get();
-        // dd($tupian);
-        $goods = DB::table('goods')
-        ->where('status',1)
-        ->select('id','title','price')
-        ->orderBy('id','desc')
-        ->paginate(20);
-        
-        //便利商品信息
-        foreach ($goods as $key => &$value) {
-            $value->pic = DB::table('goods_pic')
-            ->where('goods_id',$value->id)
-            ->value('pic');
-        }
-        // dd($goods);
-
-        $cates = DB::table('cate');
-        //模板
-
-        // return view('home.goods.list',compact('goods'));
-        return view('home.official',compact('goods','tupian'));
-
-    }
-    public function zhuanq(){
-        //读取商品
-        $tupian = DB::table('goods_pic')->get();
-        // dd($tupian);
-        $goods = DB::table('goods')
-        ->where('status',1)
-        ->select('id','title','price')
-        ->orderBy('id','desc')
-        ->paginate(20);
-        
-        //便利商品信息s
-        foreach ($goods as $key => &$value) {
-            $value->pic = DB::table('goods_pic')
-            ->where('goods_id',$value->id)
-            ->value('pic');
-        }
-        // dd($goods);
-
-        $cates = DB::table('cate');
-        //模板
-
-        // return view('home.goods.list',compact('goods'));
-        return view('home.prefe',compact('goods','tupian'));
-
-    }
+   
 }

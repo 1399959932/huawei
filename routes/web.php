@@ -68,16 +68,16 @@ Route::group(['middleware'=> 'login'],function(){
 
 	//基础信息管理
 	Route::resource('/admin/xinxi','InfoController');
-
-
+});
+	
 
 Route::get('/fens','GoodsController@classify');
 
 Route::get('/fenlei','GoodsController@glist');
 
-Route::get('/hwgws','GoodsController@hua');
+Route::get('/hwgws','hwzqController@hua');
 
-Route::get('/hwaq','GoodsController@zhuanq');
+Route::get('/hwaq','hwzqController@zhuanq');
 
  // 陈结束
 
