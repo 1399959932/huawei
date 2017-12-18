@@ -174,27 +174,25 @@
 					<div style="height: 10px;"></div>
 					<div style="height: 10px;"></div>
 					@foreach($pinglun as $k=>$v)
-					<form action="//{{$v->id}}" method="post">
+					<form action="/goods/{{$v->id}}" method="post">
 					
-			        <div class="pl">
-			            <div class="col-md-2 nav_imgs">
-			                <img src="holder.js/90x100?bg=#afd">
-			                <h6>{{$v->user_tel}}</h6>
-			            </div>
-			            
-			            <p style="color: red;">华为系列产品___{{$v->goods_id}}</p>
-			            <p>{{$v->addtime}}</p>
-			            <p>{{$v->content}}</p>
-			            <hr>
-			            <p style="color:#ac141b;">华为商城回复：<span>亲，您的一句话简洁有力，这就是给我们最大的鼓励，谢谢！</span></p>
-			            
-				            <button type="submit" class="btn-md bg-danger btn pull-right" id="de">删除</button>
-				            <input type="hidden" name="id" value="{{$v->id}}">
-				            {{csrf_field()}}
-	                        {{method_field('DELETE')}}
+				        <div class="pl">
+				            <div class="col-md-2 nav_imgs">
+				                <img src="holder.js/90x100?bg=#afd">
+				                <h6>{{$v->user_tel}}</h6>
+				            </div>
 				            
-			        	
-			        </div>
+				            <p style="color: red;">华为系列产品___{{$v->goods_id}}</p>
+				            <p>{{$v->addtime}}</p>
+				            <p>{{$v->content}}</p>
+				            <hr>
+				            <p style="color:#ac141b;">华为商城回复：<span>亲，您的一句话简洁有力，这就是给我们最大的鼓励，谢谢！</span></p>
+				            	<input type="hidden" name="goods_id" value="{{$v->id}}">
+					            <button type="submit" class="btn-md bg-danger btn pull-right" id="de">删除</button>
+					            {{ method_field('DELETE') }}
+					            {{csrf_field()}}
+		                        
+				        </div>
 			    	</form>
 			        @endforeach
 			    
@@ -281,7 +279,7 @@ function init() {
 }
 init();
 
-$('.del').click(function(e){
+$('#de').click(function(e){
       var res = confirm('您确定要删除么');
       if(!res){
         return false;

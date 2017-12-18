@@ -124,6 +124,9 @@ Route::resource('article','ArticleController');
 // 分类管理
 Route::resource('cate','CateController');
 
+//后台首页
+Route::get('/admin','AdminController@index');
+
 
 //后台登录
 

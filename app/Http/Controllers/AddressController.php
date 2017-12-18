@@ -132,6 +132,7 @@ class AddressController extends Controller
      */
     public function destroy($id)
     {
+        dd($request->all());
         if(DB::table('address')->where('id', $id)->delete()) {
             return back()->with('msg','删除成功');
         }else{
