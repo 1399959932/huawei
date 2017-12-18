@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="/bootstrap/css/bootstrap-theme.min.css">
 <script type="text/javascript" src="/bootstrap/js/jquery.js"></script>
@@ -8,7 +8,6 @@
 <style>
 	.height{height: auto;} .top10{height: 10px;}
 </style>
-=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +21,7 @@
 		<link rel="stylesheet" type="text/css" href="/css/zfym.css">
 </head>
 <body>
->>>>>>> 3d5d409c642a8bdc63a60846a47e8a11ff26f503
+
 <!-- 支付页面 开始 -->
 	<div class="container height">
 		<div class="zhifu height">

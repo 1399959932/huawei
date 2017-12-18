@@ -217,7 +217,7 @@ class UserController extends Controller
         }
 
 
-        $data = $request->only(['username','tel','password']);
+        $data = $request->only(['email','tel','password']);
         $data['password'] = Hash::make($data['password']);
         $data['verify'] = str_random(30);
 

@@ -12,8 +12,8 @@
 <style>.top10{height:10px;}</style>
 
 @section('content')
-<div class="sns">
-	<div class="container">
+<div class="sns"  style="height: auto;">
+	<div class="container" style="height: auto;">
 		<div class="sns_t">
 			<p><a href="#">首页</a></p>
 			<p class="yjt">></p>
@@ -143,7 +143,7 @@
 					      <div class="top10"></div>
 					      <div class="top10"></div>
 					      <div class="top10"></div>
-						  {{csrf_field()}}
+
 						  <div class="form-group">
 						    <div class="col-sm-offset-2 col-sm-10">
 						      <button type="submit" class="btn btn-success  col-md-6 col-md-3-offset" style="margin-left: 100px;">提交</button>
@@ -155,6 +155,49 @@
 
 				<div>
 					
+				</div>
+
+
+				<div class="s_b_r" style="height: auto;">
+				<div class="b_r_t">
+					<div class="t_l">
+						<p>我的评论</p>
+					</div>
+					<div class="t_r">
+						<ul>
+							<li class="zj"><a href="#">购物评论</a></li>
+							<li class="yq"><a href="#">追加评论</a></li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+					<div style="height: 10px;"></div>
+					<div style="height: 10px;"></div>
+					<div style="height: 10px;"></div>
+					@foreach($pinglun as $k=>$v)
+					<form action="//{{$v->id}}" method="post">
+					
+			        <div class="pl">
+			            <div class="col-md-2 nav_imgs">
+			                <img src="holder.js/90x100?bg=#afd">
+			                <h6>{{$v->user_tel}}</h6>
+			            </div>
+			            
+			            <p style="color: red;">华为系列产品___{{$v->goods_id}}</p>
+			            <p>{{$v->addtime}}</p>
+			            <p>{{$v->content}}</p>
+			            <hr>
+			            <p style="color:#ac141b;">华为商城回复：<span>亲，您的一句话简洁有力，这就是给我们最大的鼓励，谢谢！</span></p>
+			            
+				            <button type="submit" class="btn-md bg-danger btn pull-right" id="de">删除</button>
+				            <input type="hidden" name="id" value="{{$v->id}}">
+				            {{csrf_field()}}
+	                        {{method_field('DELETE')}}
+				            
+			        	
+			        </div>
+			    	</form>
+			        @endforeach
+			    
 				</div>
 
 				<div class="clearfix"></div>
@@ -204,23 +247,7 @@
 										</ul>
 									</div>
 								</div>
-								<div class="b_jl_b">
-									<ul>
-										<li>
-											<img src="holder.js/120x135?bg=#acf" style="float: left;">
-											<p><a href="#">荣耀V9&nbsp;play&nbsp;全网通标配版（极光蓝）</a></p>
-										</li>
-										<li class="jg">&yen;&nbsp;899.00</li>
-										<li class="shu">1</li>
-										<li class="jg">&yen;&nbsp;0.00</li>
-										<li class="tai">
-											<span class="ljzf"><a href="#">立即支付</a></span>
-											<span class="xqd"><a href="#">修改订单</a></span>
-											<span class="xqd"><a href="#">取消订单</a></span>
-											<span class="xqd"><a href="#">订单详情</a></span>
-										</li>
-									</ul>
-								</div>
+								
 							</div>
 						</div>
 					</div>
@@ -235,6 +262,7 @@
 
 
 <script>
+
 function init() {
 	$.ajax({
 		type:'get',
@@ -252,6 +280,13 @@ function init() {
 	})
 }
 init();
+
+$('.del').click(function(e){
+      var res = confirm('您确定要删除么');
+      if(!res){
+        return false;
+      }
+    });
 
 $('select[name=province]').change(function(){
 	$('select[name=city]').html('<option value="">请选择</option>')
@@ -290,9 +325,12 @@ $('select[name=city]').change(function(){
 				$('select[name=xian]').append(option);
 			}
 		}
-	})
+	}) 
+
+	
 });
 
+   
 
 </script>
 

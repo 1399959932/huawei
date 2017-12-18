@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DB;
+use session;
 
 class GoodsController extends Controller
 {
@@ -17,6 +18,14 @@ class GoodsController extends Controller
         $num = $request->input('num',10);
         $keywords = $request->input('keywords','');
 
+        // $res = DB::table('users')->first();
+
+        $user = session('tel');
+
+        //评论
+        $pinglun = DB::table('pinglun')->get();
+
+        
         //关键字
         if($request->has('keywords')) {
             //列表显示
@@ -27,11 +36,13 @@ class GoodsController extends Controller
         }
 
 
-        //解析模板
-        return view('admin.goods.index',[
+        //解析模板 源'admin.goods.index 后来 homes.xqym
+        return view( 's',[
             'goods'=>$goods,
             'keywords'=>$keywords,
-            'num' => $num
+            'num' => $num,
+            'user' => $user,
+            'pinglun' => $pinglun
         ]);
     }
 
@@ -102,20 +113,33 @@ class GoodsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Request $request ,$id)
     {
         //读取商品的详细信息
         $goods = DB::table('goods')->where('id',$id)->first();
-
+        // dd($goods);
         //读取商品的图片信息
         $goods_pic = DB::table('goods_pic')->where('goods_id',$id)->get();
         $goods_picda = DB::table('goods_pic')->where('id',$id)->get();
 
+        //index///////////////// //index///////////////// //index/////////////////
+        //index///////////////// //index/////////////////
+        $num = $request->input('num',10);
+        $keywords = $request->input('keywords','');
 
-        // dd($goods_pic);
+        // $res = DB::table('users')->first();
 
-        //home.goods.show      homes.gwcs
-        return view('home.goods.show',compact(['goods','goods_pic'],['goods','goods_picda']));
+        $user = session('tel');
+
+        //评论
+        $pinglun = DB::table('pinglun')->get();
+         //index///////////////// //index///////////////// //index/////////////////
+         //index///////////////// //index///////////////// //index/////////////////
+
+        // dd($goods_picda);
+
+        //home.goods.show      homes.xqym
+        return view('homes.xqym',compact('goods','goods_pic','goods_picda','num','keywords','pinglun'));
 
     }
 
@@ -223,7 +247,7 @@ class GoodsController extends Controller
         ->select('id','title','price')
         ->orderBy('id','desc')
         ->paginate(20);
-        
+       
         //便利商品信息
         foreach ($goods as $key => &$value) {
             $value->pic = DB::table('goods_pic')
@@ -231,8 +255,9 @@ class GoodsController extends Controller
             ->value('pic');
         }
         // dd($goods);
-
+        
         $cates = DB::table('cate');
+
         //模板
 
         // return view('home.goods.list',compact('goods'));

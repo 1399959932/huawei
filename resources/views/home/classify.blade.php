@@ -407,7 +407,8 @@
 	<div class="container">
         @foreach($goods as $k=>$v)
 		<div class="col-md-2 theme_1" style="padding: 0px; margin-right: 15px;">
-			<img src="{{$v->pic}}" style="width: 180px;height: 180px;margin-left: 21px;margin-top: 38px;">
+            <a href="/goods/{{$v->id}}">
+			<img src="{{$v->pic}}" style="width: 180px;height: 180px;margin-left: 21px;margin-top: 38px;"></a>
 			<h5><a href="#">{{$v->title}}</a></h5>
 			<h3>&yen;{{$v->price}}</h3>
 			<div class="dib">

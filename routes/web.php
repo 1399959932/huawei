@@ -48,6 +48,10 @@ Route::get('/zhifubao','PayController@index');
 
 //后台路由组
 Route::group(['middleware'=> 'login'],function(){
+
+	//评论
+	Route::resource('/goods/pinglun','PinglunController');
+
 	//zhifu
 	Route::get('/dingdan/pay','DingdanController@pay');
 	//购物且添加商品
@@ -139,8 +143,6 @@ Route::resource('/article','ArticleController');
 Route::resource('/admin/lbotu','LbtController');
 Route::get('/lunbotu','LbtController@rool');
 
-//商品管理
-Route::resource('/goods','GoodsController');
 
 // 前台页面
 // 前页详情

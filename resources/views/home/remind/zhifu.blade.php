@@ -93,11 +93,11 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach($goodsData as $k=>$v)
+                            @foreach($goodsDate as $k=>$v)
                             <tr>
                                 <td>
                                     <a href="#">
-                                        <img alt="Product" class="product-thumb" src="{{$v->pic}}" width="200" height="80">
+                                        <img src="{{$v->pic}}" class="product-thumb"  width="200" height="80">
                                     </a>
                                 </td>
                                 <td>

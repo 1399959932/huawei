@@ -112,7 +112,7 @@
                         <a href="/admin/xinxi/{{$v->id}}/edit" class="btn btn-info btn-sm pull-left"  >修改</a>
 
                         <form action="/admin/xinxi/{{$v->id}}" method="post">
-                         <button class="btn btn-danger btn-sm del" id="de" type="submit">删除</button>
+                         <button type="submit" class="btn btn-danger btn-sm del" id="de" >删除</button>
                          {{method_field('DELETE')}}
                          {{csrf_field()}}
                         </form>
