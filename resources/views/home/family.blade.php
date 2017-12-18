@@ -23,7 +23,7 @@
   	<!-- Wrapper for slides -->
 	<div class="carousel-inner" role="listbox">
 	    <div class="item active">
-		    <img src="holder.js/1349x450?bg=#acd" alt="...">
+		    <img src="" alt="...">
 		    <div class="carousel-caption">
 		    </div>
 	    </div>
@@ -84,49 +84,40 @@
 			</div>
 			<div class="ry_b">
 				<div class="ry_b_t">
+					@foreach($shouye as $k=>$v)
+					@if($k > 123 && $k < 127)
 					<div class="col-md-3" style="padding: 0px;">
 						<div class="one">
-							<img src="holder.js/200x200?bg=#fed" style="margin-left: 45px;margin-top: 40px;">
-							<div class="tit">荣耀9</div>
-							<div class="des">最高优惠500元</div>
-							<div class="price">&yen;2299</div>
+							<img src="{{$v->pic}}" style="margin-left: 45px;margin-top: 40px;">
+							<div class="tit">{{$v->title}}</div>
+							<div class="des">{{$v->youhui}}</div>
+							<div class="price">&yen;{{$v->price}}</div>
 						</div>
 					</div>
-					<div class="col-md-3" style="padding: 0px; border-left: 1px solid #ddd;">
+					@elseif($k == 127)
+					<div class="col-md-3" style="padding: 0px;">
 						<div class="one">
-							<img src="holder.js/200x200?bg=#fed" style="margin-left: 45px;margin-top: 40px;">
-							<div class="tit">荣耀9</div>
-							<div class="des">最高优惠500元</div>
-							<div class="price">&yen;2299</div>
+							<img src="{{$v->pic}}" style="margin-left: 45px;margin-top: 40px;">
+							<div class="tit">{{$v->title}}</div>
+							<div class="des">{{$v->youhui}}</div>
+							<div class="price">&yen;{{$v->price}}</div>
 						</div>
 					</div>
-					<div class="col-md-3" style="padding: 0px; border-left: 1px solid #ddd;">
-						<div class="one">
-							<img src="holder.js/200x200?bg=#fed" style="margin-left: 45px;margin-top: 40px;">
-							<div class="tit">荣耀9</div>
-							<div class="des">最高优惠500元</div>
-							<div class="price">&yen;2299</div>
-						</div>
-					</div>
-					<div class="col-md-3" style="padding: 0px; border-left: 1px solid #ddd;">
-						<div class="one">
-							<img src="holder.js/200x200?bg=#fed" style="margin-left: 45px;margin-top: 40px;">
-							<div class="tit">荣耀9</div>
-							<div class="des">最高优惠500元</div>
-							<div class="price">&yen;2299</div>
-						</div>
-					</div>
+					@endif
+					@endforeach
 				</div>
 				<div class="ry_b_b">
+					@foreach($shouye as $k=>$v)
+					@if($k > 127 && $k < 130)
 					<div class="col-md-4" style="padding: 0px;">
-						<img src="holder.js/386x198?bg=#fed">
+						<img src="{{$v->pic}}">
 					</div>
-					<div class="col-md-4" style="padding: 0px; border-left: 1px solid #ddd;">
-						<img src="holder.js/386x198?bg=#fed">
+					@elseif($k == 130)
+					<div class="col-md-4" style="padding: 0px;">
+						<img src="{{$v->pic}}">
 					</div>
-					<div class="col-md-4" style="padding: 0px; border-left: 1px solid #ddd;">
-						<img src="holder.js/386x198?bg=#fed">
-					</div>
+					@endif
+					@endforeach
 				</div>
 			</div>
 		</div>
@@ -148,44 +139,58 @@
 				</ul>
 			</div>
 			<div class="iph_b">
+				@foreach($shouye as $k=>$v)
+				@if($k == 131)
 				<div class="col-md-4 b_dy" style="padding: 0px;">
-					<img src="holder.js/370x490?bg=#fed" style="border-radius: 5px;">
+					<img src="{{$v->pic}}" style="border-radius: 5px;">
 				</div>
+				@endif
+				@endforeach
 				<div class="col-md-4 b_de" style="padding: 0px;margin-left: 22px;">
+					@foreach($shouye as $k=>$v)
+					@if($k > 131 && $k < 133)
 					<div class="de_y">
-						<img src="holder.js/150x150?bg=#fed" style="margin-left: 20px;margin-top: 43px;">
+						<img src="{{$v->pic}}" style="margin-left: 20px;margin-top: 43px;width: 150px;height: 150px;">
 						<div class="zi">
-							<h3>荣耀V8</h3>
-							<p class="xs">限时最高省600</p>
-							<p class="mou">&yen;1699</p>
+							<h3>{{$v->title}}</h3>
+							<p class="xs">{{$v->youhui}}</p>
+							<p class="mou">&yen;{{$v->price}}</p>
 						</div>
 					</div>
+					@elseif($k == 133)
 					<div class="de_y" style="margin-top: 24px;">
-						<img src="holder.js/150x150?bg=#fed" style="margin-left: 20px;margin-top: 43px;">
+						<img src="{{$v->pic}}" style="margin-left: 20px;margin-top: 43px;width: 150px;height: 150px;">
 						<div class="zi">
-							<h3>荣耀V8</h3>
-							<p class="xs">限时最高省600</p>
-							<p class="mou">&yen;1699</p>
-						</div>
-					</div>		
-				</div>
-				<div class="col-md-4 b_de" style="padding: 0px;margin-left: 22px;">
-					<div class="de_y">
-						<img src="holder.js/150x150?bg=#fed" style="margin-left: 20px;margin-top: 43px;">
-						<div class="zi">
-							<h3>荣耀V8</h3>
-							<p class="xs">限时最高省600</p>
-							<p class="mou">&yen;1699</p>
+							<h3>{{$v->title}}</h3>
+							<p class="xs">{{$v->youhui}}</p>
+							<p class="mou">&yen;{{$v->price}}</p>
 						</div>
 					</div>
-					<div class="de_y" style="margin-top: 24px;">
-						<img src="holder.js/150x150?bg=#fed" style="margin-left: 20px;margin-top: 43px;">
+					@endif
+					@endforeach	
+				</div>
+				<div class="col-md-4 b_de" style="padding: 0px;margin-left: 22px;">
+					@foreach($shouye as $k=>$v)
+					@if($k > 133 && $k < 135)
+					<div class="de_y">
+						<img src="{{$v->pic}}" style="margin-left: 20px;margin-top: 43px;width: 150px;height: 150px;">
 						<div class="zi">
-							<h3>荣耀V8</h3>
-							<p class="xs">限时最高省600</p>
-							<p class="mou">&yen;1699</p>
+							<h3>{{$v->title}}</h3>
+							<p class="xs">{{$v->youhui}}</p>
+							<p class="mou">&yen;{{$v->price}}</p>
 						</div>
-					</div>		
+					</div>
+					@elseif($k == 135)
+					<div class="de_y" style="margin-top: 24px;">
+						<img src="{{$v->pic}}" style="margin-left: 20px;margin-top: 43px;width: 150px;height: 150px;">
+						<div class="zi">
+							<h3>{{$v->title}}</h3>
+							<p class="xs">{{$v->youhui}}</p>
+							<p class="mou">&yen;{{$v->price}}</p>
+						</div>
+					</div>
+					@endif
+					@endforeach	
 				</div>
 			</div>
 		</div>
@@ -205,35 +210,48 @@
 				</ul>
 			</div>
 			<div class="pb_nr_b">
+				@foreach($shouye as $k=>$v)
+				@if($k == 136)
 				<div class="col-md-4 b_yi" style="padding: 0px;">
-					<img src="holder.js/370x570?bg=#fed" style="border-radius: 5px;">
+					<img src="{{$v->pic}}" style="border-radius: 5px;">
 				</div>
+				@endif
+				@endforeach
 				<div class="b_er">
+					@foreach($shouye as $k=>$v)
+					@if($k > 136 && $k < 138)
 					<div class="rypb" style="padding: 0px;">
-						<img src="holder.js/357x257?bg=#fed" style="margin-left: 7px;margin-top: 7px;">
+						<img src="{{$v->pic}}">
 						<div class="er_zi">
-							<h3>荣耀平板2&nbsp;3GB+32GB<br>WiFi版（香槟金）</h3>
-							<p class="xs">限时最高直降100元</p>
-							<p class="mou">&yen;1199</p>
+							<h3>{{$v->title}}</h3>
+							<p class="xs">{{$v->youhui}}</p>
+							<p class="mou">&yen;{{$v->price}}</p>
 						</div>
 					</div>
+					@elseif($k == 138)
 					<div class="rypb" style="padding: 0px; float: right;">
-						<img src="holder.js/357x257?bg=#fed" style="margin-left: 7px;margin-top: 7px;">
+						<img src="{{$v->pic}}">
 						<div class="er_zi">
-							<h3>荣耀平板2&nbsp;3GB+32GB<br>WiFi版（香槟金）</h3>
-							<p class="xs">限时最高直降100元</p>
-							<p class="mou">&yen;1199</p>
+							<h3>{{$v->title}}</h3>
+							<p class="xs">{{$v->youhui}}</p>
+							<p class="mou">&yen;{{$v->price}}</p>
 						</div>
 					</div>
+					@endif
+					@endforeach
 				</div>
+				@foreach($shouye as $k=>$v)
+				@if($k == 139)
 				<div class="col-md-8 san_zi">
-					<img src="holder.js/755x260?bg=#fed" style="margin-left: 7px;margin-top: 7px;">
+					<img src="{{$v->pic}}">
 						<div class="sa_zi">
-							<h3>荣耀畅玩平板2&nbsp;8英寸</h3>
-							<p class="zj">最高直降50元</p>
-							<p class="qi">&yen;749</p>
+							<h3>{{$v->title}}</h3>
+							<p class="zj">{{$v->youhui}}</p>
+							<p class="qi">&yen;{{$v->price}}</p>
 						</div>
 				</div>
+				@endif
+				@endforeach
 			</div>
 		</div>
 	</div>
@@ -252,35 +270,48 @@
 				</ul>
 			</div>
 			<div class="pb_nr_b">
+				@foreach($shouye as $k=>$v)
+				@if($k == 140)
 				<div class="col-md-4 b_yi" style="padding: 0px;">
-					<img src="holder.js/370x570?bg=#fed" style="border-radius: 5px;">
+					<img src="{{$v->pic}}" style="border-radius: 5px;">
 				</div>
+				@endif
+				@endforeach
 				<div class="b_er">
+					@foreach($shouye as $k=>$v)
+					@if($k > 140 && $k < 142)
 					<div class="rypb" style="padding: 0px;">
-						<img src="holder.js/357x257?bg=#fed" style="margin-left: 7px;margin-top: 7px;">
+						<img src="{{$v->pic}}">
 						<div class="er_zi">
-							<h3>荣耀平板2&nbsp;3GB+32GB<br>WiFi版（香槟金）</h3>
-							<p class="xs">限时最高直降100元</p>
-							<p class="mou">&yen;1199</p>
+							<h3>{{$v->title}}</h3>
+							<p class="xs">{{$v->youhui}}</p>
+							<p class="mou">&yen;{{$v->price}}</p>
 						</div>
 					</div>
+					@elseif($k == 142)
 					<div class="rypb" style="padding: 0px; float: right;">
-						<img src="holder.js/357x257?bg=#fed" style="margin-left: 7px;margin-top: 7px;">
+						<img src="{{$v->pic}}">
 						<div class="er_zi">
-							<h3>荣耀平板2&nbsp;3GB+32GB<br>WiFi版（香槟金）</h3>
-							<p class="xs">限时最高直降100元</p>
-							<p class="mou">&yen;1199</p>
+							<h3>{{$v->title}}</h3>
+							<p class="xs">{{$v->youhui}}</p>
+							<p class="mou">&yen;{{$v->price}}</p>
 						</div>
 					</div>
+					@endif
+					@endforeach
 				</div>
+				@foreach($shouye as $k=>$v)
+				@if($k == 143)
 				<div class="col-md-8 san_zi">
-					<img src="holder.js/755x260?bg=#fed" style="margin-left: 7px;margin-top: 7px;">
+					<img src="{{$v->pic}}">
 						<div class="sa_zi">
-							<h3>荣耀畅玩平板2&nbsp;8英寸</h3>
-							<p class="zj">最高直降50元</p>
-							<p class="qi">&yen;749</p>
+							<h3>{{$v->title}}</h3>
+							<p class="zj">{{$v->youhui}}</p>
+							<p class="qi">&yen;{{$v->price}}</p>
 						</div>
 				</div>
+				@endif
+				@endforeach
 			</div>
 		</div>
 	</div>
@@ -301,50 +332,56 @@
 				</ul>
 			</div>
 			<div class="jia_nr_b">
+				@foreach($shouye as $k=>$v)
+				@if($k == 144)
 				<div class="col-md-3" style="padding: 0px;">
-					<img src="holder.js/300x606?bg=#afe" style="border-radius: 5px;">
+					<img src="{{$v->pic}}" style="border-radius: 5px;">
 				</div>
+				@endif
+				@endforeach
 				<div class="ju">
+					@foreach($shouye as $k=>$v)
+					@if($k > 144 && $k < 146)
 					<div class="aju" style="padding: 0px;float: left;">
-						<img src="holder.js/410x294?bg=#fed" style="border-radius: 5px;">
+						<img src="{{$v->pic}}" style="border-radius: 5px;">
 						<div class="ju_zi">
-							<h3>荣耀盒子Pro</h3>
-							<p class="xs">&yen;399</p>
+							<h3>{{$v->title}}</h3>
+							<p class="xs">&yen;{{$v->price}}</p>
 						</div>
 					</div>
+					@elseif($k == 146)
 					<div class="aju" style="padding: 0px;float: right;">
-						<img src="holder.js/410x294?bg=#fed" style="border-radius: 5px;">
+						<img src="{{$v->pic}}" style="border-radius: 5px;">
 						<div class="ju_zi">
-							<h3>荣耀盒子Pro</h3>
-							<p class="xs">&yen;399</p>
+							<h3>{{$v->title}}</h3>
+							<p class="xs">&yen;{{$v->price}}</p>
 						</div>
 					</div>
+					@endif
+					@endforeach
 				</div>
 				<div class="col-md-12 jia_nr_bo" style="padding: 0px;">
-					<div class="col-md-3 bo_1" style="margin-left: 0px;">
-						<img src="holder.js/150x150?bg=#acf" style="margin-top: 20px;margin-left: 40px;">
+					@foreach($shouye as $k=>$v)
+					@if($k > 146 && $k < 149)
+					<div class="col-md-3 bo_1" style="margin-left: 0px; margin-right: 22px;">
+						<img src="{{$v->pic}}" style="margin-top: 20px;margin-left: 40px;">
 						<div class="bo_zi">
-							<h3>荣耀路由Pro</h3>
-							<p class="zhj">限时直降30元</p>
-							<p class="jige">&yen;399</p>
+							<h3>{{$v->title}}</h3>
+							<p class="zhj">{{$v->youhui}}</p>
+							<p class="jige">&yen;{{$v->price}}</p>
 						</div>
 					</div>
-					<div class="col-md-3 bo_1" style="margin-left: 24px;">
-						<img src="holder.js/150x150?bg=#acf" style="margin-top: 20px;margin-left: 40px;">
+					@elseif($k == 149)
+					<div class="col-md-3 bo_1" style="margin-left: 4px;">
+						<img src="{{$v->pic}}" style="margin-top: 20px;margin-left: 40px;">
 						<div class="bo_zi">
-							<h3>荣耀路由Pro</h3>
-							<p class="zhj">限时直降30元</p>
-							<p class="jige">&yen;399</p>
+							<h3>{{$v->title}}</h3>
+							<p class="zhj">{{$v->youhui}}</p>
+							<p class="jige">&yen;{{$v->price}}</p>
 						</div>
 					</div>
-					<div class="col-md-3 bo_1" style="float: right;">
-						<img src="holder.js/150x150?bg=#acf" style="margin-top: 20px;margin-left: 40px;">
-						<div class="bo_zi">
-							<h3>荣耀路由Pro</h3>
-							<p class="zhj">限时直降30元</p>
-							<p class="jige">&yen;399</p>
-						</div>
-					</div>
+					@endif
+					@endforeach
 				</div>
 			</div>
 		</div>
@@ -373,50 +410,56 @@
 				</ul>
 			</div>
 			<div class="jia_nr_b">
+				@foreach($shouye as $k=>$v)
+				@if($k == 150)
 				<div class="col-md-3" style="padding: 0px;">
-					<img src="holder.js/300x606?bg=#afe" style="border-radius: 5px;">
+					<img src="{{$v->pic}}" style="border-radius: 5px;">
 				</div>
+				@endif
+				@endforeach
 				<div class="ju">
+					@foreach($shouye as $k=>$v)
+					@if($k > 150 && $k < 152)
 					<div class="aju" style="padding: 0px;float: left;">
-						<img src="holder.js/410x294?bg=#fed" style="border-radius: 5px;">
+						<img src="{{$v->pic}}" style="border-radius: 5px;">
 						<div class="ju_zi">
-							<h3>荣耀盒子Pro</h3>
-							<p class="xs">&yen;399</p>
+							<h3>{{$v->title}}</h3>
+							<p class="xs">&yen;{{$v->price}}</p>
 						</div>
 					</div>
+					@elseif($k == 152)
 					<div class="aju" style="padding: 0px;float: right;">
-						<img src="holder.js/410x294?bg=#fed" style="border-radius: 5px;">
+						<img src="{{$v->pic}}" style="border-radius: 5px;">
 						<div class="ju_zi">
-							<h3>荣耀盒子Pro</h3>
-							<p class="xs">&yen;399</p>
+							<h3>{{$v->title}}</h3>
+							<p class="xs">&yen;{{$v->price}}</p>
 						</div>
 					</div>
+					@endif
+					@endforeach
 				</div>
 				<div class="col-md-12 jia_nr_bo" style="padding: 0px;">
-					<div class="col-md-3 bo_1" style="margin-left: 0px;">
-						<img src="holder.js/150x150?bg=#acf" style="margin-top: 20px;margin-left: 40px;">
+					@foreach($shouye as $k=>$v)
+					@if($k > 152 && $k < 155)
+					<div class="col-md-3 bo_1" style="margin-left: 0px; margin-right: 22px;">
+						<img src="{{$v->pic}}" style="margin-top: 20px;margin-left: 40px;">
 						<div class="bo_zi">
-							<h3>荣耀路由Pro</h3>
-							<p class="zhj">限时直降30元</p>
-							<p class="jige">&yen;399</p>
+							<h3>{{$v->title}}</h3>
+							<p class="zhj">{{$v->youhui}}</p>
+							<p class="jige">&yen;{{$v->price}}</p>
 						</div>
 					</div>
-					<div class="col-md-3 bo_1" style="margin-left: 24px;">
-						<img src="holder.js/150x150?bg=#acf" style="margin-top: 20px;margin-left: 40px;">
+					@elseif($k == 155)
+					<div class="col-md-3 bo_1" style="margin-left: 4px;">
+						<img src="{{$v->pic}}" style="margin-top: 20px;margin-left: 40px;">
 						<div class="bo_zi">
-							<h3>荣耀路由Pro</h3>
-							<p class="zhj">限时直降30元</p>
-							<p class="jige">&yen;399</p>
+							<h3>{{$v->title}}</h3>
+							<p class="zhj">{{$v->youhui}}</p>
+							<p class="jige">&yen;{{$v->price}}</p>
 						</div>
 					</div>
-					<div class="col-md-3 bo_1" style="float: right;">
-						<img src="holder.js/150x150?bg=#acf" style="margin-top: 20px;margin-left: 40px;">
-						<div class="bo_zi">
-							<h3>荣耀路由Pro</h3>
-							<p class="zhj">限时直降30元</p>
-							<p class="jige">&yen;399</p>
-						</div>
-					</div>
+					@endif
+					@endforeach
 				</div>
 			</div>
 		</div>

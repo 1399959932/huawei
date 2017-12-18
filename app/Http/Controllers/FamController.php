@@ -8,6 +8,7 @@ class FamController extends Controller
 {
     public function family()
     {
-    	return view('home.family');
+    	$goods = DB::table('shouye')->get();
+    	return view('home.family',['goods',$goods]);
     }
 }

@@ -16,6 +16,8 @@ class SyscController extends Controller
     {
          $num = $request->input('num',10);
         $keywords = $request->input('keywords','');
+        // dd($num);
+
 
         //关键字
         if($request->has('keywords')) {
@@ -25,7 +27,6 @@ class SyscController extends Controller
             //列表显示
             $goods = DB::table('shouye')->paginate($num);
         }
-
         //解析模板
         return view('home.sysc.index',[
             'goods'=>$goods,
@@ -52,6 +53,7 @@ class SyscController extends Controller
      */
     public function store(Request $request)
     {
+
         // dd($request->all());
         $data = $request->only(['price','title','youhui','pic']);
 
@@ -59,29 +61,22 @@ class SyscController extends Controller
         $data['status'] = 1;
         // dd($data);
         //插入表
-        $res = DB::table('shouye')->insertGetId($data);
+        // $res = DB::table('shouye')->insertGetId($data);
         // dd($data);
-
-        if($res > 0){
-            if($request->hasFile('pic')){
-                $images = [];
-
-                foreach($request->file('pic') as $k=>$v){
-                    $tmp = [];
-                    $suffix = $v->extension();
-                    $name  = uniqid('img_').'.'.$suffix;
-                    $dir = './upload/'.date('Y-m-d');
-                    $v->move($dir,$name);
-                    $tmp['goods_id'] = $res;
-                    $tmp['pic'] = trim($dir.'/'.$name,'.');
-                    $images[] = $tmp;
-                    $data['profile'] = trim($dir.'/'.$name,'.');
-                }    
-                DB::table('shouye')->insert($images);
-            }
+        // dd($res);
+        if($request->hasFile('pic')){
+            $suffix = $request->file('pic')->extension();
+            // dd($suffix);
+            $name = uniqid('img_').'.'.$suffix;
+            $dir = './upload/'.date('Y-m-d');
+            $request->file('pic')->move($dir,$name);
+            $data['pic'] = trim($dir.'/'.$name,'.');
+            
+        }
+        if(DB::table('shouye')->insert($data)){
             return redirect('/sysc')->with('msg','添加成功');
         }else{
-            return redirect('/sysc')->with('msg','添加失败');
+            return back()->with('msg','添加失败');
         }
     }
 
@@ -131,6 +126,7 @@ class SyscController extends Controller
             $data['pic'] = trim($dir.'/'.$name,'.');
             
         }
+        // dd($name);
         if(DB::table('shouye')->where('id',$id)->update($data)){
             return redirect('/sysc')->with('msg','更新成功');
         }else{
@@ -164,8 +160,12 @@ class SyscController extends Controller
         ->orderBy('id','desc')
 =======
         ->orderBy('id','asc')
+<<<<<<< HEAD
+        ->get();
+=======
 >>>>>>> 33a174e30bd5a671863da6af3d024d3a5590e51c
         ->paginate(20);
+>>>>>>> f97d506e2cddbfdfd3e3f6bc8b4e5ea297f60774
         
         //遍历商品信息
         foreach ($shouye as $key => &$value) {
@@ -177,6 +177,28 @@ class SyscController extends Controller
 
         //模板
         return view('home.colle',compact('shouye'));
+
+    }
+
+    public function rysc(){
+        //读取商品
+        $goods = DB::table('shouye')->get();
+        $shouye = DB::table('shouye')
+        ->where('status',1)
+        ->select('id','title','price','youhui')
+        ->orderBy('id','asc')
+        ->get();
+        
+        //遍历商品信息
+        foreach ($shouye as $key => &$value) {
+            $value->pic = DB::table('shouye')
+            ->where('id',$value->id)
+            ->value('pic');
+        }
+        // dd($shouye);
+
+        //模板
+        return view('home.family',compact('shouye','goods'));
 
     }
 }

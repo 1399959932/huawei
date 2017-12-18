@@ -174,6 +174,8 @@ Route::get('/hwgw','HwgwController@official');
 //首页上传
 Route::resource('sysc','SyscController');
 Route::get('/syscs','SyscController@colle');
+//荣耀上传
+Route::get('/fams','SyscController@rysc');
 
 
 

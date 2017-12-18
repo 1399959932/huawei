@@ -351,8 +351,23 @@ body{
 	height: 47px;
 	/*background-color: green;*/
 }
+.lbx .lbx_3 .lb_b ul{
+	width: 300px;
+}
 .lbx .lbx_3 .lb_b ul li{
+	width: 65px;
+	height: 20px;
+	/*background-color: red;*/
+	margin-right: 30px;
 	float: left;
+	cursor: pointer;
+}
+.lbx .lbx_3 .lb_b ul li:nth-child(2){
+	width: 80px;
+	/*background-color: purple;*/
+}
+.lbx .lbx_3 .lb_b ul li:hover{
+	color: #ca151d;
 }
 /*导航部分结束*/
 /*导航下部分开始*/
@@ -524,6 +539,7 @@ body{
 	height: 345px;
 	background-color: #fff;
 	margin-right: 10px;
+	margin-bottom: 10px;
 }
 .iphone .iphone_b ul .gao h5{
 	text-align: center;
