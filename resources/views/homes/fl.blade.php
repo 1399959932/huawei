@@ -55,7 +55,11 @@
 <!-- 小分图 开始 -->
 <div class="container">
 	<div class=" fentu">
-		
+		<!-- 此处写循环 -->
+		<!-- 此处写循环 -->
+		<!-- 此处写循环 -->
+		<!-- 此处写循环 -->
+		<!-- 此处写循环 -->
 		<div class="col-md-2 bor_left" style="padding: 0px;">
 			<img src="" style="width: 220px;height: 229px;margin-top: 10px;">
 			<h5></h5>

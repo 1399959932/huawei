@@ -33,9 +33,9 @@
                                 <input type="text" id="user-name" placeholder="姓名 / Name"  name="name">
                             </div>
                         </div>
-                        <div class="am-form-group" style="position: relative;">
-                            <label for="user-name" class="am-u-sm-3 am-form-label">分类名称</label>
-                            <div class="am-u-sm-4" style="position: absolute;left:186px;">
+                        <div class="am-form-group" >
+                            <label for="user-name" class="am-u-sm-3 am-form-label pull-left" >分类等级</label>
+                            <div class="am-u-sm-4 pull-left"  >
                                 <select name="pid">
                                     <option value="0">顶级分类</option>
                                     @foreach($cate as $k=>$v)

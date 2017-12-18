@@ -45,7 +45,7 @@
 			<div class="top10"></div>
 			<div class="top10"></div>
 
-			<div class="col-md-12 bg-info height" >
+			<div class="col-md-12 height" >
 			  <form action="/dingdan" method="post">
 				<h3 class=""><b>收货地址选择</b></h3><hr>
 				@foreach($dizhi as $k=>$v)
@@ -79,7 +79,7 @@
 
 
 
-			<div class="col-md-12 bg-info height" >
+			<div class="col-md-12 height" >
 				<h3 class=""><b>商品信息</b></h3><hr>
 				<div class="col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1">
                     <table class="table cart mb48">
@@ -93,11 +93,11 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach($goodsData as $k=>$v)
+                            @foreach($goodsDate as $k=>$v)
                             <tr>
                                 <td>
                                     <a href="#">
-                                        <img alt="Product" class="product-thumb" src="{{$v->pic}}" width="200" height="80">
+                                        <img src="{{$v->pic}}" class="product-thumb"  width="200" height="80">
                                     </a>
                                 </td>
                                 <td>
@@ -134,14 +134,13 @@
 					<div class="col-md-2">
 						<button>支付宝</button>
 					</div>
-					<div class="col-md-2 bg-dange pull-right"  style="margin-top: 120px; font-size: 24px;">
+					<div class="col-md-2 pull-right"  style="margin-top: 120px; font-size: 24px;">
 						总价:<span style="color: red"> ¥{{$zongjia}}</span>
                     	{{csrf_field()}}
 					</div>
 				</div>
 			</div>
-			<button class="pull-right" type="submit" >确认支付</button>
-		</div>
+			<button class="pull-right" type="submit" ><a href="/zhifubao">确认支付</a></button>
 	</div>
 	<!-- 尾部 开始 -->
 		<div class="footer">

@@ -25,6 +25,10 @@ class LoginController extends Controller
     		session(['username'=>$user->username]);
     		return redirect('/admin')->with('msg','登陆成功');
     	}
-    	return back('/')->with('msg','登录失败');
+    	return back()->with('msg','登录失败1');
+    }
+    public function quit(){
+      session()->forget('username');
+      return redirect('/admin/login');
     }
 }

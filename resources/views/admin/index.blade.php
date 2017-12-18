@@ -1,4 +1,4 @@
-<!doctype html>
+aa<!doctype html>
 <html>
 
 <head>
@@ -8,20 +8,9 @@
     <link rel="stylesheet" href="/css/admin.css">
     <link rel="stylesheet" href="/css/appp.css">
     <script src="/js/echarts.min.js"></script>
-<<<<<<< HEAD
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
-
-=======
-<<<<<<< HEAD
-
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
 
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
 
-=======
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
->>>>>>> 996ab4aa93743de5977bac421a79babc3ed49d7f
->>>>>>> 25dd12c646c7987b551984045bcb18985374f395
     <script src="/bootstrap/js/jquery.js"></script>
     <script src="/bootstrap/js/bootstrap.js"></script>
     <script src="/bootstrap/js/holder.min.js"></script>
@@ -70,12 +59,12 @@
 
                 <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
                     <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
-                        <span class="tpl-header-list-user-nick">禁言小张</span><span class="tpl-header-list-user-ico"> <img src="/img/user01.png"></span>
+                        <span class="tpl-header-list-user-nick">{{session('username')}}</span><span class="tpl-header-list-user-ico"> <img src="{{session('hwfile')}}"></span>
                     </a>
                     <ul class="am-dropdown-content">
                         <li><a href="#"><span class="am-icon-bell-o"></span> 资料</a></li>
                         <li><a href="#"><span class="am-icon-cog"></span> 设置</a></li>
-                        <li><a href="#"><span class="am-icon-power-off"></span> 退出</a></li>
+                        <li><a href="/admin/quit"><span class="am-icon-power-off"></span> 退出</a></li>
                     </ul>
                 </li>
             </ul>

@@ -1,3 +1,16 @@
+<<<<<<< HEAD
+
+<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/bootstrap/css/bootstrap-theme.min.css">
+<script type="text/javascript" src="/bootstrap/js/jquery.js"></script>
+<script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+<script src="/bootstrap/js/holder.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/zfym.css">
+<style>
+	.height{height: auto;} .top10{height: 10px;}
+</style>
+=======
+>>>>>>> 053b2638ae39fa636a91311cee8189afa04d26ca
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +27,10 @@
         </style>
 </head>
 <body>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 053b2638ae39fa636a91311cee8189afa04d26ca
 <!-- 支付页面 开始 -->
 	<div class="container height">
 		<div class="zhifu height">

@@ -4,7 +4,7 @@
 	list-style: none;
 }
 a:hover{
-	text-decoration: none;	
+	text-decoration: none;
 }
 body{
 	background-color: #f5f5f5;
@@ -92,7 +92,7 @@ body{
 	width: 235px;
 	height: 30px;
 	/*background-color:blue;*/
-	float: right; 
+	float: right;
 }
 .header .nav-right .nav_ul .dl{
 	margin-right: 5px;
@@ -114,6 +114,7 @@ body{
 .header .nav_title .nav_cen li a{
 	font-size: 16px;
 	color: #000;
+	font-size: 16px;
 	text-decoration: none;
 }
 .header .nav_title .nav_cen .active a:hover{
@@ -153,7 +154,11 @@ body{
 	width: 1349px;
 	height: 450px;
 	/*background-color: red;*/
+<<<<<<< HEAD
+	margin:0 auto;
+=======
 	margin: 0px auto;
+>>>>>>> 33a174e30bd5a671863da6af3d024d3a5590e51c
 	position: relative;
 }
 .dh .cebi{
@@ -381,18 +386,18 @@ body{
 	margin-left: 30px;
 }
 .rexi .item h5{
-	text-align: center;	
+	text-align: center;
 }
 .rexi .item h5 a{
 	font-size: 14px;
-	color: #3a3a3a;	
+	color: #3a3a3a;
 }
-.rexi .item h6{	
-	text-align: center;	
+.rexi .item h6{
+	text-align: center;
 }
 .rexi .item h6 a{
 	font-size: 12px;
-	color: #a4a4a4;	
+	color: #a4a4a4;
 }
 .rexi .item .money a{
 	color: #cc0e11;
@@ -416,9 +421,9 @@ body{
 }
 .jptj .jipi h5 a{
 	font-size: 14px;
-	color: #3a3a3a;	
+	color: #3a3a3a;
 }
-.jptj .jipi h6{	
+.jptj .jipi h6{
 	text-align: center;
 	line-height: 20px;
 }
@@ -440,9 +445,9 @@ body{
 }
 .jptj .jipi_1 h5 a{
 	font-size: 14px;
-	color: #3a3a3a;	
+	color: #3a3a3a;
 }
-.jptj .jipi_1 h6{	
+.jptj .jipi_1 h6{
 	text-align: center;
 	line-height: 20px;
 }
@@ -521,14 +526,14 @@ body{
 	margin-right: 10px;
 }
 .iphone .iphone_b ul .gao h5{
-	text-align: center;	
+	text-align: center;
 }
 .iphone .iphone_b ul .gao h5 a{
 	font-size: 14px;
 	color: #3a3a3a;
 }
 .iphone .iphone_b ul .gao h6{
-	text-align: center;	
+	text-align: center;
 }
 .iphone .iphone_b ul .gao h6 a{
 	font-size: 12px;
@@ -539,7 +544,7 @@ body{
 }
 .iphone .iphone_b ul .gao .yuan a{
 	font-size: 14px;
-	color: #cc0e11;	
+	color: #cc0e11;
 }
 /*手机部分结束*/
 /*笔记本电脑部分开始*/
@@ -595,9 +600,9 @@ body{
 }
 .house .hou h5 a{
 	font-size: 14px;
-	color: #3a3a3a;	
+	color: #3a3a3a;
 }
-.house .hou h6{	
+.house .hou h6{
 	text-align: center;
 	line-height: 20px;
 }
@@ -614,9 +619,9 @@ body{
 }
 .house .hous h5 a{
 	font-size: 14px;
-	color: #3a3a3a;	
+	color: #3a3a3a;
 }
-.house .hous h6{	
+.house .hous h6{
 	text-align: center;
 	line-height: 20px;
 }

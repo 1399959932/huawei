@@ -1,7 +1,7 @@
 @extends('admin.index')
 
 @section('title')
-<title>商品列表</title>
+<title>1111</title>
 @endsection
 
 @section('content')
@@ -12,10 +12,10 @@
 <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
 <script type="text/javascript" charset="utf-8" src="/plugins/ueditor/lang/zh-cn/zh-cn.js"></script>
 <div class="">
-    
+
     <!-- 提示框 -->
     <div class="tpl-content-scope">
-		
+
     </div>
     <!-- 提示框结束 -->
 
@@ -52,7 +52,7 @@
                   <div class="col-sm-6">
                     <form action="/goods">
                     <div class="dataTables_length" id="datatable-fixed-header_length">
-                <label>Show 
+                <label>Show
                   <select name="num"  aria-controls="datatable-fixed-header" class="form-control input-sm">
                     <option value="10" @if($num == 10) selected @endif>10</option>
                     <option value="25" @if($num == 25) selected @endif>25</option>
@@ -90,8 +90,8 @@
                     <th class="sorting" tabindex="0" aria-controls="datatable-fixed-header" rowspan="1" colspan="1" aria-label="Start date: activate to sort column ascending" style="width: 144px;">操作</th>
                   </tr>
                 </thead>
-                
-                  @if(count($goods) > 0)  
+
+                  @if(count($goods) > 0)
                     @foreach($goods as $k=>$v)
                     <tr role="row" class="odd">
                       <td class="sorting_1">{{$v->id}}</td>
@@ -115,9 +115,9 @@
                   <tr><td colspan="5" class="text-center">暂无数据</td></tr>
                   @endif
                 <tbody>
-                  
-              
-                 
+
+
+
                 </tbody>
               </table></div></div><div class="row"><div class="col-sm-5"><div class="dataTables_info" id="datatable-fixed-header_info" role="status" aria-live="polite">Showing</div></div><div class="col-sm-7"><div class="dataTables_paginate paging_simple_numbers" id="datatable-fixed-header_paginate"><ul class="pagination"><li class="paginate_button previous disabled" id="datatable-fixed-header_previous"><a href="#" aria-controls="datatable-fixed-header" data-dt-idx="0" tabindex="0">Previous</a></li></a></li>
                 </ul>

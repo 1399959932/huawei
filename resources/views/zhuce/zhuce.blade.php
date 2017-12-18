@@ -34,7 +34,7 @@
 				<div class="right"><span>已有华为账号</span>&nbsp;<a href="">登录></a></div>
 			</div>
 
-				<form class="form-horizontal" action="/zhuce" method="post">
+				<form class="form-horizontal" action="/message" method="post">
 				  <div class="top20"></div>
 				  <div class="top20"></div>
 				  <div class="top20"></div>
@@ -163,7 +163,7 @@ $(function(){
 
 		//发送短信之后 1分钟之内不能点击该按钮
 		$(this).addClass('disabled');
-		var t = 30;
+		var t = 10;
 		//加倒计时
 		var inte = setInterval(function()
 		{

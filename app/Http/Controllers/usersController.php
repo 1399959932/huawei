@@ -58,7 +58,7 @@ class usersController extends Controller
     {
         $data = $request->only(['username','password','email']);
         //加密密码
-        $data['password'] = encrypt($data['password']);
+        $data['password'] = Hash::make($data['password']);
         //文件上传
         if($request->hasFile('hwfile')){
             //文件后缀
