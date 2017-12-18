@@ -35,7 +35,7 @@ Route::get('/goods/list','GoodsController@gdlist');
 Route::get('/test','PayController@index');
 
 //后台路由组
-Route::group(['middleware'=> 'login'],function(){
+
 	//zhifu
 	Route::get('/dingdan/pay','DingdanController@pay');
 	//购物且添加商品
@@ -62,11 +62,15 @@ Route::group(['middleware'=> 'login'],function(){
 	//基础信息管理
 	Route::resource('/admin/xinxi','InfoController');
 
-});
+
 
 Route::get('/fens','GoodsController@classify');
 
 Route::get('/fenlei','GoodsController@glist');
+
+Route::get('/hwgws','GoodsController@hua');
+
+Route::get('/hwaq','GoodsController@zhuanq');
 
  // 陈结束
 

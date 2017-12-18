@@ -33,7 +33,11 @@
 	<div class="container">
 		<div class="headers">
 			<div class="nav_logo">
-				<img src="holder.js/109x25?bg=#fec&text=logo">
+				@foreach($tupian as $k=>$v)
+				@if($k == 71)
+				<img src="{{$v->pic}}" width="109px;" height="25px;">
+				@endif
+				@endforeach
 			</div>
 			<div class="nav_menu">
 				<ul>
@@ -313,7 +317,11 @@
 <!-- logo部分开始 -->
 <div class="logo">
 	<div class="tu">
-		<img src="holder.js/100px560?bg=#fea">
+		@foreach($tupian as $k=>$v)
+		@if($k == 35)
+		<img src="{{$v->pic}}" width="100%" height="560px;">
+		@endif
+		@endforeach
 		<div class="btns col-md-offset-3">
 			<span class="col-md-3"><a href="#">了解HUAWEI&nbsp;Mate&nbsp;10</a></span>
 			<span class="col-md-3" style="margin-left: 0px;"><a href="#">HUAWEI&nbsp;Mate&nbsp;10&nbsp;Pro</a></span>
@@ -325,7 +333,11 @@
 <div class="chan">
 	<div class="container">
 		<div class="col-md-2 col-md-offset-2">
-			<img src="holder.js/198x426?bg=#fea" style="margin-top: 70px;">
+			@foreach($tupian as $k=>$v)
+			@if($k == 59)
+			<img src="{{$v->pic}}" style="margin-top: 70px;">
+			@endif
+			@endforeach
 		</div>
 		<div class="col-md-8 col-md-offset-2 pin" style="padding: 0px;">
 			<img src="/img/cplo.png" style="margin-top: 5px;">
@@ -354,25 +366,41 @@
 			<div class="col-md-2 part1" style="padding: 0px;">
 				<h2>HUAWEI<br>Mate&nbsp;10<br>保时捷设计</h2>
 				<p>预见未来</p>
-				<img src="holder.js/216x176?bg=#ace" style="margin-left: -8px;">
+				@foreach($tupian as $k=>$v)
+				@if($k == 60)
+				<img src="{{$v->pic}} " width="216px;" height="176px;" style="margin-left: -8px;">
+				@endif
+				@endforeach
 				<button>查看详情</button>
 			</div>
 			<div class="col-md-2 part1" style="padding: 0px; margin-left: 72px;">
 				<h2>HUAWEI<br>Mate&nbsp;10<br>保时捷设计</h2>
 				<p>预见未来</p>
-				<img src="holder.js/216x176?bg=#ace" style="margin-left: -8px;">
+				@foreach($tupian as $k=>$v)
+				@if($k == 61)
+				<img src="{{$v->pic}}" width="216px;" height="176px;" style="margin-left: -8px;">
+				@endif
+				@endforeach
 				<button>查看详情</button>
 			</div>
 			<div class="col-md-2 part1" style="padding: 0px; margin-left: 72px;">
 				<h2>HUAWEI<br>Mate&nbsp;10<br>保时捷设计</h2>
 				<p>预见未来</p>
-				<img src="holder.js/216x176?bg=#ace" style="margin-left: -8px;">
+				@foreach($tupian as $k=>$v)
+				@if($k == 62)
+				<img src="{{$v->pic}}" width="216px;" height="176px;" style="margin-left: -8px;">
+				@endif
+				@endforeach
 				<button>查看详情</button>
 			</div>
 			<div class="col-md-2 part1" style="padding: 0px; margin-left: 72px;">
 				<h2>HUAWEI<br>Mate&nbsp;10<br>保时捷设计</h2>
 				<p>预见未来</p>
-				<img src="holder.js/216x176?bg=#ace" style="margin-left: -8px;">
+				@foreach($tupian as $k=>$v)
+				@if($k == 63)
+				<img src="{{$v->pic}}" width="216px;" height="176px;" style="margin-left: -8px;">
+				@endif
+				@endforeach
 				<button>查看详情</button>
 			</div>
 		</div>
@@ -383,14 +411,22 @@
 <div class="pict">
 	<div class="ure_t">
 		<div class="col-md-6 t_zi" style="padding: 0px;">
-			<img src="holder.js/100px431?bg=#fea">
+			@foreach($tupian as $k=>$v)
+			@if($k == 64)
+			<img src="{{$v->pic}}" width="844px;" height="431px;">
+			@endif
+			@endforeach
 			<p class="col-md-offset-4">人像摄影大师</p>
 			<div class="plus col-md-offset-4">
 				<a href="#">了解HUAWEI&nbsp;P10&nbsp;Plus</a>
 			</div>
 		</div>
 		<div class="col-md-6 t_zin" style="padding: 0px;">
-			<img src="holder.js/100px431?bg=#ade">
+			@foreach($tupian as $k=>$v)
+			@if($k == 65)
+			<img src="{{$v->pic}}" width="844px;" height="431px;">
+			@endif
+			@endforeach
 			<p class="col-md-offset-4">这一刻更自由</p>
 			<div class="plus col-md-offset-4">
 				<a href="#">了解HUAWEI&nbsp;WATCH&nbsp;2&nbsp;Pro</a>
@@ -399,7 +435,11 @@
 	</div>
 	<div class="ure_c">
 		<div class="col-md-12" style="padding: 0px;">
-			<img src="holder.js/100px490?bg=#fcb">
+			@foreach($tupian as $k=>$v)
+			@if($k == 66)
+			<img src="{{$v->pic}}" width="1349px;" height="490px;">
+			@endif
+			@endforeach
 		</div>
 		<div class="xq">
 			<p class="yjwl">预见未来</p>
@@ -409,7 +449,11 @@
 	</div>
 	<div class="ure_b">
 		<div class="col-md-12" style="padding: 0px;">
-			<img src="holder.js/100px560?bg=#abc">
+			@foreach($tupian as $k=>$v)
+			@if($k == 67)
+			<img src="{{$v->pic}}" width="1686px;" height="560px;">
+			@endif
+			@endforeach
 		</div>
 		<p class="col-md-offset-5">预见未来</p>
 		<!-- <div class="col-md-12 hhx">
@@ -427,7 +471,11 @@
 		<div class="imgs">
 			<ul>
 				<li class="col-md-4" style="padding: 0px;">
-					<img src="holder.js/300x396">
+					@foreach($tupian as $k=>$v)
+			        @if($k == 68)
+					<img src="{{$v->pic}}" width="300px;" height="396px;">
+					@endif
+			        @endforeach
 					<div class="jish">
 						<span>智能手机</span>
 						<span class="xian"></span>
@@ -435,7 +483,11 @@
 					</div>
 				</li>
 				<li class="col-md-4" style="padding: 0px;" >
-					<img src="holder.js/300x396" style="margin-left: 11px;">
+					@foreach($tupian as $k=>$v)
+			        @if($k == 69)
+					<img src="{{$v->pic}}" width="300px;" height="396px;" style="margin-left: 11px;">
+					@endif
+			        @endforeach
 					<div class="jish">
 						<span>笔记本&平板</span>
 						<span class="xian"></span>
@@ -443,7 +495,11 @@
 					</div>
 				</li>
 				<li class="col-md-4" style="padding: 0px;">
-					<img src="holder.js/300x396" style="float: right;">
+					@foreach($tupian as $k=>$v)
+			        @if($k == 70)
+					<img src="{{$v->pic}}" width="300px;" height="396px;" style="float: right;">
+					@endif
+			        @endforeach
 					<div class="jish">
 						<span>穿戴设备</span>
 						<span class="xian"></span>
@@ -470,19 +526,19 @@
 				<div class="line"></div>
 				<ul>
 					<li>
-						<img src="holder.js/35x35" style="margin-right: 13px;">
+						<img src="图片/logo1.png" style="margin-right: 13px;">
 						<a href="#">微信客服</a>
 					</li>
 					<li>
-						<img src="holder.js/35x35" style="margin-right: 13px;">
+						<img src="图片/logo2.png" style="margin-right: 13px;">
 						<a href="#">在线客服</a>
 					</li>
 					<li>
-						<img src="holder.js/35x35" style="margin-right: 13px;">
+						<img src="图片/logo3.png" style="margin-right: 13px;">
 						<a href="#">零售店查询</a>
 					</li>
 					<li style="margin-right: 0px;">
-						<img src="holder.js/35x35" style="margin-right: 13px;">
+						<img src="图片/logo4.png" style="margin-right: 13px;">
 						<a href="#">服务中心查询</a>
 					</li>
 				</ul>
@@ -549,17 +605,17 @@
 						<div class="icons">
 							<div class="fang">
 								<span>访问花粉俱乐部</span>
-								<a href="#"><img src="holder.js/30x25"></a>
+								<a href="#"><img src="图片/logo5.png"></a>
 							</div>
 							<div class="guan">
 								<span>关注我们</span>
-								<a href="#"><img src="holder.js/30x25"></a>
-								<a href="#"><img src="holder.js/30x25"></a>
+								<a href="#"><img src="图片/logo6.png" style="width: 30px;" ></a>
+								<a href="#"><img src="图片/logo7.png"></a>
 							</div>
 							<div class="hua">
 								<span>关注花粉俱乐部</span>
-								<a href="#"><img src="holder.js/30x25"></a>
-								<a href="#"><img src="holder.js/30x25"></a>
+								<a href="#"><img src="图片/logo6.png" style="width: 30px;"></a>
+								<a href="#"><img src="图片/logo7.png"></a>
 							</div>
 						</div>
 					</div>

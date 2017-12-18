@@ -10,6 +10,8 @@ class RygwController extends Controller
     public function ry()
     {
     	$goods = DB::table('lbt')->get();
-    	return view('homes.ry',['goods'=>$goods]);
+    	$tupian = DB::table('goods_pic')->get();
+    	$xinxi = DB::table('goods')->get();
+    	return view('homes.ry',['goods'=>$goods],['tupian'=>$tupian],['xinxi'=>$xinxi]);
     }
 }

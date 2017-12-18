@@ -13,7 +13,7 @@ class GoodsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index(Request $request)
-    {
+    { 
         $num = $request->input('num',10);
         $keywords = $request->input('keywords','');
 
@@ -56,15 +56,7 @@ class GoodsController extends Controller
      */
     public function store(Request $request)
     {
-
-
-
         $data = $request->only(['title','price','content','cate_id','kucun']);
-
-
-        $data = $request->only(['title','price','content','cate_id']);
-
-
         // 填充数据库数据
         $data['created_at'] = date('Y-m-d H:i:s');
         $data['status'] = 1;
@@ -91,7 +83,7 @@ class GoodsController extends Controller
                 }
             DB::table('goods_pic')->insert($images);
             }
-            return redirect('/goods/create')->with('msg','添加成功');
+            return redirect('/goods')->with('msg','添加成功');
         }else{
             return redirect('/goods')->with('msg','添加失败');
         }
@@ -239,6 +231,56 @@ class GoodsController extends Controller
 
         // return view('home.goods.list',compact('goods'));
         return view('home.classify',compact('goods'));
+
+    }
+    public function hua(){
+        //读取商品
+        $tupian = DB::table('goods_pic')->get();
+        // dd($tupian);
+        $goods = DB::table('goods')
+        ->where('status',1)
+        ->select('id','title','price')
+        ->orderBy('id','desc')
+        ->paginate(20);
+        
+        //便利商品信息
+        foreach ($goods as $key => &$value) {
+            $value->pic = DB::table('goods_pic')
+            ->where('goods_id',$value->id)
+            ->value('pic');
+        }
+        // dd($goods);
+
+        $cates = DB::table('cate');
+        //模板
+
+        // return view('home.goods.list',compact('goods'));
+        return view('home.official',compact('goods','tupian'));
+
+    }
+    public function zhuanq(){
+        //读取商品
+        $tupian = DB::table('goods_pic')->get();
+        // dd($tupian);
+        $goods = DB::table('goods')
+        ->where('status',1)
+        ->select('id','title','price')
+        ->orderBy('id','desc')
+        ->paginate(20);
+        
+        //便利商品信息s
+        foreach ($goods as $key => &$value) {
+            $value->pic = DB::table('goods_pic')
+            ->where('goods_id',$value->id)
+            ->value('pic');
+        }
+        // dd($goods);
+
+        $cates = DB::table('cate');
+        //模板
+
+        // return view('home.goods.list',compact('goods'));
+        return view('home.prefe',compact('goods','tupian'));
 
     }
 }
