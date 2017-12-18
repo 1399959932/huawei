@@ -231,7 +231,9 @@
     			<!-- 进度条 结束 -->
     			<!-- 介绍 开始 -->
     			<div class="jieshao">
+                    @foreach($shouye as $k=>$v)
     				<img src="{{$v->pic}}" style="width: 475px;height: 510px;">
+                    @endforeach
     				<div class="jieshao_right">
     					<h3>荣耀V10</h3>
     					<h4>我AI的快</h4>
@@ -283,7 +285,7 @@
     				</div>
     			</div>
     			<div style="margin-top: 20px;">
-    				<img src="{{$v->pic}}" style="width: 1140px;height: 480px;">
+    				<img src="" style="width: 1140px;height: 480px;">
     			</div>
     		</div>
     	</div>

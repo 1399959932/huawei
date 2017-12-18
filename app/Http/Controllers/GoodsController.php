@@ -67,10 +67,27 @@ class GoodsController extends Controller
      */
     public function store(Request $request)
 
+<<<<<<< HEAD
     {   
         // dd($request->all());
         $data = $request->only(['title','kucun','price','content','cate_id']);
 
+=======
+
+<<<<<<< HEAD
+        $data = $request->only(['title','price','content','cate_id']);
+
+
+
+=======
+
+        $data = $request->only(['title','price','content','cate_id','kucun']);
+
+
+        $data = $request->only(['title','price','content','cate_id']);
+
+>>>>>>> 33a174e30bd5a671863da6af3d024d3a5590e51c
+>>>>>>> 053b2638ae39fa636a91311cee8189afa04d26ca
 
         // 填充数据库数据
         $data['created_at'] = date('Y-m-d H:i:s');
@@ -96,8 +113,18 @@ class GoodsController extends Controller
                 $images[] = $tmp;
                 $data['profile'] = trim($dir.'/'.$name,'.');
                 }
+<<<<<<< HEAD
 
                 // dd($images);
+=======
+<<<<<<< HEAD
+
+
+                // dd($images);
+
+=======
+>>>>>>> 33a174e30bd5a671863da6af3d024d3a5590e51c
+>>>>>>> 053b2638ae39fa636a91311cee8189afa04d26ca
             DB::table('goods_pic')->insert($images);
             }
             return redirect('/goods/create')->with('msg','添加成功');
@@ -214,14 +241,30 @@ class GoodsController extends Controller
     public function gdlist(){
 
         //读取商品
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+        $goods = DB::table('goods')->where('status',1)
+        ->select('id','title','price')->orderBy('id','desc')->paginate(20);
+=======
+>>>>>>> 33a174e30bd5a671863da6af3d024d3a5590e51c
+>>>>>>> 053b2638ae39fa636a91311cee8189afa04d26ca
 
         $goods = DB::table('goods')
         ->where('status',1)
         ->select('id','title','price')
         ->orderBy('id','desc')
         ->paginate(20);
+<<<<<<< HEAD
+
+=======
         
+<<<<<<< HEAD
+=======
+>>>>>>> 33a174e30bd5a671863da6af3d024d3a5590e51c
+
+>>>>>>> 053b2638ae39fa636a91311cee8189afa04d26ca
         //便利商品信息
         foreach ($goods as $key => &$value) {
             $value->pic = DB::table('goods_pic')
@@ -247,7 +290,11 @@ class GoodsController extends Controller
         ->select('id','title','price')
         ->orderBy('id','desc')
         ->paginate(20);
+<<<<<<< HEAD
        
+=======
+
+>>>>>>> 053b2638ae39fa636a91311cee8189afa04d26ca
         //便利商品信息
         foreach ($goods as $key => &$value) {
             $value->pic = DB::table('goods_pic')
@@ -265,4 +312,3 @@ class GoodsController extends Controller
 
     }
 }
-

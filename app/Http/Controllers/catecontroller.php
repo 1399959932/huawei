@@ -13,7 +13,7 @@ class catecontroller extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
+    {    
         $cate = DB::select("select id,name,pid,concat(path,'_',id) as paths from cate order by paths");
         foreach ($cate as $key => &$value){
             $count = count(explode('_',$value->paths))-2;
@@ -77,7 +77,10 @@ class catecontroller extends Controller
     public function edit($id)
     {
         return view('admin.cate.edit');
+<<<<<<< HEAD
 
+=======
+>>>>>>> 053b2638ae39fa636a91311cee8189afa04d26ca
     }
 
     /**
@@ -111,5 +114,5 @@ class catecontroller extends Controller
         }
     }
 
-    
+
 }
