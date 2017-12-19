@@ -11,11 +11,16 @@ class HwzqController extends Controller
         //读取商品
         $tupian = DB::table('goods_pic')->get();
         // dd($tupian);
+        $lbt = DB::table('lbt')->get();
         $goods = DB::table('goods')
         ->where('status',1)
         ->select('id','title','price')
         ->orderBy('id','desc')
         ->paginate(20);
+
+
+         $shouye = DB::table('shouye')->get();
+
         
         //便利商品信息s
         foreach ($goods as $key => &$value) {
@@ -23,13 +28,13 @@ class HwzqController extends Controller
             ->where('goods_id',$value->id)
             ->value('pic');
         }
-        // dd($goods);
+        // dd($lbt);
 
         // $cates = DB::table('cate')->get();   
         //模板
 
         // return view('home.goods.list',compact('goods'));
-        return view('home.prefe',compact('goods','tupian'));
+        return view('home.prefe',compact('goods','tupian','lbt','shouye'));
 
     }
 
@@ -58,5 +63,6 @@ class HwzqController extends Controller
         return view('home.official',compact('goods','tupian'));
 
     }
+
 
 }

@@ -22,7 +22,6 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox" >
             @foreach($lbt as $k=>$v)
-
             <div class="item  @if($k==0) active @endif">
                
                 <img src="{{$v->pic}}" alt="..." width="100%">

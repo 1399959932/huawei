@@ -75,8 +75,10 @@ Route::get('/fens','GoodsController@classify');
 
 Route::get('/fenlei','GoodsController@glist');
 
+//华为消费者业务官网
 Route::get('/hwgws','hwzqController@hua');
 
+//华为专区
 Route::get('/hwaq','hwzqController@zhuanq');
 
  // 陈结束
