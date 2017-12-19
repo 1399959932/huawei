@@ -405,20 +405,7 @@
 @section('body')
 <div class="theme">
 	<div class="container">
-        @foreach($goods as $k=>$v)
-		<div class="col-md-2 theme_1" style="padding: 0px; margin-right: 15px;">
-            <a href="/goods/{{$v->id}}">
-			<img src="{{$v->pic}}" style="width: 180px;height: 180px;margin-left: 21px;margin-top: 38px;"></a>
-			<h5><a href="#">{{$v->title}}</a></h5>
-			<h3>&yen;{{$v->price}}</h3>
-			<div class="dib">
-				<button class="xg">选购</button>
-				<ul>
-					<li class="pj">6人评价</li>
-				</ul>
-			</div>
-		</div>
-        @endforeach
+       
 		<nav class="pull-right" style="margin-top: 20px;">
 		  	<ul class="pagination">
 			    <li>
